@@ -1,0 +1,1 @@
+CKEDITOR.replace( 'escrow_instruction_value' );

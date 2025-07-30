@@ -1,0 +1,124 @@
+<?php
+class SalesSnapShot_model extends CI_Model
+{
+    public function __construct()
+    {
+        // Set table name
+        $this->table = 'pct_sales_snap_shot_report';
+    }
+
+    public function insert($data = array(), $table = '')
+    {
+        if ($table == '') {
+            $table = $this->table;
+        }
+
+        if (!empty($data)) {
+
+            // Insert data
+            $insert = $this->db->insert($table, $data);
+
+            // Return the status
+            return $insert ? $this->db->insert_id() : false;
+        }
+        return false;
+    }
+
+    public function getData($condition = null)
+    {
+        $table = $this->table;
+        $this->db->select($table . '.*,customer_basic_details.first_name ,customer_basic_details.last_name, ,customer_basic_details.email_address');
+        $this->db->from($table);
+        if ($condition && is_array($condition)) {
+            foreach ($condition as $key => $val) {
+                $this->db->where($key, $val);
+            }
+        }
+        $this->db->join('customer_basic_details', "customer_basic_details.id = $table.sales_rep");
+        $this->db->order_by('id', 'DESC');
+        $query = $this->db->get();
+        $result = $query->result_array();
+        if (!empty($result)) {
+            return $result;
+        } else {
+            return array();
+        }
+    }
+
+    public function getSalesRepData($condition = null, $added_by = 0)
+    {
+        $table = 'customer_basic_details';
+        $this->db->select($table . '.*,count(' . $this->table . '.id) as report_count');
+        $this->db->from($table);
+        if ($condition && is_array($condition)) {
+            foreach ($condition as $key => $val) {
+                $this->db->where($key, $val);
+            }
+        }
+        $this->db->join($this->table, "$table.id = {$this->table}.sales_rep AND added_by = $added_by ", 'LEFT');
+        $this->db->group_by("$table.id");
+        $this->db->order_by("$table.first_name");
+        $query = $this->db->get();
+        $result = $query->result_array();
+        if (!empty($result)) {
+            return $result;
+        } else {
+            return array();
+        }
+    }
+
+    public function getReportData($condition = null, $order_by = 'id', $limit = 0)
+    {
+        $table = 'pct_sales_rep_report_records';
+        $this->db->select($table . '.*');
+        $this->db->from($table);
+        if ($condition && is_array($condition)) {
+
+            foreach ($condition as $key => $val) {
+                $this->db->where($key, $val);
+            }
+        }
+        $this->db->order_by($order_by, 'DESC');
+        if ($limit > 0) {
+            $this->db->limit($limit);
+        }
+        $query = $this->db->get();
+        $result = $query->result_array();
+        if (!empty($result)) {
+            return $result;
+        } else {
+            return array();
+        }
+    }
+
+    public function update($data, $condition = array(), $table = '')
+    {
+        if (empty($table)) {
+            $table = $this->table;
+        }
+
+        if (!empty($data)) {
+
+            // $data['updated_at'] = date("Y-m-d H:i:s");
+
+            // Update data
+            $update = $this->db->update($table, $data, $condition);
+
+            // Return the status
+            return $update ? true : false;
+        }
+        return false;
+    }
+
+    public function delete_records($condition = array(), $table = '')
+    {
+
+        if (empty($table)) {
+            $table = $this->table;
+        }
+
+        $this->db->delete($table, $condition);
+
+    }
+
+}

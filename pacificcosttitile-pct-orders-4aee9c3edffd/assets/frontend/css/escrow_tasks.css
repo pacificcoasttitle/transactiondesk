@@ -1,0 +1,146 @@
+.custom-checkbox input[type="checkbox"]:checked+label{  text-decoration: line-through;}
+
+.task__info label {
+	text-transform: capitalize;
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 16px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	font-weight: normal;
+}
+
+.card.custom__task_card {
+	border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+.custom__task_collapse .card-body {
+    padding-left: 75px;
+    font-size: 16px;
+    
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #f0f0f0;
+    
+}
+.custom__collapse_arrow {
+	padding: 15px;
+	font-size: 20px;
+}
+
+	/* Hide the browser's default checkbox */
+.task__info label input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+	position: absolute;
+	top: 6px;
+	left: 0;
+	height: 20px;
+	width: 20px;
+	/* background-color: #eee; */
+	border: 3px solid #da7047;
+}
+
+	
+	/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the checkmark when checked */
+.task__info label input:checked ~ .checkmark:after {
+	display: block;
+}
+
+/* Style the checkmark/indicator */
+.task__info label .checkmark:after {
+	left: 3px;
+	top: 0px;
+	width: 7px;
+	height: 12px;
+	border: solid #da7047;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+	
+.task__info label input:checked ~ .check_box_text {
+	text-decoration: line-through;
+}
+
+.b-task-list__item.task__info {
+	margin-bottom: 50px;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+}
+.custom__task_button .btn {
+	width: auto;
+	/* border: 1px solid; */
+    font-size: 14px;
+    padding: 3px 12px;
+}
+#progress_bar {
+	width: 100%;
+	height: 5.5rem;
+	
+}
+
+.progress-holder {
+	text-align: center;
+}
+.custom__task_progress {
+	background-color: #f2f2f2;
+	height: 40px;
+    font-size: 1.6rem;
+}
+.custom__collapse_arrow .fa-angle-down {
+	display: none;
+}
+.custom__task_actions .btn {
+	border-bottom: 2px solid #666;
+}
+.custom__task_actions .btn.btn-default:hover {
+	color: #333;
+}
+/* .custom__collapse_arrow .fa-angle-up {
+	display: inline-block;
+} */
+.custom__collapse_arrow.collapsed .fa-angle-down {
+	display: inline-block;
+}
+.custom__collapse_arrow.collapsed .fa-angle-up {
+	display: none;
+}
+.mt-20 {
+	margin-top: 20px;
+}
+@media (max-width: 991px){
+	html .text-right {
+		text-align: right;
+	}
+}
+@media (max-width: 767px){
+.ui-title-block {
+    font-size: 27px;
+}
+.custom__task_button .typography-section__inner {
+	margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+}
+

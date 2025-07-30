@@ -1,0 +1,31 @@
+{
+	"description": "The CodeIgniter framework with HMVC Library",
+	"name": "alzen8work/ci_hmvc",
+	"type": "project",
+	"homepage": "https://github.com/alzen8work/ci_hmvc",
+	"license": "MIT",
+	"require": {
+		"php": ">=5.2.4",
+		"vlucas/phpdotenv": "^4.1",
+		"gufy/pdftohtml-php": "~2",
+		"twilio/sdk": "^6.13",
+		"sendgrid/sendgrid": "~7",
+		"aws/aws-sdk-php": "^3.178",
+		"h4cc/wkhtmltopdf-amd64": "0.12.x",
+		"knplabs/knp-snappy": "^1.2",
+		"wemersonjanuario/wkhtmltopdf-windows": "0.12.2.3",
+		"phpseclib/phpseclib": "^3.0",
+		"aspose-cloud/aspose-words-cloud": "^21.9",
+		"pusher/pusher-php-server": "^6.1",
+		"mpdf/mpdf": "^8.1",
+		"mikehaertl/php-pdftk": "^0.12.1"
+	},
+	"suggest": {
+		"paragonie/random_compat": "Provides better randomness in PHP 5.x"
+	},
+	"require-dev": {
+		"mikey179/vfsstream": "1.1.*",
+		"robmorgan/phinx": "*",
+		"phpunit/phpunit": "4.* || 5.*"
+	}
+}

@@ -1,0 +1,533 @@
+<?php
+    include dirname(__FILE__).'/config/config.php';
+    session_start();
+?>
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Order Submitted | Pacific Coast Title Company</title>
+    <meta content="We specialize in Residential, Commercial Title & Escrow Services" name="description">
+    <meta content="" name="keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="HandheldFriendly" content="true">
+    <!-- <link rel="stylesheet" href="/assets/css/master.css"> -->
+    <link rel="stylesheet" href="<?php echo BASE_URL; ?>css/custom.css">
+    <link rel="stylesheet" type="text/css"  href="<?php echo BASE_URL_MAIN; ?>assets/css/master.css">
+    <link rel="icon" href="<?php echo BASE_URL; ?>/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css"  href="<?php echo BASE_URL; ?>css/smart-forms.css">
+    <script type="text/javascript">
+        var address = "<?php echo isset($_SESSION['address']) && !empty($_SESSION['address']) ? $_SESSION['address'] : ''; ?>";
+        var city = "<?php echo isset($_SESSION['city']) && !empty($_SESSION['city']) ? $_SESSION['city'] : ''; ?>";
+        var apn = "<?php echo isset($_SESSION['apn']) && !empty($_SESSION['apn']) ? $_SESSION['apn'] : '' ; ?>";
+        var state = "<?php echo isset($_SESSION['state']) && !empty($_SESSION['state']) ? $_SESSION['state'] : ''; ?>";
+        var county = "<?php echo isset($_SESSION['county']) && !empty($_SESSION['county']) ? $_SESSION['county'] : ''; ?>";
+        var fipCode = "<?php echo isset($_SESSION['fipCode']) && !empty($_SESSION['fipCode']) ? $_SESSION['fipCode'] : ''; ?>";
+        var customer_number = "<?php echo isset($_SESSION['customer_number']) && !empty($_SESSION['customer_number']) ? $_SESSION['customer_number'] : '' ; ?>";
+    </script>
+    <!--[if lt IE 9 ]>
+<script src="/assets/js/separate-js/html5shiv-3.7.2.min.js" type="text/javascript"></script><meta content="no" http-equiv="imagetoolbar">
+<![endif]-->
+</head>
+
+<body>
+    <!-- Loader-->
+    <div id="page-preloader"><span class="spinner border-t_second_b border-t_prim_a"></span></div>
+    <!-- Loader end-->
+    <div class="l-theme animated-css" data-header="sticky" data-header-top="200" data-canvas="container">
+        <!-- ==========================-->
+        <!-- SEARCH MODAL-->
+        <!-- ==========================-->
+        <!-- <div class="header-search open-search">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">
+                        <div class="navbar-search">
+                            <form class="search-global">
+                                <input class="search-global__input" type="text" placeholder="Type to search" autocomplete="off" name="s" value="">
+                                <button class="search-global__btn"><i class="icon stroke icon-Search"></i></button>
+                                <div class="search-global__note">Begin typing your search above and press return to search.</div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="search-close close" type="button"><i class="fa fa-times"></i></button>
+        </div>  -->
+        <!-- ==========================-->
+        <!-- MOBILE MENU-->
+        <!-- ==========================-->
+        <div data-off-canvas="mobile-slidebar left overlay">
+            <ul class="yamm nav navbar-nav">
+               <li><a href="index.html">Home</a></li>
+                               <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">About Us<b class="caret"></b>
+                          <!-- Classic Dropdown--></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="what-is-title-insurance.html">What Is Title Insurance</a></li>
+										<li><a href="benefits-title-insurance.html">Benefits of Title Insurance</a></li>
+										<li><a href="top-10-title-problems.html">Top 10 Title Concerns</a></li>
+										<li><a href="our-role.html">Our Role</a></li>
+										<li><a href="about-us.html">About Us</a></li>
+                                        
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Residential<b class="caret"></b>
+                          <!-- Classic Dropdown--></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="residential-title.html">Residential Title</a></li>
+                                        
+                                        <li><a href="escrow-settlement.html">Escrow Settlement</a></li>
+                                    </ul>
+                                </li>
+								 <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Commercial<b class="caret"></b>
+                          <!-- Classic Dropdown--></a>
+                                    <ul class="dropdown-menu">
+                                         <li><a href="commercial-services.html">Services</a></li>
+                                        <li><a href="commercial-expertise.html">Expertise</a></li>
+                                        <li><a href="commercial-resources.html">Resources</a></li>
+                                    </ul>
+                                </li>
+								
+                                <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Agent Resources<b class="caret"></b>
+                          <!-- Classic Dropdown--></a>
+                                    <ul class="dropdown-menu">
+										
+                                        <li><a href="blank-forms.html">Blank Forms</a></li>
+										<li><a href="educational-booklets.html">Educational Booklets</a></li>
+										<li><a href="flyer-center.html">Flyer Center</a></li>
+										 <li class="divider"></li>
+										<li><a href="http://www.pct.com/calculator/">Rate Calculator</a></li>
+										<li><a href="rate-book.html">Rate Book</a></li>
+										 <li class="divider"></li>
+										<li><a href="training-center.html">Training center</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Branches<b class="caret"></b>
+                          <!-- Classic Dropdown--></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="downey.html">Downey</a></li>
+                                        <li><a href="glendale.html">Glendale</a></li>
+                                        <li><a href="orange.html">Orange</a></li>
+										<li><a href="oxnard.html">Oxnard</a></li>
+                                        <li><a href="sandiego.html">San Diego</a></li>
+                                        <li><a href="westlake.html">Westlake</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a>
+                                    <!-- Simple-->
+                                </li>
+            </ul>
+        </div>
+        <!-- ==========================-->
+        <!-- FULL SCREEN MENU-->
+        <!-- ==========================-->
+      <!--  <div class="wrap-fixed-menu" id="fixedMenu">
+            <nav class="fullscreen-center-menu">
+
+                <div class="menu-main-menu-container">
+
+                    <ul class="nav navbar-nav">
+
+                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="about-us.html">About</a></li>
+                        <li><a href="blank-forms.html" >Blank Forms</a></li>
+                        <li><a href="informational-flyers.html">Informational Flyers</a> </li>
+                        <li><a href="educational-booklets.html">Educational Booklets</a></li>
+                        <li><a href="contact.html" >Branches</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+            <button type="button" class="fullmenu-close"><i class="fa fa-times"></i></button>
+        </div> -->
+
+        <header class="header header-topbar-hidden header-boxed-width navbar-fixed-top header-background-trans header-color-white header-logo-white header-navibox-1-left header-navibox-2-right header-navibox-3-right header-navibox-4-right">
+            <div class="container container-boxed-width">
+                
+                <nav class="navbar" id="nav">
+                    <div class="container">
+                        <div class="header-navibox-1">
+                            <!-- Mobile Trigger Start-->
+                            <button class="menu-mobile-button visible-xs-block js-toggle-mobile-slidebar toggle-menu-button"><i class="toggle-menu-button-icon"><span></span><span></span><span></span><span></span><span></span><span></span></i></button>
+                            <!-- Mobile Trigger End-->
+                            <a class="navbar-brand scroll" href="index.html"><img class="normal-logo" src="<?php echo BASE_URL_MAIN; ?>assets/media/general/logo2.png" alt="logo"><img class="scroll-logo hidden-xs" src="<?php echo BASE_URL_MAIN; ?>assets/media/general/logo2-dark.png" alt="logo"></a>
+                        </div>
+                        <div class="header-navibox-2">
+                            <ul class="yamm main-menu nav navbar-nav">
+                                <li><a href="index.html">Home</a></li>
+                               <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">About Us<b class="caret"></b>
+                          <!-- Classic Dropdown--></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="what-is-title-insurance.html">What Is Title Insurance</a></li>
+										<li><a href="benefits-title-insurance.html">Benefits of Title Insurance</a></li>
+										<li><a href="top-10-title-problems.html">Top 10 Title Concerns</a></li>
+										<li><a href="our-role.html">Our Role</a></li>
+										<li><a href="about-us.html">About Us</a></li>
+                                        
+                                    </ul>
+                                </li>
+                               <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Residential<b class="caret"></b>
+                          <!-- Classic Dropdown--></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="residential-title.html">Residential Title</a></li>
+                                        
+                                        <li><a href="escrow-settlement.html">Escrow Settlement</a></li>
+                                    </ul>
+                                </li>
+								 <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Commercial<b class="caret"></b>
+                          <!-- Classic Dropdown--></a>
+                                    <ul class="dropdown-menu">
+                                         <li><a href="commercial-services.html">Services</a></li>
+                                        <li><a href="commercial-expertise.html">Expertise</a></li>
+                                        <li><a href="commercial-resources.html">Resources</a></li>
+                                    </ul>
+                                </li>
+								
+                                <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Agent Resources<b class="caret"></b>
+                          <!-- Classic Dropdown--></a>
+                                    <ul class="dropdown-menu">
+										
+                                        <li><a href="blank-forms.html">Blank Forms</a></li>
+										<li><a href="educational-booklets.html">Educational Booklets</a></li>
+										<li><a href="flyer-center.html">Flyer Center</a></li>
+										 <li class="divider"></li>
+										<li><a href="http://www.pct.com/calculator/">Rate Calculator</a></li>
+										<li><a href="rate-book.html">Rate Book</a></li>
+										 <li class="divider"></li>
+										<li><a href="training-center.html">Training center</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown">Branches<b class="caret"></b>
+                          <!-- Classic Dropdown--></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="downey.html">Downey</a></li>
+                                        <li><a href="glendale.html">Glendale</a></li>
+                                        <li><a href="orange.html">Orange</a></li>
+										<li><a href="oxnard.html">Oxnard</a></li>
+                                        <li><a href="sandiego.html">San Diego</a></li>
+                                        <li><a href="westlake.html">Westlake</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a>
+                                    <!-- Simple-->
+                                </li>
+                            </ul>
+                        </div>
+                    <!--   <div class="header-navibox-3">
+                            <ul class="nav navbar-nav hidden-xs clearfix vcenter">
+                              <!--  <li><a class="btn_header_search" href="#"><i class="fa fa-search"></i></a></li>
+                                <li>
+                                    <button class="js-toggle-screen toggle-menu-button"><i class="toggle-menu-button-icon"><span></span><span></span><span></span><span></span><span></span><span></span></i></button>
+                                </li>
+                            </ul>
+                        </div> -->
+                      <!--  <div class="header-navibox-4">
+                            <div class="header-cart"><a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a><span class="header-cart-count">3</span></div>
+                            <div class="header-language-nav dropdown">
+                                <button class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">English<span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">English</a></li>
+                                    <li><a href="#">Italy</a></li>
+                                    <li><a href="#">France</a></li>
+                                </ul>
+                            </div>
+                        </div> -->
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!-- end .header-->
+        <div class="section-title-page3 area-bg area-bg_blue area-bg_op_90 parallax">
+          <div class="area-bg__inner">
+            <div class="container">
+              <div class="row">
+                <div class="col-xs-12">
+                  <h1 class="b-title-page">Order Submitted Successfully</h1>
+                  <div class="b-title-page__info">Congratulations</div>
+                  <!-- end breadcrumb-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end .b-title-page-->
+        <article class="b-about section-default">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="ui-subtitle-block">Important Details Below</div>
+                <h2 class="ui-title-block ui-title-block_light">Your Order Info...</h2>
+                <div class="ui-decor-1 bg-primary"></div>
+                <p>We will be sending you an email confirmation shortly. Below you can find your order number, the full legal description, and the vesting information for your recently submitted order.</p>
+                <footer class="b-about__footer">
+				<ul class="list list-mark-2">
+                    <?php 
+                        if(isset($_SESSION['orderNumber']) && !empty($_SESSION['orderNumber']))
+                        {
+                    ?>
+                            <li>
+                                <h3>Order Number:</h3><br>
+                                <span class="orderinfo1" id="orderNumber"><?php echo $_SESSION['orderNumber']; ?></span>
+                            </li><br>
+                    <?php
+                        }
+                    ?>
+                    
+                    <li>
+                        <h3>Full Legal Description:</h3><br>
+                        <span class="orderinfo1">
+                            <div class="loader"></div>
+                            <span id="legalDescription"></span>
+                        </span>
+                    </li><br>
+                    <li>
+                        <h3>Vesting Information:</h3><br>
+                        <span class="orderinfo1">
+                            <div class="loader"></div>
+                            <span id="vestingInformation"></span>
+                        </span>
+                    </li><br>                                         
+                </ul>
+				</footer>
+              </div>
+              <div class="col-md-6">
+                <div class="b-sm-about-group">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <section class="b-sm-about"><img class="img-responsive" src="<?php echo BASE_URL_MAIN; ?>assets/media/components/b-about/p1.jpg" alt="foto">
+                        <h3 class="b-sm-about__title">How to Read a Prelim</h3>
+                        <p>Want to understand your preliminary title report? Our guide can help you understand what your report is stating.</p>
+						
+						<a class="btn btn-default btn-sm btn_mrg-top_30" href="/industry-documents/pctReadPrelim.pdf">Download PDF</a>
+                      </section>
+                    </div>
+                    <div class="col-md-6">
+                      <section class="b-sm-about"><img class="img-responsive" src="<?php echo BASE_URL_MAIN; ?>assets/media/components/b-about/p2.jpg" alt="foto">
+                        <h3 class="b-sm-about__title">Buyer & Seller Guide</h3>
+                        <p>The perfect way to educate your prospective buyers and sellers about the process of purchasing or selling a home.</p>
+						<a class="btn btn-default btn-sm btn_mrg-top_30" href="/industry-documents/TitleCompany-Buy-Sell-Web.pdf">Download PDF</a>
+						
+                      </section>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row" id="taxInformation">
+                <div class="col-md-12">
+                    <h3>Taxes:</h3>
+                </div>
+                <div class="col-md-6">
+                    <h3>1st Installment</h3>
+                    <div class="loader"></div>
+                    <div id="firstInstallment"></div>
+                </div>
+                <div class="col-md-6">
+                    <h3>2nd Installment</h3>
+                    <div class="loader"></div>
+                    <div id="secondInstallment"></div>
+                </div>
+            </div><br/>
+            <div class="row" id="grantDeedInfo">
+                <div class="col-md-12">
+                    <h3>Grant Deed Information:</h3>
+                </div>
+                <div class="col-md-6">                    
+                    <div class="loader"></div>
+                    <div id="grantDeedInfoFile"></div>
+                </div>
+            </div>
+          </div>
+        </article>
+        <!-- end .b-about-->
+      <div class="section-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="b-advantages-group">
+                  <section class="b-advantages b-advantages-2 b-advantages-2_mod-a b-advantages_3-col"><i class="b-advantages__icon stroke flaticon-screen"></i>
+                    <div class="b-advantages__inner">
+                      <h3 class="b-advantages__title ui-title-inner"><a href="home.html">Order a Farm</a></h3>
+                      <div class="b-advantages__info">Our customer service team is ready to help create a farm package to help you alert the neighbors about your new listing.</div>
+					  <a class="btn btn-default btn-sm btn_mrg-top_30" href="#">Order</a>
+                    </div>
+                  </section>
+                  <!-- end .b-advantages-->
+                  <section class="b-advantages b-advantages-2 b-advantages-2_mod-a b-advantages_3-col"><i class="b-advantages__icon stroke flaticon-worldwide"></i>
+                    <div class="b-advantages__inner">
+                      <h3 class="b-advantages__title ui-title-inner"><a href="https://www.pcttitletoolbox.com/#!/">Create a Farm</a></h3>
+                      <div class="b-advantages__info">Login in to our PCT Title Toolbox program and create your own farm package consisting of the various types of owners.</div>
+					  <a class="btn btn-default btn-sm btn_mrg-top_30" href="https://www.pcttitletoolbox.com/#!/">Login</a>
+                    </div>
+                  </section>
+                  <!-- end .b-advantages-->
+                  <section class="b-advantages b-advantages-2 b-advantages-2_mod-a b-advantages_3-col"><i class="b-advantages__icon stroke flaticon-analytics"></i>
+                    <div class="b-advantages__inner">
+                      <h3 class="b-advantages__title ui-title-inner"><a href="home.html">Open New Order</a></h3>
+                      <div class="b-advantages__info">Need to open another order? That's fantastic. The link below will redirect you back to our Open Order form.</div>
+					  <a class="btn btn-default btn-sm btn_mrg-top_30" href="#">Create</a>
+                    </div>
+                  </section>
+                  <!-- end .b-advantages-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end .section-area-->
+      
+      <!-- end .section-type-12-->
+     
+     
+       
+
+      <!-- end .section-default-->
+     <section class="section-type-1 section-sm parallax area-bg area-bg_grad-2 area-bg_op_70">
+            <div class="area-bg__inner">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h2 class="ui-title-block-3">we provide higher quality services</h2>
+                            <div class="ui-subtitle-block-2">and you’ll get solutions for everything</div>
+                        </div>
+                        <div class="col-md-5"><a class="btn btn-default btn-round pull-right" href="https://clients.pacificcoasttitle.com/login.aspx?ReturnUrl=/&amp;officeid=1">open orders</a><a class="btn btn-default btn-round pull-right" href="rate-book.html">get rates</a></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      <!-- end .section-type-11-->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <ul class="footer-social-nets">
+                            <li class="footer-social-nets__item"><a class="footer-social-nets__link" href="https://www.facebook.com/PacificCoastTitleCompany/">facebook</a></li>
+                            <li class="footer-social-nets__item"><a class="footer-social-nets__link" href="https://twitter.com/mypct?lang=en">twitter</a></li>                      
+                            <li class="footer-social-nets__item"><a class="footer-social-nets__link" href="#">instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__main">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="footer-section">
+                                <a class="footer__logo" href="index.html"><img class="img-responsive" src="<?php echo BASE_URL_MAIN; ?>assets/media/general/logo-lg2.png" alt="Logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <section class="footer-section footer-section_links">
+                                <h3 class="footer-section__title">useful links</h3>
+                                <ul class="footer-list list-unstyled">
+                                    <li class="footer-list__item"><a class="footer-list__link" href="about.html">About Us</a></li>
+                                    <li class="footer-list__item"><a class="footer-list__link" href="contact.html">Contact Us</a></li>
+                                    <li class="footer-list__item"><a class="footer-list__link" href="how-we-protect-you.html">Our Role</a></li>
+                                    <li class="footer-list__item"><a class="footer-list__link" href="blank-forms.html">Blank Forms</a></li>
+                                    <li class="footer-list__item"><a class="footer-list__link" href="what-is-title-insurance.html">What Is Title Ins.</a></li>
+                                    <li class="footer-list__item"><a class="footer-list__link" href="information-flyers.html">Info Flyers</a></li>
+									<li class="footer-list__item"><a class="footer-list__link" href="notices.html">Notices</a></li>
+                                   <li class="footer-list__item"><a class="footer-list__link" href="sb2-forms.html">SB2-Forms</a></li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="col-sm-4">
+                            <section class="footer-section">
+                                <h3 class="footer-section__title">Corporate Contact Info</h3>
+                                <p>Address: 1111 E. Katella Ave Ste. 120 Orange, CA 92867</p>
+                                <p>Phone: (714) 516-6700 / (866) 724-1050</p>
+                                <p>Email: info@pct.com</p><a class="footer__link" href="https://goo.gl/maps/Hrjgqrh1imP2">get directions</a>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                <div class="row">
+                    <div class="col-xs-12">©<a class="copyright__link" href="index.html"> PACIFIC COAST TITLE COMPANY</a> All rights reserved.</div>
+                </div>
+                    </div>
+            </div>
+        </footer>
+        <!-- .footer-->
+        <!-- .footer-->
+    </div>
+    <!-- Start Show Customer Number Modal -->
+        <div class="modal fade smart-forms" id="showOrderCustomernumberModal" tabindex="-1" role="dialog" aria-labelledby="showOrderCustomernumberModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Customer Number</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+                <div class="modal-body search-result">                    
+                        <div class="form-body">                            
+                            <div id="showOrderCustomerNumber"></div>
+                        </div>                    
+                        <!-- <div class="find-customer-result"></div> -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="button btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Show Customer Number Modal -->
+    <!-- end layout-theme-->
+    
+    
+   
+    <!-- ++++++++++++-->
+    <!-- MAIN SCRIPTS-->
+    <!-- ++++++++++++-->
+    <script type="text/javascript" src="<?php echo BASE_URL_MAIN; ?>assets/libs/jquery-1.12.4.min.js"></script>
+    <!-- <script src="/assets/libs/jquery-1.12.4.min.js"></script> -->
+    <!-- <script src="/assets/libs/jquery-migrate-1.2.1.js"></script> -->
+    <script type="text/javascript" src="<?php echo BASE_URL_MAIN; ?>assets/libs/jquery-migrate-1.2.1.js"></script>
+    <!-- Bootstrap-->
+    <script src="<?php echo BASE_URL_MAIN; ?>assets/libs/bootstrap/bootstrap.min.js"></script>
+
+    <!---->
+    <!-- Select customization & Color scheme-->
+    <script src="<?php echo BASE_URL_MAIN; ?>assets/plugins/bootstrap-select/js/bootstrap-select.js"></script>
+    <!-- Slider-->
+    <script src="<?php echo BASE_URL_MAIN; ?>assets/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <!-- Pop-up window-->
+    <script src="<?php echo BASE_URL_MAIN; ?>assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <!-- Headers scripts-->
+    <script src="<?php echo BASE_URL_MAIN; ?>assets/plugins/headers/slidebar.js"></script>
+    <script src="<?php echo BASE_URL_MAIN; ?>assets/plugins/headers/header.js"></script>
+    <!-- Mail scripts-->
+    <script src="<?php echo BASE_URL_MAIN; ?>assets/plugins/jqBootstrapValidation.js"></script>
+    <script src="<?php echo BASE_URL_MAIN; ?>assets/plugins/contact_me.js"></script>
+    <!-- Video player-->
+    <script src="<?php echo BASE_URL_MAIN; ?>assets/plugins/flowplayer/flowplayer.min.js"></script>
+    <!-- Filter and sorting images-->
+    <script src="<?php echo BASE_URL_MAIN; ?>assets/plugins/isotope/isotope.pkgd.min.js"></script>
+    <script src="<?php echo BASE_URL_MAIN; ?>assets/plugins/isotope/imagesLoaded.js"></script>
+    <!-- Progress numbers-->
+    <script src="<?php echo BASE_URL_MAIN; ?>assets/plugins/rendro-easy-pie-chart/jquery.easypiechart.min.js"></script>
+    <script src="<?php echo BASE_URL_MAIN; ?>assets/plugins/rendro-easy-pie-chart/waypoints.min.js"></script>
+    <!-- Animations-->
+    <script src="<?php echo BASE_URL_MAIN; ?>assets/plugins/scrollreveal/scrollreveal.min.js"></script>
+    <script src="<?php echo BASE_URL_MAIN; ?>assets/plugins/revealer/js/anime.min.js"></script>
+    <script src="<?php echo BASE_URL_MAIN; ?>assets/plugins/revealer/js/scrollMonitor.js"></script>
+    <script src="<?php echo BASE_URL_MAIN; ?>assets/plugins/revealer/js/main.js"></script>
+    <script src="<?php echo BASE_URL_MAIN; ?>assets/plugins/animate/wow.min.js"></script>
+    <script src="<?php echo BASE_URL_MAIN; ?>assets/plugins/animate/jquery.shuffleLetters.js"></script>
+    <script src="<?php echo BASE_URL_MAIN; ?>assets/plugins/animate/jquery.scrollme.min.js"></script>
+
+
+    <!-- User customization-->
+    <script src="<?php echo BASE_URL_MAIN; ?>assets/js/custom.js"></script>
+    <script type="text/javascript" src="<?php echo BASE_URL; ?>js/order.js"></script>
+</body>
+
+</html>

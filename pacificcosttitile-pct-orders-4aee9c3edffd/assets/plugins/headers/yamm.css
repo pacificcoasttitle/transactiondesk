@@ -1,0 +1,210 @@
+/*!
+ * Yamm!
+ * Yet another megamenu for Bootstrap
+ * http://geedmo.github.com/yamm
+ *
+ * https://github.com/geedmo
+ */
+
+
+
+
+.yamm .nav, .yamm .dropup, .yamm .dropdown, .yamm .collapse {
+	position: static;
+}
+.yamm .navbar-inner, .yamm .container {
+	position: relative;
+}
+.yamm .dropdown-menu {
+	left: auto;
+}
+.yamm .dropdown-menu > li {
+	display: block;
+}
+.yamm .dropdown-submenu .dropdown-menu {
+	left: 100%;
+}
+.yamm .nav.pull-right .dropdown-menu {
+	right: 0;
+}
+.yamm .yamm-content {
+	padding: 20px 30px;
+ *zoom: 1;
+}
+.yamm .yamm-content:before, .yamm .yamm-content:after {
+	display: table;
+	content: "";
+	line-height: 0;
+}
+.yamm .yamm-content:after {
+	clear: both;
+}
+.yamm.navbar .nav > li > .dropdown-menu:after, .yamm.navbar .nav > li > .dropdown-menu:before {
+	display: none;
+}
+.yamm .dropdown.yamm-fullwidth .dropdown-menu {
+	width: 100%;
+	left: 0;
+	right: 0;
+}
+
+@media (max-width: 969px) {
+.yamm .dropdown.yamm-fullwidth .dropdown-menu {
+	width: auto;
+}
+.yamm .yamm-content {
+	padding-left: 0;
+	padding-right: 0;
+}
+.yamm .dropdown-menu > li > ul {
+	display: block;
+}
+}
+.yamm {
+	position: relative;
+}
+.yamm .yamm-content * {
+	color: #000;
+}
+.yamm li {
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.yamm li a {
+	transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+}
+.yamm.nav>li>a:focus, .yamm.nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+    color: #fff;
+}
+.yamm.nav .open>a, .yamm.nav .open>a:focus, .yamm.nav .open>a:hover, yamm.nav li.open a {
+	background-color: #337ab7;
+	border-color: #337ab7;
+	color: #fff;
+}
+.yamm .dropdown-menu li {
+	display: inline-block;
+	float: none;
+	width: 100%;
+    margin-bottom: 0;
+}
+
+/********  Side Widget *****/
+.yamm2 .nav, .yamm2 .dropup, .yamm2 .dropdown, .yamm2 .collapse {
+	position: static;
+}
+.yamm2 .navbar-inner, .yamm2 .container {
+	position: relative;
+}
+.yamm2 .dropdown-menu {
+	left: auto;
+}
+.yamm2 .dropdown-menu > li {
+	display: block;
+}
+.yamm2 .dropdown-submenu .dropdown-menu {
+	left: 100%;
+}
+.yamm2 .nav.pull-right .dropdown-menu {
+	right: 0;
+}
+.yamm2 .yamm2-content {
+	padding: 20px 30px;
+ *zoom: 1;
+}
+.yamm2 .yamm2-content:before, .yamm2 .yamm2-content:after {
+	display: table;
+	content: "";
+	line-height: 0;
+}
+.yamm2 .yamm2-content:after {
+	clear: both;
+}
+.yamm2.navbar .nav > li > .dropdown-menu:after, .yamm2.navbar .nav > li > .dropdown-menu:before {
+	display: none;
+}
+.yamm2 .dropdown.yamm2-fullwidth .dropdown-menu {
+	width: 100%;
+	left: 0;
+	right: 0;
+}
+
+@media (max-width: 969px) {
+.yamm2 .dropdown.yamm2-fullwidth .dropdown-menu {
+	width: auto;
+}
+.yamm2 .yamm2-content {
+	padding-left: 0;
+	padding-right: 0;
+}
+.yamm2 .dropdown-menu > li > ul {
+	display: block;
+}
+}
+.yamm2 {
+	position: relative;
+}
+.yamm2 .yamm2-content * {
+	color: #000;
+}
+.yamm2 li {
+	display: inline-block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.yamm2 li a {
+	transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	padding-left:1px;
+	color: #04415D;
+    background: #ffffff;
+    width: 150px;
+    padding-left: 0px;
+    border-bottom: 2px #D0D0D0 dotted;
+}
+
+.yamm2 li a:hover {
+	transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	padding-left:1px;
+    color:#000c28;
+    background: #ffffff;
+    width: 150px;
+    padding-left: 0px;
+    border-bottom: 2px #9d9f9f dotted;
+}
+
+
+
+}
+.yamm2.nav>li>a:focus, .yamm2.nav>li>a:hover {
+    text-decoration: none;
+    background-color: white;
+    color:#000c28;
+}
+.yamm2.nav .open>a, .yamm2.nav .open>a:focus, .yamm2.nav .open>a:hover, yamm2.nav li.open a {
+	background-color: #337ab7;
+	border-color: #337ab7;
+	color: #fff;
+}
+.yamm2 .dropdown-menu li {
+	display: inline-block;
+	float: none;
+	width: 100%;
+    margin-bottom: 0;
+}
+
+.navbar-nav2 li {
+	float:;
+}
+
+	
+

@@ -1,0 +1,23 @@
+<?php
+use Phinx\Migration\AbstractMigration;
+
+class $className extends AbstractMigration
+{
+    /**
+     * NOTE: To target a single database or a list of databases, add the following code:
+     *
+     * if(in_array($this->adapter->getOption('name'), ["database_1", "database_2", etc...])){
+     *     //insert SQL here
+     * }
+     */
+    public function up()
+    {
+    }
+
+    /**
+     *
+     */
+    public function down()
+    {
+    }
+}

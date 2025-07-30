@@ -1,0 +1,109 @@
+body {
+    font-family: Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+.dropdown-btn {
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    color: #04415D;
+    background: #ffffff;
+    width: 100%;
+    border-bottom: 2px #D0D0D0 dotted;
+    padding: 10px 15px 10px 0;
+}
+
+.dropdown-container {
+    display: none;
+}
+
+.active {
+    border :none;
+}
+
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+.review_li {
+    float: left;
+    width: 100%;
+    font-size: 20px;
+}
+
+.review_li ol {
+    list-style-type: none;
+}
+
+.review_li ol  li {
+    font-size: 15px;
+}
+
+.linked_doc {
+    float: left;
+    padding: 5px 0px 10px 0;
+    border: none !important;
+    font-weight:bold;
+}
+
+.yamm2 {
+    flex-direction: column;
+}
+.yamm2 li a {
+    width:100%;
+}
+
+.yamm2 li a:hover {
+    width:100%;
+}
+
+button:focus {
+    outline:0;
+}
+
+.wrapper-alignment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.fn-36 {
+    font-size: 36px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.nav-bottom-border {
+    border-bottom: 2px #D35411 dotted !important;
+}
+.ui-decor-3 {
+    border-bottom: 1px solid #D35411
+}
+.ui-decor-3:after {
+    background-color: #D35411;
+}
+.entry-content p {
+    font-size: 14px;
+}
+
+.entry-content strong, 
+.entry-content b {
+    font-weight: 700;
+}
+
+br {
+    line-height: 12px;
+}
+.bg-border {
+    border-radius: 5px;
+}
+.ml-50 {
+    margin-left: 50px;
+}
+.p-6 {
+    padding: 6px;
+}

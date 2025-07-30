@@ -1,0 +1,2597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XML187 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://api.sitexdata.com/GetReport">
+  <PropertyProfile>
+    <PrimaryOwnerName>PENTON SEAN CLIFFORD</PrimaryOwnerName>
+    <SecondaryOwnerName />
+    <MailAddress>4739 E COOPER ST</MailAddress>
+    <MailUnit />
+    <MailUnitType />
+    <MailCity>TUCSON</MailCity>
+    <MailState>AZ</MailState>
+    <MailZip>85711</MailZip>
+    <MailZip4>3615</MailZip4>
+    <OwnerPhoneNum />
+    <SiteAddress>4739 E COOPER ST</SiteAddress>
+    <SiteUnit />
+    <SiteUnitType />
+    <SiteCity>TUCSON</SiteCity>
+    <SiteState>AZ</SiteState>
+    <SiteZip>85711</SiteZip>
+    <SiteZip4>3615</SiteZip4>
+    <APN>128-11-1170</APN>
+    <CensusTract>0034.00</CensusTract>
+    <HousingTract />
+    <LotNumber>11</LotNumber>
+    <TBMPage>1713</TBMPage>
+    <TBMGrid>E4</TBMGrid>
+    <LegalDescriptionInfo>
+      <LotCode>11     </LotCode>
+      <Block>1      </Block>
+      <Section />
+      <District />
+      <Subdivision>FRANKLIN HEIGHTS</Subdivision>
+      <TractNumber />
+      <PhaseNumber />
+      <Unit />
+      <LandLot />
+      <MapRef />
+      <SecTwnshipRange>SEC 14 TWN 14S RNG 14E</SecTwnshipRange>
+      <LegalBriefDescription>LOT:11      BLK:1       CITY:TUCSON SEC/TWN/RNG/MER:SEC 14 TWN 14S RNG 14E FRANKLIN HEIGHTS LOT 11 BLK 1 </LegalBriefDescription>
+      <CityMuniTwp>TUCSON</CityMuniTwp>
+    </LegalDescriptionInfo>
+    <PropertyCharacteristics>
+      <Bedrooms>0</Bedrooms>
+      <YearBuilt>1952</YearBuilt>
+      <BuildingArea>1092</BuildingArea>
+      <Baths>1</Baths>
+      <GarageType>Mixed</GarageType>
+      <GarageNumCars>3</GarageNumCars>
+      <LotSize>0</LotSize>
+      <LotSizeUnits />
+      <TotalRooms>7</TotalRooms>
+      <Fireplace />
+      <NumUnits>0</NumUnits>
+      <Zoning />
+      <Pool />
+      <UseCode>Single Family Residential</UseCode>
+      <Basement />
+      <Latitude>32.220007</Latitude>
+      <Longitude>-110.890509</Longitude>
+      <NoOfStories>1</NoOfStories>
+      <BuildingStyle />
+    </PropertyCharacteristics>
+    <SaleLoanInfo>
+      <TransferDate>20020708</TransferDate>
+      <SellerName>PENTON, STEPHEN L</SellerName>
+      <SalesPrice>123000</SalesPrice>
+      <DocumentNumber>20021300703</DocumentNumber>
+      <Book>11836</Book>
+      <Page>1859</Page>
+      <PricePerSQFT>112</PricePerSQFT>
+      <LoanAmount>88000</LoanAmount>
+      <LenderName>AMERICAN HOME MTG CORP</LenderName>
+      <TitleCompany />
+    </SaleLoanInfo>
+    <AssessmentTaxInfo>
+      <AssessedValue>109014</AssessedValue>
+      <PercentImproved>0</PercentImproved>
+      <HomeOwnerExemption />
+      <LandValue>0</LandValue>
+      <TaxAmount>1405.39</TaxAmount>
+      <TaxRateArea>0150</TaxRateArea>
+      <ImprovementValue>0</ImprovementValue>
+      <TaxAccountID />
+      <TaxStatus>Current</TaxStatus>
+      <MarketImprovementValue>108512</MarketImprovementValue>
+      <MarketLandValue>502</MarketLandValue>
+      <MarketValue>109014</MarketValue>
+      <TaxYear>2012</TaxYear>
+    </AssessmentTaxInfo>
+  </PropertyProfile>
+  <Status>OK</Status>
+  <PropertyMapURL>http://utils.sitexdata.com/DisplayMap/displaymapv2.aspx?mapstring=lZJNboQwDEavEpR1R3Z%2bYZmGSIMEBJEwlThL5bM3mX2HsPPi%2bfmzZTeSsnJggfkYt7CzlDufKR8%2bxbVLmdzZnRv12iJ2syMpHkIAgO3mSF%2bI8OgH0DD8upEQB7Yy9wrrNDrm3R7naXX%2f6mqLGqDORpGfnya%2fUYNv1DSgvdYF3VwKkc3HlD6HQFS3c%2fdSlgmpwHPI%2bTo79DU7NGTXCgu6uPkV9vV6U2OqWLaIpbkhNgitYoO2FbWiLjdck6Ic7PYvYd%2f6S1qriuqW7ZRotpp6s%2b9jX1Or9uJo%2fEnSAv8hDcBPQsm9pyNx7wj44Qn5tJRqKdUf</PropertyMapURL>
+  <ComparableSalesReport>
+    <ComparableSales>
+      <ComparableSale>
+        <Proximity>.29</Proximity>
+        <Latitude>32.224145</Latitude>
+        <Longitude>-110.88947</Longitude>
+        <SiteAddress>119 N AVENIDA CAROLINA</SiteAddress>
+        <SiteUnit />
+        <SiteUnitType />
+        <SiteCity>TUCSON</SiteCity>
+        <SiteState>AZ</SiteState>
+        <SiteZip>85711</SiteZip>
+        <SiteZip4>3011</SiteZip4>
+        <RecordingDate>20131217</RecordingDate>
+        <PriceCode>V</PriceCode>
+        <SalePrice>129900</SalePrice>
+        <PricePerSQFT>113</PricePerSQFT>
+        <BuildingArea>1149</BuildingArea>
+        <TotalRooms>5</TotalRooms>
+        <Bedrooms>0</Bedrooms>
+        <Baths>1</Baths>
+        <YearBuilt>1953</YearBuilt>
+        <LotSize>0</LotSize>
+        <Pool />
+        <APN>127-06-0850</APN>
+        <DocumentNumber>20133510480</DocumentNumber>
+        <DocumentType>Warranty Deed</DocumentType>
+        <UseCodeDescription>Single Family Residential</UseCodeDescription>
+        <LotCode>MP</LotCode>
+        <LotNumber>20 19</LotNumber>
+        <Block>W</Block>
+        <Section />
+        <District />
+        <LandLot />
+        <Unit />
+        <CityMuniTwp>TUCSON</CityMuniTwp>
+        <SubdivisionName>SIERRA ESTATES ADDITION</SubdivisionName>
+        <PhaseNumber />
+        <TractNumber />
+        <LegalBriefDescription>Lot:20 19 Block:W Subdivision:SIERRA ESTATES ADDITION Map Ref:MAP9 PG16City/Muni/Twp:TUCSON </LegalBriefDescription>
+        <SecTwpRngMer />
+        <MapRef>MAP9 PG16</MapRef>
+        <Buyer1FName>CURRY E</Buyer1FName>
+        <Buyer1LName>KUCHERER</Buyer1LName>
+        <Buyer2FName />
+        <Buyer2LName />
+        <Seller1FName>MARY CATHERINE</Seller1FName>
+        <Seller1LName>ROMER</Seller1LName>
+        <Seller2FName />
+        <Seller2LName>MARY CATHERINE ROMER REVOCAVLE LIVING TR</Seller2LName>
+        <LenderName>HOMESERVICES LENDING LLC</LenderName>
+        <Loan1Amount>127546</Loan1Amount>
+        <PID>1195220</PID>
+        <AssessmentValue>98981</AssessmentValue>
+      </ComparableSale>
+      <ComparableSale>
+        <Proximity>.23</Proximity>
+        <Latitude>32.220756</Latitude>
+        <Longitude>-110.886738</Longitude>
+        <SiteAddress>4909 E 12TH ST</SiteAddress>
+        <SiteUnit />
+        <SiteUnitType />
+        <SiteCity>TUCSON</SiteCity>
+        <SiteState>AZ</SiteState>
+        <SiteZip>85711</SiteZip>
+        <SiteZip4>3605</SiteZip4>
+        <RecordingDate>20131213</RecordingDate>
+        <PriceCode>V</PriceCode>
+        <SalePrice>183500</SalePrice>
+        <PricePerSQFT>113</PricePerSQFT>
+        <BuildingArea>1621</BuildingArea>
+        <TotalRooms>6</TotalRooms>
+        <Bedrooms>0</Bedrooms>
+        <Baths>2</Baths>
+        <YearBuilt>1951</YearBuilt>
+        <LotSize>0</LotSize>
+        <Pool />
+        <APN>128-11-4160</APN>
+        <DocumentNumber>20133470414</DocumentNumber>
+        <DocumentType>Warranty Deed</DocumentType>
+        <UseCodeDescription>Single Family Residential</UseCodeDescription>
+        <LotCode />
+        <LotNumber>2</LotNumber>
+        <Block>18</Block>
+        <Section />
+        <District />
+        <LandLot />
+        <Unit />
+        <CityMuniTwp />
+        <SubdivisionName>HOFFMAN ADDITION</SubdivisionName>
+        <PhaseNumber />
+        <TractNumber />
+        <LegalBriefDescription>Lot:2 Block:18 Subdivision:HOFFMAN ADDITION Map Ref:MAP9 PG34</LegalBriefDescription>
+        <SecTwpRngMer />
+        <MapRef>MAP9 PG34</MapRef>
+        <Buyer1FName>MATTHEW Z</Buyer1FName>
+        <Buyer1LName>JONES</Buyer1LName>
+        <Buyer2FName />
+        <Buyer2LName />
+        <Seller1FName>BRANT D</Seller1FName>
+        <Seller1LName>DUNAWAY</Seller1LName>
+        <Seller2FName>STACY N</Seller2FName>
+        <Seller2LName>DUNAWAY</Seller2LName>
+        <LenderName>BANK OF AMERICA NA</LenderName>
+        <Loan1Amount>187445</Loan1Amount>
+        <PID>1191927</PID>
+        <AssessmentValue>120518</AssessmentValue>
+      </ComparableSale>
+      <ComparableSale>
+        <Proximity>.41</Proximity>
+        <Latitude>32.21473</Latitude>
+        <Longitude>-110.893712</Longitude>
+        <SiteAddress>4619 E 16TH ST</SiteAddress>
+        <SiteUnit />
+        <SiteUnitType />
+        <SiteCity>TUCSON</SiteCity>
+        <SiteState>AZ</SiteState>
+        <SiteZip>85711</SiteZip>
+        <SiteZip4>4231</SiteZip4>
+        <RecordingDate>20131211</RecordingDate>
+        <PriceCode>V</PriceCode>
+        <SalePrice>179000</SalePrice>
+        <PricePerSQFT>126</PricePerSQFT>
+        <BuildingArea>1416</BuildingArea>
+        <TotalRooms>6</TotalRooms>
+        <Bedrooms>0</Bedrooms>
+        <Baths>2</Baths>
+        <YearBuilt>1953</YearBuilt>
+        <LotSize>0</LotSize>
+        <Pool />
+        <APN>126-13-2210</APN>
+        <DocumentNumber>20133450512</DocumentNumber>
+        <DocumentType>Warranty Deed</DocumentType>
+        <UseCodeDescription>Single Family Residential</UseCodeDescription>
+        <LotCode />
+        <LotNumber>10</LotNumber>
+        <Block>32</Block>
+        <Section />
+        <District />
+        <LandLot />
+        <Unit />
+        <CityMuniTwp />
+        <SubdivisionName>LINDEN PARK</SubdivisionName>
+        <PhaseNumber />
+        <TractNumber />
+        <LegalBriefDescription>Lot:10 Block:32 Subdivision:LINDEN PARK Map Ref:MAP9 PG57</LegalBriefDescription>
+        <SecTwpRngMer />
+        <MapRef>MAP9 PG57</MapRef>
+        <Buyer1FName>KERRY</Buyer1FName>
+        <Buyer1LName>LANE</Buyer1LName>
+        <Buyer2FName />
+        <Buyer2LName />
+        <Seller1FName>KEVIN</Seller1FName>
+        <Seller1LName>WISNIEWSKI</Seller1LName>
+        <Seller2FName />
+        <Seller2LName />
+        <LenderName>FAIRWAY INDEPENDENT MORTGAGE CORP</LenderName>
+        <Loan1Amount>129000</Loan1Amount>
+        <PID>1191581</PID>
+        <AssessmentValue>73717</AssessmentValue>
+      </ComparableSale>
+      <ComparableSale>
+        <Proximity>.38</Proximity>
+        <Latitude>32.214875</Latitude>
+        <Longitude>-110.88817</Longitude>
+        <SiteAddress>4855 E PASEO LUISA</SiteAddress>
+        <SiteUnit />
+        <SiteUnitType />
+        <SiteCity>TUCSON</SiteCity>
+        <SiteState>AZ</SiteState>
+        <SiteZip>85711</SiteZip>
+        <SiteZip4>5301</SiteZip4>
+        <RecordingDate>20131115</RecordingDate>
+        <PriceCode>V</PriceCode>
+        <SalePrice>134000</SalePrice>
+        <PricePerSQFT>103</PricePerSQFT>
+        <BuildingArea>1290</BuildingArea>
+        <TotalRooms>5</TotalRooms>
+        <Bedrooms>0</Bedrooms>
+        <Baths>2</Baths>
+        <YearBuilt>1950</YearBuilt>
+        <LotSize>0</LotSize>
+        <Pool />
+        <APN>128-11-2020</APN>
+        <DocumentNumber>20133190238</DocumentNumber>
+        <DocumentType>Warranty Deed</DocumentType>
+        <UseCodeDescription>Single Family Residential</UseCodeDescription>
+        <LotCode />
+        <LotNumber>9</LotNumber>
+        <Block>2</Block>
+        <Section />
+        <District />
+        <LandLot />
+        <Unit />
+        <CityMuniTwp />
+        <SubdivisionName>HOFFMAN ADDITION</SubdivisionName>
+        <PhaseNumber />
+        <TractNumber />
+        <LegalBriefDescription>Lot:9 Block:2 Subdivision:HOFFMAN ADDITION Map Ref:MAP9 PG30</LegalBriefDescription>
+        <SecTwpRngMer />
+        <MapRef>MAP9 PG30</MapRef>
+        <Buyer1FName>GABRIEL J</Buyer1FName>
+        <Buyer1LName>CUESTAS</Buyer1LName>
+        <Buyer2FName />
+        <Buyer2LName />
+        <Seller1FName>MICHELLE M</Seller1FName>
+        <Seller1LName>MADOVOY</Seller1LName>
+        <Seller2FName>MICHELLE MUNOZ</Seller2FName>
+        <Seller2LName>MADOVOY</Seller2LName>
+        <LenderName>NOVA FINANCIAL &amp; INVESTMENT CORP</LenderName>
+        <Loan1Amount>120600</Loan1Amount>
+        <PID>1188541</PID>
+        <AssessmentValue>103595</AssessmentValue>
+      </ComparableSale>
+      <ComparableSale>
+        <Proximity>.29</Proximity>
+        <Latitude>32.224021</Latitude>
+        <Longitude>-110.888865</Longitude>
+        <SiteAddress>114 N AVENIDA CAROLINA</SiteAddress>
+        <SiteUnit />
+        <SiteUnitType />
+        <SiteCity>TUCSON</SiteCity>
+        <SiteState>AZ</SiteState>
+        <SiteZip>85711</SiteZip>
+        <SiteZip4>3012</SiteZip4>
+        <RecordingDate>20131113</RecordingDate>
+        <PriceCode>V</PriceCode>
+        <SalePrice>125000</SalePrice>
+        <PricePerSQFT>81</PricePerSQFT>
+        <BuildingArea>1525</BuildingArea>
+        <TotalRooms>6</TotalRooms>
+        <Bedrooms>0</Bedrooms>
+        <Baths>1</Baths>
+        <YearBuilt>1954</YearBuilt>
+        <LotSize>0</LotSize>
+        <Pool />
+        <APN>127-06-0610</APN>
+        <DocumentNumber>20133170248</DocumentNumber>
+        <DocumentType>Warranty Deed</DocumentType>
+        <UseCodeDescription>Single Family Residential</UseCodeDescription>
+        <LotCode>MP</LotCode>
+        <LotNumber>6 7</LotNumber>
+        <Block>E</Block>
+        <Section />
+        <District />
+        <LandLot />
+        <Unit />
+        <CityMuniTwp />
+        <SubdivisionName>SIERRA ESTATES ADDITION</SubdivisionName>
+        <PhaseNumber />
+        <TractNumber />
+        <LegalBriefDescription>Lot:6 7 Block:E Subdivision:SIERRA ESTATES ADDITION Map Ref:MAP9 PG16</LegalBriefDescription>
+        <SecTwpRngMer />
+        <MapRef>MAP9 PG16</MapRef>
+        <Buyer1FName>AMANDA</Buyer1FName>
+        <Buyer1LName>PERINO</Buyer1LName>
+        <Buyer2FName>BRIAN</Buyer2FName>
+        <Buyer2LName>LITTLE</Buyer2LName>
+        <Seller1FName>VICTOR</Seller1FName>
+        <Seller1LName>WILLIAM</Seller1LName>
+        <Seller2FName />
+        <Seller2LName />
+        <LenderName>NOVA FINANCIAL &amp; INVESTMENT CORP</LenderName>
+        <Loan1Amount>122735</Loan1Amount>
+        <PID>1188133</PID>
+        <AssessmentValue>109667</AssessmentValue>
+      </ComparableSale>
+      <ComparableSale>
+        <Proximity>.14</Proximity>
+        <Latitude>32.218385</Latitude>
+        <Longitude>-110.888979</Longitude>
+        <SiteAddress>4833 E SCARLETT ST</SiteAddress>
+        <SiteUnit />
+        <SiteUnitType />
+        <SiteCity>TUCSON</SiteCity>
+        <SiteState>AZ</SiteState>
+        <SiteZip>85711</SiteZip>
+        <SiteZip4>4336</SiteZip4>
+        <RecordingDate>20131031</RecordingDate>
+        <PriceCode>V</PriceCode>
+        <SalePrice>227500</SalePrice>
+        <PricePerSQFT>110</PricePerSQFT>
+        <BuildingArea>2067</BuildingArea>
+        <TotalRooms>8</TotalRooms>
+        <Bedrooms>0</Bedrooms>
+        <Baths>2</Baths>
+        <YearBuilt>1951</YearBuilt>
+        <LotSize>0</LotSize>
+        <Pool>Yes</Pool>
+        <APN>128-11-3100</APN>
+        <DocumentNumber>20133040151</DocumentNumber>
+        <DocumentType>Warranty Deed</DocumentType>
+        <UseCodeDescription>Single Family Residential</UseCodeDescription>
+        <LotCode />
+        <LotNumber>5</LotNumber>
+        <Block>12</Block>
+        <Section />
+        <District />
+        <LandLot />
+        <Unit />
+        <CityMuniTwp />
+        <SubdivisionName>HOFFMAN ADDITION</SubdivisionName>
+        <PhaseNumber />
+        <TractNumber />
+        <LegalBriefDescription>Lot:5 Block:12 Subdivision:HOFFMAN ADDITION Map Ref:MAP9 PG34</LegalBriefDescription>
+        <SecTwpRngMer />
+        <MapRef>MAP9 PG34</MapRef>
+        <Buyer1FName>MINDY</Buyer1FName>
+        <Buyer1LName>LIU</Buyer1LName>
+        <Buyer2FName />
+        <Buyer2LName />
+        <Seller1FName>RON</Seller1FName>
+        <Seller1LName>WARFIELD</Seller1LName>
+        <Seller2FName />
+        <Seller2LName />
+        <LenderName />
+        <Loan1Amount>0</Loan1Amount>
+        <PID>1186698</PID>
+        <AssessmentValue>128390</AssessmentValue>
+      </ComparableSale>
+      <ComparableSale>
+        <Proximity>.28</Proximity>
+        <Latitude>32.222778</Latitude>
+        <Longitude>-110.894089</Longitude>
+        <SiteAddress>4608 E 10TH ST</SiteAddress>
+        <SiteUnit />
+        <SiteUnitType />
+        <SiteCity>TUCSON</SiteCity>
+        <SiteState>AZ</SiteState>
+        <SiteZip>85711</SiteZip>
+        <SiteZip4>3504</SiteZip4>
+        <RecordingDate>20131011</RecordingDate>
+        <PriceCode>V</PriceCode>
+        <SalePrice>76000</SalePrice>
+        <PricePerSQFT>48</PricePerSQFT>
+        <BuildingArea>1566</BuildingArea>
+        <TotalRooms>6</TotalRooms>
+        <Bedrooms>0</Bedrooms>
+        <Baths>1</Baths>
+        <YearBuilt>1950</YearBuilt>
+        <LotSize>0</LotSize>
+        <Pool />
+        <APN>126-12-2530</APN>
+        <DocumentNumber>20132840066</DocumentNumber>
+        <DocumentType>SW</DocumentType>
+        <UseCodeDescription>Single Family Residential</UseCodeDescription>
+        <LotCode>P</LotCode>
+        <LotNumber>15</LotNumber>
+        <Block />
+        <Section />
+        <District />
+        <LandLot />
+        <Unit />
+        <CityMuniTwp />
+        <SubdivisionName>LINDEN PARK ADDITION</SubdivisionName>
+        <PhaseNumber />
+        <TractNumber />
+        <LegalBriefDescription>Lot:15 Subdivision:LINDEN PARK ADDITION Map Ref:MAP8 PG87</LegalBriefDescription>
+        <SecTwpRngMer />
+        <MapRef>MAP8 PG87</MapRef>
+        <Buyer1FName>BRIGITTA L</Buyer1FName>
+        <Buyer1LName>BEMENT</Buyer1LName>
+        <Buyer2FName />
+        <Buyer2LName />
+        <Seller1FName />
+        <Seller1LName>FANNIE MAE</Seller1LName>
+        <Seller2FName />
+        <Seller2LName>FEDERAL NATIONAL MORTGAGE ASSOCIATION</Seller2LName>
+        <LenderName />
+        <Loan1Amount>0</Loan1Amount>
+        <PID>1184356</PID>
+        <AssessmentValue>100847</AssessmentValue>
+      </ComparableSale>
+      <ComparableSale>
+        <Proximity>.41</Proximity>
+        <Latitude>32.215519</Latitude>
+        <Longitude>-110.895123</Longitude>
+        <SiteAddress>4541 E MALVERN ST</SiteAddress>
+        <SiteUnit />
+        <SiteUnitType />
+        <SiteCity>TUCSON</SiteCity>
+        <SiteState>AZ</SiteState>
+        <SiteZip>85711</SiteZip>
+        <SiteZip4>4263</SiteZip4>
+        <RecordingDate>20130930</RecordingDate>
+        <PriceCode>V</PriceCode>
+        <SalePrice>75000</SalePrice>
+        <PricePerSQFT>82</PricePerSQFT>
+        <BuildingArea>913</BuildingArea>
+        <TotalRooms>5</TotalRooms>
+        <Bedrooms>0</Bedrooms>
+        <Baths>1</Baths>
+        <YearBuilt>1951</YearBuilt>
+        <LotSize>0</LotSize>
+        <Pool />
+        <APN>126-13-1840</APN>
+        <DocumentNumber>20132730409</DocumentNumber>
+        <DocumentType>Warranty Deed</DocumentType>
+        <UseCodeDescription>Single Family Residential</UseCodeDescription>
+        <LotCode>MP</LotCode>
+        <LotNumber>8 9</LotNumber>
+        <Block>30</Block>
+        <Section />
+        <District />
+        <LandLot />
+        <Unit />
+        <CityMuniTwp />
+        <SubdivisionName>LINDEN PARK ADDITION</SubdivisionName>
+        <PhaseNumber />
+        <TractNumber />
+        <LegalBriefDescription>Lot:8 9 Block:30 Subdivision:LINDEN PARK ADDITION Map Ref:MAP9 PG57</LegalBriefDescription>
+        <SecTwpRngMer />
+        <MapRef>MAP9 PG57</MapRef>
+        <Buyer1FName>TANYA</Buyer1FName>
+        <Buyer1LName>COSBY</Buyer1LName>
+        <Buyer2FName />
+        <Buyer2LName />
+        <Seller1FName />
+        <Seller1LName>4541 E MALVER STREET LLC</Seller1LName>
+        <Seller2FName />
+        <Seller2LName />
+        <LenderName>NOVA FINANCIAL &amp; INVESTMENT CORP</LenderName>
+        <Loan1Amount>73641</Loan1Amount>
+        <PID>1182886</PID>
+        <AssessmentValue>64223</AssessmentValue>
+      </ComparableSale>
+      <ComparableSale>
+        <Proximity>.18</Proximity>
+        <Latitude>32.218606</Latitude>
+        <Longitude>-110.887952</Longitude>
+        <SiteAddress>4866 E 13TH ST</SiteAddress>
+        <SiteUnit />
+        <SiteUnitType />
+        <SiteCity>TUCSON</SiteCity>
+        <SiteState>AZ</SiteState>
+        <SiteZip>85711</SiteZip>
+        <SiteZip4>4304</SiteZip4>
+        <RecordingDate>20130912</RecordingDate>
+        <PriceCode>V</PriceCode>
+        <SalePrice>165000</SalePrice>
+        <PricePerSQFT>101</PricePerSQFT>
+        <BuildingArea>1621</BuildingArea>
+        <TotalRooms>7</TotalRooms>
+        <Bedrooms>0</Bedrooms>
+        <Baths>2</Baths>
+        <YearBuilt>1950</YearBuilt>
+        <LotSize>0</LotSize>
+        <Pool />
+        <APN>128-11-3210</APN>
+        <DocumentNumber>20132550072</DocumentNumber>
+        <DocumentType>Warranty Deed</DocumentType>
+        <UseCodeDescription>Single Family Residential</UseCodeDescription>
+        <LotCode />
+        <LotNumber>16</LotNumber>
+        <Block>12</Block>
+        <Section />
+        <District />
+        <LandLot />
+        <Unit />
+        <CityMuniTwp />
+        <SubdivisionName>HOFFMAN</SubdivisionName>
+        <PhaseNumber />
+        <TractNumber />
+        <LegalBriefDescription>Lot:16 Block:12 Subdivision:HOFFMAN Map Ref:MAP9 PG34</LegalBriefDescription>
+        <SecTwpRngMer />
+        <MapRef>MAP9 PG34</MapRef>
+        <Buyer1FName>PAUL D</Buyer1FName>
+        <Buyer1LName>CONWAY</Buyer1LName>
+        <Buyer2FName />
+        <Buyer2LName />
+        <Seller1FName>JEFFREY A</Seller1FName>
+        <Seller1LName>LANGEJANS</Seller1LName>
+        <Seller2FName />
+        <Seller2LName />
+        <LenderName />
+        <Loan1Amount>0</Loan1Amount>
+        <PID>1180601</PID>
+        <AssessmentValue>106471</AssessmentValue>
+      </ComparableSale>
+      <ComparableSale>
+        <Proximity>.44</Proximity>
+        <Latitude>32.215082</Latitude>
+        <Longitude>-110.895309</Longitude>
+        <SiteAddress>4536 E MALVERN ST</SiteAddress>
+        <SiteUnit />
+        <SiteUnitType />
+        <SiteCity>TUCSON</SiteCity>
+        <SiteState>AZ</SiteState>
+        <SiteZip>85711</SiteZip>
+        <SiteZip4>4248</SiteZip4>
+        <RecordingDate>20130910</RecordingDate>
+        <PriceCode>V</PriceCode>
+        <SalePrice>133000</SalePrice>
+        <PricePerSQFT>139</PricePerSQFT>
+        <BuildingArea>953</BuildingArea>
+        <TotalRooms>5</TotalRooms>
+        <Bedrooms>0</Bedrooms>
+        <Baths>1</Baths>
+        <YearBuilt>1951</YearBuilt>
+        <LotSize>0</LotSize>
+        <Pool />
+        <APN>126-13-2320</APN>
+        <DocumentNumber>20132530377</DocumentNumber>
+        <DocumentType>Warranty Deed</DocumentType>
+        <UseCodeDescription>Single Family Residential</UseCodeDescription>
+        <LotCode>MP</LotCode>
+        <LotNumber>3 4</LotNumber>
+        <Block>33</Block>
+        <Section />
+        <District />
+        <LandLot />
+        <Unit />
+        <CityMuniTwp>TUCSON</CityMuniTwp>
+        <SubdivisionName>LINDEN PARK ADDITION</SubdivisionName>
+        <PhaseNumber />
+        <TractNumber />
+        <LegalBriefDescription>Lot:3 4 Block:33 Subdivision:LINDEN PARK ADDITION Map Ref:MAP9 PG57City/Muni/Twp:TUCSON </LegalBriefDescription>
+        <SecTwpRngMer />
+        <MapRef>MAP9 PG57</MapRef>
+        <Buyer1FName>JERRI</Buyer1FName>
+        <Buyer1LName>COX TORRESALA</Buyer1LName>
+        <Buyer2FName />
+        <Buyer2LName />
+        <Seller1FName />
+        <Seller1LName>AMERICAN CAPITAL ASSETS LLC</Seller1LName>
+        <Seller2FName />
+        <Seller2LName />
+        <LenderName>EVERBANK.COM</LenderName>
+        <Loan1Amount>106400</Loan1Amount>
+        <PID>1180392</PID>
+        <AssessmentValue>78243</AssessmentValue>
+      </ComparableSale>
+      <ComparableSale>
+        <Proximity>.24</Proximity>
+        <Latitude>32.21826</Latitude>
+        <Longitude>-110.89398</Longitude>
+        <SiteAddress>4610 E 13TH ST</SiteAddress>
+        <SiteUnit />
+        <SiteUnitType />
+        <SiteCity>TUCSON</SiteCity>
+        <SiteState>AZ</SiteState>
+        <SiteZip>85711</SiteZip>
+        <SiteZip4>4210</SiteZip4>
+        <RecordingDate>20130805</RecordingDate>
+        <PriceCode>V</PriceCode>
+        <SalePrice>115000</SalePrice>
+        <PricePerSQFT>112</PricePerSQFT>
+        <BuildingArea>1020</BuildingArea>
+        <TotalRooms>5</TotalRooms>
+        <Bedrooms>0</Bedrooms>
+        <Baths>1</Baths>
+        <YearBuilt>1950</YearBuilt>
+        <LotSize>0</LotSize>
+        <Pool />
+        <APN>126-13-1000</APN>
+        <DocumentNumber>20132170242</DocumentNumber>
+        <DocumentType>Warranty Deed</DocumentType>
+        <UseCodeDescription>Single Family Residential</UseCodeDescription>
+        <LotCode />
+        <LotNumber>6</LotNumber>
+        <Block>23</Block>
+        <Section />
+        <District />
+        <LandLot />
+        <Unit />
+        <CityMuniTwp />
+        <SubdivisionName>LINDEN PARK</SubdivisionName>
+        <PhaseNumber />
+        <TractNumber />
+        <LegalBriefDescription>Lot:6 Block:23 Subdivision:LINDEN PARK Map Ref:MAP9 PG44</LegalBriefDescription>
+        <SecTwpRngMer />
+        <MapRef>MAP9 PG44</MapRef>
+        <Buyer1FName>JANE D</Buyer1FName>
+        <Buyer1LName>HIMMER</Buyer1LName>
+        <Buyer2FName />
+        <Buyer2LName />
+        <Seller1FName>CHRIS A</Seller1FName>
+        <Seller1LName>REEDY</Seller1LName>
+        <Seller2FName>C J</Seller2FName>
+        <Seller2LName>KOLB III</Seller2LName>
+        <LenderName />
+        <Loan1Amount>0</Loan1Amount>
+        <PID>1175337</PID>
+        <AssessmentValue>84302</AssessmentValue>
+      </ComparableSale>
+      <ComparableSale>
+        <Proximity>.21</Proximity>
+        <Latitude>32.218722</Latitude>
+        <Longitude>-110.893724</Longitude>
+        <SiteAddress>4617 E 13TH ST</SiteAddress>
+        <SiteUnit />
+        <SiteUnitType />
+        <SiteCity>TUCSON</SiteCity>
+        <SiteState>AZ</SiteState>
+        <SiteZip>85711</SiteZip>
+        <SiteZip4>4209</SiteZip4>
+        <RecordingDate>20130719</RecordingDate>
+        <PriceCode>V</PriceCode>
+        <SalePrice>158500</SalePrice>
+        <PricePerSQFT>106</PricePerSQFT>
+        <BuildingArea>1486</BuildingArea>
+        <TotalRooms>5</TotalRooms>
+        <Bedrooms>0</Bedrooms>
+        <Baths>2</Baths>
+        <YearBuilt>1977</YearBuilt>
+        <LotSize>0</LotSize>
+        <Pool />
+        <APN>126-13-0610</APN>
+        <DocumentNumber>20132000545</DocumentNumber>
+        <DocumentType>Warranty Deed</DocumentType>
+        <UseCodeDescription>Single Family Residential</UseCodeDescription>
+        <LotCode />
+        <LotNumber>10</LotNumber>
+        <Block>20</Block>
+        <Section />
+        <District />
+        <LandLot />
+        <Unit />
+        <CityMuniTwp />
+        <SubdivisionName>LINDEN PARK</SubdivisionName>
+        <PhaseNumber />
+        <TractNumber />
+        <LegalBriefDescription>Lot:10 Block:20 Subdivision:LINDEN PARK Map Ref:MAP9 PG44</LegalBriefDescription>
+        <SecTwpRngMer />
+        <MapRef>MAP9 PG44</MapRef>
+        <Buyer1FName>DAVID STEVEN</Buyer1FName>
+        <Buyer1LName>MIKLOFSKY</Buyer1LName>
+        <Buyer2FName />
+        <Buyer2LName />
+        <Seller1FName>FREDERICK H</Seller1FName>
+        <Seller1LName>CAMP</Seller1LName>
+        <Seller2FName />
+        <Seller2LName />
+        <LenderName>NOVA FINANCIAL &amp; INVESTMENT CORP</LenderName>
+        <Loan1Amount>155628</Loan1Amount>
+        <PID>1173147</PID>
+        <AssessmentValue>106272</AssessmentValue>
+      </ComparableSale>
+      <ComparableSale>
+        <Proximity>.30</Proximity>
+        <Latitude>32.224314</Latitude>
+        <Longitude>-110.891624</Longitude>
+        <SiteAddress>4721 E 9TH ST</SiteAddress>
+        <SiteUnit />
+        <SiteUnitType />
+        <SiteCity>TUCSON</SiteCity>
+        <SiteState>AZ</SiteState>
+        <SiteZip>85711</SiteZip>
+        <SiteZip4>3003</SiteZip4>
+        <RecordingDate>20130719</RecordingDate>
+        <PriceCode>V</PriceCode>
+        <SalePrice>128000</SalePrice>
+        <PricePerSQFT>89</PricePerSQFT>
+        <BuildingArea>1425</BuildingArea>
+        <TotalRooms>6</TotalRooms>
+        <Bedrooms>0</Bedrooms>
+        <Baths>1</Baths>
+        <YearBuilt>1952</YearBuilt>
+        <LotSize>0</LotSize>
+        <Pool />
+        <APN>127-06-0470</APN>
+        <DocumentNumber>20132000133</DocumentNumber>
+        <DocumentType>Warranty Deed</DocumentType>
+        <UseCodeDescription>Single Family Residential</UseCodeDescription>
+        <LotCode>P</LotCode>
+        <LotNumber>9 10</LotNumber>
+        <Block>3</Block>
+        <Section />
+        <District />
+        <LandLot />
+        <Unit />
+        <CityMuniTwp />
+        <SubdivisionName>BROADWAY ESTATES</SubdivisionName>
+        <PhaseNumber />
+        <TractNumber />
+        <LegalBriefDescription>Lot:9 10 Block:3 Subdivision:BROADWAY ESTATES Map Ref:MAP9 PG35</LegalBriefDescription>
+        <SecTwpRngMer />
+        <MapRef>MAP9 PG35</MapRef>
+        <Buyer1FName>STEPHANIE</Buyer1FName>
+        <Buyer1LName>BRAVO</Buyer1LName>
+        <Buyer2FName>PAUL</Buyer2FName>
+        <Buyer2LName>BECKNER</Buyer2LName>
+        <Seller1FName>CHRISTOPHER</Seller1FName>
+        <Seller1LName>RIFE</Seller1LName>
+        <Seller2FName>DORINDA E D</Seller2FName>
+        <Seller2LName>RITE</Seller2LName>
+        <LenderName>NOVA FINANCIAL &amp; INVESTMENT CORP</LenderName>
+        <Loan1Amount>115200</Loan1Amount>
+        <PID>1173055</PID>
+        <AssessmentValue>99437</AssessmentValue>
+      </ComparableSale>
+      <ComparableSale>
+        <Proximity>.34</Proximity>
+        <Latitude>32.224703</Latitude>
+        <Longitude>-110.888879</Longitude>
+        <SiteAddress>208 N AVENIDA CAROLINA</SiteAddress>
+        <SiteUnit />
+        <SiteUnitType />
+        <SiteCity>TUCSON</SiteCity>
+        <SiteState>AZ</SiteState>
+        <SiteZip>85711</SiteZip>
+        <SiteZip4>3014</SiteZip4>
+        <RecordingDate>20130710</RecordingDate>
+        <PriceCode>V</PriceCode>
+        <SalePrice>127900</SalePrice>
+        <PricePerSQFT>104</PricePerSQFT>
+        <BuildingArea>1220</BuildingArea>
+        <TotalRooms>6</TotalRooms>
+        <Bedrooms>0</Bedrooms>
+        <Baths>2</Baths>
+        <YearBuilt>1961</YearBuilt>
+        <LotSize>0</LotSize>
+        <Pool />
+        <APN>127-06-0570</APN>
+        <DocumentNumber>20131910749</DocumentNumber>
+        <DocumentType>Warranty Deed</DocumentType>
+        <UseCodeDescription>Single Family Residential</UseCodeDescription>
+        <LotCode>MP</LotCode>
+        <LotNumber>2 3</LotNumber>
+        <Block>E</Block>
+        <Section />
+        <District />
+        <LandLot />
+        <Unit />
+        <CityMuniTwp />
+        <SubdivisionName>SIERRA ESTATES ADDITION</SubdivisionName>
+        <PhaseNumber />
+        <TractNumber />
+        <LegalBriefDescription>Lot:2 3 Block:E Subdivision:SIERRA ESTATES ADDITION Map Ref:MAP9 PG16</LegalBriefDescription>
+        <SecTwpRngMer />
+        <MapRef>MAP9 PG16</MapRef>
+        <Buyer1FName>CHANDER K</Buyer1FName>
+        <Buyer1LName>VEMULAPALLI</Buyer1LName>
+        <Buyer2FName>MELISSA A</Buyer2FName>
+        <Buyer2LName>VEMULAPALLI</Buyer2LName>
+        <Seller1FName>LEE ANN</Seller1FName>
+        <Seller1LName>BARRICK</Seller1LName>
+        <Seller2FName />
+        <Seller2LName>MARY SUE MORRIS TRUST</Seller2LName>
+        <LenderName>WELLS FARGO BANK NA</LenderName>
+        <Loan1Amount>102320</Loan1Amount>
+        <PID>1171954</PID>
+        <AssessmentValue>102000</AssessmentValue>
+      </ComparableSale>
+      <ComparableSale>
+        <Proximity>.24</Proximity>
+        <Latitude>32.220266</Latitude>
+        <Longitude>-110.886459</Longitude>
+        <SiteAddress>4918 E 12TH ST</SiteAddress>
+        <SiteUnit />
+        <SiteUnitType />
+        <SiteCity>TUCSON</SiteCity>
+        <SiteState>AZ</SiteState>
+        <SiteZip>85711</SiteZip>
+        <SiteZip4>3606</SiteZip4>
+        <RecordingDate>20130521</RecordingDate>
+        <PriceCode>V</PriceCode>
+        <SalePrice>145000</SalePrice>
+        <PricePerSQFT>111</PricePerSQFT>
+        <BuildingArea>1302</BuildingArea>
+        <TotalRooms>5</TotalRooms>
+        <Bedrooms>0</Bedrooms>
+        <Baths>2</Baths>
+        <YearBuilt>1950</YearBuilt>
+        <LotSize>0</LotSize>
+        <Pool />
+        <APN>128-11-3680</APN>
+        <DocumentNumber>20131410403</DocumentNumber>
+        <DocumentType>Warranty Deed</DocumentType>
+        <UseCodeDescription>Single Family Residential</UseCodeDescription>
+        <LotCode />
+        <LotNumber>7</LotNumber>
+        <Block>15</Block>
+        <Section />
+        <District />
+        <LandLot />
+        <Unit />
+        <CityMuniTwp />
+        <SubdivisionName>HOFFMAN ADDITION</SubdivisionName>
+        <PhaseNumber />
+        <TractNumber />
+        <LegalBriefDescription>Lot:7 Block:15 Subdivision:HOFFMAN ADDITION Map Ref:MAP9 PG34</LegalBriefDescription>
+        <SecTwpRngMer />
+        <MapRef>MAP9 PG34</MapRef>
+        <Buyer1FName>GANGA</Buyer1FName>
+        <Buyer1LName>SANGRAULA</Buyer1LName>
+        <Buyer2FName>DAMBAR</Buyer2FName>
+        <Buyer2LName>SANGRAULA</Buyer2LName>
+        <Seller1FName>WILLIAM R</Seller1FName>
+        <Seller1LName>NEHER</Seller1LName>
+        <Seller2FName>ANN RAGER</Seller2FName>
+        <Seller2LName>HENER</Seller2LName>
+        <LenderName>TUCSON FEDERAL CREDIT UNION</LenderName>
+        <Loan1Amount>114000</Loan1Amount>
+        <PID>1164432</PID>
+        <AssessmentValue>105030</AssessmentValue>
+      </ComparableSale>
+      <ComparableSale>
+        <Proximity>.38</Proximity>
+        <Latitude>32.215819</Latitude>
+        <Longitude>-110.894755</Longitude>
+        <SiteAddress>4554 E 15TH ST</SiteAddress>
+        <SiteUnit />
+        <SiteUnitType />
+        <SiteCity>TUCSON</SiteCity>
+        <SiteState>AZ</SiteState>
+        <SiteZip>85711</SiteZip>
+        <SiteZip4>4222</SiteZip4>
+        <RecordingDate>20130513</RecordingDate>
+        <PriceCode>V</PriceCode>
+        <SalePrice>85000</SalePrice>
+        <PricePerSQFT>93</PricePerSQFT>
+        <BuildingArea>913</BuildingArea>
+        <TotalRooms>5</TotalRooms>
+        <Bedrooms>0</Bedrooms>
+        <Baths>1</Baths>
+        <YearBuilt>1951</YearBuilt>
+        <LotSize>0</LotSize>
+        <Pool />
+        <APN>126-13-1740</APN>
+        <DocumentNumber>20131330614</DocumentNumber>
+        <DocumentType>Warranty Deed</DocumentType>
+        <UseCodeDescription>Single Family Residential</UseCodeDescription>
+        <LotCode />
+        <LotNumber>1 2</LotNumber>
+        <Block>30</Block>
+        <Section />
+        <District />
+        <LandLot />
+        <Unit />
+        <CityMuniTwp>TUCSON</CityMuniTwp>
+        <SubdivisionName>LINDEN PARK ADDITION</SubdivisionName>
+        <PhaseNumber />
+        <TractNumber />
+        <LegalBriefDescription>Lot:1 2 Block:30 Subdivision:LINDEN PARK ADDITION Map Ref:MAP9 PG57City/Muni/Twp:TUCSON </LegalBriefDescription>
+        <SecTwpRngMer />
+        <MapRef>MAP9 PG57</MapRef>
+        <Buyer1FName>XAVIER</Buyer1FName>
+        <Buyer1LName>ZIMMER</Buyer1LName>
+        <Buyer2FName />
+        <Buyer2LName />
+        <Seller1FName />
+        <Seller1LName>G&amp;G FINANCIAL INC</Seller1LName>
+        <Seller2FName />
+        <Seller2LName />
+        <LenderName>NOVA FINANCIAL &amp; INVESTMENT CORP</LenderName>
+        <Loan1Amount>80750</Loan1Amount>
+        <PID>1163351</PID>
+        <AssessmentValue>63245</AssessmentValue>
+      </ComparableSale>
+      <ComparableSale>
+        <Proximity>.14</Proximity>
+        <Latitude>32.219803</Latitude>
+        <Longitude>-110.892943</Longitude>
+        <SiteAddress>4642 E 12TH ST</SiteAddress>
+        <SiteUnit />
+        <SiteUnitType />
+        <SiteCity>TUCSON</SiteCity>
+        <SiteState>AZ</SiteState>
+        <SiteZip>85711</SiteZip>
+        <SiteZip4>4204</SiteZip4>
+        <RecordingDate>20130502</RecordingDate>
+        <PriceCode>V</PriceCode>
+        <SalePrice>155000</SalePrice>
+        <PricePerSQFT>120</PricePerSQFT>
+        <BuildingArea>1287</BuildingArea>
+        <TotalRooms>6</TotalRooms>
+        <Bedrooms>0</Bedrooms>
+        <Baths>1</Baths>
+        <YearBuilt>1950</YearBuilt>
+        <LotSize>0</LotSize>
+        <Pool />
+        <APN>126-13-0390</APN>
+        <DocumentNumber>20131220288</DocumentNumber>
+        <DocumentType>Warranty Deed</DocumentType>
+        <UseCodeDescription>Single Family Residential</UseCodeDescription>
+        <LotCode />
+        <LotNumber>2</LotNumber>
+        <Block>19</Block>
+        <Section />
+        <District />
+        <LandLot />
+        <Unit />
+        <CityMuniTwp />
+        <SubdivisionName>LINDEN PARK</SubdivisionName>
+        <PhaseNumber />
+        <TractNumber />
+        <LegalBriefDescription>Lot:2 Block:19 Subdivision:LINDEN PARK Map Ref:MAP9 PG44</LegalBriefDescription>
+        <SecTwpRngMer />
+        <MapRef>MAP9 PG44</MapRef>
+        <Buyer1FName>ANDREA</Buyer1FName>
+        <Buyer1LName>MYSLICKI</Buyer1LName>
+        <Buyer2FName>NICHOLAS</Buyer2FName>
+        <Buyer2LName>SANCHEZ</Buyer2LName>
+        <Seller1FName />
+        <Seller1LName>4642 EAST 12TH STREET LLC</Seller1LName>
+        <Seller2FName />
+        <Seller2LName />
+        <LenderName>V I P MORTGAGE INC</LenderName>
+        <Loan1Amount>124000</Loan1Amount>
+        <PID>1161900</PID>
+        <AssessmentValue>92086</AssessmentValue>
+      </ComparableSale>
+      <ComparableSale>
+        <Proximity>.38</Proximity>
+        <Latitude>32.224402</Latitude>
+        <Longitude>-110.894487</Longitude>
+        <SiteAddress>4560 E BURNS ST</SiteAddress>
+        <SiteUnit />
+        <SiteUnitType />
+        <SiteCity>TUCSON</SiteCity>
+        <SiteState>AZ</SiteState>
+        <SiteZip>85711</SiteZip>
+        <SiteZip4>2970</SiteZip4>
+        <RecordingDate>20130418</RecordingDate>
+        <PriceCode>V</PriceCode>
+        <SalePrice>115000</SalePrice>
+        <PricePerSQFT>78</PricePerSQFT>
+        <BuildingArea>1470</BuildingArea>
+        <TotalRooms>6</TotalRooms>
+        <Bedrooms>0</Bedrooms>
+        <Baths>1</Baths>
+        <YearBuilt>1955</YearBuilt>
+        <LotSize>0</LotSize>
+        <Pool>Yes</Pool>
+        <APN>126-12-2010</APN>
+        <DocumentNumber>20131080525</DocumentNumber>
+        <DocumentType>Warranty Deed</DocumentType>
+        <UseCodeDescription>Single Family Residential</UseCodeDescription>
+        <LotCode>MP</LotCode>
+        <LotNumber>8 9</LotNumber>
+        <Block>11</Block>
+        <Section />
+        <District />
+        <LandLot />
+        <Unit />
+        <CityMuniTwp />
+        <SubdivisionName>LINDEN PARK</SubdivisionName>
+        <PhaseNumber />
+        <TractNumber />
+        <LegalBriefDescription>Lot:8 9 Block:11 Subdivision:LINDEN PARK Map Ref:MAP8 PG87</LegalBriefDescription>
+        <SecTwpRngMer />
+        <MapRef>MAP8 PG87</MapRef>
+        <Buyer1FName>LINDA J</Buyer1FName>
+        <Buyer1LName>SHRENK</Buyer1LName>
+        <Buyer2FName />
+        <Buyer2LName />
+        <Seller1FName>KAREN D</Seller1FName>
+        <Seller1LName>TULLGREN</Seller1LName>
+        <Seller2FName />
+        <Seller2LName>KAREN D TULLGREN REVOCABLE TRUST</Seller2LName>
+        <LenderName />
+        <Loan1Amount>0</Loan1Amount>
+        <PID>1159582</PID>
+        <AssessmentValue>109136</AssessmentValue>
+      </ComparableSale>
+      <ComparableSale>
+        <Proximity>.19</Proximity>
+        <Latitude>32.218267</Latitude>
+        <Longitude>-110.892927</Longitude>
+        <SiteAddress>4642 E 13TH ST</SiteAddress>
+        <SiteUnit />
+        <SiteUnitType />
+        <SiteCity>TUCSON</SiteCity>
+        <SiteState>AZ</SiteState>
+        <SiteZip>85711</SiteZip>
+        <SiteZip4>4210</SiteZip4>
+        <RecordingDate>20130327</RecordingDate>
+        <PriceCode>V</PriceCode>
+        <SalePrice>60480</SalePrice>
+        <PricePerSQFT>45</PricePerSQFT>
+        <BuildingArea>1330</BuildingArea>
+        <TotalRooms>6</TotalRooms>
+        <Bedrooms>0</Bedrooms>
+        <Baths>1</Baths>
+        <YearBuilt>1954</YearBuilt>
+        <LotSize>0</LotSize>
+        <Pool />
+        <APN>126-13-0960</APN>
+        <DocumentNumber>20130860706</DocumentNumber>
+        <DocumentType>SW</DocumentType>
+        <UseCodeDescription>Single Family Residential</UseCodeDescription>
+        <LotCode />
+        <LotNumber>2</LotNumber>
+        <Block>23</Block>
+        <Section />
+        <District />
+        <LandLot />
+        <Unit />
+        <CityMuniTwp>TUCSON</CityMuniTwp>
+        <SubdivisionName>LINDEN PARK</SubdivisionName>
+        <PhaseNumber />
+        <TractNumber />
+        <LegalBriefDescription>Lot:2 Block:23 Subdivision:LINDEN PARK Map Ref:MAP9 PG44City/Muni/Twp:TUCSON </LegalBriefDescription>
+        <SecTwpRngMer />
+        <MapRef>MAP9 PG44</MapRef>
+        <Buyer1FName>NHON D</Buyer1FName>
+        <Buyer1LName>NGUYEN</Buyer1LName>
+        <Buyer2FName />
+        <Buyer2LName />
+        <Seller1FName />
+        <Seller1LName>FEDERAL NATIONAL MORTGAGE ASSOCIATION</Seller1LName>
+        <Seller2FName />
+        <Seller2LName />
+        <LenderName />
+        <Loan1Amount>0</Loan1Amount>
+        <PID>1157055</PID>
+        <AssessmentValue>93667</AssessmentValue>
+      </ComparableSale>
+    </ComparableSales>
+    <AreaSalesAnalysisInfo>
+      <TotalAreaSales>19</TotalAreaSales>
+      <MedianLotSize>0</MedianLotSize>
+      <MedianLivingArea>1330</MedianLivingArea>
+      <PriceRangeMin>60480</PriceRangeMin>
+      <PriceRangeMax>227500</PriceRangeMax>
+      <MedianValue>129900</MedianValue>
+      <MedianNumBeds>0</MedianNumBeds>
+      <MedianNumBaths>1</MedianNumBaths>
+      <MedianYearBuilt>1951</MedianYearBuilt>
+      <AgeRangeMin>37</AgeRangeMin>
+      <AgeRangeMax>64</AgeRangeMax>
+      <MedianAge>63</MedianAge>
+    </AreaSalesAnalysisInfo>
+    <SortFlag>2</SortFlag>
+  </ComparableSalesReport>
+  <TransferHistory>
+    <TransferWithDefault>
+      <TypeCD>4</TypeCD>
+      <RecordingDate>20060619</RecordingDate>
+      <ContractDate />
+      <DocumentNumber>20061171134</DocumentNumber>
+      <DocumentType>Cancellation of Notice of Trustee Sale</DocumentType>
+      <DocumentTypeCode />
+      <Book>12828</Book>
+      <Page>04840</Page>
+      <MultiAPN />
+      <Loan1DueDate />
+      <Loan1Amount />
+      <MortDoc />
+      <LenderName />
+      <LenderType>Not Known</LenderType>
+      <TypeFinancing />
+      <Loan1Rate />
+      <Loan2Amount />
+      <BuyerName />
+      <BuyerMailCareOfName />
+      <BuyerMailUnit />
+      <BuyerMailUnitType />
+      <BuyerMailAddress />
+      <BuyerMailCity />
+      <BuyerMailState />
+      <BuyerMailZip />
+      <BuyerMailZip4 />
+      <BuyerVesting>N/A</BuyerVesting>
+      <BuyerID />
+      <SellerName />
+      <SellerID />
+      <SalePrice />
+      <SalePriceCode />
+      <SaleType />
+      <TrustorName>, </TrustorName>
+      <TrusteeName />
+      <ContactName />
+      <ContactAttentionto />
+      <ContactAddress />
+      <ContactUnit />
+      <ContactCity />
+      <ContactState />
+      <ContactZip />
+      <ContactZip4 />
+      <CaseNumber />
+      <LoanAmount />
+      <LoanDoc />
+      <LoanDate />
+      <TrusteePhone />
+      <TrusteeSaleNumber />
+      <TrusteeAddress />
+      <TrusteeUnit />
+      <TrusteeCity />
+      <TrusteeState />
+      <TrusteeZip />
+      <TrusteeZip4 />
+      <AuctionDate />
+      <AuctionTime />
+      <AuctionLocation />
+      <AuctionCity />
+      <AuctionMinimumBidAmount>0</AuctionMinimumBidAmount>
+      <InterestRate />
+      <FixedStepRider />
+      <AdjRateIndex />
+      <ChangeIndex />
+      <RateChangeFrequency />
+      <FirstChangeDate />
+      <IntRateNotGreater />
+      <IntRateNotLess />
+      <InterestOnlyPeriod />
+      <PrepaymentPenaltyRider />
+      <PrepaymentPenaltyRiderTerm />
+    </TransferWithDefault>
+    <TransferWithDefault>
+      <TypeCD>2</TypeCD>
+      <RecordingDate>20060525</RecordingDate>
+      <ContractDate />
+      <DocumentNumber>20061010922</DocumentNumber>
+      <DocumentType>ND</DocumentType>
+      <DocumentTypeCode />
+      <Book>12812</Book>
+      <Page>03390</Page>
+      <MultiAPN />
+      <Loan1DueDate />
+      <Loan1Amount>88000</Loan1Amount>
+      <MortDoc>20021300704</MortDoc>
+      <LenderName>NATIONAL CITY MORTGAGE CO</LenderName>
+      <LenderType>Not Known</LenderType>
+      <TypeFinancing />
+      <Loan1Rate />
+      <Loan2Amount />
+      <BuyerName />
+      <BuyerMailCareOfName />
+      <BuyerMailUnit />
+      <BuyerMailUnitType />
+      <BuyerMailAddress />
+      <BuyerMailCity />
+      <BuyerMailState />
+      <BuyerMailZip />
+      <BuyerMailZip4 />
+      <BuyerVesting>N/A</BuyerVesting>
+      <BuyerID />
+      <SellerName />
+      <SellerID />
+      <SalePrice />
+      <SalePriceCode />
+      <SaleType />
+      <TrustorName>BENTON, SEAN CLIFFORD</TrustorName>
+      <TrusteeName>CAL WESTERN RECONVEYANCE CORP</TrusteeName>
+      <ContactName>CAL WESTERN RECONVEYANCE CORP</ContactName>
+      <ContactAttentionto />
+      <ContactAddress>525 E MAIN ST</ContactAddress>
+      <ContactUnit />
+      <ContactCity>EL CAJON</ContactCity>
+      <ContactState>CA</ContactState>
+      <ContactZip>92022</ContactZip>
+      <ContactZip4>9004</ContactZip4>
+      <CaseNumber>NONE AVAILABLE</CaseNumber>
+      <LoanAmount>88000</LoanAmount>
+      <LoanDoc>20021300704</LoanDoc>
+      <LoanDate>20020708</LoanDate>
+      <TrusteePhone>800-546-1531</TrusteePhone>
+      <TrusteeSaleNumber>1084064-05</TrusteeSaleNumber>
+      <TrusteeAddress>525 E MAIN ST</TrusteeAddress>
+      <TrusteeUnit />
+      <TrusteeCity>EL CAJON</TrusteeCity>
+      <TrusteeState>CA</TrusteeState>
+      <TrusteeZip>92022</TrusteeZip>
+      <TrusteeZip4>9004</TrusteeZip4>
+      <AuctionDate>20060829</AuctionDate>
+      <AuctionTime>1130A</AuctionTime>
+      <AuctionLocation>110 W CONGRESS</AuctionLocation>
+      <AuctionCity />
+      <AuctionMinimumBidAmount>0</AuctionMinimumBidAmount>
+      <InterestRate />
+      <FixedStepRider />
+      <AdjRateIndex />
+      <ChangeIndex />
+      <RateChangeFrequency />
+      <FirstChangeDate />
+      <IntRateNotGreater />
+      <IntRateNotLess />
+      <InterestOnlyPeriod />
+      <PrepaymentPenaltyRider />
+      <PrepaymentPenaltyRiderTerm />
+    </TransferWithDefault>
+    <TransferWithDefault>
+      <Loan1Type>Credit Line (Revolving)</Loan1Type>
+      <LegalDescriptionInfo>
+        <LotNumber>11        </LotNumber>
+        <Block>1</Block>
+        <Section />
+        <District />
+        <Subdivision>FRANKLIN HEIGHTS                                  </Subdivision>
+        <TractNumber />
+        <PhaseNumber />
+        <Unit />
+        <LandLot />
+        <MapRef />
+        <SecTwnshipRange />
+        <LegalBriefDescription />
+        <CityMuniTwp />
+      </LegalDescriptionInfo>
+      <TypeCD>0</TypeCD>
+      <RecordingDate>20030221</RecordingDate>
+      <ContractDate>20030121</ContractDate>
+      <DocumentNumber>20030350505</DocumentNumber>
+      <DocumentType />
+      <DocumentTypeCode />
+      <Book>11992</Book>
+      <Page>2003</Page>
+      <MultiAPN />
+      <Loan1DueDate>20230121</Loan1DueDate>
+      <Loan1Amount>10000</Loan1Amount>
+      <MortDoc />
+      <LenderName>BANK ONE NA                             </LenderName>
+      <LenderType>Bank</LenderType>
+      <TypeFinancing>OTH </TypeFinancing>
+      <Loan1Rate />
+      <Loan2Amount />
+      <BuyerName>PENTON,SEAN CLIFFORD</BuyerName>
+      <BuyerMailCareOfName />
+      <BuyerMailUnit />
+      <BuyerMailUnitType />
+      <BuyerMailAddress />
+      <BuyerMailCity />
+      <BuyerMailState />
+      <BuyerMailZip />
+      <BuyerMailZip4 />
+      <BuyerVesting>N/A</BuyerVesting>
+      <BuyerID />
+      <SellerName />
+      <SellerID />
+      <SalePrice />
+      <SalePriceCode />
+      <SaleType />
+      <TrustorName />
+      <TrusteeName />
+      <ContactName />
+      <ContactAttentionto />
+      <ContactAddress />
+      <ContactUnit />
+      <ContactCity />
+      <ContactState />
+      <ContactZip />
+      <ContactZip4 />
+      <CaseNumber />
+      <LoanAmount />
+      <LoanDoc />
+      <LoanDate />
+      <TrusteePhone />
+      <TrusteeSaleNumber />
+      <TrusteeAddress />
+      <TrusteeUnit />
+      <TrusteeCity />
+      <TrusteeState />
+      <TrusteeZip />
+      <TrusteeZip4 />
+      <AuctionDate />
+      <AuctionTime />
+      <AuctionLocation />
+      <AuctionCity />
+      <AuctionMinimumBidAmount />
+      <InterestRate />
+      <FixedStepRider />
+      <AdjRateIndex />
+      <ChangeIndex />
+      <RateChangeFrequency>Monthly</RateChangeFrequency>
+      <FirstChangeDate />
+      <IntRateNotGreater />
+      <IntRateNotLess />
+      <InterestOnlyPeriod />
+      <PrepaymentPenaltyRider />
+      <PrepaymentPenaltyRiderTerm />
+    </TransferWithDefault>
+    <TransferWithDefault>
+      <LegalDescriptionInfo>
+        <LotNumber>11        </LotNumber>
+        <Block>1      </Block>
+        <Section />
+        <District />
+        <Subdivision>FRANKLIN HEIGHTS</Subdivision>
+        <TractNumber />
+        <PhaseNumber />
+        <Unit />
+        <LandLot />
+        <MapRef>MAP9 PG99</MapRef>
+        <SecTwnshipRange />
+        <LegalBriefDescription />
+        <CityMuniTwp />
+      </LegalDescriptionInfo>
+      <TypeCD>1</TypeCD>
+      <RecordingDate>20020708</RecordingDate>
+      <ContractDate>20020701</ContractDate>
+      <DocumentNumber>20021300703</DocumentNumber>
+      <DocumentType>Intrafamily Transfer or Dissolution</DocumentType>
+      <DocumentTypeCode />
+      <Book>11836</Book>
+      <Page>1859</Page>
+      <MultiAPN>A</MultiAPN>
+      <Loan1DueDate />
+      <Loan1Amount>88000</Loan1Amount>
+      <MortDoc>20021300704</MortDoc>
+      <LenderName>AMERICAN HOME MTG CORP</LenderName>
+      <LenderType />
+      <TypeFinancing />
+      <Loan1Rate />
+      <Loan2Amount />
+      <BuyerName>PENTON, SEAN CLIFFORD</BuyerName>
+      <BuyerMailCareOfName />
+      <BuyerMailUnit />
+      <BuyerMailUnitType />
+      <BuyerMailAddress />
+      <BuyerMailCity />
+      <BuyerMailState />
+      <BuyerMailZip />
+      <BuyerMailZip4 />
+      <BuyerVesting>N/A</BuyerVesting>
+      <BuyerID />
+      <SellerName>PENTON, STEPHEN L</SellerName>
+      <SellerID />
+      <SalePrice>123000</SalePrice>
+      <SalePriceCode />
+      <SaleType>Verified Sale Price</SaleType>
+      <TrustorName />
+      <TrusteeName />
+      <ContactName />
+      <ContactAttentionto />
+      <ContactAddress />
+      <ContactUnit />
+      <ContactCity />
+      <ContactState />
+      <ContactZip />
+      <ContactZip4 />
+      <CaseNumber />
+      <LoanAmount />
+      <LoanDoc />
+      <LoanDate />
+      <TrusteePhone />
+      <TrusteeSaleNumber />
+      <TrusteeAddress />
+      <TrusteeUnit />
+      <TrusteeCity />
+      <TrusteeState />
+      <TrusteeZip />
+      <TrusteeZip4 />
+      <AuctionDate />
+      <AuctionTime />
+      <AuctionLocation />
+      <AuctionCity />
+      <AuctionMinimumBidAmount />
+      <InterestRate />
+      <FixedStepRider />
+      <AdjRateIndex />
+      <ChangeIndex />
+      <RateChangeFrequency />
+      <FirstChangeDate />
+      <IntRateNotGreater />
+      <IntRateNotLess />
+      <InterestOnlyPeriod />
+      <PrepaymentPenaltyRider />
+      <PrepaymentPenaltyRiderTerm />
+    </TransferWithDefault>
+    <TransferWithDefault>
+      <LegalDescriptionInfo>
+        <LotNumber>11        </LotNumber>
+        <Block>1      </Block>
+        <Section />
+        <District />
+        <Subdivision>FRANKLIN HEIGHTS</Subdivision>
+        <TractNumber />
+        <PhaseNumber />
+        <Unit />
+        <LandLot />
+        <MapRef>MAP9 PG99</MapRef>
+        <SecTwnshipRange />
+        <LegalBriefDescription />
+        <CityMuniTwp />
+      </LegalDescriptionInfo>
+      <TypeCD>1</TypeCD>
+      <RecordingDate>19951219</RecordingDate>
+      <ContractDate>19950829</ContractDate>
+      <DocumentNumber>95194041</DocumentNumber>
+      <DocumentType>Deed</DocumentType>
+      <DocumentTypeCode />
+      <Book>10193</Book>
+      <Page>0211</Page>
+      <MultiAPN>A</MultiAPN>
+      <Loan1DueDate />
+      <Loan1Amount>0</Loan1Amount>
+      <MortDoc />
+      <LenderName />
+      <LenderType />
+      <TypeFinancing />
+      <Loan1Rate />
+      <Loan2Amount />
+      <BuyerName>PENTON, STEPHEN L</BuyerName>
+      <BuyerMailCareOfName />
+      <BuyerMailUnit />
+      <BuyerMailUnitType />
+      <BuyerMailAddress />
+      <BuyerMailCity />
+      <BuyerMailState />
+      <BuyerMailZip />
+      <BuyerMailZip4 />
+      <BuyerVesting>Married Man as his sole and separate property</BuyerVesting>
+      <BuyerID />
+      <SellerName>KACHNIC, JOSEPH E</SellerName>
+      <SellerID />
+      <SalePrice>0</SalePrice>
+      <SalePriceCode />
+      <SaleType />
+      <TrustorName />
+      <TrusteeName />
+      <ContactName />
+      <ContactAttentionto />
+      <ContactAddress />
+      <ContactUnit />
+      <ContactCity />
+      <ContactState />
+      <ContactZip />
+      <ContactZip4 />
+      <CaseNumber />
+      <LoanAmount />
+      <LoanDoc />
+      <LoanDate />
+      <TrusteePhone />
+      <TrusteeSaleNumber />
+      <TrusteeAddress />
+      <TrusteeUnit />
+      <TrusteeCity />
+      <TrusteeState />
+      <TrusteeZip />
+      <TrusteeZip4 />
+      <AuctionDate />
+      <AuctionTime />
+      <AuctionLocation />
+      <AuctionCity />
+      <AuctionMinimumBidAmount />
+      <InterestRate />
+      <FixedStepRider />
+      <AdjRateIndex />
+      <ChangeIndex />
+      <RateChangeFrequency />
+      <FirstChangeDate />
+      <IntRateNotGreater />
+      <IntRateNotLess />
+      <InterestOnlyPeriod />
+      <PrepaymentPenaltyRider />
+      <PrepaymentPenaltyRiderTerm />
+    </TransferWithDefault>
+    <TransferWithDefault>
+      <LegalDescriptionInfo>
+        <LotNumber>11        </LotNumber>
+        <Block>1      </Block>
+        <Section />
+        <District />
+        <Subdivision>FRANKLIN HEIGHTS</Subdivision>
+        <TractNumber />
+        <PhaseNumber />
+        <Unit />
+        <LandLot />
+        <MapRef>MAP9 PG99</MapRef>
+        <SecTwnshipRange />
+        <LegalBriefDescription />
+        <CityMuniTwp />
+      </LegalDescriptionInfo>
+      <TypeCD>1</TypeCD>
+      <RecordingDate>19950918</RecordingDate>
+      <ContractDate>19950829</ContractDate>
+      <DocumentNumber>95141695</DocumentNumber>
+      <DocumentType>Intrafamily Transfer or Dissolution</DocumentType>
+      <DocumentTypeCode />
+      <Book>10130</Book>
+      <Page>2269</Page>
+      <MultiAPN>A</MultiAPN>
+      <Loan1DueDate />
+      <Loan1Amount>0</Loan1Amount>
+      <MortDoc />
+      <LenderName />
+      <LenderType />
+      <TypeFinancing />
+      <Loan1Rate />
+      <Loan2Amount />
+      <BuyerName>PENTON, STEPHEN L</BuyerName>
+      <BuyerMailCareOfName />
+      <BuyerMailUnit />
+      <BuyerMailUnitType />
+      <BuyerMailAddress />
+      <BuyerMailCity />
+      <BuyerMailState />
+      <BuyerMailZip />
+      <BuyerMailZip4 />
+      <BuyerVesting>N/A</BuyerVesting>
+      <BuyerID />
+      <SellerName>PENTON, MARGARET S</SellerName>
+      <SellerID />
+      <SalePrice>0</SalePrice>
+      <SalePriceCode />
+      <SaleType />
+      <TrustorName />
+      <TrusteeName />
+      <ContactName />
+      <ContactAttentionto />
+      <ContactAddress />
+      <ContactUnit />
+      <ContactCity />
+      <ContactState />
+      <ContactZip />
+      <ContactZip4 />
+      <CaseNumber />
+      <LoanAmount />
+      <LoanDoc />
+      <LoanDate />
+      <TrusteePhone />
+      <TrusteeSaleNumber />
+      <TrusteeAddress />
+      <TrusteeUnit />
+      <TrusteeCity />
+      <TrusteeState />
+      <TrusteeZip />
+      <TrusteeZip4 />
+      <AuctionDate />
+      <AuctionTime />
+      <AuctionLocation />
+      <AuctionCity />
+      <AuctionMinimumBidAmount />
+      <InterestRate />
+      <FixedStepRider />
+      <AdjRateIndex />
+      <ChangeIndex />
+      <RateChangeFrequency />
+      <FirstChangeDate />
+      <IntRateNotGreater />
+      <IntRateNotLess />
+      <InterestOnlyPeriod />
+      <PrepaymentPenaltyRider />
+      <PrepaymentPenaltyRiderTerm />
+    </TransferWithDefault>
+    <TransferWithDefault>
+      <LegalDescriptionInfo>
+        <LotNumber>11        </LotNumber>
+        <Block>1      </Block>
+        <Section />
+        <District />
+        <Subdivision>FRANKLIN HEIGHTS</Subdivision>
+        <TractNumber />
+        <PhaseNumber />
+        <Unit />
+        <LandLot />
+        <MapRef>MAP9 PG99</MapRef>
+        <SecTwnshipRange />
+        <LegalBriefDescription />
+        <CityMuniTwp />
+      </LegalDescriptionInfo>
+      <TypeCD>1</TypeCD>
+      <RecordingDate>19950918</RecordingDate>
+      <ContractDate>19950829</ContractDate>
+      <DocumentNumber>95141694</DocumentNumber>
+      <DocumentType>Deed</DocumentType>
+      <DocumentTypeCode />
+      <Book>10130</Book>
+      <Page>2268</Page>
+      <MultiAPN>A</MultiAPN>
+      <Loan1DueDate />
+      <Loan1Amount>0</Loan1Amount>
+      <MortDoc />
+      <LenderName />
+      <LenderType />
+      <TypeFinancing />
+      <Loan1Rate />
+      <Loan2Amount />
+      <BuyerName>PENTON, STEPHEN L</BuyerName>
+      <BuyerMailCareOfName />
+      <BuyerMailUnit />
+      <BuyerMailUnitType />
+      <BuyerMailAddress />
+      <BuyerMailCity />
+      <BuyerMailState />
+      <BuyerMailZip />
+      <BuyerMailZip4 />
+      <BuyerVesting>N/A</BuyerVesting>
+      <BuyerID />
+      <SellerName>KACHNIC, JOSEPH E</SellerName>
+      <SellerID />
+      <SalePrice>88000</SalePrice>
+      <SalePriceCode />
+      <SaleType>Verified Sale Price</SaleType>
+      <TrustorName />
+      <TrusteeName />
+      <ContactName />
+      <ContactAttentionto />
+      <ContactAddress />
+      <ContactUnit />
+      <ContactCity />
+      <ContactState />
+      <ContactZip />
+      <ContactZip4 />
+      <CaseNumber />
+      <LoanAmount />
+      <LoanDoc />
+      <LoanDate />
+      <TrusteePhone />
+      <TrusteeSaleNumber />
+      <TrusteeAddress />
+      <TrusteeUnit />
+      <TrusteeCity />
+      <TrusteeState />
+      <TrusteeZip />
+      <TrusteeZip4 />
+      <AuctionDate />
+      <AuctionTime />
+      <AuctionLocation />
+      <AuctionCity />
+      <AuctionMinimumBidAmount />
+      <InterestRate />
+      <FixedStepRider />
+      <AdjRateIndex />
+      <ChangeIndex />
+      <RateChangeFrequency />
+      <FirstChangeDate />
+      <IntRateNotGreater />
+      <IntRateNotLess />
+      <InterestOnlyPeriod />
+      <PrepaymentPenaltyRider />
+      <PrepaymentPenaltyRiderTerm />
+    </TransferWithDefault>
+  </TransferHistory>
+  <Neighborhood>
+    <Neighbor>
+      <OwnerName>PENTON SEAN CLIFFORD</OwnerName>
+      <SiteAddress>4739 E COOPER ST</SiteAddress>
+      <SiteUnit />
+      <SiteUnitType />
+      <SiteCity>TUCSON</SiteCity>
+      <SiteState>AZ</SiteState>
+      <SiteZip>85711</SiteZip>
+      <APN>128-11-1170</APN>
+      <Phone />
+      <BuildingArea>1092</BuildingArea>
+      <Bedrooms>0</Bedrooms>
+      <Baths>1</Baths>
+      <YearBuilt>1952</YearBuilt>
+      <LotSize>0</LotSize>
+      <LotSizeUnits />
+      <GarageType>M</GarageType>
+    </Neighbor>
+    <Neighbor>
+      <OwnerName>GUERRA DAVID L</OwnerName>
+      <SiteAddress>4743 E COOPER ST</SiteAddress>
+      <SiteUnit />
+      <SiteUnitType />
+      <SiteCity>TUCSON</SiteCity>
+      <SiteState>AZ</SiteState>
+      <SiteZip>85711</SiteZip>
+      <APN>128-11-1180</APN>
+      <Phone />
+      <BuildingArea>1003</BuildingArea>
+      <Bedrooms>0</Bedrooms>
+      <Baths>1</Baths>
+      <YearBuilt>1953</YearBuilt>
+      <LotSize>0</LotSize>
+      <LotSizeUnits />
+      <GarageType>C</GarageType>
+    </Neighbor>
+    <Neighbor>
+      <OwnerName>HEFFERNAN TERRACE PAUL &amp; LINDA TRICE</OwnerName>
+      <SiteAddress>215 S NEMA PL</SiteAddress>
+      <SiteUnit />
+      <SiteUnitType />
+      <SiteCity>TUCSON</SiteCity>
+      <SiteState>AZ</SiteState>
+      <SiteZip>85711</SiteZip>
+      <APN>128-11-1150</APN>
+      <Phone />
+      <BuildingArea>2127</BuildingArea>
+      <Bedrooms>0</Bedrooms>
+      <Baths>2</Baths>
+      <YearBuilt>1953</YearBuilt>
+      <LotSize>0</LotSize>
+      <LotSizeUnits />
+      <GarageType>M</GarageType>
+    </Neighbor>
+    <Neighbor>
+      <OwnerName>HOLDEN JAMES R &amp; MILADA</OwnerName>
+      <SiteAddress>4731 E COOPER ST</SiteAddress>
+      <SiteUnit />
+      <SiteUnitType />
+      <SiteCity>TUCSON</SiteCity>
+      <SiteState>AZ</SiteState>
+      <SiteZip>85711</SiteZip>
+      <APN>128-11-1160</APN>
+      <Phone />
+      <BuildingArea>1308</BuildingArea>
+      <Bedrooms>0</Bedrooms>
+      <Baths>2</Baths>
+      <YearBuilt>1953</YearBuilt>
+      <LotSize>0</LotSize>
+      <LotSizeUnits />
+      <GarageType>C</GarageType>
+    </Neighbor>
+    <Neighbor>
+      <OwnerName>LEWANDOWSKI DAVID</OwnerName>
+      <SiteAddress>4801 E COOPER ST</SiteAddress>
+      <SiteUnit />
+      <SiteUnitType />
+      <SiteCity>TUCSON</SiteCity>
+      <SiteState>AZ</SiteState>
+      <SiteZip>85711</SiteZip>
+      <APN>128-11-3710</APN>
+      <Phone />
+      <BuildingArea>1302</BuildingArea>
+      <Bedrooms>0</Bedrooms>
+      <Baths>2</Baths>
+      <YearBuilt>1950</YearBuilt>
+      <LotSize>0</LotSize>
+      <LotSizeUnits />
+      <GarageType>G</GarageType>
+    </Neighbor>
+    <Neighbor>
+      <OwnerName>NEVIUS RUTH J (TRUSTEE)</OwnerName>
+      <SiteAddress>4802 E 12TH ST</SiteAddress>
+      <SiteUnit />
+      <SiteUnitType />
+      <SiteCity>TUCSON</SiteCity>
+      <SiteState>AZ</SiteState>
+      <SiteZip>85711</SiteZip>
+      <APN>128-11-3920</APN>
+      <Phone />
+      <BuildingArea>1417</BuildingArea>
+      <Bedrooms>0</Bedrooms>
+      <Baths>2</Baths>
+      <YearBuilt>1950</YearBuilt>
+      <LotSize>0</LotSize>
+      <LotSizeUnits />
+      <GarageType>M</GarageType>
+    </Neighbor>
+    <Neighbor>
+      <OwnerName>ASHBY KIMBERLEY ANNE</OwnerName>
+      <SiteAddress>4738 E COOPER ST</SiteAddress>
+      <SiteUnit />
+      <SiteUnitType />
+      <SiteCity>TUCSON</SiteCity>
+      <SiteState>AZ</SiteState>
+      <SiteZip>85711</SiteZip>
+      <APN>128-11-1250</APN>
+      <Phone />
+      <BuildingArea>1434</BuildingArea>
+      <Bedrooms>0</Bedrooms>
+      <Baths>1</Baths>
+      <YearBuilt>1952</YearBuilt>
+      <LotSize>0</LotSize>
+      <LotSizeUnits />
+      <GarageType>N</GarageType>
+    </Neighbor>
+    <Neighbor>
+      <OwnerName>THORN TONY R &amp; TAMMY L</OwnerName>
+      <SiteAddress>4740 E COOPER ST</SiteAddress>
+      <SiteUnit />
+      <SiteUnitType />
+      <SiteCity>TUCSON</SiteCity>
+      <SiteState>AZ</SiteState>
+      <SiteZip>85711</SiteZip>
+      <APN>128-11-1260</APN>
+      <Phone />
+      <BuildingArea>1336</BuildingArea>
+      <Bedrooms>0</Bedrooms>
+      <Baths>2</Baths>
+      <YearBuilt>1952</YearBuilt>
+      <LotSize>0</LotSize>
+      <LotSizeUnits />
+      <GarageType>C</GarageType>
+    </Neighbor>
+    <Neighbor>
+      <OwnerName>DIAMOND JANICE</OwnerName>
+      <SiteAddress>202 S NEMA PL</SiteAddress>
+      <SiteUnit />
+      <SiteUnitType />
+      <SiteCity>TUCSON</SiteCity>
+      <SiteState>AZ</SiteState>
+      <SiteZip>85711</SiteZip>
+      <APN>128-11-1140</APN>
+      <Phone />
+      <BuildingArea>1637</BuildingArea>
+      <Bedrooms>0</Bedrooms>
+      <Baths>2</Baths>
+      <YearBuilt>1952</YearBuilt>
+      <LotSize>0</LotSize>
+      <LotSizeUnits />
+      <GarageType>C</GarageType>
+    </Neighbor>
+    <Neighbor>
+      <OwnerName>GUTOWSKI LAURA J</OwnerName>
+      <SiteAddress>4732 E COOPER ST</SiteAddress>
+      <SiteUnit />
+      <SiteUnitType />
+      <SiteCity>TUCSON</SiteCity>
+      <SiteState>AZ</SiteState>
+      <SiteZip>85711</SiteZip>
+      <APN>128-11-1240</APN>
+      <Phone />
+      <BuildingArea>1258</BuildingArea>
+      <Bedrooms>0</Bedrooms>
+      <Baths>1</Baths>
+      <YearBuilt>1953</YearBuilt>
+      <LotSize>0</LotSize>
+      <LotSizeUnits />
+      <GarageType>C</GarageType>
+    </Neighbor>
+    <Neighbor>
+      <OwnerName>HARVEY VIVIAN &amp; HARVEY CONNIE</OwnerName>
+      <SiteAddress>4809 E COOPER ST</SiteAddress>
+      <SiteUnit />
+      <SiteUnitType />
+      <SiteCity>TUCSON</SiteCity>
+      <SiteState>AZ</SiteState>
+      <SiteZip>85711</SiteZip>
+      <APN>128-11-3720</APN>
+      <Phone />
+      <BuildingArea>1621</BuildingArea>
+      <Bedrooms>0</Bedrooms>
+      <Baths>2</Baths>
+      <YearBuilt>1950</YearBuilt>
+      <LotSize>0</LotSize>
+      <LotSizeUnits />
+      <GarageType>N</GarageType>
+    </Neighbor>
+    <Neighbor>
+      <OwnerName>SLEMP THOMAS W &amp; SLEMP JOHN R</OwnerName>
+      <SiteAddress>4802 E COOPER ST</SiteAddress>
+      <SiteUnit />
+      <SiteUnitType />
+      <SiteCity>TUCSON</SiteCity>
+      <SiteState>AZ</SiteState>
+      <SiteZip>85711</SiteZip>
+      <APN>128-11-3530</APN>
+      <Phone>5203278855</Phone>
+      <BuildingArea>1302</BuildingArea>
+      <Bedrooms>0</Bedrooms>
+      <Baths>1</Baths>
+      <YearBuilt>1950</YearBuilt>
+      <LotSize>0</LotSize>
+      <LotSizeUnits />
+      <GarageType>G</GarageType>
+    </Neighbor>
+    <Neighbor>
+      <OwnerName>BADALOV RAFOEL &amp; NONNA</OwnerName>
+      <SiteAddress>4810 E 12TH ST</SiteAddress>
+      <SiteUnit />
+      <SiteUnitType />
+      <SiteCity>TUCSON</SiteCity>
+      <SiteState>AZ</SiteState>
+      <SiteZip>85711</SiteZip>
+      <APN>128-11-3910</APN>
+      <Phone />
+      <BuildingArea>1621</BuildingArea>
+      <Bedrooms>0</Bedrooms>
+      <Baths>2</Baths>
+      <YearBuilt>1950</YearBuilt>
+      <LotSize>0</LotSize>
+      <LotSizeUnits />
+      <GarageType>C</GarageType>
+    </Neighbor>
+    <Neighbor>
+      <OwnerName>MANNING FAMILY TR</OwnerName>
+      <SiteAddress>4726 E COOPER ST</SiteAddress>
+      <SiteUnit />
+      <SiteUnitType />
+      <SiteCity>TUCSON</SiteCity>
+      <SiteState>AZ</SiteState>
+      <SiteZip>85711</SiteZip>
+      <APN>128-11-1230</APN>
+      <Phone />
+      <BuildingArea>1321</BuildingArea>
+      <Bedrooms>0</Bedrooms>
+      <Baths>2</Baths>
+      <YearBuilt>1953</YearBuilt>
+      <LotSize>0</LotSize>
+      <LotSizeUnits />
+      <GarageType>C</GarageType>
+    </Neighbor>
+    <Neighbor>
+      <OwnerName>TUTTLE, CHARLES E; TUTTLE, SUSANNE R</OwnerName>
+      <SiteAddress>4810 E COOPER ST</SiteAddress>
+      <SiteUnit />
+      <SiteUnitType />
+      <SiteCity>TUCSON</SiteCity>
+      <SiteState>AZ</SiteState>
+      <SiteZip>85711</SiteZip>
+      <APN>128-11-3520</APN>
+      <Phone />
+      <BuildingArea>1302</BuildingArea>
+      <Bedrooms>0</Bedrooms>
+      <Baths>2</Baths>
+      <YearBuilt>1950</YearBuilt>
+      <LotSize>0</LotSize>
+      <LotSizeUnits />
+      <GarageType>G</GarageType>
+    </Neighbor>
+  </Neighborhood>
+  <SubjectValueInfo>
+    <OwnerName>PENTON SEAN CLIFFORD</OwnerName>
+    <Unit />
+    <Address>4739 E COOPER ST</Address>
+    <City>TUCSON</City>
+    <State>AZ</State>
+    <Zip>85711</Zip>
+    <Zip4>3615</Zip4>
+    <APN>128-11-1170</APN>
+    <CountyName>PIMA</CountyName>
+    <FIPS>04019</FIPS>
+  </SubjectValueInfo>
+  <NeighborhoodDemographics>
+    <Population>
+      <DemographicsInfoItems>
+        <DemoInfoItem>
+          <Description>2000</Description>
+          <ZipTotal>43,437</ZipTotal>
+          <NationalTotal>281,421,906</NationalTotal>
+        </DemoInfoItem>
+        <DemoInfoItem>
+          <Description>2009</Description>
+          <ZipTotal>44,830</ZipTotal>
+          <NationalTotal>309,731,508</NationalTotal>
+        </DemoInfoItem>
+        <DemoInfoItem>
+          <Description>2014</Description>
+          <ZipTotal>45,920</ZipTotal>
+          <NationalTotal>324,062,684</NationalTotal>
+        </DemoInfoItem>
+        <DemoInfoItem>
+          <Description>Growth Rate</Description>
+          <ZipTotal>0.3 %</ZipTotal>
+          <NationalTotal>1.0 %</NationalTotal>
+        </DemoInfoItem>
+        <DemoInfoItem>
+          <Description>Growth Centile</Description>
+          <ZipTotal>11.0 %</ZipTotal>
+          <NationalTotal />
+        </DemoInfoItem>
+      </DemographicsInfoItems>
+      <SubjectZip>85711</SubjectZip>
+    </Population>
+    <Household>
+      <DemographicsInfoItems>
+        <DemoInfoItem>
+          <Description>2000</Description>
+          <ZipTotal>18,136</ZipTotal>
+          <NationalTotal>105,480,101</NationalTotal>
+        </DemoInfoItem>
+        <DemoInfoItem>
+          <Description>2009</Description>
+          <ZipTotal>18,850</ZipTotal>
+          <NationalTotal>116,523,156</NationalTotal>
+        </DemoInfoItem>
+        <DemoInfoItem>
+          <Description>2014</Description>
+          <ZipTotal>19,402</ZipTotal>
+          <NationalTotal>122,109,448</NationalTotal>
+        </DemoInfoItem>
+        <DemoInfoItem>
+          <Description>Household Growth Rate</Description>
+          <ZipTotal>0.4 %</ZipTotal>
+          <NationalTotal>1.1 %</NationalTotal>
+        </DemoInfoItem>
+        <DemoInfoItem>
+          <Description>Average Household Size</Description>
+          <ZipTotal>2.4</ZipTotal>
+          <NationalTotal>2.6</NationalTotal>
+        </DemoInfoItem>
+      </DemographicsInfoItems>
+      <SubjectZip>85711</SubjectZip>
+    </Household>
+    <Family>
+      <DemographicsInfoItems>
+        <DemoInfoItem>
+          <Description>2000</Description>
+          <ZipTotal>10,462</ZipTotal>
+          <NationalTotal>71,787,347</NationalTotal>
+        </DemoInfoItem>
+        <DemoInfoItem>
+          <Description>2009</Description>
+          <ZipTotal>10,242</ZipTotal>
+          <NationalTotal>77,956,117</NationalTotal>
+        </DemoInfoItem>
+        <DemoInfoItem>
+          <Description>Family Growth Rate</Description>
+          <ZipTotal />
+          <NationalTotal>0.9 %</NationalTotal>
+        </DemoInfoItem>
+      </DemographicsInfoItems>
+      <SubjectZip>85711</SubjectZip>
+    </Family>
+    <AgeDistribution>
+      <DemographicsInfoItems>
+        <DemoInfoItem>
+          <Description>0-4</Description>
+          <ZipTotal>7.4 %</ZipTotal>
+          <NationalTotal>6.8 %</NationalTotal>
+        </DemoInfoItem>
+        <DemoInfoItem>
+          <Description>5-9</Description>
+          <ZipTotal>6.5 %</ZipTotal>
+          <NationalTotal>6.7 %</NationalTotal>
+        </DemoInfoItem>
+        <DemoInfoItem>
+          <Description>10-14</Description>
+          <ZipTotal>6.0 %</ZipTotal>
+          <NationalTotal>6.6 %</NationalTotal>
+        </DemoInfoItem>
+        <DemoInfoItem>
+          <Description>15-19</Description>
+          <ZipTotal>6.6 %</ZipTotal>
+          <NationalTotal>7.1 %</NationalTotal>
+        </DemoInfoItem>
+        <DemoInfoItem>
+          <Description>20-24</Description>
+          <ZipTotal>8.6 %</ZipTotal>
+          <NationalTotal>6.9 %</NationalTotal>
+        </DemoInfoItem>
+        <DemoInfoItem>
+          <Description>25-44</Description>
+          <ZipTotal>28.4 %</ZipTotal>
+          <NationalTotal>27.0 %</NationalTotal>
+        </DemoInfoItem>
+        <DemoInfoItem>
+          <Description>45-64</Description>
+          <ZipTotal>24.2 %</ZipTotal>
+          <NationalTotal>26.0 %</NationalTotal>
+        </DemoInfoItem>
+        <DemoInfoItem>
+          <Description>65-84</Description>
+          <ZipTotal>10.1 %</ZipTotal>
+          <NationalTotal>10.9 %</NationalTotal>
+        </DemoInfoItem>
+        <DemoInfoItem>
+          <Description>85+</Description>
+          <ZipTotal>2.3 %</ZipTotal>
+          <NationalTotal>1.9 %</NationalTotal>
+        </DemoInfoItem>
+      </DemographicsInfoItems>
+      <SubjectZip>85711</SubjectZip>
+    </AgeDistribution>
+    <MedianAge>
+      <DemographicsInfoItems>
+        <DemoInfoItem>
+          <Description>2009</Description>
+          <ZipTotal>34.4</ZipTotal>
+          <NationalTotal>36.9</NationalTotal>
+        </DemoInfoItem>
+        <DemoInfoItem>
+          <Description>Male Ratio</Description>
+          <ZipTotal>48.7 %</ZipTotal>
+          <NationalTotal>49.2 %</NationalTotal>
+        </DemoInfoItem>
+        <DemoInfoItem>
+          <Description>Female Ratio</Description>
+          <ZipTotal>51.3 %</ZipTotal>
+          <NationalTotal>50.8 %</NationalTotal>
+        </DemoInfoItem>
+      </DemographicsInfoItems>
+      <SubjectZip>85711</SubjectZip>
+    </MedianAge>
+    <HouseholdIncome>
+      <DemographicsInfoItems>
+        <DemoInfoItem>
+          <Description>% &lt; $25K</Description>
+          <ZipTotal>30.0 %</ZipTotal>
+          <NationalTotal>20.9 %</NationalTotal>
+        </DemoInfoItem>
+        <DemoInfoItem>
+          <Description>% $25K-50K</Description>
+          <ZipTotal>30.8 %</ZipTotal>
+          <NationalTotal>24.4 %</NationalTotal>
+        </DemoInfoItem>
+        <DemoInfoItem>
+          <Description>% $50K-100K</Description>
+          <ZipTotal>30.2 %</ZipTotal>
+          <NationalTotal>35.3 %</NationalTotal>
+        </DemoInfoItem>
+        <DemoInfoItem>
+          <Description>% $100K-150K</Description>
+          <ZipTotal>6.4 %</ZipTotal>
+          <NationalTotal>11.7 %</NationalTotal>
+        </DemoInfoItem>
+        <DemoInfoItem>
+          <Description>% &gt;$150K</Description>
+          <ZipTotal>2.6 %</ZipTotal>
+          <NationalTotal>7.6 %</NationalTotal>
+        </DemoInfoItem>
+      </DemographicsInfoItems>
+      <SubjectZip>85711</SubjectZip>
+    </HouseholdIncome>
+    <MedianHouseholdIncome>
+      <DemographicsInfoItems>
+        <DemoInfoItem>
+          <Description>2009</Description>
+          <ZipTotal>$40,393.00</ZipTotal>
+          <NationalTotal>$54,719.00</NationalTotal>
+        </DemoInfoItem>
+        <DemoInfoItem>
+          <Description>2014</Description>
+          <ZipTotal>$42,960.00</ZipTotal>
+          <NationalTotal>$56,938.00</NationalTotal>
+        </DemoInfoItem>
+        <DemoInfoItem>
+          <Description>Per Capita Income</Description>
+          <ZipTotal>$21,607.00</ZipTotal>
+          <NationalTotal>$27,277.00</NationalTotal>
+        </DemoInfoItem>
+      </DemographicsInfoItems>
+      <SubjectZip>85711</SubjectZip>
+    </MedianHouseholdIncome>
+    <HouseholdIncomeCentile>
+      <DemographicsInfoItems>
+        <DemoInfoItem>
+          <Description>National</Description>
+          <ZipTotal>34.0 %</ZipTotal>
+        </DemoInfoItem>
+        <DemoInfoItem>
+          <Description>State</Description>
+          <ZipTotal>34.0 %</ZipTotal>
+        </DemoInfoItem>
+      </DemographicsInfoItems>
+      <SubjectZip>85711</SubjectZip>
+    </HouseholdIncomeCentile>
+  </NeighborhoodDemographics>
+  <PublicSchoolsReport>
+    <Schools>
+      <School>
+        <SchoolName>BONILLAS ELEMENTARY BASIC CURRICULUM MAGNET SCHOOL</SchoolName>
+        <Distance>.41</Distance>
+        <SchoolAddress>4757 E WINSETT                </SchoolAddress>
+        <SchoolCity>TUCSON                        </SchoolCity>
+        <SchoolState>AZ</SchoolState>
+        <SchoolZip>85711</SchoolZip>
+        <SchoolZip4>    </SchoolZip4>
+        <SchoolPhone>520-232-6600</SchoolPhone>
+        <LowestGrade>Kindergarten</LowestGrade>
+        <HighestGrade>Grade 5</HighestGrade>
+        <StudentTeacherRatio>1:19.2</StudentTeacherRatio>
+        <Administrators>N/A</Administrators>
+        <KindergartenMembership>78</KindergartenMembership>
+        <Grade1Membership>81</Grade1Membership>
+        <Grade2Membership>89</Grade2Membership>
+        <Grade3Membership>82</Grade3Membership>
+        <Grade4Membership>81</Grade4Membership>
+        <Grade5Membership>87</Grade5Membership>
+        <Grade6Membership>0</Grade6Membership>
+        <Grade7Membership>0</Grade7Membership>
+        <Grade8Membership>0</Grade8Membership>
+        <Grade9Membership>0</Grade9Membership>
+        <Grade10Membership>0</Grade10Membership>
+        <Grade11Membership>0</Grade11Membership>
+        <Grade12Membership>0</Grade12Membership>
+        <TotalEnrolled>498</TotalEnrolled>
+        <APIDecile>0</APIDecile>
+      </School>
+      <School>
+        <SchoolName>DUFFY ELEMENTARY SCHOOL                           </SchoolName>
+        <Distance>.76</Distance>
+        <SchoolAddress>5145 E 5TH ST                 </SchoolAddress>
+        <SchoolCity>TUCSON                        </SchoolCity>
+        <SchoolState>AZ</SchoolState>
+        <SchoolZip>85711</SchoolZip>
+        <SchoolZip4>    </SchoolZip4>
+        <SchoolPhone>520-232-7000</SchoolPhone>
+        <LowestGrade>Kindergarten</LowestGrade>
+        <HighestGrade>Grade 5</HighestGrade>
+        <StudentTeacherRatio>1:16.2</StudentTeacherRatio>
+        <Administrators>N/A</Administrators>
+        <KindergartenMembership>42</KindergartenMembership>
+        <Grade1Membership>51</Grade1Membership>
+        <Grade2Membership>49</Grade2Membership>
+        <Grade3Membership>57</Grade3Membership>
+        <Grade4Membership>48</Grade4Membership>
+        <Grade5Membership>53</Grade5Membership>
+        <Grade6Membership>0</Grade6Membership>
+        <Grade7Membership>0</Grade7Membership>
+        <Grade8Membership>0</Grade8Membership>
+        <Grade9Membership>0</Grade9Membership>
+        <Grade10Membership>0</Grade10Membership>
+        <Grade11Membership>0</Grade11Membership>
+        <Grade12Membership>0</Grade12Membership>
+        <TotalEnrolled>302</TotalEnrolled>
+        <APIDecile>0</APIDecile>
+      </School>
+      <School>
+        <SchoolName>ALICE VAIL MIDDLE SCHOOL                          </SchoolName>
+        <Distance>.83</Distance>
+        <SchoolAddress>5350 E 16TH                   </SchoolAddress>
+        <SchoolCity>TUCSON                        </SchoolCity>
+        <SchoolState>AZ</SchoolState>
+        <SchoolZip>85711</SchoolZip>
+        <SchoolZip4>    </SchoolZip4>
+        <SchoolPhone>520-584-5400</SchoolPhone>
+        <LowestGrade>Grade 6</LowestGrade>
+        <HighestGrade>Grade 8</HighestGrade>
+        <StudentTeacherRatio>1:15</StudentTeacherRatio>
+        <Administrators>N/A</Administrators>
+        <KindergartenMembership>0</KindergartenMembership>
+        <Grade1Membership>0</Grade1Membership>
+        <Grade2Membership>0</Grade2Membership>
+        <Grade3Membership>0</Grade3Membership>
+        <Grade4Membership>0</Grade4Membership>
+        <Grade5Membership>0</Grade5Membership>
+        <Grade6Membership>240</Grade6Membership>
+        <Grade7Membership>269</Grade7Membership>
+        <Grade8Membership>256</Grade8Membership>
+        <Grade9Membership>0</Grade9Membership>
+        <Grade10Membership>0</Grade10Membership>
+        <Grade11Membership>0</Grade11Membership>
+        <Grade12Membership>0</Grade12Membership>
+        <TotalEnrolled>765</TotalEnrolled>
+        <APIDecile>0</APIDecile>
+      </School>
+      <School>
+        <SchoolName>UNIVERSITY HIGH SCHOOL                            </SchoolName>
+        <Distance>.48</Distance>
+        <SchoolAddress>421 N ARCADIA AVENUE          </SchoolAddress>
+        <SchoolCity>TUCSON                        </SchoolCity>
+        <SchoolState>AZ</SchoolState>
+        <SchoolZip>85711</SchoolZip>
+        <SchoolZip4>    </SchoolZip4>
+        <SchoolPhone>520-232-5903</SchoolPhone>
+        <LowestGrade>Grade 9</LowestGrade>
+        <HighestGrade>Grade 12</HighestGrade>
+        <StudentTeacherRatio>1:19.8</StudentTeacherRatio>
+        <Administrators>N/A</Administrators>
+        <KindergartenMembership>0</KindergartenMembership>
+        <Grade1Membership>0</Grade1Membership>
+        <Grade2Membership>0</Grade2Membership>
+        <Grade3Membership>0</Grade3Membership>
+        <Grade4Membership>0</Grade4Membership>
+        <Grade5Membership>0</Grade5Membership>
+        <Grade6Membership>0</Grade6Membership>
+        <Grade7Membership>0</Grade7Membership>
+        <Grade8Membership>0</Grade8Membership>
+        <Grade9Membership>177</Grade9Membership>
+        <Grade10Membership>165</Grade10Membership>
+        <Grade11Membership>137</Grade11Membership>
+        <Grade12Membership>155</Grade12Membership>
+        <TotalEnrolled>634</TotalEnrolled>
+        <APIDecile>0</APIDecile>
+      </School>
+    </Schools>
+    <SchoolDistrict>
+      <DistrictName>TUCSON UNIFIED DISTRICT                                     </DistrictName>
+      <DistrictAddress>1010 E. 10TH ST.              </DistrictAddress>
+      <DistrictCity>TUCSON                        </DistrictCity>
+      <DistrictState>AZ</DistrictState>
+      <DistrictZip>85719</DistrictZip>
+      <DistrictZip4 />
+      <DistrictPhone>520-225-6000</DistrictPhone>
+      <GradeSpan>PK-12</GradeSpan>
+      <StudentTeacherRatio>18:1</StudentTeacherRatio>
+      <TotalEnrollment>61,958</TotalEnrollment>
+      <NumOfGraduates>3,309</NumOfGraduates>
+      <NumOfTeachers>3,450</NumOfTeachers>
+      <NumOfTeachersAids>850</NumOfTeachersAids>
+      <NumOfGuidanceCounselors>148</NumOfGuidanceCounselors>
+      <NumOfAdministrators>196</NumOfAdministrators>
+      <NumOfSchools>125</NumOfSchools>
+    </SchoolDistrict>
+  </PublicSchoolsReport>
+  <PrivateSchoolsReport>
+    <Schools>
+      <School>
+        <Affiliation>Roman Catholic</Affiliation>
+        <Gender>Coed</Gender>
+        <SchoolName>ST JOSEPH CATHOLIC SCHOOL</SchoolName>
+        <Distance>.93</Distance>
+        <SchoolAddress>215 S CRAYCROFT ROAD</SchoolAddress>
+        <SchoolCity>TUCSON</SchoolCity>
+        <SchoolState>AZ</SchoolState>
+        <SchoolZip>85711</SchoolZip>
+        <SchoolZip4>3821</SchoolZip4>
+        <SchoolPhone>520-747-3060</SchoolPhone>
+        <LowestGrade>Kindergarten</LowestGrade>
+        <HighestGrade>Grade 8</HighestGrade>
+        <StudentTeacherRatio>1:21.4</StudentTeacherRatio>
+        <Administrators>21.8</Administrators>
+        <PreschoolMembership>0</PreschoolMembership>
+        <KindergartenMembership>52</KindergartenMembership>
+        <Grade1Membership>38</Grade1Membership>
+        <Grade2Membership>54</Grade2Membership>
+        <Grade3Membership>52</Grade3Membership>
+        <Grade4Membership>50</Grade4Membership>
+        <Grade5Membership>57</Grade5Membership>
+        <Grade6Membership>48</Grade6Membership>
+        <Grade7Membership>53</Grade7Membership>
+        <Grade8Membership>63</Grade8Membership>
+        <Grade9Membership>0</Grade9Membership>
+        <Grade10Membership>0</Grade10Membership>
+        <Grade11Membership>0</Grade11Membership>
+        <Grade12Membership>0</Grade12Membership>
+        <TotalEnrolled>467</TotalEnrolled>
+      </School>
+      <School>
+        <Affiliation>Jewish</Affiliation>
+        <Gender>Coed</Gender>
+        <SchoolName>ANSHEI ISRAEL PRESCHOOL AND KINDERGARTEN</SchoolName>
+        <Distance>1.12</Distance>
+        <SchoolAddress>5550 E 5TH STREET</SchoolAddress>
+        <SchoolCity>TUCSON</SchoolCity>
+        <SchoolState>AZ</SchoolState>
+        <SchoolZip>85711</SchoolZip>
+        <SchoolZip4>2416</SchoolZip4>
+        <SchoolPhone>520-745-5550</SchoolPhone>
+        <LowestGrade>Prekindergarten</LowestGrade>
+        <HighestGrade>Kindergarten</HighestGrade>
+        <StudentTeacherRatio>1:1.0</StudentTeacherRatio>
+        <Administrators>18.4</Administrators>
+        <PreschoolMembership>87</PreschoolMembership>
+        <KindergartenMembership>19</KindergartenMembership>
+        <Grade1Membership>0</Grade1Membership>
+        <Grade2Membership>0</Grade2Membership>
+        <Grade3Membership>0</Grade3Membership>
+        <Grade4Membership>0</Grade4Membership>
+        <Grade5Membership>0</Grade5Membership>
+        <Grade6Membership>0</Grade6Membership>
+        <Grade7Membership>0</Grade7Membership>
+        <Grade8Membership>0</Grade8Membership>
+        <Grade9Membership>0</Grade9Membership>
+        <Grade10Membership>0</Grade10Membership>
+        <Grade11Membership>0</Grade11Membership>
+        <Grade12Membership>0</Grade12Membership>
+        <TotalEnrolled>106</TotalEnrolled>
+      </School>
+      <School>
+        <Affiliation>Lutheran Church - Missouri Synod</Affiliation>
+        <Gender>Coed</Gender>
+        <SchoolName>FAITH LUTHERAN SCHOOL</SchoolName>
+        <Distance>1.23</Distance>
+        <SchoolAddress>3925 E 5TH STREET</SchoolAddress>
+        <SchoolCity>TUCSON</SchoolCity>
+        <SchoolState>AZ</SchoolState>
+        <SchoolZip>85711</SchoolZip>
+        <SchoolZip4>1953</SchoolZip4>
+        <SchoolPhone>520-881-0670</SchoolPhone>
+        <LowestGrade>Prekindergarten</LowestGrade>
+        <HighestGrade>Grade 6</HighestGrade>
+        <StudentTeacherRatio>1:8.8</StudentTeacherRatio>
+        <Administrators>4</Administrators>
+        <PreschoolMembership>16</PreschoolMembership>
+        <KindergartenMembership>6</KindergartenMembership>
+        <Grade1Membership>4</Grade1Membership>
+        <Grade2Membership>6</Grade2Membership>
+        <Grade3Membership>4</Grade3Membership>
+        <Grade4Membership>5</Grade4Membership>
+        <Grade5Membership>4</Grade5Membership>
+        <Grade6Membership>6</Grade6Membership>
+        <Grade7Membership>0</Grade7Membership>
+        <Grade8Membership>0</Grade8Membership>
+        <Grade9Membership>0</Grade9Membership>
+        <Grade10Membership>0</Grade10Membership>
+        <Grade11Membership>0</Grade11Membership>
+        <Grade12Membership>0</Grade12Membership>
+        <TotalEnrolled>51</TotalEnrolled>
+      </School>
+      <School>
+        <Affiliation>Seventh-Day Adventist</Affiliation>
+        <Gender>Coed</Gender>
+        <SchoolName>DESERT VALLEY CHRISTIAN SCHOOL</SchoolName>
+        <Distance>1.27</Distance>
+        <SchoolAddress>1200 N SANTA ROSA AVENUE</SchoolAddress>
+        <SchoolCity>TUCSON</SchoolCity>
+        <SchoolState>AZ</SchoolState>
+        <SchoolZip>85712</SchoolZip>
+        <SchoolZip4>4750</SchoolZip4>
+        <SchoolPhone>520-795-0161</SchoolPhone>
+        <LowestGrade>Kindergarten</LowestGrade>
+        <HighestGrade>Grade 7</HighestGrade>
+        <StudentTeacherRatio>1:7.5</StudentTeacherRatio>
+        <Administrators>2</Administrators>
+        <PreschoolMembership>0</PreschoolMembership>
+        <KindergartenMembership>1</KindergartenMembership>
+        <Grade1Membership>5</Grade1Membership>
+        <Grade2Membership>1</Grade2Membership>
+        <Grade3Membership>3</Grade3Membership>
+        <Grade4Membership>0</Grade4Membership>
+        <Grade5Membership>2</Grade5Membership>
+        <Grade6Membership>2</Grade6Membership>
+        <Grade7Membership>1</Grade7Membership>
+        <Grade8Membership>0</Grade8Membership>
+        <Grade9Membership>0</Grade9Membership>
+        <Grade10Membership>0</Grade10Membership>
+        <Grade11Membership>0</Grade11Membership>
+        <Grade12Membership>0</Grade12Membership>
+        <TotalEnrolled>15</TotalEnrolled>
+      </School>
+      <School>
+        <Affiliation>Episcopal</Affiliation>
+        <Gender>Coed</Gender>
+        <SchoolName>TULLER SCHOOL</SchoolName>
+        <Distance>1.44</Distance>
+        <SchoolAddress>5870 EAST 14TH STREET</SchoolAddress>
+        <SchoolCity>TUCSON</SchoolCity>
+        <SchoolState>AZ</SchoolState>
+        <SchoolZip>85711</SchoolZip>
+        <SchoolZip4>4506</SchoolZip4>
+        <SchoolPhone>520-747-1142</SchoolPhone>
+        <LowestGrade>Kindergarten</LowestGrade>
+        <HighestGrade>Grade 8</HighestGrade>
+        <StudentTeacherRatio>1:5.1</StudentTeacherRatio>
+        <Administrators>7</Administrators>
+        <PreschoolMembership>0</PreschoolMembership>
+        <KindergartenMembership>4</KindergartenMembership>
+        <Grade1Membership>3</Grade1Membership>
+        <Grade2Membership>3</Grade2Membership>
+        <Grade3Membership>4</Grade3Membership>
+        <Grade4Membership>4</Grade4Membership>
+        <Grade5Membership>6</Grade5Membership>
+        <Grade6Membership>4</Grade6Membership>
+        <Grade7Membership>2</Grade7Membership>
+        <Grade8Membership>6</Grade8Membership>
+        <Grade9Membership>0</Grade9Membership>
+        <Grade10Membership>0</Grade10Membership>
+        <Grade11Membership>0</Grade11Membership>
+        <Grade12Membership>0</Grade12Membership>
+        <TotalEnrolled>36</TotalEnrolled>
+      </School>
+      <School>
+        <Affiliation>Nonsectarian</Affiliation>
+        <Gender>Coed</Gender>
+        <SchoolName>ST MARK'S PRESBYTERIAN PRESCHOOL AND KINDERGARTEN</SchoolName>
+        <Distance>1.49</Distance>
+        <SchoolAddress>3809 E 3RD STREET</SchoolAddress>
+        <SchoolCity>TUCSON</SchoolCity>
+        <SchoolState>AZ</SchoolState>
+        <SchoolZip>85716</SchoolZip>
+        <SchoolZip4>4611</SchoolZip4>
+        <SchoolPhone>520-325-1510</SchoolPhone>
+        <LowestGrade>Prekindergarten</LowestGrade>
+        <HighestGrade>Kindergarten</HighestGrade>
+        <StudentTeacherRatio>1:9.0</StudentTeacherRatio>
+        <Administrators>2</Administrators>
+        <PreschoolMembership>112</PreschoolMembership>
+        <KindergartenMembership>18</KindergartenMembership>
+        <Grade1Membership>0</Grade1Membership>
+        <Grade2Membership>0</Grade2Membership>
+        <Grade3Membership>0</Grade3Membership>
+        <Grade4Membership>0</Grade4Membership>
+        <Grade5Membership>0</Grade5Membership>
+        <Grade6Membership>0</Grade6Membership>
+        <Grade7Membership>0</Grade7Membership>
+        <Grade8Membership>0</Grade8Membership>
+        <Grade9Membership>0</Grade9Membership>
+        <Grade10Membership>0</Grade10Membership>
+        <Grade11Membership>0</Grade11Membership>
+        <Grade12Membership>0</Grade12Membership>
+        <TotalEnrolled>130</TotalEnrolled>
+      </School>
+      <School>
+        <Affiliation>Roman Catholic</Affiliation>
+        <Gender>Coed</Gender>
+        <SchoolName>ST CYRIL ELEMENTARY SCHOOL</SchoolName>
+        <Distance>1.62</Distance>
+        <SchoolAddress>4725 E PIMA STREET</SchoolAddress>
+        <SchoolCity>TUCSON</SchoolCity>
+        <SchoolState>AZ</SchoolState>
+        <SchoolZip>85712</SchoolZip>
+        <SchoolZip4>3520</SchoolZip4>
+        <SchoolPhone>520-881-4240</SchoolPhone>
+        <LowestGrade>Kindergarten</LowestGrade>
+        <HighestGrade>Grade 8</HighestGrade>
+        <StudentTeacherRatio>1:19.6</StudentTeacherRatio>
+        <Administrators>19.3</Administrators>
+        <PreschoolMembership>0</PreschoolMembership>
+        <KindergartenMembership>37</KindergartenMembership>
+        <Grade1Membership>44</Grade1Membership>
+        <Grade2Membership>37</Grade2Membership>
+        <Grade3Membership>38</Grade3Membership>
+        <Grade4Membership>46</Grade4Membership>
+        <Grade5Membership>41</Grade5Membership>
+        <Grade6Membership>46</Grade6Membership>
+        <Grade7Membership>46</Grade7Membership>
+        <Grade8Membership>44</Grade8Membership>
+        <Grade9Membership>0</Grade9Membership>
+        <Grade10Membership>0</Grade10Membership>
+        <Grade11Membership>0</Grade11Membership>
+        <Grade12Membership>0</Grade12Membership>
+        <TotalEnrolled>379</TotalEnrolled>
+      </School>
+      <School>
+        <Affiliation>Christian (no specific denomination)</Affiliation>
+        <Gender>Coed</Gender>
+        <SchoolName>PALO VERDE CHRISTIAN SCHOOL</SchoolName>
+        <Distance>2.49</Distance>
+        <SchoolAddress>2151 N PALO VERDE BLVD</SchoolAddress>
+        <SchoolCity>TUCSON</SchoolCity>
+        <SchoolState>AZ</SchoolState>
+        <SchoolZip>85716</SchoolZip>
+        <SchoolZip4>2920</SchoolZip4>
+        <SchoolPhone>520-327-6683</SchoolPhone>
+        <LowestGrade>Kindergarten</LowestGrade>
+        <HighestGrade>Grade 8</HighestGrade>
+        <StudentTeacherRatio>1:7.9</StudentTeacherRatio>
+        <Administrators>12.8</Administrators>
+        <PreschoolMembership>0</PreschoolMembership>
+        <KindergartenMembership>6</KindergartenMembership>
+        <Grade1Membership>12</Grade1Membership>
+        <Grade2Membership>8</Grade2Membership>
+        <Grade3Membership>11</Grade3Membership>
+        <Grade4Membership>18</Grade4Membership>
+        <Grade5Membership>9</Grade5Membership>
+        <Grade6Membership>11</Grade6Membership>
+        <Grade7Membership>10</Grade7Membership>
+        <Grade8Membership>16</Grade8Membership>
+        <Grade9Membership>0</Grade9Membership>
+        <Grade10Membership>0</Grade10Membership>
+        <Grade11Membership>0</Grade11Membership>
+        <Grade12Membership>0</Grade12Membership>
+        <TotalEnrolled>101</TotalEnrolled>
+      </School>
+    </Schools>
+  </PrivateSchoolsReport>
+</XML187>

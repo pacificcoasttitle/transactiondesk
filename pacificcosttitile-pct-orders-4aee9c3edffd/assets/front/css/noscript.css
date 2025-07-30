@@ -1,0 +1,140 @@
+/***** No Script Stylesheet *****/
+#mainmenu li:hover ul{
+display:block;		
+}
+
+
+
+/*nitin*/
+a:hover
+{
+	cursor: pointer;
+}
+.user-table
+{
+	width: 100% !important;
+	border:0px solid #a4a4a4;
+	margin-bottom: initial;
+}
+.user-table-wrapper
+{
+	overflow-y:scroll;
+	padding-top:20px;
+	max-height: 600px;
+	margin-bottom: 50px;
+	border-collapse: collapse;
+	border: 1px solid #a4a4a4;
+}
+section#content-wrapper {
+    min-height: 500px;
+}
+.user-table-wrapper td
+{
+	text-align: center;
+}
+.user-table-wrapper::-webkit-scrollbar {
+    width:5px;
+}
+ 
+.user-table-wrapper::-webkit-scrollbar-track {
+   background-color: #ccc;
+}
+ 
+.user-table-wrapper::-webkit-scrollbar-thumb {
+  background-color: #05415b;
+}
+
+.user-table a,select
+{
+	margin-bottom:initial;
+}
+.user-table th
+{	
+	background-color: #05415b;
+	font-size: 16px;
+	text-align: center;
+	border:0px solid #a4a4a4;
+}
+.user-table tr
+{
+	border:1px solid #a4a4a4;
+	border-collapse: collapse;
+}
+.user-table td
+{
+	padding: 8px !important;
+	text-align: center;
+	color:#646464 !important;
+}
+/* Tables */
+.table th:first-child,
+.table td:first-child {
+  padding-left: 20px;
+}
+
+.table-type-1 {
+  border-bottom: 1px solid #eee;
+}
+
+.table-type-1 > thead > tr > th {
+  padding-top: 30px;
+  padding-bottom: 22px;
+  border-bottom-color: #3890d7;
+  background-color: #f4f4f4;
+}
+
+.table-type-3 > thead > tr > th {
+  padding-top: 26px;
+  padding-bottom: 25px;
+}
+
+.table-type-3 > tbody > tr > td {
+  border: 1px solid #eee;
+    padding: 18px 29px 16px;
+    line-height: 1;
+    border-top: 1px solid #eee;
+}
+.table-type-3 > tbody > tr > td.cell {
+  border: 1px solid #eee;
+    padding: 18px 29px 16px;
+    line-height: 1;
+    vertical-align: middle;
+    border-top: 1px solid #eee;
+}
+
+.table-type-3 > thead:first-child > tr:first-child > th {
+  border-top: 1px solid #eee;
+  border-right: 1px solid #eee;
+  border-bottom-width: 4px;
+  border-left: 1px solid #eee;
+  text-align: center;
+  font-size:12px;
+}
+
+/* Tabular scrolling for mobile devices */
+.table-container {
+  overflow-y: auto;
+  width: 100%;
+  _overflow: auto;
+}
+
+.table-container::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+  -webkit-appearance: none;
+}
+
+.table-container::-webkit-scrollbar-thumb {
+  border: 3px solid #fff;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.table tr td {
+	vertical-align:middle;
+}
+.button.small2 {
+    font-size: 12px;
+    padding: 12px 15px;
+    height: 34px;
+}
+

@@ -1,0 +1,181 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.size_a4 { width: 8.3in; height: 11.7in; }
+.size_letter { width: 8.5in; height: 11in; }
+.size_executive { width: 7.25in; height: 10.5in; }
+.pdf_page {
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #333;
+    position: relative;
+}
+.pdf_header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: url(/assets/sales_snap_shot/GenericBG-Logo.jpg) no-repeat;
+    background-size: cover;
+    padding: 40px;
+    height: 205px;
+    background-position: center;
+}
+.pacific_logo {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 230px;
+}
+.pdf_header h1{
+    font-size: 50px;
+    font-weight: 900;
+    color: #fff;
+    margin: 0;
+    line-height: 60px;
+}
+.overview_text{
+    font-size: 32px;
+    font-weight: 500;
+    color: #fff;
+}
+.santa_monica {
+    font-size: 32px;
+    font-weight: 700;
+    color: #f26a2a;
+    margin-top: 20px;
+}
+.pdf_footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 10px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+}
+.pdf_footer p{
+    margin: 0;
+}
+.page_text{
+    float: right;
+}
+.page_title{
+    float: left;
+}
+.pdf_body {
+    position: absolute;
+    top: 255px;
+    bottom: 1.2in;
+    left: 0;
+    right: 0;
+}
+.grid{
+    margin-bottom: 10px;
+}
+.grid::after{
+    display: table;
+    content: '';
+    width: 100%;
+}
+.grid > div {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+.grid > div img {
+    width: 60px;
+}
+.grid h4 {
+    font-size: 16px;
+    color: #0a2a3d;
+    font-weight: 500;
+    margin: 5px 0;
+}
+.count {
+    font-size: 24px;
+    font-weight: 900;
+    color: #0a2a3d;
+    text-align: center;
+    line-height: 24px;
+    font-family: 'Poppins', sans-serif;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+table th {
+    color: #717171;
+    font-weight: 500;
+    font-size: 15px;
+    border-bottom: 4px solid #9ba4aa;
+    padding-bottom: 5px;
+}
+table td {
+    font-size: 15px;
+    color: #717171;
+    font-weight: 500;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 2px 0;
+    border-bottom: 2px solid #ccd1d4;
+}
+table tr:last-child td{
+    border-bottom: 4px solid #9ba4aa;
+}
+table td:first-child{
+    text-align: left;
+    font-weight: bold;
+    color: #f26a2a;
+    font-family: 'Montserrat', sans-serif;
+}
+.media-object img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #8dc9ff;
+    margin-right: 15px;
+}
+.media-object > *{
+    float: left;
+}
+.zoe-name {
+    color: #04415d;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.occupation {
+    color: #d35400;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+.contact-detail a {
+    color: #04415d;
+    text-decoration: none;
+    font-weight: 700;
+    display: block;
+    font-size: 18px;
+}
+.sales-price {
+    float: right;
+    color: #717171;
+    font-weight: 400;
+    font-family: Arial;
+    text-align: right;
+    line-height: 20px;
+    font-size: 17px;
+    margin-top: 35px;
+}
+.monthly_conatiner  {
+    padding: 0px 30px 0px 30px;
+}

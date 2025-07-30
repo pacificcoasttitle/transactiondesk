@@ -1,0 +1,1023 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head id="Head1"><meta charset="UTF-8" /><link href="/DefaultContent/Default/bootstrap.min.css" rel="stylesheet"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" /><title>
+	
+    County Recorder | Mendocino County, CA
+
+</title>
+    <script type="text/javascript">
+        //script for making "view full site" button work on mobile devices 
+        function getCookie(c_name) {
+            var i, x, y, ARRcookies = document.cookie.split(";");
+            for (i = 0; i < ARRcookies.length; i++) {
+                x = ARRcookies[i].substr(0, ARRcookies[i].indexOf("="));
+                y = ARRcookies[i].substr(ARRcookies[i].indexOf("=") + 1);
+                x = x.replace(/^\s+|\s+$/g, "");
+                if (x == c_name) {
+                    return unescape(y);
+                }
+            }
+        }
+
+        function setCookie(c_name, value, exdays) {
+            var exdate = new Date();
+            exdate.setDate(exdate.getDate() + exdays);
+            var c_value = escape(value) + ((exdays == null) ? "" : "; expires=" + exdate.toUTCString());
+            c_value = (window.location.protocol == 'https:') ? c_value + "; secure" : c_value;
+            document.cookie = c_name + "=" + c_value;
+        }
+
+        var isResponsive = getCookie('ISRESPONSIVE');
+        if (isResponsive != "no" && isResponsive != "yes") {
+            setCookie('ISRESPONSIVE', 'yes', 7);
+            document.write('<meta name="viewport" content="width=device-width" />');
+            isResponsive = 'yes';
+        } else {
+            if (isResponsive == "no") {
+                document.write('<meta name="viewport" content="width=980" />');
+            }
+            else {
+                document.write('<meta name="viewport" content="width=device-width" />');
+            }
+        }
+    </script>
+
+    <link href="/DefaultContent/Default/StyleBundleDesignTheme.cssbnd?v=Qy4FEDnSuqgYP0kXBAdLI8TSriWt_DeV6Q1j5oN8tZA1" rel="stylesheet"/>
+<link href="/Project/Contents/Main/StyleBundleDesignTheme.cssbnd?v=f6zZ_xJ5e0utEhjCU7uURSi9BEKpVsVHNCni9qHy5n81" rel="stylesheet"/>
+<link href="/Areas/Admin/Content/StyleBundleFrontendExtra.cssbnd?v=-cG6bfciEzyG0pVpDdXAbInOUnqKuoiK61z7_e6NMxo1" rel="stylesheet"/>
+<link href="/DefaultContent/Default/Print.cssbnd?v=47rmsGcOk4CIHfb2HDg7t9s31eiFEWHej5QI1ytFlII1" rel="stylesheet" media="print" />
+<link href="/Project/Contents/Main/Print.cssbnd?v=TOidz400LrsqWm9X0h1j2yHFdK8TX3A8RyiCqXZ-yCg1" rel="stylesheet" media="print" />
+<link href="/DefaultContent/Default/kendo/StyleBundleKendo.cssbnd?v=xST1bsl5yknXpl9jp1HsezLGTLBh6mO_aQWPARk7ONM1" rel="stylesheet"/>
+<script src="/Scripts/ScriptBundleFAllInOne.jsbnd?v=2ow9ur3k1MGEtzCs1H51pp-FEILBG8DzHvoK8dTGSnQ1"></script>
+
+<script>
+    function handleExternalURL() { };
+</script>
+<script>window.visionOptions = {virtualApplicationPath:'/',logOnPath:'Admin/LogOn',logOffPath:'Admin/LogOff',enableSessionTimeout:false,sessionTimeoutInMinutes:60,timeToAlertBeforeSessionTimeoutInMinutes:5,extendSessionTimeoutPath:'Admin/Account/ExtendSessionTimeout',mainFolderPath:'/Project/Contents/Main/',centerLocation:'Mendocino County, CA', siteID:1, navigationID:75, isHomePage:false, emergencyNoticeChanged:false, loggedIn:false, showTopTips:true, currentDesignFolderPath:'/Project/Contents/Main/', useDesignThemFontSizeCss:false , clientResponsiveTableEnabled:true, imageUrl:'/Home/ShowImage?id=', engagementAdminEndPoint:'/Admin/Engagement/', visionLiveAdminEndPoint:'/Admin/Components/', cmsAdminEndPoint:'/Admin/', enableSplashUrl:false };;window.visionApps={"cms_core":{"DateFormat":"MM/dd/yyyy","TimeFormat":"h:mm tt","PhoneFormat":"(999) 999-9999","OrganizationName":"Mendocino County, CA","TimeAMFormat":"AM","TimePMFormat":"PM","GoogleReCaptchaPublicKey":"6Lcs8CIUAAAAAB04mqgyrxSt9LqtO9kE6mQAZBn9","GoogleReCaptchaPrivateKey":"6Lcs8CIUAAAAAF4QS5ygM-Gu6Dzy44iMFFdcjFEg"}};;window.visionApps.token="eyJhbGciOiJBMjU2S1ciLCJlbmMiOiJBMjU2Q0JDLUhTNTEyIiwiayI6IkZSdE5CQmIvNHFaRUErNXVvRVVoTmc9PSJ9.8iXg_pOrqCRZk3ZnfDeLv9EBBQPwP2GuNMviVmy7M7NSK9lXfKw7PiZwYbetGtJeCrxgeYy6G3HlGhjaw6VEoKP7xrjXQt1k.Uk77rFuWpSpRbEvEtGtf9Q.2Z1m-ejwxx-tCHe0P86dZIGkHCjXIwCl9bZ-AIqzFNLOXXsrfa5gw9AUPozam0MJlOegdNnXmrRqXXY0tmlFv3w2TFiQblSoWAKE5tR8-DR6CEIjHNy6rsknL0V9btxyYuLuO0ySUh-As4ZIBk1dCH1V-eS45MhTUz_t2FhFOXygVfRk4pClZ_gDLlAOr-2IBcbP71kU5wM7SYtohwgQMrMHOw8xsjbEb8OGVQ6Xa00.pkdV2SvCSkOAiglzAKc5IPS-Q9pZSWsvCCBCxS5ERbY";</script>
+
+    <script type="text/javascript">
+        // added the htmlEncode and htmlDecode method to fixed the js load order issue.
+        $.extend($, {
+            htmlEncode: function (html) {
+                var temp = document.createElement("div");
+                (temp.textContent != undefined) ? (temp.textContent = html) : (temp.innerText = html);
+                var output = temp.innerHTML;
+                temp = null;
+                return output;
+            },
+            htmlDecode: function (text) {
+                var temp = document.createElement("div");
+                temp.innerHTML = text;
+                var output = temp.innerText || temp.textContent;
+                temp = null;
+                return output;
+            }
+        });
+
+        //script for view full site button, placed here to keep firefox for mobile devices happy
+        $(function () {
+            var viewFullElement = document.getElementById("view-full");
+            if (viewFullElement) {
+                if (isResponsive == "yes") {
+                    viewFullElement.className = 'mobile_only fullsite';
+                }
+                else {
+                    viewFullElement.innerHTML = 'View Mobile Optimized';
+                    viewFullElement.className = '';
+                }
+            }
+        });
+    </script>
+    
+
+    <!--[if lt IE 9]>
+        <script src="/Scripts/ScriptBundleOthers.jsbnd?v=3Q7FhTQfRrKx8h7Kvdbh9bBluzlNlXKsFAERd4g8_TY1"></script>
+
+	<![endif]-->
+
+    
+    <link id="active_font" rel="stylesheet" type="text/css" href="/Project/Contents/Main/x-small.css">
+    
+    <link rel="Shortcut Icon" href="/favicon.ico" />
+
+    
+    
+
+<!-- Google Universal Analytics -->
+<script type="text/javascript">
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-21199597-1', 'auto');
+    ga('require', 'displayfeatures');
+    //TFS 21771, Enhanced Link Attribution, https://developers.google.com/analytics/devguides/collection/analyticsjs/enhanced-link-attribution
+    ga('require', 'linkid'); 
+    ga('set', 'dimension1', 'County Recorder, ID:75');
+    ga('set', 'dimension2', '2018');
+    ga('send', 'pageview');
+</script>
+<!-- End Google Universal Analytics -->
+
+      
+    
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    
+<script>
+
+    $(window).load(function () {
+        $('.home_news ul li > a img').each(function () {
+            $(this).closest("li").addClass('hasimage');
+        });
+
+        //$('.search-trigger').click(function () {
+        //    $('#siteheader').addClass('searchactive');
+        //    $('.icon_close').fadeIn();
+        //    $('#headercolumn .search_container').fadeIn();
+        //    $('.search-trigger').css("visibility", "hidden");
+        //    $('.home_popular').fadeIn();
+        //})
+
+        //$('.icon_close').click(function (e) {
+
+        //    e.preventDefault();
+        //    $('#siteheader').removeClass('searchactive');
+        //    $('.icon_close').fadeOut();
+        //    $('#headercolumn .search_container').fadeOut();
+        //    $('.search-trigger').css("visibility", "visible");
+        //    $('.home_popular').fadeOut();
+        //})
+
+
+        $(document).ready(function () {
+            $(".search-trigger").click(function () {
+                $(".search_container").fadeIn();
+                $(".search_overlay").fadeIn();
+                $("body").addClass('search_isActive');
+            })
+            $(".icon_close").click(function () {
+                $(".search_container").hide();
+                $(".search_overlay").hide();
+                $("body").removeClass('search_isActive');
+            })
+
+        });
+
+        $('#headercolumn').find('#search_text').on('focus', function () {
+
+            if ($(window).width() < 767) {
+                $('.home_popular').fadeIn();
+            } else {
+                $('.home_popular').fadeIn();
+            }
+
+        })
+
+
+
+        $('.weather-trigger').click(function (e) {
+
+            e.preventDefault();
+            $('.weather_container').fadeToggle(400);
+
+        })
+
+        $(".arrow_trigger").click(function () {
+
+            $(".slide_caption").toggleClass("opened");
+            $(this).toggleClass("opened");
+        });
+    });
+
+</script>
+<meta name="google-site-verification" content="K0HTnZlrL4-Abyl2510tmrZ6U4WV28qFhlxyVf0SjJA" /></head>
+
+<body class="front_end_body site_standardsitetemplate ">
+    <link href="/DefaultContent/Default/StyleBundleAngularLib.cssbnd?v=sED2Qjf38ysQJYZW_ZvZj-7IGXKm4NOJhdA51oOtG5A1" rel="stylesheet"/>
+
+<script src="/Scripts/ScriptBundleAngularLib.jsbnd?v=mKEpkTe3Xh97QKqIC8bYZcZcx39z5ppgmuHcH22MDes1"></script>
+
+
+<script>
+    (function (window, angular) {
+        
+        $("body").attr("ng-app", "vi.cms");
+        
+        window.viCurrentModule = angular.module("vi.cms", []);
+    })(window, angular)
+</script>
+
+<script>
+    window.frontendCommonConfig = {
+        loginPage: 'https://www.mendocinocounty.org/sys/sso/login',
+        photoBaseUrlForPeople: 'https://www.mendocinocounty.org/sys/sso/ShowProfilePhoto?id=',
+        photoBaseUrl: 'https://www.mendocinocounty.org/Home/ShowImage?id=',
+        token: window.visionApps ? window.visionApps.token : '',
+        cmsUserLogged: false,
+        anonymousAvatar: 'https://www.mendocinocounty.org/DefaultContent/Default/_gfx/anonymous.png',
+        loginUser: {
+            name: '',
+            avatar: '',
+            userID: null,
+            firstName: '',
+            lastName: '',
+            imageID: null,
+            email: '',
+        }
+    };
+
+</script>
+    
+    <script src="/Scripts/frontendCoreBundle.jsbnd?v=MRJchHgeI1CDy2b7x6CDIQeS1r9s9Q3xMr2xjS1cFIQ1"></script>
+
+
+    
+    <!--stopindex-->
+    <noscript>
+        <div class="noscript_alert"><span>Please enable JavaScript in your browser for a better user experience.</span></div>
+    </noscript>
+    <!--startindex-->
+    <div class="vi-temp-message-container" style="display:none;"></div>
+
+
+    
+    
+
+<div class="sitewrapper site_template mainSpan_wrapper">
+    <div class="mainSpan" id="mainSpan_wrapper_Screen">
+        <!--stopindex-->
+        <div id="skipnav">
+            <a href="#sitebody">
+                <img alt="Skip to page body" src="/DefaultContent/Default/_gfx/spacer.gif" /></a>
+            
+            <a title="Home" href="/home">
+                <img alt="Home" src="/DefaultContent/Default/_gfx/spacer.gif" /></a>
+            
+            <a title="Services" href="/services">
+                <img alt="Services" src="/DefaultContent/Default/_gfx/spacer.gif" /></a>
+            
+            <a title="Government" href="/government">
+                <img alt="Government" src="/DefaultContent/Default/_gfx/spacer.gif" /></a>
+            
+            <a title="Community" href="/community">
+                <img alt="Community" src="/DefaultContent/Default/_gfx/spacer.gif" /></a>
+            
+            <a title="Business" href="/business">
+                <img alt="Business" src="/DefaultContent/Default/_gfx/spacer.gif" /></a>
+            
+            <a title="How Do I..." href="/how-do-i-">
+                <img alt="How Do I..." src="/DefaultContent/Default/_gfx/spacer.gif" /></a>
+            
+        </div>
+        <!--startindex-->
+
+        <header id="siteheader" class="">
+            <!--stopindex-->
+			<h1 class="wcag_only">Mendocino County, CA</h1>
+            <a id="home_link" href="/home">Home</a>
+            
+            <a class="menu_trigger mobile_only" href="javascript:void(0);">Menu</a>
+            
+            <!--startindex-->
+            
+<div id="headercolumn" class="site_template_column  header_column   " >
+
+                <!--stopindex-->
+                
+<div id="top_nav">
+		<a href="/how-do-i/pay-my-taxes" target="_self">Property Taxes</a>
+		<a href="/how-do-i/pay-online" target="_self">Pay Online</a>
+		<a href="/government/human-resources/join-our-team/county-employment" target="_self">Jobs</a>
+		<a href="/services/permits-and-licenses" target="_self">Permits & Licenses</a>
+		<a href="/services/business-directory" target="_self">Contact Us</a>
+		<a href="/government/executive-office/information-services/sb-272" target="_self">SB 272</a>
+		<a href="https://mendocino.legistar.com/Calendar.aspx" target="_self">Agendas & Minutes</a>
+</div>
+                <!--startindex-->
+            
+
+                <!--stopindex-->
+                
+<a href="javascript:void(0);" class="weather-trigger hidden-xs">F°</a>
+<div class="weather_container">
+    <a href="https://www.yahoo.com/news/weather/united-states/california/fort-bragg-2405607/" title="Partly Cloudy">
+        <span>Fort Bragg</span>
+        <img src="https://s.yimg.com/zz/combo?/a/i/us/we/52/30.gif" alt="" />
+        <span>51&deg;</span>
+    </a>
+    <a id="jsWeather2" href="https://www.yahoo.com/news/weather/united-states/california/ukiah-2509496/" target="_blank" title="Ukiah">
+        
+    </a>
+</div>
+
+<script>
+  var callbackWeatherFunc = function(data) {
+    var channel = data.query.results.channel;
+    var weatherDom = [];
+    weatherDom.push("<span>Ukiah</span>");
+    weatherDom.push("<img src=\"https://s.yimg.com/zz/combo?/a/i/us/we/52/" + channel.item.condition.code + ".gif\" alt=\"weather icon\" />");
+    weatherDom.push("<span>" + parseFloat(channel.item.condition.temp).toFixed(0) + "°" + "</span> ");
+    
+    $("#jsWeather2").html(weatherDom.join(""));
+  };
+</script>
+<div id="jsWeather">
+</div>
+<script src="//query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid = 2509496&format=json&callback=callbackWeatherFunc"></script>
+
+                <!--startindex-->
+            
+
+                <!--stopindex-->
+                
+<a href="javascript:void(0);" class="search-trigger hidden-xs">Search</a>
+<div class="search_overlay"></div>
+<div class="search_container" style="display:none;">
+    <span class="icon_close">close</span>
+    <div class="search_block">
+	    <div id="searchbox" class="clearfix">
+		<label style="display: none;" for="search_text">Search</label>
+		<input type="text" title="Search..."  id="search_text" placeholder="I AM LOOKING FOR..."/>		
+		<a href="javascript:void(0);">Go</a>
+	</div>
+        <div class="home_popular clearfix">
+        <ul>
+				<li><a href="/services/advanced-components/search/?q=Calendar">Calendar</a></li>
+				<li><a href="/services/advanced-components/search/?q=Employment">Employment</a></li>
+				<li><a href="/services/advanced-components/search/?q=News">News</a></li>
+				<li><a href="/services/advanced-components/search/?q=Cannabis">Cannabis</a></li>
+				<li><a href="/services/advanced-components/search/?q=Birth Certificate">Birth Certificate</a></li>
+				<li><a href="/services/advanced-components/search/?q=Marriage License">Marriage License</a></li>
+				<li><a href="/services/advanced-components/search/?q=Property Taxes">Property Taxes</a></li>
+				<li><a href="/services/advanced-components/search/?q=Health Services">Health Services</a></li>
+				<li><a href="/services/advanced-components/search/?q=Agenda and Minutes">Agenda and Minutes</a></li>
+				<li><a href="/services/advanced-components/search/?q=County Jail">County Jail</a></li>
+        </ul>
+    </div>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function () {
+    	$("#searchbox input").keydown(function(e){
+		if(e.keyCode == 13){
+			 $("#searchbox a").click();
+		}
+	});
+        $("#searchbox a").click(function () {
+            var keyWord = $("#searchbox input#search_text").val();
+	    if(keyWord.length<=0){return false;}
+            keyWord  = encodeURIComponent(keyWord.replace("<"," ").replace(">"," ") );
+            var link = '/services/advanced-components/search';
+	    if (link.indexOf("?") >= 0 )
+	    	link = link + "&q=" + keyWord;
+	     else
+	     	link = link + "?q=" + keyWord;
+            window.location.href = link;
+        });
+    });
+</script>
+                <!--startindex-->
+            
+
+</div>
+
+        </header>
+
+        
+<div class="standardlayout clearfix" id="sitebody">
+    
+<div id="ColumnUserControl1" class="column   top_col clearfix  "  >
+    <!--!!WidgetStart, vi-orderdata="0"  vi-hideonmobile="false" vi-widgetinstancedata="1"WidgetStart!!-->    
+
+                <!--stopindex-->
+                <div class=" main_menu_widget"><link href="/DefaultContent/Default/StyleBundleMegaMenuDropDown.cssbnd?v=CD_eN-fYJU8KKPigt6x-Ey-z8_WTsoZ7bqx2pLTZtXU1" rel="stylesheet"/>
+<link href="/Project/Contents/Main/StyleBundleMegaMenuDropDown.cssbnd?v=Kp9Ryuu9GmYiPNRT3v1twvmEkzVXX_BHIUETwuA8KTA1" rel="stylesheet"/>
+<nav class="regularmegamenu mainnav" id="menuContainer_1_0_151"><ul class="dropdownmenu clearfix"><li class="megamenu_first" id="dropdownrootitem1"><a class="dropdownrootitem1" href="/home" title="Home" data-navid="1" >Home</a></li><li class="megamenu_first" id="dropdownrootitem2"><a class="dropdownrootitem2" href="/services" title="Services" data-navid="2" >Services</a><div class="megamenu_container widthcontainer3col"><div class="inner_container"><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/services/facility-directory" title="FacilityDirectory" data-navid="648" >Facility Directory</a></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/services/permits-and-licenses" title="Permits and Licenses" data-navid="623" >Permits and Licenses</a></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/services/business-directory" title="Business Directory " data-navid="667" >Business Directory </a></li></ul></div></div></li><li class="megamenu_first" id="dropdownrootitem3"><a class="dropdownrootitem3" href="/government" title="Government" data-navid="3" >Government</a><div class="megamenu_container widthcontainer3col"><div class="inner_container"><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/government/agriculture" title="Agriculture" data-navid="61" >Agriculture</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/government/agriculture/cannabis-cultivation" title="Cannabis Cultivation" data-navid="63" >Cannabis Cultivation</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/agriculture/calendar" title="Calendar" data-navid="740" >Calendar</a></li></ul></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/animal-care-services" title="Animal Care Services" data-navid="64" >Animal Care Services</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/government/adoptable-animals" title="Adoptable Animals" data-navid="696" >Adoptable Animals</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/animal-care-services/spay-neuter-benefits" title="Spay &amp; Neuter Benefits" data-navid="1853" >Spay &amp; Neuter Benefits</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/animal-care-services/weather-tips" title="Weather Tips" data-navid="774" >Weather Tips</a></li></ul></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/assessor-county-clerk-recorder-elections" title="Assessor - County Clerk - Recorder - Elections" data-navid="66" >Assessor - County Clerk - Recorder - Elections</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/government/assessor-county-clerk-recorder-elections/county-clerk" title="County Clerk" data-navid="70" >County Clerk</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/assessor-county-clerk-recorder-elections/county-recorder" title="County Recorder" data-navid="75" >County Recorder</a><ul class="megamenu_level2"><li class="megamenu_level3"><a class="megamenu_level3" href="/government/assessor-county-clerk-recorder-elections/county-recorder/fee-schedule" title="Fee Schedule" data-navid="713" >Fee Schedule</a></li></ul></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/assessor-county-clerk-recorder-elections/elections" title="Elections" data-navid="79" >Elections</a><ul class="megamenu_level2"><li class="megamenu_level3"><a class="megamenu_level3" href="/government/assessor-county-clerk-recorder-elections/elections/election-precincts" title="Election Precincts" data-navid="714" >Election Precincts</a></li><li class="megamenu_level3"><a class="megamenu_level3" href="/government/assessor-county-clerk-recorder-elections/elections/become-an-election-officer" title="Become an Election Officer" data-navid="715" >Become an Election Officer</a></li><li class="megamenu_level3"><a class="megamenu_level3" href="/government/assessor-county-clerk-recorder-elections/elections/press-releases" title="Press Releases" data-navid="1954" >Press Releases</a></li></ul></li></ul></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/auditor-controller" title="Auditor-Controller" data-navid="90" >Auditor-Controller</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/government/auditor-controller/stale-dated-checks" title="Stale Dated Checks" data-navid="704" >Stale Dated Checks</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/gann-limit-calculation" title="GANN Limit Calculation" data-navid="782" >GANN Limit Calculation</a></li></ul></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/board-of-supervisors" title="Board of Supervisors" data-navid="98" >Board of Supervisors</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/government/board-of-supervisors/agendas-and-minutes" title="Agendas and Minutes" data-navid="99" >Agendas and Minutes</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/board-of-supervisors/board-members/all-board-members" title="Board Members" data-navid="110" >Board Members</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/board-of-supervisors/district-boundaries" title="District Boundaries" data-navid="730" >District Boundaries</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/county-government" title="GENERAL INFORMATION" data-navid="732" >County Government</a></li></ul></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/child-support-services" title="Child Support Services" data-navid="114" >Child Support Services</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/county-counsel" title="County Counsel" data-navid="133" >County Counsel</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/district-attorney" title="District Attorney" data-navid="141" >District Attorney</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/economic-development" title="Economic Development" data-navid="164" >Economic Development</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/executive-office" title="Executive Office" data-navid="169" >Executive Office</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/government/executive-office/past-county-budgets" title="County Budget" data-navid="171" >County Budget</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/executive-office/office-of-emergency-services" title="Office of Emergency Services" data-navid="175" >Office of Emergency Services</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/executive-office/open-rfp-quotes-bids" title="Open RFP, Quotes &amp; Bids" data-navid="181" >Open RFP, Quotes &amp; Bids</a></li></ul></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/government/health-and-human-services-agency" title="Health &amp; Human Services Agency" data-navid="199" >Health &amp; Human Services Agency</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/government/office-of-the-director" title="Office of the Director" data-navid="629" >Office of the Director</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/health-and-human-services-agency/social-services/adult-aging-services" title="Adult &amp; Aging Services" data-navid="217" >Adult &amp; Aging Services</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/health-human-services-agency/animal-care-services" title="Animal Care Services" data-navid="768" >Animal Care Services</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/health-and-human-services-agency/behavioral-health-and-recovery-services" title="Behavioral Health and Recovery Services" data-navid="200" >Behavioral Health and Recovery Services</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/health-and-human-services-agency/children-s-services" title="Family and Children&#39;s Services" data-navid="220" >Children&#39;s Services</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/health-and-human-services-agency/social-services/employment-family-assistance-services" title="Employment &amp; Family Assistance Services" data-navid="218" >Employment &amp; Family Assistance Services</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/health-and-human-services-agency/environmental-health" title="Environmental Health" data-navid="544" >Environmental Health</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/health-and-human-services-agency/public-health" title="Public Health  &quot;Healthy People in Healthy Communities&quot;" data-navid="211" >Public Health</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/health-human-services-agency/public-health/disaster-preparedness-and-response" title="Emergency Preparedness and Disaster Response" data-navid="1803" >Emergency Preparedness and Disaster Response</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/health-and-human-services-agency/adult-services/veterans-services" title="Veterans Services" data-navid="224" >Veterans Services</a></li></ul></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/human-resources" title="Human Resources" data-navid="242" >Human Resources</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/government/human-resources/join-our-team/county-employment" title="County Employment" data-navid="244" >Career Opportunities</a></li></ul></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/grand-jury" title="Grand Jury" data-navid="284" >Grand Jury</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/government/grand-jury/2016-2017-reports" title="2016-2017 Reports" data-navid="1783" >2016-2017 Reports</a></li></ul></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/library" title="Mendocino County Library&#160;" data-navid="305" >Library&#160;</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/government/library/branches" title="Hours  Locations &amp;" data-navid="312" >Hours &amp; Locations</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/library/holidays-closures-1962" title="Holidays &amp; Closures" data-navid="1962" >Holidays &amp; Closures</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/library-/locations/library-calendar" title="Library Calendar " data-navid="599" >Library Calendar </a></li></ul></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/museum" title="Museum " data-navid="329" >Museum </a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/planning-building-services" title="Planning &amp; Building Services" data-navid="330" >Planning &amp; Building Services</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/government/planning-building-services/redwood-complex-fire-and-recovery-information" title="Redwood Complex Fire and Recovery Information" data-navid="1960" >Redwood Complex Fire and Recovery Information</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/planning-building-services/plans-guidelines-and-eirs" title="Plans, Guidelines and EIRs" data-navid="1941" >Plans, Guidelines and EIRs</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/planning-building-services/public-agency-referrals" title="Public Agency Referrals" data-navid="771" >Public Agency Referrals</a></li></ul></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/probation" title="Probation&#160;" data-navid="368" >Probation&#160;</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/government/probation/juvenile-justice-delinquency-commission" title="Juvenile Justice &amp; Delinquency Commission" data-navid="1898" >Juvenile Justice &amp; Delinquency Commission</a></li></ul></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/mendocino-public-defender" title="Mendocino County Public Defender" data-navid="374" >Mendocino County Public Defender</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/mendocino-sheriff" title="Mendocino County Sheriff&#39;s Office" data-navid="379" target="_self">Sheriff-Coroner</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/government/mendocino-sheriff/news-alerts" title="News &amp; Alerts" data-navid="566" >News &amp; Alerts</a><ul class="megamenu_level2"><li class="megamenu_level3"><a class="megamenu_level3" href="/government/mendocino-sheriff/news-alerts/missing-persons" title="Missing Persons" data-navid="567" >Missing Persons</a></li><li class="megamenu_level3"><a class="megamenu_level3" href="/government/mendocino-sheriff/news-alerts/most-wanted-mendocino-county" title="Most Wanted" data-navid="570" >Most Wanted Mendocino County</a></li><li class="megamenu_level3"><a class="megamenu_level3" href="/government/mendocino-sheriff/news-alerts/booking-log" title="Booking Log" data-navid="633" target="_blank">Booking Log</a></li></ul></li></ul></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/government/transportation" title="Transportation" data-navid="380" >Transportation</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/government/report-a-problem-on-a-county-road" title="Report a Problem on a County Road" data-navid="1791" >Report a Problem on a County Road</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/transportation/road-closures" title="Road Closures" data-navid="384" >Road Closures</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/transportation/dot-permits-applications" title="DOT Permits &amp; Applications" data-navid="386" >DOT Permits &amp; Applications</a><ul class="megamenu_level2"><li class="megamenu_level3"><a class="megamenu_level3" href="/government/transportation/dot-permits-applications/permit-search" title="County DOT Permit Search" data-navid="1788" >Permit Search</a></li></ul></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/transportation/rfps-rfqs-projects-to-bid" title="RFPs, RFQs, &amp; Projects to Bid" data-navid="385" >RFPs, RFQs, &amp; Projects to Bid</a></li></ul></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/collections/treasurer-tax-collector" title="Treasurer-Tax Collector" data-navid="128" >Treasurer-Tax Collector</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/government/treasurer-tax-collector/property-tax-lookup-fr" title="Secured Property Tax" data-navid="1928" >Property Tax Current Secured Online Payments and Property Search Tool</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/treasurer-tax-collector/pay-miscellaneous-tax-bills-online" title="Pay Miscellaneous Tax Bills Online" data-navid="1858" >Pay Miscellaneous Tax Bills Online</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/collections/treasurer-tax-collector/transient-occupancy-tax-and-bid-assessment" title="Transient Occupancy Tax and Business Improvement District Assessment" data-navid="649" >Transient Occupancy Tax and Business Improvement District Assessment</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/treasurer-tax-collector/cannabis-taxes-and-applications" title="Cannabis Taxes and License" data-navid="1977" >Cannabis Taxes and License</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/collections/treasurer-tax-collector/apply-for-a-business-license" title="Apply for a Business License" data-navid="551" >Apply for a Business License</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/collections" title="Court Collections" data-navid="127" >Court Collections Department</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/collections/treasurer-tax-collector/forms" title="Forms" data-navid="650" >Forms</a></li></ul></li><li class="megamenu_level1"><a class="megamenu_level1" href="/government/affiliated-agencies" title="Affiliated Agencies" data-navid="392" >Affiliated Agencies</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/government/affiliated-agencies/air-quality-management-district" title="Air Quality Management District" data-navid="393" target="_blank">Air Quality Management District</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/affiliated-agencies/uc-cooperative-extension-farm-advisors" title="UC Cooperative Extension-Farm Advisors" data-navid="394" target="_blank">UC Cooperative Extension-Farm Advisors</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/affiliated-agencies/law-library" title="Law Library" data-navid="395" >Law Library</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/affiliated-agencies/local-agency-formation-commission" title="Local Agency Formation Commission" data-navid="396" target="_blank">Local Agency Formation Commission</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/affiliated-agencies/mendocino-council-of-governments" title="Mendocino Council of Governments" data-navid="397" target="_blank">Mendocino Council of Governments</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/affiliated-agencies/retirement-association" title="Mendocino County Employees Retirement Association" data-navid="399" >Mendocino County Employees Retirement Association</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/affiliated-agencies/office-of-education" title="Office of Education" data-navid="398" target="_blank">Office of Education</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/affiliated-agencies/solid-waste-authority" title="Solid Waste Authority" data-navid="406" target="_self">Solid Waste Authority</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/affiliated-agencies/superior-courts" title="Superior Courts" data-navid="407" target="_self">Superior Courts</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/affiliated-agencies/transit-authority" title="Transit Authority" data-navid="408" target="_self">Transit Authority</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/affiliated-agencies/water-agency" title="Water Agency" data-navid="409" target="_self">Water Agency</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/government/affiliated-agencies/ukiah-valley-basin-gsa" title="Ukiah Valley Basin Groundwater Sustainability Agency" data-navid="660" >Ukiah Valley Basin GSA</a></li></ul></li></ul></div></div></li><li class="megamenu_first" id="dropdownrootitem4"><a class="dropdownrootitem4" href="/community" title="Community" data-navid="4" >Community</a><div class="megamenu_container widthcontainer3col"><div class="inner_container"><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/community/fire-recovery" title="Fire Recovery Mendocino" data-navid="1966" >Fire Recovery Mendocino</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/community/mendocino-strong" title="How To Help" data-navid="1987" >Mendocino Strong</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/community/events-calendar" title="Events &amp; Meetings " data-navid="625" >Events &amp; Meetings </a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/community/news-releases" title="News Releases" data-navid="626" >News Releases</a></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/community/enotification" title="eNotification " data-navid="665" >eNotification </a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/community/job-opportunities" title="Job Opportunities" data-navid="410" >Job Opportunities</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/community/county-parks" title="County Parks" data-navid="709" target="_self">County Parks</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/community/visit-mendocino" title="Visit Mendocino" data-navid="411" target="_self">Visit Mendocino</a></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/community/arts-council" title="Arts Council" data-navid="412" target="_self">Arts Council</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/community/mental-health-oversight-committee" title="Mental Health Treatment Act Citizen&#39;s Oversight Committee" data-navid="2994" >Mental Health Oversight Committee</a></li></ul></div></div></li><li class="megamenu_first" id="dropdownrootitem5"><a class="dropdownrootitem5" href="/business" title="Business" data-navid="5" >Business</a><div class="megamenu_container widthcontainer3col"><div class="inner_container"><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/business/business-licenses" title="Business Licenses" data-navid="413" target="_self">Business Licenses</a></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/business/cannabis-permits-and-licenses" title="Cannabis Permits and Licenses " data-navid="716" >Cannabis Permits and Licenses </a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/business/cannabis-permits-and-licenses/cannabis-cultivation-faq" title="Cannabis Cultivation Program FAQs" data-navid="773" >Cannabis Cultivation FAQ</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/business/cannabis-permits-and-licenses/cannabis-track-and-trace-program" title="Cannabis Track and Trace Program" data-navid="1899" >Cannabis Track and Trace Program</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/business/cannabis-permits-and-licenses-/cannabis-track-and-trace-program/cannabis-working-groups" title="Cannabis Working Groups" data-navid="1940" >Cannabis Working Groups</a></li></ul></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/business/economic-development" title="Economic Development" data-navid="414" target="_self">Economic Development</a><ul class="megamenu_level1"><li class="megamenu_level2"><a class="megamenu_level2" href="/business/economic-development/business-improvement-district" title="Business Improvement District" data-navid="415" target="_self">Business Improvement District</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/business/economic-development/film-permits" title="Film Permits" data-navid="417" target="_self">Film Permits</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/business/economic-development/gis-mapping" title="Industrial Land Survey" data-navid="418" target="_self">GIS Mapping</a></li><li class="megamenu_level2"><a class="megamenu_level2" href="/business/economic-development/visitor-information" title="Visitor Information" data-navid="419" >Visitor Information</a></li></ul></li></ul></div></div></li><li class="megamenu_first" id="dropdownrootitem6"><a class="dropdownrootitem6" href="/how-do-i-" title="How Do I..." data-navid="6" >How Do I...</a><div class="megamenu_container widthcontainer3col"><div class="inner_container"><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/how-do-i/pay-online" title="Pay Online" data-navid="486" >Pay Online</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/how-do-i/apply-for-a-job" title="Apply for a Job" data-navid="426" target="_self">Apply for a Job</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/how-do-i/apply-for-a-business-license" title="Apply for a Business License" data-navid="427" target="_self">Apply for a Business License</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/how-do-i/appy-for-a-building-permit" title="Apply for a Building Permit" data-navid="621" target="_self">Apply for a Building Permit</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/how-do-i/apply-for-a-cannabis-facilities-business-license" title="Apply for a Cannabis Facilities Business License" data-navid="1982" >Apply for a Cannabis Facilities Business License</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/how-do-i/file-a-cannabis-cultivation-application" title="File a Cannabis Cultivation Application " data-navid="717" target="_self">File a Cannabis Cultivation Application </a></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/how-do-i/apply-for-a-building-permit" title="Do Business with the County" data-navid="428" target="_self">Do Business with the County</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/how-do-i/find-open-rfp-quotes-bids" title="Find Open RFP, Quotes &amp; Bids" data-navid="708" target="_self">Find Open RFP, Quotes &amp; Bids</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/how-do-i/animal-license-revewals" title="Animal License Renewals" data-navid="429" target="_self">Animal License Renewals</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/how-do-i/find-press-releases" title="Find Press Releases" data-navid="431" >Find Press Releases</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/how-do-i/contact-the-library" title="Contact the Library " data-navid="433" target="_self">Contact the Library </a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/how-do-i/pay-my-taxes" title="Pay Property Taxes" data-navid="434" >Pay My Taxes</a></li></ul><ul class="megamenu_column"><li class="megamenu_level1"><a class="megamenu_level1" href="/how-do-i/zoning-lookup" title="Zoning Lookup" data-navid="435" target="_self">Zoning Lookup</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/how-do-i/food-faciliteis-inspection" title="Food Facilities Inspection" data-navid="436" >Food Facilities Inspection</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/how-do-i/check-permit-status" title="Check Permit Status" data-navid="437" target="_self">Check Permit Status</a></li><li class="megamenu_level1"><a class="megamenu_level1" href="/how-do-i/request-birth-death-and-marriage-records" title="Request Birth, Death and Marriage Records " data-navid="438" target="_self">Request Birth, Death and Marriage Records </a></li></ul></div></div></li></ul><script>
+$(function () {
+ var menuContainer = $('#menuContainer_1_0_151')
+ $(".dropdownmenu a[data-navid='75']", menuContainer).closest('.dropdownmenu>li').addClass('active');
+});
+</script></nav></div>
+
+
+<script>
+    /**********************************************************
+    Dropdown Menu delay disappearance on mouse out
+    *********************************************************/
+    /*javascript to delay the disappearance of the menu when the user mouses out.  Uses jquery library.*/
+    $(function () {
+        
+
+        var timer = null;
+        var delay = 800; //change this number for shorter or longer delay
+
+        
+        //using megamenu
+        var dropdowncontainer = '>.megamenu_container';
+        var activePage = $(".mainnav .dropdownmenu > li.active");
+        $(".mainnav > .dropdownmenu > li").hoverIntent(
+
+            //what happens on hover over
+             function () {
+                 //end timer and stop hiding if they are mousing back in.
+                 if (timer != null) {
+                     clearTimeout(timer);
+                     timer = null;
+                 }
+                 // Find the hovered menu's sub-menu
+                 var $menu = $(this);
+                 var $submenu = $(this).find(dropdowncontainer);
+
+                 // hide any other submenus that are open
+                 $('.mainnav > .dropdownmenu>li' + dropdowncontainer).not($submenu).css('display', 'none');
+                 $('.mainnav > .dropdownmenu li.active').not($menu).not(activePage).removeClass('active');
+
+                 // show current menu
+                 $submenu.css('display', 'block');
+                 $menu.addClass('active');
+             },
+
+            //what happens on mouse out
+            function () {
+                var $submenu = $(this).find(dropdowncontainer);
+                var $menu = $(this);
+                // delay disappearance
+                var mouseDelay = $(this).data("mouseDelay") || delay;
+                clearTimeout(timer);
+                timer = setTimeout(function () {
+                    $submenu.css('display', 'none'); $menu.not(activePage).removeClass('active');
+                    clearTimeout(timer); timer = null;
+                }, mouseDelay);
+            }
+        );
+        
+    });
+</script>
+
+<script>
+    //$(function () 
+    {
+        var menuContainerID = "menuContainer_1_0_151";
+        var menuContainer = $("#" + menuContainerID);
+        
+        function isIE(userAgent) {
+            userAgent = userAgent || navigator.userAgent;
+            return userAgent.indexOf("MSIE ") > -1 || userAgent.indexOf("Trident/") > -1;
+        }
+
+        function isIE9(userAgent) {
+            userAgent = userAgent || navigator.userAgent;
+            return userAgent.indexOf("MSIE 9") > -1;
+        }
+
+        function isTouchScreenEvent(event) {
+            var _isTouchScreen = false;
+            if ("ontouchstart" in window) {
+                _isTouchScreen = true;
+            } else if ("onpointerdown" in window) {
+                _isTouchScreen = event.originalEvent.pointerType == "touch";
+            } else if (window.MSPointerEvent) {
+                _isTouchScreen = event.originalEvent.pointerType == event.originalEvent.MSPOINTER_TYPE_TOUCH; // 2 ; http://blogs.msdn.com/b/ie/archive/2011/09/20/touch-input-for-ie10-and-metro-style-apps.aspx
+            } else {
+            }
+            return _isTouchScreen;
+        }
+
+        var _isIE = isIE();
+        var _isIE9 = isIE9();
+        var isMegaMenu = $('.megamenu_first', menuContainer).length > 0;
+        var currentMenu = $('> ul.dropdownmenu > li.active', menuContainer);
+
+        $(function () {
+            if (currentMenu.length == 0)
+                currentMenu = $('> ul.dropdownmenu > li.active', menuContainer);
+        });
+
+        if (("ontouchstart" in window   // Chrome & Safari (IOS) && Firefox
+         || "onpointerdown" in window   // IE 11 
+         || window.MSPointerEvent       // IE 10
+         ) && ($(window).width() > 648)) {
+            var eventName = "ontouchstart" in window ? "touchstart"
+                          : "onpointerdown" in window ? "pointerdown"
+                          : window.MSPointerEvent ? "MSPointerDown"
+                          : "";
+            if (eventName.length > 0) {                
+                $('> ul.dropdownmenu  li>a[data-navid]', menuContainer).bind(eventName, function (event) {
+                    
+                    if (isTouchScreenEvent(event) == false) {
+                        return true;
+                    }
+    
+                    var currentLevelAnchor = $(this);
+                    var currentLeveLi = currentLevelAnchor.closest("li");
+                    var firstLevelLi = currentLevelAnchor.closest("li[id^='dropdownrootitem']");
+                    var firstLevelAnchor = firstLevelLi.find(">a[data-navid]");
+                    var inFirstLevel = currentLevelAnchor[0] == firstLevelAnchor[0];
+
+                    var hasSubMenu = currentLevelAnchor.next("ul,div").length > 0;
+                    if (hasSubMenu) {
+                        $(this).closest("li").data("mouseDelay", 1);
+
+                        // Menu is not selected
+                        if (!firstLevelLi.hasClass('touch-active')) {                
+                            if ($(this).attr("href")) {
+                                $(this).attr("data-href", $(this).attr("href"));
+                                $(this).attr("href", "javascript:void(0);");
+                            }
+                            $(menuContainer).find('.touch-active').removeClass('touch-active').not(currentMenu).removeClass('active');                           
+                            
+                            firstLevelLi.addClass('touch-active active');
+                            currentLevelAnchor.addClass('touch-active active');
+                            currentMenu.addClass("active");
+
+                            $(' li:not(.touch-active)', menuContainer).not(firstLevelLi).removeClass('_current');    
+                            $(' li:not(.touch-active) li', menuContainer).not(currentLeveLi).removeClass('_current');
+
+                            $('> ul.dropdownmenu > li:not(.touch-active) > a[data-navid]', menuContainer).next().css('display', 'none');
+                            $('> ul.dropdownmenu > li.touch-active > a[data-navid]', menuContainer).next().css('display', 'block');
+
+                            event.preventDefault();
+                        }
+                            // Menu is selected
+                        else {
+                            if (inFirstLevel) {
+                                // non clickable
+                                if (currentLevelAnchor.attr('href') == undefined) {
+                                    //has class touch-active and no link
+                                    removeClassAndHideMenu();
+                                    event.preventDefault();
+                                } else if ($(this).attr("data-href")) { //clickable, but href have been moved to data.
+                                    $(this).attr("href", $(this).attr("data-href"));
+                                }
+                            }
+                            else {
+                                if (isMegaMenu)
+                                    return true;
+
+                                if (!currentLeveLi.hasClass('touch-active')) {
+                                    if ($(this).attr("href")) {
+                                        $(this).attr("data-href", $(this).attr("href"));
+                                        $(this).attr("href", "javascript:void(0);");
+                                    }
+                                    $(firstLevelLi).find('.touch-active').removeClass('touch-active').not(currentMenu).removeClass('active');
+                                    currentLeveLi.parent().children("li._current").removeClass("_current");
+                                    currentLeveLi.addClass('touch-active active _current');
+
+                                    currentLevelAnchor.addClass('touch-active active');
+
+                                    //$(' li:not(.touch-active)', menuContainer).not(firstLevelLi).removeClass('_current');    
+                                    //$(' li:not(.touch-active) li', menuContainer).not(currentLeveLi).removeClass('_current');
+
+                                    $(' li:not(.touch-active) > a[data-navid]', currentLeveLi.parent()).next().css('display', 'none');
+                                    $('> li.touch-active > a[data-navid]', currentLeveLi.parent()).next().css('display', 'block');
+
+                                    event.preventDefault();
+                                } else {
+                                    if (currentLevelAnchor.attr('href') == undefined) {
+                                        //has class touch-active and no link
+                                        removeClassAndHideMenu();
+                                        event.preventDefault();
+                                    } else if ($(this).attr("data-href")) {
+                                        $(this).attr("href", $(this).attr("data-href"));
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                });
+            }
+        }
+
+        
+
+        function removeClassAndHideMenu() {
+            $(menuContainer).find('a.touch-active, li.touch-active').removeClass('touch-active active');
+            $('> ul.dropdownmenu > li > a[data-navid]', menuContainer).next().css('display', 'none');
+            // If we don't change the menu item, we should keep the old one.
+            if ($('> ul.dropdownmenu > li.active', menuContainer).length == 0) {
+                currentMenu.addClass("active");
+            }
+        }
+
+        $('body').bind(eventName, function (event) {
+            if (isTouchScreenEvent(event) == false) {
+                return true;
+            }
+            if (!$(event.target).closest('li.touch-active').length) {
+                removeClassAndHideMenu();
+            }
+        });
+    }
+    //);
+</script>
+                
+                <!--startindex-->
+                <!--!!WidgetEnd-->
+
+    
+</div>
+
+    
+<div id="ColumnUserControl2" class="column   left_col  "  >
+    <!--!!WidgetStart, vi-orderdata="0"  vi-hideonmobile="false" vi-widgetinstancedata="2"WidgetStart!!-->    
+
+                <!--stopindex-->
+                
+
+<nav id='leftNav_2_0_151' class='nocontent sidenav mobile_list   '>
+    <h2 class="mobile_only mobile_header">Jump to subpage...</h2>
+    <ul><li class="sidenav_expanded sidenav_haschildren"><a href='https://www.mendocinocounty.org/government/assessor-county-clerk-recorder-elections' >Assessor - County Clerk - Recorder - Elections</a><ul><li class="sidenav_haschildren"><a href='https://www.mendocinocounty.org/government/assessor-county-clerk-recorder-elections/assessor-services-forms' >Assessor Services &amp; Forms</a></li><li class="sidenav_haschildren"><a href='https://www.mendocinocounty.org/government/assessor-county-clerk-recorder-elections/county-clerk' >County Clerk</a></li><li class="sidenav_current sidenav_expanded sidenav_haschildren"><a href='https://www.mendocinocounty.org/government/assessor-county-clerk-recorder-elections/county-recorder' >County Recorder</a><ul><li><a href='https://www.mendocinocounty.org/government/assessor-county-clerk-recorder-elections/county-recorder/website-notice-public-viewing-of-birth-death-and-marriage-indexes' target='_blank'>Website Notice: Public Viewing of Birth, Death, and Marriage Indexes</a></li><li><a href='https://www.mendocinocounty.org/government/assessor-county-clerk-recorder-elections/county-recorder/birth-death-or-marriage-records' >Birth, Death, or Marriage Records</a></li><li><a href='https://www.mendocinocounty.org/government/assessor-county-clerk-recorder-elections/county-recorder/land-records' >Public Records</a></li><li><a href='https://www.mendocinocounty.org/government/assessor-county-clerk-recorder-elections/county-recorder/fee-schedule' >Fee Schedule</a></li></ul></li><li class="sidenav_haschildren"><a href='https://www.mendocinocounty.org/government/assessor-county-clerk-recorder-elections/elections' >Elections</a></li><li class="sidenav_haschildren"><a href='https://www.mendocinocounty.org/government/assessor-county-clerk-recorder-elections/current-election-information' >Current Election Information</a></li></ul></li></ul>
+</nav>
+
+                
+                <!--startindex-->
+                <!--!!WidgetEnd-->
+
+    
+</div>
+
+    
+<div id="ColumnUserControl3" class="column   right_col  "  >
+    <!--!!WidgetStart, vi-orderdata="0"  vi-hideonmobile="false" vi-widgetinstancedata="3"WidgetStart!!-->    
+
+<a id="pagebody"></a>
+<header id="widget_3_0_151" class="title_widget clearfix  " >
+    
+    <!--stopindex-->
+    <p class="breadcrumb">
+        <a href="/government">Government</a> » <a href="/government/assessor-county-clerk-recorder-elections">Assessor - County Clerk - Recorder - Elections</a> 
+    </p>
+    <!--startindex-->
+    
+    <h1><span>County Recorder</span></h1>
+    
+    <!--stopindex-->
+    <div class="title_right">
+        
+        <a class="printer_friendly" href="javascript:window.print();" title="Click to print this page">Print</a>
+        
+        <a class="thickbox feedback_link" title="Click to submit an email to feedback" href="javascript:void(0);">Feedback</a>
+        
+        <script type="text/javascript">
+            function shareLink(shareType) {
+                var shareUrl = "";
+                var shareTitle = document.itemTitle ? encodeURIComponent(document.itemTitle.trim()).replace(/[!'()*]/g, escape) : "County+Recorder";
+                switch (shareType) {
+                    case "facebook":
+                        shareUrl = "http://www.facebook.com/sharer.php?u=https%3a%2f%2fwww.mendocinocounty.org%2fgovernment%2fassessor-county-clerk-recorder-elections%2fcounty-recorder&t=" + shareTitle;
+                        break;
+                    case "gplus":
+                        shareUrl = "https://plus.google.com/share?url=https%3a%2f%2fwww.mendocinocounty.org%2fgovernment%2fassessor-county-clerk-recorder-elections%2fcounty-recorder";
+                        if (shareUrl.length > 0) window.open(shareUrl, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');
+                        return;
+                        break;
+                    case "linkedin":
+                        shareUrl = "http://www.linkedin.com/shareArticle?mini=true&url=https%3a%2f%2fwww.mendocinocounty.org%2fgovernment%2fassessor-county-clerk-recorder-elections%2fcounty-recorder&title=" + shareTitle;
+                        break;
+                    case "twitter":
+                        //Below link works in iOS and other OS
+                        shareUrl = "https://twitter.com/intent/tweet?url=https%3a%2f%2fwww.mendocinocounty.org%2fgovernment%2fassessor-county-clerk-recorder-elections%2fcounty-recorder&text=County+Recorder+%7c+";
+                        break;
+                    case "delicious":
+                        shareUrl = "https://secure.delicious.com/login?noui=yes&v=4&jump=https%3a%2f%2fwww.mendocinocounty.org%2fgovernment%2fassessor-county-clerk-recorder-elections%2fcounty-recorder%26title%3D" + shareTitle + "%26notes%3D%26tags%3D%26v%3D4%26noui%3D%26share%3Dyes%26jump%3Dclose%26time%3D1239993443";
+                        break;
+                    case "myspace":
+                        shareUrl = "http://www.myspace.com/Modules/PostTo/Pages/?u=https%3a%2f%2fwww.mendocinocounty.org%2fgovernment%2fassessor-county-clerk-recorder-elections%2fcounty-recorder&t=" + shareTitle + "&c=";
+                        break;
+                    case "googlebookmark":
+                        shareUrl = "http://www.google.com/bookmarks/mark?op=add&bkmk=https%3a%2f%2fwww.mendocinocounty.org%2fgovernment%2fassessor-county-clerk-recorder-elections%2fcounty-recorder&title=" + shareTitle;
+                        break;
+                    case "stumbleupon":
+                        shareUrl = "http://www.stumbleupon.com/submit?url=https%3a%2f%2fwww.mendocinocounty.org%2fgovernment%2fassessor-county-clerk-recorder-elections%2fcounty-recorder&title=" + shareTitle;
+                        break;
+                    case "digg":
+                        shareUrl = "http://digg.com/submit/?url=https%3a%2f%2fwww.mendocinocounty.org%2fgovernment%2fassessor-county-clerk-recorder-elections%2fcounty-recorder";
+                        break;
+                    case "tumblr":
+                        shareUrl = "https://www.tumblr.com/share/link?url=https%3a%2f%2fwww.mendocinocounty.org%2fgovernment%2fassessor-county-clerk-recorder-elections%2fcounty-recorder&name=" + shareTitle;
+                        break;
+                    case "reddit":
+                        shareUrl = "http://www.reddit.com/submit?url=https%3a%2f%2fwww.mendocinocounty.org%2fgovernment%2fassessor-county-clerk-recorder-elections%2fcounty-recorder&title=" + shareTitle;
+                        break;
+                }
+                if (shareUrl.length > 0) window.open(shareUrl, "_blank");
+            }
+        </script>
+        <div id="share">
+            <a class="sharelink" href="javascript:void(0);" title="Click to expand Share & Bookmark options" aria-haspopup="true" aria-expanded="false" aria-labelledby="share-desciption">Share & Bookmark</a>
+            <span id="share-desciption" class="wcag_only" >Press Enter to show all options, press Tab go to next option</span>
+            <ul class="no_external_url_indication">
+                <li>
+                    
+                    <a title="Click to submit an email online" href="javascript:void(0);" class="shareemail send_share_email">Email</a>
+                    
+                </li>
+                <li><a title="Click to share with Facebook" href="javascript:shareLink('facebook')" class="sharefacebook">Facebook</a></li>
+                <li><a title="Click to share with Google+" href="javascript:shareLink('gplus')" class="sharegoogleplus">Google+</a></li>
+                <li><a title="Click to share with LinkedIn" href="javascript:shareLink('linkedin')" class="sharelinkedin">LinkedIn</a></li>
+                <li><a title="Click to share with Twitter" href="javascript:shareLink('twitter')" class="sharetwitter">Twitter</a></li>
+                
+                
+                
+                
+                
+                
+                <li><a title="Click to share with Reddit" href="javascript:shareLink('reddit')" class="sharereddit">Reddit</a></li>
+            </ul>
+        </div>
+        
+        <div class="font_size">
+            <a href="javascript:void(0);" title="default font size" class="text_size">Font Size:</a>
+            <a href="javascript:void(0);" title="larger font size" class="font_larger">+</a>
+            <a href="javascript:void(0);" title="smaller font size" class="font_smaller">-</a>
+        </div>
+        
+    </div>
+    <!--startindex-->
+
+    
+</header>
+<script type="text/javascript">
+    $(function () {
+        var widgetContext = "widget_3_0_151";
+
+        $("#" + widgetContext + " #share").click(function () {
+            if (!$("#" + widgetContext + " div#share").hasClass("click-active"))
+                $("#" + widgetContext + " div#share").find("ul").show();
+            else
+                $("#" + widgetContext + " div#share").find("ul").hide();
+        });
+
+        $("div").click(function () {
+            if ($("#" + widgetContext + " div#share").hasClass("click-active")) {
+                $("#" + widgetContext + " div#share").find("ul").hide();
+            }
+        });
+
+        $(document).click(function (e) {
+            if (!$(e.target).closest("#share").length > 0) {
+                $("#" + widgetContext + " div#share").removeClass("click-active");
+                $("#" + widgetContext + " div#share").find("ul").hide();
+            }
+        });
+
+        var shareContainerTimeout = null;
+        $("#" + widgetContext + " #share").bind('mouseover', function () {
+            //If not relate to click event
+            if (shareContainerTimeout) {
+                clearTimeout(shareContainerTimeout);
+                shareContainerTimeout = null;
+            }
+            shareContainerTimeout = setTimeout(function () {
+                if (!$("#" + widgetContext + " div#share").hasClass("click-active"))
+                    $("#" + widgetContext + " div#share").find("ul").show();
+            }, 100);
+        });
+
+        $("#" + widgetContext + " #share").bind('mouseleave', function () {            
+            //If not relate to click event     
+            if (shareContainerTimeout) {
+                clearTimeout(shareContainerTimeout);
+                shareContainerTimeout = null;
+            }
+            shareContainerTimeout = setTimeout(function () {
+                if (!$("#" + widgetContext + " div#share").hasClass("click-active"))
+                    $("#" + widgetContext + " div#share").find("ul").hide();
+            }, 200);
+        });
+
+        $("header#" + widgetContext + " a.feedback_link").click(function () {
+            var windowHeight = 485;
+            if (window.innerWidth <= 648) {
+                windowHeight = 545;
+            }
+            var opts = {
+                title: "Feedback",
+                url: "/Template/GetFeedbackPartial?feedbackUrl=https%3a%2f%2fwww.mendocinocounty.org%2fgovernment%2fassessor-county-clerk-recorder-elections%2fcounty-recorder",
+                useFrame: true,
+                height: windowHeight,
+                onClosed: function (result) {
+                    if (result != undefined && result.IsOk == true) {
+                        $.refreshTempMessage(result.Message);
+                    }
+                },
+                skin: 'viClientDialog feedback_lightbox',
+                fixed: false
+            };
+            $.viClientDialog(opts).open();
+        });
+
+        //Safari iOS: No click event
+        $("header#" + widgetContext + " a.send_share_email").bind("click touchstart", function () {
+            var shareEmailTitle = document.itemTitle ? encodeURIComponent(document.itemTitle.trim()).replace(/[!'()*]/g, escape) : "County+Recorder";
+            var opts = {
+                title: "Click to submit an email online",
+                url: "/Template/GetShareEmailPartial?shareUrl=https%3a%2f%2fwww.mendocinocounty.org%2fgovernment%2fassessor-county-clerk-recorder-elections%2fcounty-recorder" + "&shareTitle=" + shareEmailTitle,
+                useFrame: true,
+                height: 485,
+                onClosed: function (result) {
+                    if (result != undefined && result.IsOk == true) {
+                        $.refreshTempMessage(result.Message);
+                    }
+                },
+                skin: 'viClientDialog send_share_email_lightbox',
+                fixed: false
+            };
+            $.viClientDialog(opts).open();
+        });
+
+        
+
+    });
+</script>
+
+            <!--!!WidgetEnd-->
+
+    <!--!!WidgetStart, vi-orderdata="0"  vi-hideonmobile="false" vi-widgetinstancedata="4"WidgetStart!!-->    
+<div id='widget_4_39_151' class='content_area normal_content_area clearfix  '><h2>Welcome to the Recorder’s Website</h2>
+<h3>*NEW* &nbsp; SB2 Information</h3>
+<p><strong>Effective January 1, 2018</strong>, pursuant to SB2, documents accepted for recording at the Mendocino County Clerk Recorder's office may be charged an additional $75 - <a href="/home/showdocument?id=17421" target="_blank" id="link_1514329611624"><strong>click here for the Public Notice, a basic Fee Grid and Exemption Cover Page</strong></a>.</p>
+<p>The Recorders Division of the Assessor-Clerk-Recorder’s office performs the mandated duties of recording documents and filing maps, maintaining cross-reference indexes to these records. Document Transfer Tax is collected on transfers of real property.</p>
+<p><strong>A few examples of typical recorded documents are: </strong></p>
+<ul>
+    <li>Real Property Records – Deeds, Leases, Notices of Completion</li>
+    <li>Issue certified copies of Marriage, Birth and Death records</li>
+    <li>Financing Documents – Deeds of Trust, Notices of Default, Reconveyances, Financing Statements</li>
+    <li>Maps – Subdivisions, Parcel Divisions, Surveys</li>
+    <li>Military Discharge Papers</li>
+    <li>Declaration of Homestead</li>
+    <li>Mechanics’ Liens</li>
+    <li>Tax Liens, Release of Liens</li>
+</ul>
+<p>Recorded documents are scanned and microfilmed for permanent record and for security purposes, the original document is returned to the customer. All documents are indexed by the names of the parties, the type of document and by the year the document is recorded. Copies of recorded documents are available for purchase for qualifying individuals. </p>
+<ul>
+    <li><a href="/home/showdocument?id=110" target="_blank">Preliminary Change in Ownership Form </a></li>
+</ul>
+<p><strong>Important Notice </strong></p>
+<p>Our staff is forbidden by California legal codes to provide legal advice; this includes giving advice about what forms you might need or how you should fill them out.</p>
+<div class="downloadmessage no_external_url_indication">
+	<p>
+		Free viewers are required for some of the attached documents.<br />They can be downloaded by clicking on the icons below.
+	</p>
+    <a href="http://get.adobe.com/reader/" target="_blank" class="acrobat_reader_downloadmessage" title="Download Acrobat Reader">
+        <span>Acrobat Reader</span>
+        <img src="/DefaultContent/Default/_gfx/downloadmessage/acrobat.jpg" alt ="" />
+    </a>
+    <a href="https://get.adobe.com/flashplayer/" target="_blank" class="flashplayer_downloadmessage" title="Download Flash Player">
+        <span>Flash Player</span>
+        <img  src="/DefaultContent/Default/_gfx/downloadmessage/flash.jpg" alt=""/>
+    </a>
+    <a href="https://support.apple.com/downloads/quicktime" target="_blank" class="quicktime_downloadmessage" title="Download QuickTime">
+        <span>QuickTime</span>
+        <img  src="/DefaultContent/Default/_gfx/downloadmessage/quicktime.jpg" alt=""/>
+    </a>
+    <a href="http://windows.microsoft.com/en-us/windows/windows-media-player" target="_blank" class="windows_media_player_downloadmessage" title="Download Windows Media Player">
+        <span>Windows Media Player</span>
+        <img  src="/DefaultContent/Default/_gfx/downloadmessage/wmp.jpg" alt=""/>
+    </a>
+    <span class="line-breaker" style="display:none;"></span>
+    <a href="http://www.microsoft.com/getsilverlight/get-started/install/default.aspx" target="_blank" class="silverlight_downloadmessage" title="Download Microsoft Silverlight">
+        <span>Microsoft Silverlight</span>
+        <img  src="/DefaultContent/Default/_gfx/downloadmessage/silverlight.jpg" alt=""/>
+    </a>
+    <a href="https://products.office.com/en-US/office-online/documents-spreadsheets-presentations-office-online" target="_blank" class="word_downloadmessage" title="Download Word Viewer">
+        <span>Word Viewer</span>
+        <img  src="/DefaultContent/Default/_gfx/downloadmessage/word.jpg" alt=""/>
+    </a>
+    <a href="https://products.office.com/en-US/office-online/documents-spreadsheets-presentations-office-online" target="_blank" class="excel_downloadmessage" title="Download Excel Viewer">
+        <span>Excel Viewer</span>
+        <img  src="/DefaultContent/Default/_gfx/downloadmessage/excel.jpg" alt=""/>
+    </a>
+    <a href="https://products.office.com/en-US/office-online/documents-spreadsheets-presentations-office-online" target="_blank" class="powerpoint_downloadmessage" title="Download PowerPoint Viewer">
+        <span>PowerPoint Viewer</span>
+        <img  src="/DefaultContent/Default/_gfx/downloadmessage/powerpoint.jpg" alt=""/>
+    </a>
+</div>
+
+
+
+
+
+</div>
+            <!--!!WidgetEnd-->
+
+    
+</div>
+
+</div> 
+
+        <footer id="page_footer" class="">
+            <!--stopindex-->
+            
+<div id="footercolumn" class="site_template_column  footer_column   " >
+
+                <!--stopindex-->
+                
+<div class="footer_address">
+	<h2>Come &amp; Visit</h2>
+<p>501 Low Gap Road</p>
+<p>Ukiah, CA 95482</p>
+<p><a href="https://www.google.com/maps/place/501+Low+Gap+Rd,+Ukiah,+CA+95482">View on Google Maps</a></p>
+</div>
+                <!--startindex-->
+            
+
+                <!--stopindex-->
+                
+<div class="footer_info">
+	<h2>Get In Touch</h2>
+<p><a href="/services/business-directory">County Directory</a></p>
+<p><a href="mailto:&#119;&#101;&#98;&#109;&#97;&#115;&#116;&#101;&#114;&#64;&#99;&#111;&#46;&#109;&#101;&#110;&#100;&#111;&#99;&#105;&#110;&#111;&#46;&#99;&#97;&#46;&#117;&#115;">Contact By Email</a></p>
+
+                <!--startindex-->
+            
+
+                <!--stopindex-->
+                
+	<div class="social_icons">
+			<a href="https://www.facebook.com/mendocinocounty/" target="_blank" title="Facebook"> 
+				<img src="/Home/ShowImage?id=266&t=636144934189400000" alt="" /> 
+			</a>
+			<a href="https://twitter.com/countymendocino" target="_blank" title="Twitter"> 
+				<img src="/Home/ShowImage?id=270&t=636144934191100000" alt="" /> 
+			</a>
+			<a href="https://plus.google.com/107198798020358115107" target="_self" title="GooglePlus"> 
+				<img src="/Home/ShowImage?id=268&t=636144934190170000" alt="" /> 
+			</a>
+			<a href="https://www.youtube.com/channel/UCSYcX7uSxr-GyRh20JtuwFg" target="_self" title="YouTube"> 
+				<img src="/Home/ShowImage?id=272&t=636144934192030000" alt="" /> 
+			</a>
+	</div>
+</div>
+                <!--startindex-->
+            
+
+                <!--stopindex-->
+                
+<div class="footer_notification">
+	<h2>Stay Informed</h2>
+<p><a href="#">Get News, Views, Insights, and Events</a></p>
+<p><a href="http://www.mendocinocounty.org/community/enotification" class="esignup_btn" target="_blank">Enotification Sign Up</a></p>
+<p></p>
+</div>
+<p class="footer_copyright">© 2018 Mendocino County. All Rights Reserved. | <a href="/privacy-policy">Privacy Policy</a> | Created By <a href="http://www.visioninternet.com/sitecredit/" target="_blank">Vision</a> - Where Communities & Government Meet</a></p>
+                <!--startindex-->
+            
+
+</div>
+
+            <!--startindex-->
+        </footer>
+        <div id="view-options"><a href="javascript:void(0);" id="view-full" onclick="viewfullsite()" class="mobile_only">View Full Site</a></div>
+    </div>
+</div>
+
+<script src="/Project/Contents/Main/mobile_nav_scripts.js" type="text/javascript"></script>
+
+    
+    <script>
+        $(function () {
+            $(".reComment[comment]").removeClass("reComment")
+                                    .removeAttr("comment")
+                                    .removeAttr("author")
+                                    .removeAttr("title")
+                                    .removeAttr("timestamp");
+        })
+    </script>
+    
+
+    
+
+    <script src="/Scripts/ScriptBundleVisionFrontend.jsbnd?v=MTz0Fhb0BJgIlCPNkS-U3HToDrZ-Qj_fgwZQETmVeyo1"></script>
+
+
+    
+    
+    <script>
+        try { manualRenderMobile(); } catch (err) {}
+    </script>
+    
+    <script src="/Scripts/ScriptBundleKendo.jsbnd?v=IiVUWeFghEcfq5UT-a337Y4jRYXiiP_YUrkfqq53tqw1"></script>
+
+    <script src="/Scripts/Components/ScriptsFEBundle.jsbnd?v=pEgtsyOL6etoOcjZfH0qpaPz3RVCNoBfsfXBHju_Nmo1"></script>
+
+    <script>
+        $(function() {
+            var sitewrapper = $(".sitewrapper");
+            if(sitewrapper.length && !sitewrapper.hasClass("")) {
+                sitewrapper.addClass("");
+            }
+        });
+    </script>
+
+    
+</body>
+</html>

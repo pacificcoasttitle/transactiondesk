@@ -1,0 +1,35 @@
+@media print {
+	@page {
+		size: portrait;
+		margin: 0.5in 0.19in 0 0.19in ;
+	}
+}
+
+tr {
+	width: 100%;
+	margin: 0;
+}
+
+td {
+	font-size: 13px;
+	font-family: Calibri, sans-serif;
+	width: 2.63in;
+	height: 1in;
+	margin-top: 0;
+	vertical-align: top;
+	-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+	padding: 0.132in 0.05in 0.05in 0.053in;
+	line-height: 1.5;
+	/*border: 0.1px solid black;*/
+	overflow: hidden;
+}
+
+td.separator {
+	width: 0.125in;
+	/*border: none;
+	border: 0.1px solid black;*/
+}
+
+* { font-family: sans-serif; }
+
+td h1, td h2, td p { font-size: 13px; }

@@ -1,0 +1,28 @@
+<?php
+declare(strict_types=1);
+
+use Phinx\Migration\AbstractMigration;
+
+final class AddPropertyColsToPropertyDetailsTable extends AbstractMigration
+{
+    /**
+     * Change Method.
+     *
+     * Write your reversible migrations using this method.
+     *
+     * More information on writing migrations is available here:
+     * https://book.cakephp.org/phinx/0/en/migrations.html#the-change-method
+     *
+     * Remember to call "create()" or "update()" and NOT "save()" when working
+     * with the Table class.
+     */
+    public function change(): void
+    {
+        $table = $this->table('property_details');
+        $table->addColumn('cpl_proposed_property_address', 'string', ['null' => true, 'after' => 'borrowers_vesting'])
+            ->addColumn('cpl_proposed_property_city', 'string', ['null' => true, 'after' => 'cpl_proposed_property_address'])
+            ->addColumn('cpl_proposed_property_state', 'string', ['null' => true, 'after' => 'cpl_proposed_property_city'])
+            ->addColumn('cpl_proposed_property_zip', 'string', ['null' => true, 'after' => 'cpl_proposed_property_state'])
+              ->update();
+    }
+}

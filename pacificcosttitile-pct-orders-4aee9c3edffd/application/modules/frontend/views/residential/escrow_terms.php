@@ -1,0 +1,576 @@
+<body>
+	<?php
+        $this->load->view('layout/header');
+    ?>
+
+	<div class="section-title-page4 area-bg area-bg_blue area-bg_op_60 parallax">
+		<div class="area-bg__inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<h1 class="b-title-page">Escrow Terms.</h1>
+						<div class="b-title-page__info">Helping you get comfortable with the lingo.</div>
+						<!-- end breadcrumb-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end .b-title-page-->
+
+	<section id="top" id="top" class="section-type-4 section-default" style="padding-bottom:0px; padding-top:40px;">
+		<div class="container">
+			<div class="row">
+
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="typography-section__inner">
+							<h2 class="ui-title-block ui-title-block_light">Common Terms”</h2>
+							<div class="ui-decor-1 bg-primary"></div>
+							<p class="">Below you will find a list of terms that you might come across during your
+								transaction. We want to make sure you are familiar with them.</p>
+							<p> <a href="#A">A</a> &nbsp | &nbsp <a href="#B">B</a> &nbsp | &nbsp <a href="#C">C</a>
+								&nbsp | &nbsp <a href="#D">D</a> &nbsp | &nbsp <a href="#E">E</a> &nbsp | &nbsp <a
+									href="#F">F</a> &nbsp | &nbsp <a href="#G">G</a> &nbsp | &nbsp <a href="#H">H</a>
+								&nbsp | &nbsp <a href="#I">I</a> &nbsp | &nbsp <a href="#J">J</a> &nbsp | &nbsp <a
+									href="#K">K</a> &nbsp | &nbsp <a href="#L">L</a> &nbsp | &nbsp <a href="#M">M</a>
+								&nbsp | &nbsp <a href="#N">N</a> &nbsp | &nbsp <a href="#O">O</a> &nbsp | &nbsp <a
+									href="#P">P</a> &nbsp | &nbsp <a href="#Q">Q</a> &nbsp | &nbsp <a href="#R">R</a>
+								&nbsp | &nbsp <a href="#S">S</a> &nbsp | &nbsp <a href="#T">T</a> &nbsp | &nbsp <a
+									href="#U">U</a> &nbsp | &nbsp <a href="#V">V</a> &nbsp | &nbsp <a href="#W">W</a>
+								&nbsp | &nbsp <a href="#X">X</a> &nbsp | &nbsp <a href="#Y">Y</a> &nbsp | &nbsp <a
+									href="#Z">Z</a> &nbsp |
+						</div>
+						<br>
+						<p><strong><a id="A"></a>A</strong></p>
+						<p class="terms">ABANDONMENT:</p>
+						<p class="def"> To relinquish or give up a right or any further interest.</p>
+						<p class="terms">ABSTRACT OF JUDGMENT:</p>
+						<p class="def"> A condensation or summary of the essential provisions of a court judgment.</p>
+						<p class="terms">ABSTRACT OF TITLE:</p>
+						<p class="def"> A condensed history or a summary of the condition of title based on an
+							examination of public records.</p>
+						<p class="terms">ACCELERATION CLAUSE:</p>
+						<p class="def"> A clause in an installment note or trust deed permitting the payee or
+							beneficiary to declare the entire unpaid balance immediately due and payable upon the
+							occurrence of a stated event, such as the failure to pay an installment when due.</p>
+						<p class="terms">ACCESS RIGHT:</p>
+						<p class="def"> The right of an owner of land to have ingress and egress to and from his
+							property to a public street.</p>
+						<p class="terms">ACTUAL NOTICE:</p>
+						<p class="def"> Notice which a party has received in fact or in reality, as compared with
+							constructive notice which is implied or inferred.</p>
+						<p class="terms">ADMINISTRATOR:</p>
+						<p class="def"> A person appointed by a probate court as the representative of a decedent’s
+							estate where the decedent left no will.</p>
+						<p class="terms">ADVANCES:</p>
+						<p class="def"> Money advanced by the beneficiary under a trust deed to pay real estate taxes,
+							hazard insurance premiums, and other items needed to protect the beneficiary’s interest
+							under the trust deed.</p>
+						<p class="terms">AFFIDAVIT:</p>
+						<p class="def"> A written sworn statement made before an authorized official.</p>
+						<p class="terms">AFFIDAVIT OF DEATH OF JOINT TENANT:</p>
+						<p class="def"> The sworn statement recorded to evidence the death of a person whose title to
+							property is held in joint tenancy.</p>
+						<p class="terms">AGENCY:</p>
+						<p class="def"> The contractual relationship between a principal and an agent in which the agent
+							is employed to act on behalf of the principal in dealings with third parties.</p>
+						<p class="terms">AGENT:</p>
+						<p class="def"> A person who acts on behalf of a principal.</p>
+						<p class="terms">A.K.A.: This abbreviation refers to “also known as” and is used in instances
+							where confusion exists concerning the identity of a party on the vesting.</p>
+						<p class="terms">ALIENATION CLAUSE:</p>
+						<p class="def"> A clause in a note or trust deed permitting the payee or beneficiary to declare
+							the entire balance immediately due and payable upon a transfer of the property. Also
+							referred to as a &#8220;due on sale&#8221; clause.</p>
+						<p class="terms">A.L.T.A.: American Land Title Association, commonly used in reference to a form
+							of title policy required by lenders.</p>
+						<p class="terms">AMORTIZATION:</p>
+						<p class="def"> Paying on an installment basis at stated times for a stated period until the
+							debt is paid in full.</p>
+						<p class="terms">APPRAISAL:</p>
+						<p class="def"> An opinion as to the fair market value of property.</p>
+						<p class="terms">ASSESSED VALUE:</p>
+						<p class="def"> Value placed on property as a basis for taxation.</p>
+						<p class="terms">ASSESSMENTS:</p>
+						<p class="def"> Special taxes imposed to pay for public improvements beneficial to a limited
+							area.</p>
+						<p class="terms">ASSIGNEE:</p>
+						<p class="def"> The person being assigned the position. For example, in a sale transaction, the
+							Buyer’s Assignee will complete the transaction in place of the Buyer.</p>
+						<p class="terms">ASSIGNMENT:</p>
+						<p class="def"> A transfer in writing of a person’s interest.</p>
+						<p class="terms">ASSIGNOR:</p>
+						<p class="def"> The person who assigns or transfers property.</p>
+						<p class="terms">ASSUMPTION:</p>
+						<p class="def"> The taking over by one party of an obligation that was originally incurred by
+							another, as in the assumption of an existing trust deed by the new owner when property is
+							sold.</p>
+						<p class="terms">ATTORNEY-IN-FACT:</p>
+						<p class="def"> An agent authorized to act for another as granted in a Power of Attorney
+							document.</p>
+						<p><a href="#top"><span>return to top</span></a></p>
+						<p><a id="B"></a><strong>B</strong></p>
+						<p class="terms">BALLOON PAYMENT:</p>
+						<p class="def"> The final payment on an installment note which is greater than the preceding
+							payments and which pays the note in full. Also, a payment that exceeds the normal payment
+							program.</p>
+						<p class="terms">BENEFICIARY:</p>
+						<p class="def"> As used in a trust deed loan, the Beneficiary is the lender. The Beneficiary is
+							the party who obtains the benefit of the security.</p>
+						<p class="terms">BENEFICIARY DEMAND:</p>
+						<p class="def"> A statement setting forth the amount required to payoff a loan in full.</p>
+						<p class="terms">BENEFICIARY STATEMENT:</p>
+						<p class="def"> A statement supplied by a lender for purposes of verifying the loan balance,
+							present status, and terms of the loan. In the case of a sale transaction in which the buyer
+							is assuming the loan, the statement will often provide the lender’s loan transfer
+							requirements and a list of required transfer fees.</p>
+						<p class="terms">BILL OF SALE:</p>
+						<p class="def"> A written instrument evidencing the transfer of title to personal property.</p>
+						<p class="terms">BINDER:</p>
+						<p class="def"> A report issued by a title insurance company binding or committing the title
+							insurance company to issue a policy within a specified time.</p>
+						<p class="terms">BLANKET MORTGAGE OR TRUST DEED:</p>
+						<p class="def"> A mortgage or trust deed which covers more than one lot or parcel of real
+							property, often an entire subdivision.</p>
+						<p><a href="#top"><span>return to top</span></a></p>
+						<p><a id="C"></a><strong>C</strong></p>
+						<p class="terms">C.A.R.: California Association of Realtors. This Association guides the
+							activities of the real estate licensees in the State of California.</p>
+						<p class="terms">C.C. &amp; R’s:</p>
+						<p class="def"> Covenants, Conditions and Restrictions are those matters that limit the use and
+							enjoyment of property usually by agreements contained in deeds and other documents.</p>
+						<p class="terms">C.E.A.: California Escrow Association. An active, State-wide organization
+							providing guidance and services for escrow personnel, including training seminars and
+							materials.</p>
+						<p class="terms">CHAIN OF TITLE:</p>
+						<p class="def"> The sequence of ownership or title on the property as evidenced by a
+							chronological list of recorded instruments affecting the title to land.</p>
+						<p class="terms">CLOUD ON TITLE:</p>
+						<p class="def"> A defect in chain of title or in documentation keeping the title from being
+							clear and easily conveyed.</p>
+						<p class="terms">COLLATERAL:</p>
+						<p class="def"> The item used to secure a loan to assure the lender of repayment or provide a
+							source of repayment in the event of default.</p>
+						<p class="terms">COMMUNITY PROPERTY:</p>
+						<p class="def"> Property acquired by husband or wife or both during marriage when not acquired
+							as separate property.</p>
+						<p class="terms">CONDOMINIUM (CONDO’S): A form of ownership of a property wherein certain parts
+							(units) of the property are in fee title to individuals and a portion of the property is
+							owned “in common” with the other owners.</p>
+						<p class="terms">CONFIRMATION OF SALE:</p>
+						<p class="def"> Court approval of the sale of property by an executor, administrator, guardian
+							or conservator.</p>
+						<p class="terms">CONSERVATOR:</p>
+						<p class="def"> A person appointed by the court to take care of the person or property of an
+							adult person needing such care.</p>
+						<p class="terms">CONSIDERATION:</p>
+						<p class="def"> The inducement for entering into a contract sometimes known as the sales price.
+						</p>
+						<p class="terms">CONSTRUCTIVE NOTICE:</p>
+						<p class="def"> Notice given by the public records of a claim of ownership or interest in
+							property.</p>
+						<p class="terms">CONTINGENCY:</p>
+						<p class="def"> A condition of closing which is dependent upon an uncertain future event. Such
+							conditions may prevent close of escrow by one of the principals in the event the contingency
+							cannot be removed, such as Buyer obtaining a new loan, a Seller being able to purchase a new
+							house, or a Buyer being able to sell an existing house.</p>
+						<p class="terms">CONTRACT:</p>
+						<p class="def"> An agreement by which a person undertakes to do or not to do a certain thing.
+						</p>
+						<p class="terms">CONVENTIONAL LOAN:</p>
+						<p class="def"> A mortgage loan which is not insured or guaranteed by a governmental agency.</p>
+						<p class="terms">CONVEYANCE:</p>
+						<p class="def"> A written instrument transferring the title to or interest in real estate from
+							one person or entity to another.</p>
+						<p class="terms">CORPORATION:</p>
+						<p class="def"> An artificial being, created by law, possessing certain rights, privileges, and
+							duties of natural persons.</p>
+						<p><a href="#top"><span>return to top</span></a></p>
+						<p><a id="D"></a><strong>D</strong></p>
+						<p class="terms">DECLARATION OF HOMESTEAD:</p>
+						<p class="def"> Document recorded by a homeowner to protect his home from a forced sale up to a
+							prescribed amount in satisfaction of certain types of creditors.</p>
+						<p class="terms">DECREE:</p>
+						<p class="def"> A type of court order.</p>
+						<p class="terms">DEED:</p>
+						<p class="def"> Written instrument by which the ownership of land is transferred from one person
+							to another.</p>
+						<p class="terms">DEED OF TRUST:</p>
+						<p class="def"> Written instrument by which title to land is transferred to a trustee as
+							security for a debt or other obligation. Also known as a trust deed.</p>
+						<p class="terms">DEFAULT:</p>
+						<p class="def"> Failure to perform a duty or to discharge an obligation.</p>
+						<p class="terms">DEPOSIT RECEIPT:</p>
+						<p class="def"> A document used when accepting “earnest money”.</p>
+						<p class="terms">DOCUMENTARY TRANSFER TAX:</p>
+						<p class="def"> A State tax on the sale or conveyance of real property located in any county in
+							the state. Applies when the consideration exceeds $100. Tax is computed at the rate of $.55
+							for each $500.00 of consideration or fraction thereof. Some cities have their own City
+							Transfer Taxes.</p>
+						<p class="terms">D.R.E.: Department of Real Estate. The agency which regulates real estate
+							licensees and the sale of property by developers in the State of California.</p>
+						<p class="terms">DUE-ON-SALE CLAUSE:</p>
+						<p class="def"> A provision in a real estate loan calling for automatic maturity at the lender’s
+							option upon the sale or transfer of the real property to a third party. Also called an
+							alienation clause or acceleration clause.</p>
+						<p><a href="#top"><span>return to top</span></a></p>
+						<p><a id="E"></a><strong>E</strong></p>
+						<p class="terms">EARNEST MONEY:</p>
+						<p class="def"> Funds given as a part of the purchase price to bind a bargain, usually the
+							initial good faith deposit of the Buyer.</p>
+						<p class="terms">EASEMENTS:</p>
+						<p class="def"> A right or interest in the land of another which exists apart from the ownership
+							of the land, such as a right to cross over another person’s property. Examples include
+							utilities easements and ingress and egress easements.</p>
+						<p class="terms">EGRESS/INGRESS:</p>
+						<p class="def"> An easement right of way for egress (exit) and ingress (entry) to a property
+							owned by another.</p>
+						<p class="terms">EMINENT DOMAIN:</p>
+						<p class="def"> The right or power of the government to take property for a public purpose upon
+							payment of just compensation.</p>
+						<p class="terms">ENCROACHMENT:</p>
+						<p class="def">The extension of an improvement onto the property of another, for example, a
+							garage, fence or driveway that crosses over a lot line.</p>
+						<p class="terms">ENCUMBRANCE:</p>
+						<p class="def"> A lien or charge on a property encumbering the subject parcel.</p>
+						<p class="terms">ENDORSEMENT:</p>
+						<p class="def"> As to a title insurance policy, a rider or attachment forming a part of the
+							insurance policy expanding or limiting coverage. Endorsement also refers to the act of
+							signing a name of the back of a check or promissory note to evidence its transfer.</p>
+						<p class="terms">EQUITY:</p>
+						<p class="def"> Property value in excess of mortgages and other liens.</p>
+						<p class="terms">ESCHEAT:</p>
+						<p class="def"> The transfer of unclaimed funds to the State of California.</p>
+						<p class="terms">ESCROW:</p>
+						<p class="def"> A transaction in which an impartial third party (escrow holder) acts upon
+							written instructions for both seller and buyer (or for borrower and lender) by holding and
+							delivering documents and disbursing funds when certain conditions have been fulfilled.</p>
+						<p class="terms">ESCROW ACCOUNT:</p>
+						<p class="def"> An account in which the borrower’s monthly deposits for taxes, hazard insurance,
+							and mortgage insurance, if any, are held in trust by the lender for the future payment of
+							these items as they become due. Also known as an Impound Account.</p>
+						<p class="terms">ESCROW ANALYSIS:</p>
+						<p class="def"> The periodic examination of escrow accounts to determine if monthly deposits
+							will provide sufficient funds to pay tax and insurance bills when due.</p>
+						<p class="terms">ESCROW HOLDER:</p>
+						<p class="def"> The escrow officer, escrow company or escrow agent.</p>
+						<p class="terms">EXECUTOR:</p>
+						<p class="def"> A person who is designated in a will as the representative of a decedent‘s
+							estate.</p>
+						<p class="terms">EXECUTRIX:</p>
+						<p class="def"> Feminine of executor.</p>
+						<p><a href="#top"><span>return to top</span></a></p>
+						<p><a id="F"></a><strong>F</strong></p>
+						<p class="terms">FIDUCIARY:</p>
+						<p class="def"> One who holds a position of trust and confidence. As an example:</p>
+						<p class="def"> an escrow holder.</p>
+						<p class="terms">FORECLOSURE:</p>
+						<p class="def"> A proceeding to enforce a lien by a sale of the property in order to satisfy the
+							debt.</p>
+						<p><a href="#top"><span>return to top</span></a></p>
+						<p><a id="G"></a><strong>G</strong></p>
+						<p class="terms">GRANT:</p>
+						<p class="def"> A transfer of real property.</p>
+						<p class="terms">GRANT DEED:</p>
+						<p class="def"> A written instrument transferring title to real property.</p>
+						<p class="terms">GRANTEE:</p>
+						<p class="def"> The person to whom a grant is made.</p>
+						<p class="terms">GRANTOR:</p>
+						<p class="def"> The person who makes a grant.</p>
+						<p class="terms">GUARDIAN:</p>
+						<p class="def"> A person appointed by the court to care for the person or estate of a minor or
+							incompetent person.</p>
+						<p><a href="#top"><span>return to top</span></a></p>
+						<p><a id="H"></a><strong>H</strong></p>
+						<p class="terms">HOMESTEAD:</p>
+						<p class="def"> A residence upon which the owner has recorded a Declaration of Homestead under
+							California law.</p>
+						<p class="terms">HYPOTHECATE:</p>
+						<p class="def"> To mortgage or pledge without delivery of the security to the lender. To give
+							something as security without parting with possession.</p>
+						<p><a href="#top"><span>return to top</span></a></p>
+						<p><strong><a id="I"></a>I</strong></p>
+						<p class="terms">IMPOUND ACCOUNT:</p>
+						<p class="def"> Funds retained by a lender to cover such items as taxes and hazard insurance
+							premiums. Also known as Escrow Account.</p>
+						<p class="terms">INDEMNITY:</p>
+						<p class="def"> Insurance against possible loss or damage. A title insurance policy is a
+							contract of indemnity.</p>
+						<p class="terms">INSTALLMENT NOTE:</p>
+						<p class="def"> A promissory note providing for payment of the principal in two or more fixed
+							amounts at different stated times.</p>
+						<p class="terms">INSURANCE CERTIFICATES:</p>
+						<p class="def"> On condominium or townhome properties, an insurance certificate is the evidence
+							that the unit owner and lender, if any, are insured under the terms of a Master Insurance
+							Policy.</p>
+						<p><a href="#top"><span>return to top</span></a></p>
+						<p><strong><a id="J"></a>J</strong></p>
+						<p class="terms">JOINT TENANCY:</p>
+						<p class="def"> Title held by two or more persons in equal shares with right of survivorship.
+						</p>
+						<p class="terms">JOINT VENTURE:</p>
+						<p class="def"> A business undertaking by two or more persons to conduct a single enterprise for
+							profit.</p>
+						<p class="terms">JUDGMENT LIEN:</p>
+						<p class="def"> A statutory lien created by recording an abstract of judgment.</p>
+						<p class="terms">JUNIOR LIEN:</p>
+						<p class="def"> A subordinate lien.</p>
+						<p class="terms">JURAT:</p>
+						<p class="def"> The sworn statement form of the notary public certificate. The clause at the end
+							of an affidavit with the date, location and person before whom the statement was sworn.</p>
+						<p><a href="#top"><span>return to top</span></a></p>
+						<p><a id="L"></a><strong>L</strong></p>
+						<p class="terms">LAND SALES CONTRACT:</p>
+						<p class="def"> A contract used in connection with the sale of real property where the seller
+							retains legal title until all or a certain part of the purchase price is paid by the buyer.
+						</p>
+						<p class="terms">LEASE:</p>
+						<p class="def"> A contract for the possession of land in consideration of payment of rent.</p>
+						<p class="terms">LEASEHOLD INTEREST:</p>
+						<p class="def"> Having possession of a property by virtue of a Lease.</p>
+						<p class="terms">LESSEE:</p>
+						<p class="def"> The tenant under a lease.</p>
+						<p class="terms">LESSOR:</p>
+						<p class="def"> The landlord under a lease.</p>
+						<p class="terms">LIEN:</p>
+						<p class="def"> A charge, claim, or liability upon property for the payment of a debt or
+							performance of an obligation. Examples include taxes, special assessments, judgments,
+							mortgages, and mechanic&#8217;s liens.</p>
+						<p class="terms">LIFE ESTATE:</p>
+						<p class="def"> An estate measured by the life of a natural person.</p>
+						<p class="terms">LIMITED PARTNERSHIP:</p>
+						<p class="def"> A partnership composed of partners whose contribution and liability are limited.
+						</p>
+						<p class="terms">LIQUIDATED DAMAGES:</p>
+						<p class="def"> An agreed-to sum of money to be paid under a contract in the event of a breach
+							where it would be difficult to prove the amount of actual damages.</p>
+						<p class="terms">LIS PENDENS:</p>
+						<p class="def"> A legal notice recorded against property to show that litigation is pending,
+							typically used to control or stop the transfer of the property when a conflict arises
+							between parties in a transaction.</p>
+						<p><a href="#top"><span>return to top</span></a></p>
+						<p><strong><a id="M"></a>M</strong></p>
+						<p class="terms">MECHANIC&#8217;S LIEN/CONTRACTOR&#8217;S LIEN:</p>
+						<p class="def"> A statutory lien in favor of laborers and suppliers who have contributed to a
+							work of improvement.</p>
+						<p class="terms">MORTGAGE:</p>
+						<p class="def"> A written document executed by the owner of land by which the land is given as
+							security for the payment of a debt or performance of an obligation.</p>
+						<p class="terms">MORTGAGEE:</p>
+						<p class="def"> The party who obtains the benefit of a mortgage.</p>
+						<p class="terms">MORTGAGOR:</p>
+						<p class="def"> The party who executes a mortgage.</p>
+						<p class="terms">MUTUAL WATER COMPANY:</p>
+						<p class="def"> A water company organized by or for the benefit of water users in a given
+							district with the object of securing an ample water supply at a reasonable rate. Shares of
+							stock are issued to the users.</p>
+						<p><a href="#top"><span>return to top</span></a></p>
+						<p><a id="N"></a><strong>N</strong></p>
+						<p class="terms">NOMINEE:</p>
+						<p class="def"> A party designated to act in place of the original buyer in a real estate
+							transaction.</p>
+						<p class="terms">NOTE:</p>
+						<p class="def"> A written acknowledgment of a debt by a borrower including a promise of payment
+							in accordance with specified terms. Also known as Promissory Note.</p>
+						<p class="terms">NOTICE OF DEFAULT:</p>
+						<p class="def"> Recorded notice that a default has occurred under a deed of trust.</p>
+						<p class="terms">NOTICE OF SALE:</p>
+						<p class="def"> A notice recorded by the Trustee of a Deed of Trust stating that a foreclosure
+							action has begun and giving the date of the proposed foreclosure sale.</p>
+						<p><a href="#top"><span>return to top</span></a></p>
+						<p><a id="O"></a><strong>O</strong></p>
+						<p class="terms">OFFSET STATEMENT/ESTOPPEL CERTIFICATE:</p>
+						<p class="def"> Statement obtained to verify or substantiate terms of an agreement or sums of
+							money. As an example:</p>
+						<p class="def"> A Tenant Offset or Estoppel is a statement signed by the Tenant giving monthly
+							rental sum, security deposits, last month rent paid, and describing any special agreements
+							with the Lessor (Landlord).</p>
+						<p><a href="#top"><span>return to top</span></a></p>
+						<p><a id="P"></a><strong>P</strong></p>
+						<p class="terms">PARTNERSHIPS:</p>
+						<p class="def"> A voluntary association of two or more persons to carry on as co-owners of a
+							business for profit.</p>
+						<p class="terms">PERSONAL PROPERTY:</p>
+						<p class="def"> Movable property such as furniture, clothing, or a car. Property which is not
+							real property.</p>
+						<p class="terms">PLAT MAP:</p>
+						<p class="def"> A drawing giving the general physical lay-out of the land covered and included
+							in the preliminary title report.</p>
+						<p class="terms">P.M.I.: Private Mortgage Insurance. It is obtained by a lender at the
+							borrower&#8217;s expense as insurance covering the payment of the loan.</p>
+						<p class="terms">POWER OF ATTORNEY:</p>
+						<p class="def"> A document authorizing another to act on one&#8217;s behalf as his agent.</p>
+						<p class="terms">PRELIMINARY TITLE REPORT:</p>
+						<p class="def"> The initial report issued by a title insurer reflecting results of the search of
+							title. This report sets out the terms upon which a title insurer is willing to insure the
+							title, provides a description of the property, the vesting of the title, and any liens and
+							encumbrances against which the company is not willing to insure.</p>
+						<p class="terms">PREPAYMENT PENALTY:</p>
+						<p class="def"> A provision in a note providing for the payment of a penalty in the event the
+							note is paid off prior to its due date</p><br>
+						<p class="terms">PRINCIPAL:</p>
+						<p class="def"> One who employs an agent to act on his behalf, such as the seller and buyer in
+							an escrow transaction. Also, an amount of debt or the face value of a note or mortgage.</p>
+						<p class="terms">PROBATE:</p>
+						<p class="def"> The official proving of a will as authentic or valid in a probate court.</p>
+						<p class="terms">PROPERTY PROFILE:</p>
+						<p class="def"> A informational package furnished by title companies to real estate agents which
+							usually provides copies of the current vesting deed, the tax parcel number, copies of trust
+							deeds, and a plat map.</p>
+						<p class="terms">PRORATE:</p>
+						<p class="def"> To divide equally or proportionately as to the time of use. In a sales escrow,
+							it is the custom to prorate taxes, interest, rents, and hazard insurance premiums between
+							buyer and seller in accordance with the respective periods of ownership.</p>
+						<p class="terms">PUBLIC REPORT:</p>
+						<p class="def"> A report issued by the Department of Real Estate containing information of
+							interest to a buyer about newly subdivided property.</p>
+						<p class="terms">PURCHASE MONEY DEED OF TRUST:</p>
+						<p class="def"> A deed of trust to secure payment of all or a portion of the purchase price of
+							real property.</p>
+						<p><a href="#Q"><span>return to top</span></a></p>
+						<p><strong><a id="17"></a>Q</strong></p>
+						<p class="terms">QUALIFIED INTERMEDIARY:</p>
+						<p class="def"> A person or entity serving as an intermediary in an exchange transaction.</p>
+						<p class="terms">QUIET TITLE:</p>
+						<p class="def"> A legal action to establish title to real property usually used to obtain clear
+							title on a property that is clouded by an issue of title.</p>
+						<p class="terms">QUITCLAIM DEED:</p>
+						<p class="def"> A deed which conveys whatever present right, title or interest the grantor may
+							have in real property but not containing any warranty of a valid interest on title in the
+							grantor.</p>
+						<p><a href="#top"><span>return to top</span></a></p>
+						<p><a id="R"></a><strong>R</strong></p>
+						<p class="terms">REAL PROPERTY:</p>
+						<p class="def"> Land and buildings affixed to the land, including the air space above and
+							mineral rights below, as opposed to personal property or chattels.</p>
+						<p class="terms">RECONVEYANCE:</p>
+						<p class="def"> A document releasing the lien of a deed of trust.</p>
+						<p class="terms">RECORDATION:</p>
+						<p class="def"> Filing a document for record in the office of the county recorder, thereby
+							making the document part of the public record.</p>
+						<p class="terms">RENT STATEMENT:</p>
+						<p class="def"> A detailed statement provided by the seller covering the rental income of a
+							property and amounts of deposits. The statement is used in escrow for rent proration
+							purposes and for making adjustments between the parties for deposits.</p>
+						<p class="terms">REQUEST FOR NOTICE OF DEFAULT:</p>
+						<p class="def"> A notice recorded by the holder of a junior lien requesting that he be notified
+							in the event that a Notice of Default is recorded under a senior deed of trust. If the deed
+							of trust is foreclosed, the person requesting the notice will be notified of the foreclosure
+							by the trustee processing the foreclosure.</p>
+						<p class="terms">R.E.S.P.A.:</p>
+						<p class="def"> The Real Estate Settlement Procedures Act enacted by Congress in 1974, provides
+							protective measures for borrowers, including establishing the manner in which closing costs
+							are disclosed. Lenders are required to use the R.E.S.P.A. settlement statement at closing.
+							In common usage, this form is called a &#8216;H.U.D.&#8221; statement.</p>
+						<p class="terms">RIGHT OF WAY:</p>
+						<p class="def"> A right to cross over a parcel of land.</p>
+						<p><a href="#top"><span>return to top</span></a></p>
+						<p><a id="S"></a><strong>S</strong></p>
+						<p class="terms">SATISFACTION OF JUDGMENT:</p>
+						<p class="def"> Evidence of the payment in full of a judgment lien.</p>
+						<p class="terms">SECURITY DEPOSIT:</p>
+						<p class="def"> A deposit made to assure performance of an obligation, usually by a lessee.</p>
+						<p class="terms">STATEMENT OF INFORMATION FORM:</p>
+						<p class="def"> A brief statement of facts relied upon by title insurers to assist in the proper
+							identification of persons.</p>
+						<p class="terms">SUBESCROW AGENT:</p>
+						<p class="def"> An approved agent to receive and disburse funds on behalf of the escrow holder
+							or a lender, usually the title company named in the escrow.</p>
+						<p class="terms">SUBORDINATION:</p>
+						<p class="def"> The procedure of allowing a new loan or obligation to take priority over an
+							existing encumbrance.</p>
+						<p class="terms">SUBORDINATION AGREEMENT:</p>
+						<p class="def"> An agreement under which a prior lien is given a lower priority to an otherwise
+							junior lien.</p>
+						<p class="terms">SURVEY:</p>
+						<p class="def"> A map or plat containing a statement of courses, distances and quantity of land
+							and showing boundary lines of real property. Also, a process of measuring a parcel of land
+							and ascertaining its area and boundaries.</p>
+						<p class="terms">SWING LOAN:</p>
+						<p class="def"> A short-term loan obtained on a Seller&#8217;s equity for the purpose of
+							purchasing a second property.</p>
+						<p><a href="#top"><span>return to top</span></a></p>
+						<p><a id="T"></a><strong>T</strong></p>
+						<p class="terms">TAX SERVICE:</p>
+						<p class="def"> A service which provides notification to a lender of whether or not a borrower
+							is paying the real property taxes. Companies who perform this service audit the tax rolls
+							and issue notices to lenders when taxes are delinquent.</p>
+						<p class="terms">TENANCY IN COMMON:</p>
+						<p class="def"> Ownership of property by two or more persons in an undivided interest without
+							right of survivorship.</p>
+						<p class="terms">TITLE:</p>
+						<p class="def"> The evidence of ownership.</p>
+						<p class="terms">TITLE INSURANCE:</p>
+						<p class="def"> An insured statement of the condition of title or ownership of real property.
+							For a one-time-only premium, the named insured and their heirs are protected against title
+							defects, liens, and encumbrances existing as of the date of the policy and not specifically
+							excluded from coverage. In the event of a claim, the title company provides legal defense
+							for the policyholder and pays any covered losses incurred as a result of such claim.</p>
+						<p class="terms">TRUST:</p>
+						<p class="def"> A fiduciary relationship in which one party (trustee) holds the title to
+							property for the benefit of another party (beneficiary).</p>
+						<p class="terms">TRUST AGREEMENTS:</p>
+						<p class="def"> A fiduciary relationship in which a trustee holds title to property for the
+							benefit of a beneficiary.</p>
+						<p class="terms">TRUST DEED:</p>
+						<p class="def"> A three-party security instrument conveying title to land as security for the
+							performance of an obligation. The three parties are the Trustor (borrower), Trustee (acts
+							only at time of payoff and in case of foreclosure), and Beneficiary (lender).</p>
+						<p class="terms">TRUSTEE:</p>
+						<p class="def"> The acting principal named in a Trust Agreement or the third party named in a
+							trust deed.</p>
+						<p class="terms">TRUSTEE&#8217;S DEED:</p>
+						<p class="def"> In a case of a foreclosure, the deed given by the trustee under a deed of trust
+							when the property is sold under the power of sale. TRUSTOR:</p>
+						<p class="def"> The person who conveys property in trust or the borrower under a deed of trust.
+						</p>
+						<p><a href="#top"><span>return to top</span></a></p>
+						<p><a id="U"></a><strong>U</strong></p>
+						<p class="terms">UNINCORPORATED AREA:</p>
+						<p class="def"> Property located outside the limits of any city.</p>
+						<p class="terms">UNLAWFUL DETAINER:</p>
+						<p class="def"> A legal action to recover possession of real property.</p>
+						<p class="terms">USURY:</p>
+						<p class="def"> Charging more interest than the law allows on a loan.</p>
+						<p><a href="#top"><span>return to top</span></a></p>
+						<p><a id="V"></a><strong>V</strong></p>
+						<p class="terms">VEST:</p>
+						<p class="def"> To give title to or to pass ownership to property.</p>
+						<p><a href="#top"><span>return to top</span></a></p>
+						<p><a id="W"></a><strong>W</strong></p>
+						<p class="terms">WILD DOCUMENT:</p>
+						<p class="def"> A commonly used expression for a document that is recorded against a property
+							but seems to have no basis for application or connection with the property.</p>
+						<p class="terms">WILL:</p>
+						<p class="def"> A disposition of property effective upon the maker&#8217;s death often referred
+							to as a &#8220;last will and testament&#8221;.</p>
+						<p><a href="#top"><span>return to top</span></a></p>
+						<p><a id="Z"></a><strong>Z</strong></p>
+						<p class="terms">ZONING:</p>
+						<p class="def"> Governmental regulations relating to the use of real property.</p>
+						<p><a href="#top"><span>return to top</span></a></p>
+						<!--end_raw-->
+						</p>
+
+
+
+
+
+					</div>
+				</div>
+			</div>
+
+		</div>
+		</div>
+	</section><br><br><br><br>
+
+	<?php
+        $this->load->view('layout/footer_above_section');
+    ?>
+</body>
+
+</html>
+<?php
+    $this->load->view('layout/footer');
+?>

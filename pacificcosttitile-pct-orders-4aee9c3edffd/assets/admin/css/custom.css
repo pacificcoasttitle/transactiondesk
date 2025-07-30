@@ -1,0 +1,28 @@
+.error,
+.required {
+	color: #FF2F0F;	
+}
+
+.pull-right {
+	float: right;
+}
+
+#tbl-users-listing a,
+#tbl-fees a,
+#tbl-escrow-refinance-rates a,
+#tbl-escrow-resale-rates a,
+#tbl-title-rates a {
+	color: #212529;
+    padding: 5px;
+}
+
+.page-item.active .page-link,
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: #6c757d;
+    border-color: #dee2e6;
+}
+
+.page-link {
+    color: #6c757d;
+}
