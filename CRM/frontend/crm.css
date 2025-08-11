@@ -1,0 +1,851 @@
+/**
+ * CRM Stylesheet
+ * 
+ * Custom styles for the CRM system that integrate with
+ * the existing Transaction Desk design language.
+ */
+
+/* ==========================================================================
+   CRM Global Styles
+   ========================================================================== */
+
+.crm-container {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.crm-page-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.crm-page-header h2 {
+    color: #495057;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* ==========================================================================
+   Dashboard Widgets
+   ========================================================================== */
+
+.crm-dashboard-widgets {
+    margin-bottom: 2rem;
+}
+
+.crm-stat-card {
+    border: none;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: all 0.3s ease;
+}
+
+.crm-stat-card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.crm-stat-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.crm-stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #495057;
+}
+
+.crm-stat-label {
+    font-size: 0.875rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5rem;
+    color: #6c757d;
+}
+
+.crm-stat-change {
+    font-size: 0.75rem;
+}
+
+/* ==========================================================================
+   Quick Actions
+   ========================================================================== */
+
+.crm-quick-form .input-group {
+    margin-bottom: 0;
+}
+
+.crm-quick-form .form-control {
+    border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.crm-search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    border: 1px solid #dee2e6;
+    border-top: none;
+    border-radius: 0 0 0.375rem 0.375rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.crm-search-result-item {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #f8f9fa;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.crm-search-result-item:hover {
+    background-color: #f8f9fa;
+}
+
+.crm-search-result-item:last-child {
+    border-bottom: none;
+}
+
+/* ==========================================================================
+   Client Management
+   ========================================================================== */
+
+.crm-clients-table {
+    font-size: 0.875rem;
+}
+
+.crm-clients-table th {
+    border-top: none;
+    font-weight: 600;
+    color: #495057;
+    background-color: #f8f9fa;
+}
+
+.crm-client-info {
+    display: flex;
+    align-items: center;
+}
+
+.crm-client-avatar,
+.crm-client-avatar-large,
+.crm-client-avatar-xl {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: white;
+    border-radius: 50%;
+    margin-right: 0.75rem;
+    flex-shrink: 0;
+}
+
+.crm-client-avatar {
+    width: 40px;
+    height: 40px;
+    font-size: 0.875rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.crm-client-avatar-large {
+    width: 60px;
+    height: 60px;
+    font-size: 1.25rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.crm-client-avatar-xl {
+    width: 80px;
+    height: 80px;
+    font-size: 1.75rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.crm-client-details {
+    flex-grow: 1;
+}
+
+.crm-client-row:hover {
+    background-color: #f8f9fa;
+}
+
+/* ==========================================================================
+   Client Cards View
+   ========================================================================== */
+
+.crm-client-card {
+    border: none;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.crm-client-card:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.crm-client-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.crm-client-title {
+    flex-grow: 1;
+}
+
+.crm-client-title h6 {
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+}
+
+.crm-client-stats .row {
+    margin: 0;
+}
+
+.crm-stat-item {
+    padding: 0.5rem 0;
+}
+
+.crm-stat-item h6 {
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+}
+
+.crm-client-contact {
+    font-size: 0.75rem;
+    line-height: 1.4;
+}
+
+.crm-client-contact i {
+    width: 12px;
+    margin-right: 0.25rem;
+}
+
+/* ==========================================================================
+   Client Profile
+   ========================================================================== */
+
+.crm-client-profile-header {
+    display: flex;
+    align-items: center;
+}
+
+.crm-client-info {
+    flex-grow: 1;
+}
+
+.crm-client-info h2 {
+    margin-bottom: 0.5rem;
+    color: #495057;
+}
+
+.crm-client-contact-quick {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.crm-contact-item {
+    display: flex;
+    align-items: center;
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+
+.crm-contact-item i {
+    margin-right: 0.5rem;
+}
+
+.crm-contact-item a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.crm-contact-item a:hover {
+    text-decoration: underline;
+}
+
+.crm-client-stats {
+    text-align: center;
+}
+
+.crm-stat-box {
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 0.375rem;
+    margin-bottom: 0.5rem;
+}
+
+.crm-stat-box h4 {
+    margin-bottom: 0.25rem;
+    font-weight: 600;
+}
+
+.crm-client-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/* ==========================================================================
+   Notes Section
+   ========================================================================== */
+
+.crm-notes-section {
+    padding: 1rem 0;
+}
+
+.crm-note-item {
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+    margin-bottom: 1rem;
+    background-color: white;
+    transition: box-shadow 0.2s ease;
+}
+
+.crm-note-item:hover {
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.crm-note-header {
+    display: flex;
+    justify-content: between;
+    align-items: center;
+    padding: 1rem 1rem 0 1rem;
+    border-bottom: 1px solid #f8f9fa;
+}
+
+.crm-note-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-grow: 1;
+    font-size: 0.75rem;
+    color: #6c757d;
+}
+
+.crm-note-type {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-weight: 500;
+}
+
+.crm-note-actions {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.crm-note-content {
+    padding: 1rem;
+}
+
+.crm-note-subject {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #495057;
+}
+
+.crm-note-body {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.crm-note-followup,
+.crm-note-order {
+    padding: 0.5rem 0.75rem;
+    background-color: #f8f9fa;
+    border-radius: 0.25rem;
+    font-size: 0.875rem;
+    margin-top: 0.5rem;
+}
+
+.crm-note-followup {
+    border-left: 4px solid #ffc107;
+}
+
+.crm-note-order {
+    border-left: 4px solid #17a2b8;
+}
+
+/* ==========================================================================
+   Activity Timeline
+   ========================================================================== */
+
+.crm-activity-timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.crm-activity-timeline::before {
+    content: '';
+    position: absolute;
+    left: 1rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #dee2e6;
+}
+
+.crm-timeline-date {
+    margin: 2rem 0 1rem 0;
+    padding-left: 1rem;
+}
+
+.crm-timeline-date h6 {
+    color: #6c757d;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.crm-activity-timeline-item {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.crm-activity-timeline-marker {
+    position: absolute;
+    left: -2.25rem;
+    top: 0.25rem;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 2px solid #dee2e6;
+    border-radius: 50%;
+    font-size: 0.75rem;
+}
+
+.crm-activity-timeline-content {
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+    padding: 1rem;
+}
+
+.crm-activity-header {
+    display: flex;
+    justify-content: between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.crm-activity-subject {
+    font-weight: 600;
+    margin-bottom: 0;
+    color: #495057;
+}
+
+.crm-activity-time {
+    font-size: 0.75rem;
+    color: #6c757d;
+}
+
+.crm-activity-description {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.crm-activity-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 0.75rem;
+    color: #6c757d;
+}
+
+.crm-activity-detail {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.crm-activity-outcome {
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid #f8f9fa;
+}
+
+.crm-outcome,
+.crm-next-action {
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+}
+
+/* ==========================================================================
+   Follow-up Management
+   ========================================================================== */
+
+.crm-followup-list {
+    padding: 1rem 0;
+}
+
+.crm-followup-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+    margin-bottom: 0.75rem;
+    background-color: white;
+    transition: box-shadow 0.2s ease;
+}
+
+.crm-followup-item:hover {
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.crm-followup-priority {
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+.crm-followup-content {
+    flex-grow: 1;
+}
+
+.crm-followup-subject {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: #495057;
+}
+
+.crm-followup-client {
+    font-size: 0.875rem;
+    color: #6c757d;
+    margin-bottom: 0.25rem;
+}
+
+.crm-followup-date {
+    font-size: 0.75rem;
+    color: #6c757d;
+}
+
+.crm-followup-actions {
+    display: flex;
+    gap: 0.25rem;
+    flex-shrink: 0;
+}
+
+/* ==========================================================================
+   Activity Feed
+   ========================================================================== */
+
+.crm-activity-feed {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.crm-activity-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #f8f9fa;
+}
+
+.crm-activity-item:last-child {
+    border-bottom: none;
+}
+
+.crm-activity-icon {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #f8f9fa;
+    margin-right: 0.75rem;
+    flex-shrink: 0;
+}
+
+.crm-activity-content {
+    flex-grow: 1;
+}
+
+.crm-activity-title {
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+    color: #495057;
+}
+
+.crm-activity-meta {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.75rem;
+    color: #6c757d;
+}
+
+/* ==========================================================================
+   Empty States
+   ========================================================================== */
+
+.crm-empty-state {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: #6c757d;
+}
+
+.crm-empty-state i {
+    margin-bottom: 1rem;
+    opacity: 0.5;
+}
+
+.crm-empty-state h5 {
+    margin-bottom: 1rem;
+    color: #495057;
+}
+
+/* ==========================================================================
+   View Toggle
+   ========================================================================== */
+
+.crm-view-toggle .btn {
+    border-color: #dee2e6;
+    color: #6c757d;
+}
+
+.crm-view-toggle .btn.active {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
+
+/* ==========================================================================
+   Notifications
+   ========================================================================== */
+
+.crm-notification {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    z-index: 1050;
+    min-width: 300px;
+    max-width: 500px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.crm-notification i {
+    margin-right: 0.5rem;
+}
+
+/* ==========================================================================
+   Form Styles
+   ========================================================================== */
+
+.crm-form-group {
+    margin-bottom: 1rem;
+}
+
+.crm-form-label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: #495057;
+}
+
+.crm-form-control {
+    border-radius: 0.375rem;
+    border: 1px solid #ced4da;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.crm-form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.auto-save-indicator {
+    font-size: 0.75rem;
+    color: #28a745;
+    margin-top: 0.25rem;
+    display: none;
+}
+
+/* ==========================================================================
+   Loading States
+   ========================================================================== */
+
+.crm-loading {
+    text-align: center;
+    padding: 2rem;
+    color: #6c757d;
+}
+
+.crm-loading i {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* ==========================================================================
+   Responsive Design
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    .crm-client-profile-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .crm-client-stats {
+        margin-top: 1rem;
+        text-align: left;
+    }
+    
+    .crm-client-actions {
+        margin-top: 1rem;
+        width: 100%;
+    }
+    
+    .crm-client-actions .btn {
+        flex: 1;
+        margin-bottom: 0.5rem;
+    }
+    
+    .crm-activity-timeline {
+        padding-left: 1rem;
+    }
+    
+    .crm-activity-timeline::before {
+        left: 0.5rem;
+    }
+    
+    .crm-activity-timeline-marker {
+        left: -1.25rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 0.625rem;
+    }
+    
+    .crm-note-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .crm-note-meta {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+    
+    .crm-followup-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .crm-followup-actions {
+        align-self: flex-end;
+    }
+    
+    .crm-activity-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+    
+    .crm-activity-details {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    
+    .crm-contact-item {
+        font-size: 0.75rem;
+    }
+    
+    .crm-dashboard-widgets .col-md-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .crm-dashboard-widgets .col-md-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    .crm-client-actions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+    }
+    
+    .crm-stat-box {
+        padding: 0.75rem;
+    }
+    
+    .crm-stat-number {
+        font-size: 1.75rem;
+    }
+    
+    .crm-notification {
+        top: 0.5rem;
+        right: 0.5rem;
+        left: 0.5rem;
+        min-width: auto;
+    }
+}
+
+/* ==========================================================================
+   Print Styles
+   ========================================================================== */
+
+@media print {
+    .crm-client-actions,
+    .crm-note-actions,
+    .crm-followup-actions,
+    .btn,
+    .dropdown {
+        display: none !important;
+    }
+    
+    .crm-note-item,
+    .crm-activity-timeline-content {
+        break-inside: avoid;
+        border: 1px solid #dee2e6 !important;
+        margin-bottom: 1rem;
+    }
+    
+    .crm-client-header-card {
+        border: 1px solid #dee2e6 !important;
+        margin-bottom: 1rem;
+    }
+}
+
+/* ==========================================================================
+   Dark Mode Support (Optional)
+   ========================================================================== */
+
+@media (prefers-color-scheme: dark) {
+    .crm-container {
+        background-color: #212529;
+        color: #dee2e6;
+    }
+    
+    .crm-note-item,
+    .crm-activity-timeline-content,
+    .crm-followup-item {
+        background-color: #343a40;
+        border-color: #495057;
+    }
+    
+    .crm-stat-card,
+    .crm-client-card {
+        background-color: #343a40;
+        border-color: #495057;
+    }
+    
+    .crm-empty-state {
+        color: #adb5bd;
+    }
+}
