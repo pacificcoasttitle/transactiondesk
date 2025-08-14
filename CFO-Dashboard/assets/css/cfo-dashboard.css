@@ -1,0 +1,629 @@
+/**
+ * CFO Dashboard Styles
+ * 
+ * Custom CSS styles for the CFO Revenue Dashboard component.
+ * Includes responsive design, dark mode support, and custom animations.
+ * 
+ * @package    CFO Dashboard
+ * @subpackage CSS
+ * @version    1.0.0
+ */
+
+/* Dashboard Container */
+.cfo-dashboard {
+    min-height: 100vh;
+    background-color: #f8f9fc;
+}
+
+/* KPI Cards */
+.cfo-dashboard .card {
+    border: none;
+    border-radius: 0.35rem;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+    transition: all 0.3s ease-in-out;
+}
+
+.cfo-dashboard .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.25rem 2rem 0 rgba(58, 59, 69, 0.2);
+}
+
+.cfo-dashboard .card-body {
+    padding: 1.5rem;
+}
+
+/* Border Left Styles for KPI Cards */
+.border-left-primary {
+    border-left: 0.25rem solid #4e73df !important;
+}
+
+.border-left-success {
+    border-left: 0.25rem solid #1cc88a !important;
+}
+
+.border-left-info {
+    border-left: 0.25rem solid #36b9cc !important;
+}
+
+.border-left-warning {
+    border-left: 0.25rem solid #f6c23e !important;
+}
+
+.border-left-danger {
+    border-left: 0.25rem solid #e74a3b !important;
+}
+
+/* KPI Card Text Styles */
+.cfo-dashboard .text-xs {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+
+.cfo-dashboard .h5 {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+/* Chart Containers */
+.chart-area {
+    position: relative;
+    height: 320px;
+    width: 100%;
+}
+
+.chart-pie {
+    position: relative;
+    height: 245px;
+    width: 100%;
+}
+
+/* Loading Overlay */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.loading-spinner {
+    text-align: center;
+}
+
+.loading-spinner .spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Alert Styles */
+.cfo-dashboard .alert {
+    border: none;
+    border-radius: 0.35rem;
+    margin-bottom: 1rem;
+}
+
+/* Table Styles */
+.cfo-dashboard .table {
+    color: #5a5c69;
+}
+
+.cfo-dashboard .table thead th {
+    border-top: none;
+    border-bottom: 1px solid #e3e6f0;
+    color: #5a5c69;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    padding: 0.75rem;
+}
+
+.cfo-dashboard .table td {
+    border-top: 1px solid #e3e6f0;
+    padding: 0.75rem;
+    vertical-align: middle;
+}
+
+.cfo-dashboard .table-sm td,
+.cfo-dashboard .table-sm th {
+    padding: 0.5rem;
+}
+
+/* Progress Bars */
+.cfo-dashboard .progress {
+    background-color: #f8f9fc;
+    border-radius: 0.35rem;
+    height: 0.5rem;
+}
+
+.cfo-dashboard .progress-bar {
+    border-radius: 0.35rem;
+}
+
+/* Badge Styles */
+.cfo-dashboard .badge {
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+}
+
+.badge-success {
+    background-color: #1cc88a;
+    color: white;
+}
+
+.badge-warning {
+    background-color: #f6c23e;
+    color: white;
+}
+
+.badge-secondary {
+    background-color: #858796;
+    color: white;
+}
+
+/* Button Styles */
+.cfo-dashboard .btn {
+    border-radius: 0.35rem;
+    font-weight: 600;
+    transition: all 0.15s ease-in-out;
+}
+
+.cfo-dashboard .btn-primary {
+    background-color: #4e73df;
+    border-color: #4e73df;
+}
+
+.cfo-dashboard .btn-primary:hover {
+    background-color: #2e59d9;
+    border-color: #2653d4;
+}
+
+.cfo-dashboard .btn-success {
+    background-color: #1cc88a;
+    border-color: #1cc88a;
+}
+
+.cfo-dashboard .btn-success:hover {
+    background-color: #17a673;
+    border-color: #169b6b;
+}
+
+.cfo-dashboard .btn-info {
+    background-color: #36b9cc;
+    border-color: #36b9cc;
+}
+
+.cfo-dashboard .btn-info:hover {
+    background-color: #2c9faf;
+    border-color: #2a96a5;
+}
+
+.cfo-dashboard .btn-warning {
+    background-color: #f6c23e;
+    border-color: #f6c23e;
+    color: #212529;
+}
+
+.cfo-dashboard .btn-warning:hover {
+    background-color: #f4b619;
+    border-color: #f4b619;
+    color: #212529;
+}
+
+/* Dropdown Styles */
+.cfo-dashboard .dropdown-menu {
+    border: none;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+    border-radius: 0.35rem;
+}
+
+.cfo-dashboard .dropdown-item {
+    padding: 0.5rem 1rem;
+    color: #5a5c69;
+    transition: all 0.15s ease-in-out;
+}
+
+.cfo-dashboard .dropdown-item:hover {
+    background-color: #f8f9fc;
+    color: #3a3b45;
+}
+
+.cfo-dashboard .dropdown-header {
+    font-weight: 700;
+    color: #858796;
+    text-transform: uppercase;
+    font-size: 0.65rem;
+    letter-spacing: 0.05rem;
+}
+
+/* Timeline Styles */
+.timeline {
+    position: relative;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #e3e6f0;
+}
+
+.timeline .alert {
+    position: relative;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.timeline .alert::before {
+    content: '';
+    position: absolute;
+    left: -1.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #4e73df;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cfo-dashboard .col-xl-3,
+    .cfo-dashboard .col-xl-4,
+    .cfo-dashboard .col-xl-6,
+    .cfo-dashboard .col-xl-8 {
+        margin-bottom: 1.5rem;
+    }
+    
+    .cfo-dashboard .h5 {
+        font-size: 1rem;
+    }
+    
+    .chart-area,
+    .chart-pie {
+        height: 250px;
+    }
+    
+    .cfo-dashboard .table-responsive {
+        font-size: 0.875rem;
+    }
+    
+    .cfo-dashboard .btn-block {
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .cfo-dashboard .card-body {
+        padding: 1rem;
+    }
+    
+    .cfo-dashboard .h3 {
+        font-size: 1.5rem;
+    }
+    
+    .cfo-dashboard .text-xs {
+        font-size: 0.65rem;
+    }
+    
+    .chart-area,
+    .chart-pie {
+        height: 200px;
+    }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    .cfo-dashboard {
+        background-color: #1a1a1a;
+        color: #e0e0e0;
+    }
+    
+    .cfo-dashboard .card {
+        background-color: #2d2d2d;
+        border: 1px solid #404040;
+    }
+    
+    .cfo-dashboard .text-gray-800 {
+        color: #e0e0e0 !important;
+    }
+    
+    .cfo-dashboard .text-muted {
+        color: #b0b0b0 !important;
+    }
+    
+    .cfo-dashboard .table {
+        color: #e0e0e0;
+    }
+    
+    .cfo-dashboard .table thead th {
+        border-bottom: 1px solid #404040;
+        color: #e0e0e0;
+    }
+    
+    .cfo-dashboard .table td {
+        border-top: 1px solid #404040;
+    }
+    
+    .cfo-dashboard .dropdown-menu {
+        background-color: #2d2d2d;
+        border: 1px solid #404040;
+    }
+    
+    .cfo-dashboard .dropdown-item {
+        color: #e0e0e0;
+    }
+    
+    .cfo-dashboard .dropdown-item:hover {
+        background-color: #404040;
+        color: #ffffff;
+    }
+    
+    .loading-overlay {
+        background-color: rgba(26, 26, 26, 0.9);
+        color: #e0e0e0;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .cfo-dashboard .btn,
+    .cfo-dashboard .dropdown,
+    .loading-overlay {
+        display: none !important;
+    }
+    
+    .cfo-dashboard .card {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+    
+    .cfo-dashboard {
+        background-color: white;
+    }
+    
+    .chart-area,
+    .chart-pie {
+        height: auto;
+    }
+}
+
+/* Animation Classes */
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.slide-up {
+    animation: slideUp 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Pulse animation for loading states */
+.pulse {
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Tooltip Styles */
+.cfo-dashboard .tooltip {
+    font-size: 0.75rem;
+}
+
+.cfo-dashboard .tooltip-inner {
+    background-color: #5a5c69;
+    border-radius: 0.25rem;
+    padding: 0.5rem 0.75rem;
+}
+
+/* Custom Scrollbar */
+.cfo-dashboard ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+.cfo-dashboard ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+.cfo-dashboard ::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 3px;
+}
+
+.cfo-dashboard ::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* Focus Styles for Accessibility */
+.cfo-dashboard .btn:focus,
+.cfo-dashboard .dropdown-item:focus {
+    box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25);
+    outline: none;
+}
+
+/* High Contrast Mode Support */
+@media (prefers-contrast: high) {
+    .cfo-dashboard .card {
+        border: 2px solid #000;
+    }
+    
+    .cfo-dashboard .btn {
+        border-width: 2px;
+    }
+    
+    .cfo-dashboard .table th,
+    .cfo-dashboard .table td {
+        border-width: 2px;
+    }
+}
+
+/* Reduced Motion Support */
+@media (prefers-reduced-motion: reduce) {
+    .cfo-dashboard .card,
+    .cfo-dashboard .btn,
+    .cfo-dashboard .dropdown-item {
+        transition: none;
+    }
+    
+    .fade-in,
+    .slide-up,
+    .pulse {
+        animation: none;
+    }
+}
+
+/* Error States */
+.error-state {
+    color: #e74a3b;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    border-radius: 0.25rem;
+    padding: 0.75rem 1rem;
+    margin: 1rem 0;
+}
+
+/* Success States */
+.success-state {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    border-radius: 0.25rem;
+    padding: 0.75rem 1rem;
+    margin: 1rem 0;
+}
+
+/* Custom Icon Styles */
+.cfo-dashboard .fa-2x {
+    font-size: 2em;
+}
+
+.cfo-dashboard .text-gray-300 {
+    color: #dddfeb !important;
+}
+
+/* Utility Classes */
+.text-nowrap {
+    white-space: nowrap;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.user-select-none {
+    user-select: none;
+}
+
+/* Chart Legend Customization */
+.chart-legend {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.chart-legend-item {
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+    font-size: 0.875rem;
+}
+
+.chart-legend-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    margin-right: 0.5rem;
+}
+
+/* Export Button Styles */
+.export-dropdown .dropdown-menu {
+    min-width: 200px;
+}
+
+.export-dropdown .dropdown-item i {
+    width: 20px;
+    text-align: center;
+    margin-right: 0.5rem;
+}
+
+/* Status Indicators */
+.status-indicator {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.status-indicator.online {
+    background-color: #1cc88a;
+}
+
+.status-indicator.offline {
+    background-color: #e74a3b;
+}
+
+.status-indicator.pending {
+    background-color: #f6c23e;
+}
+
+/* Last Updated Timestamp */
+.last-updated {
+    font-size: 0.75rem;
+    color: #858796;
+    text-align: right;
+    margin-top: 1rem;
+}
+
+/* Custom Border Radius */
+.rounded-lg {
+    border-radius: 0.5rem !important;
+}
+
+.rounded-xl {
+    border-radius: 0.75rem !important;
+}

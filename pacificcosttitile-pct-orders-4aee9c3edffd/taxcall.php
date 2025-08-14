@@ -40,7 +40,7 @@ if(isset($_POST['SubmitButton'])) {
     // Create tax image request
     $requestParams = array(
         'username'   => "PCTXML01",
-        'password'   => "AlphaOmega637#",
+        'password'   => getenv('TP_PASSWORD') ?: $_ENV['TP_PASSWORD'] ?? '',
         'serviceId1' => $serviceId,
         'serviceId2' => '',
         'source'     => '',
@@ -71,7 +71,7 @@ function generateTaxImage($requestId, $i = 1)
     // print_r($i);die;
     $requestParams = array(
         'username'  => 'PCTXML01',
-        'password'  => "AlphaOmega637#",
+        'password'  => getenv('TP_PASSWORD') ?: $_ENV['TP_PASSWORD'] ?? '',
         'requestId' => $requestId,
     );
 
@@ -97,7 +97,7 @@ function getSummury($requestId)
 {
     $requestParams = array(
         'userID'         => 'PCTXML01',
-        'password'       => 'AlphaOmega637#',
+        'password'       => getenv('TP_PASSWORD') ?: $_ENV['TP_PASSWORD'] ?? '',
         'company'        => '',
         'department'     => '',
         'titleOfficer'   => '',
@@ -119,7 +119,7 @@ function createService($post)
 {
     $requestParams = array(
         'userID'         => 'PCTXML01',
-        'password'       => 'AlphaOmega637#',
+        'password'       => getenv('TP_PASSWORD') ?: $_ENV['TP_PASSWORD'] ?? '',
         'customerRef'    => 567467456743213,
         'company'        => '',
         'orderNo'        => '',
