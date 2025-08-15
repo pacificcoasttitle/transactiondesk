@@ -1,0 +1,463 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>Pacific Coast Title - Executive Dashboard</title>
+<style>
+/* Executive Dashboard Styling */
+body {
+    font-family: Calibri, "Segoe UI", Arial, sans-serif;
+    font-size: 11pt;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.2;
+}
+
+/* Excel-style page header */
+.report-header {
+    background: linear-gradient(to bottom, #4472C4, #365F94);
+    color: white;
+    padding: 15px 20px;
+    margin: -20px -20px 20px -20px;
+    border-bottom: 2px solid #2F5597;
+}
+
+.report-title {
+    font-size: 18pt;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+.report-subtitle {
+    font-size: 12pt;
+    margin: 5px 0 0 0;
+    opacity: 0.9;
+}
+
+/* Executive KPI Cards */
+.kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.kpi-card {
+    border: 2px solid #4472C4;
+    border-radius: 8px;
+    padding: 20px;
+    background: linear-gradient(135deg, #FFFFFF, #F8F9FA);
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.kpi-card .metric-title {
+    font-size: 10pt;
+    color: #666;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+}
+
+.kpi-card .metric-value {
+    font-size: 20pt;
+    font-weight: bold;
+    color: #1F4E79;
+    margin: 8px 0;
+}
+
+.kpi-card .metric-change {
+    font-size: 12pt;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.positive { color: #28a745; }
+.negative { color: #dc3545; }
+.neutral { color: #6c757d; }
+
+/* Section headers */
+.section-header {
+    background: linear-gradient(to bottom, #E7F3FF, #D1E7FF);
+    border: 1px solid #B4D5F0;
+    padding: 12px 15px;
+    margin: 30px 0 8px 0;
+    font-weight: bold;
+    font-size: 14pt;
+    color: #1F4E79;
+    border-radius: 5px;
+}
+
+/* Analytics tables */
+.analytics-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 0 25px 0;
+    border: 1px solid #D4D4D4;
+    font-size: 10pt;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.analytics-table th {
+    background: linear-gradient(to bottom, #F8F9FA, #E9ECEF);
+    border: 1px solid #D4D4D4;
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: bold;
+    color: #495057;
+    font-size: 10pt;
+}
+
+.analytics-table td {
+    border: 1px solid #D4D4D4;
+    padding: 10px 15px;
+    vertical-align: middle;
+    background-color: #ffffff;
+}
+
+.analytics-table tr:nth-child(even) td {
+    background-color: #F8F9FA;
+}
+
+.analytics-table tr:hover td {
+    background-color: #E3F2FD;
+}
+
+/* Number formatting */
+.currency {
+    text-align: right;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    color: #0066CC;
+}
+
+.number {
+    text-align: right;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+}
+
+.percentage {
+    text-align: right;
+    font-weight: bold;
+    color: #28a745;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Performance indicators */
+.high-performance { 
+    background-color: #d4edda !important; 
+    color: #155724;
+    font-weight: bold;
+}
+
+.medium-performance { 
+    background-color: #fff3cd !important; 
+    color: #856404;
+    font-weight: bold;
+}
+
+.low-performance { 
+    background-color: #f8d7da !important; 
+    color: #721c24;
+    font-weight: bold;
+}
+
+.report-footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #E9ECEF;
+    text-align: center;
+    font-size: 9pt;
+    color: #6C757D;
+}
+</style>
+</head>
+<body>
+
+<!-- Executive Dashboard Header -->
+<div class="report-header">
+    <div class="report-title">Pacific Coast Title - Executive Dashboard</div>
+    <div class="report-subtitle">Daily Analytics & Performance Metrics | August 15, 2025</div>
+</div>
+
+<!-- Executive KPI Dashboard -->
+<div class="section-header">📊 Executive Performance Dashboard</div>
+<div class="kpi-grid">
+    <div class="kpi-card">
+        <div class="metric-title">Total Openings</div>
+        <div class="metric-value">12</div>
+        <div class="metric-change positive">↗ +15.4% vs Yesterday</div>
+    </div>
+    <div class="kpi-card">
+        <div class="metric-title">Total Closings</div>
+        <div class="metric-value">8</div>
+        <div class="metric-change positive">↗ +33.3% vs Yesterday</div>
+    </div>
+    <div class="kpi-card">
+        <div class="metric-title">Revenue Generated</div>
+        <div class="metric-value">$3.2M</div>
+        <div class="metric-change positive">↗ +22.8% vs Yesterday</div>
+    </div>
+    <div class="kpi-card">
+        <div class="metric-title">Average Transaction</div>
+        <div class="metric-value">$405K</div>
+        <div class="metric-change negative">↘ -5.2% vs Yesterday</div>
+    </div>
+</div>
+
+<!-- Title Division Analytics -->
+<div class="section-header">🏢 Title Division - Branch Performance</div>
+<table class="analytics-table">
+    <thead>
+        <tr>
+            <th>Branch</th>
+            <th>Openings Today</th>
+            <th>Closings Today</th>
+            <th>Revenue Today</th>
+            <th>Avg Transaction</th>
+            <th>Avg Title Premium</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="high-performance">
+            <td><strong>Main Office - Los Angeles</strong></td>
+            <td class="number">5</td>
+            <td class="number">3</td>
+            <td class="currency">$1,205,000</td>
+            <td class="currency">$401,667</td>
+            <td class="currency">$2,008</td>
+        </tr>
+        <tr class="medium-performance">
+            <td><strong>Orange County</strong></td>
+            <td class="number">3</td>
+            <td class="number">2</td>
+            <td class="currency">$890,000</td>
+            <td class="currency">$445,000</td>
+            <td class="currency">$2,225</td>
+        </tr>
+        <tr class="medium-performance">
+            <td><strong>San Diego</strong></td>
+            <td class="number">2</td>
+            <td class="number">2</td>
+            <td class="currency">$750,000</td>
+            <td class="currency">$375,000</td>
+            <td class="currency">$1,875</td>
+        </tr>
+        <tr class="low-performance">
+            <td><strong>Riverside</strong></td>
+            <td class="number">1</td>
+            <td class="number">1</td>
+            <td class="currency">$325,000</td>
+            <td class="currency">$325,000</td>
+            <td class="currency">$1,625</td>
+        </tr>
+        <tr class="low-performance">
+            <td><strong>Ventura</strong></td>
+            <td class="number">1</td>
+            <td class="number">0</td>
+            <td class="currency">$0</td>
+            <td class="currency">—</td>
+            <td class="currency">—</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Title Production Type Breakdown -->
+<table class="analytics-table">
+    <thead>
+        <tr>
+            <th>Transaction Type</th>
+            <th>Openings Today</th>
+            <th>Closings Today</th>
+            <th>Revenue Today</th>
+            <th>Avg Value</th>
+            <th>Market Share %</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><strong>Purchase</strong></td>
+            <td class="number">8</td>
+            <td class="number">5</td>
+            <td class="currency">$2,100,000</td>
+            <td class="currency">$420,000</td>
+            <td class="percentage">62.5%</td>
+        </tr>
+        <tr>
+            <td><strong>Refinance</strong></td>
+            <td class="number">3</td>
+            <td class="number">2</td>
+            <td class="currency">$850,000</td>
+            <td class="currency">$425,000</td>
+            <td class="percentage">25.0%</td>
+        </tr>
+        <tr>
+            <td><strong>HELOC</strong></td>
+            <td class="number">1</td>
+            <td class="number">1</td>
+            <td class="currency">$220,000</td>
+            <td class="currency">$220,000</td>
+            <td class="percentage">12.5%</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Escrow Division Analytics -->
+<div class="section-header">🏦 Escrow Division - Branch Performance</div>
+<table class="analytics-table">
+    <thead>
+        <tr>
+            <th>Branch</th>
+            <th>Openings Today</th>
+            <th>Closings Today</th>
+            <th>Revenue Today</th>
+            <th>Avg Transaction</th>
+            <th>Avg Escrow Fee</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="high-performance">
+            <td><strong>Main Office - Los Angeles</strong></td>
+            <td class="number">3</td>
+            <td class="number">2</td>
+            <td class="currency">$890,000</td>
+            <td class="currency">$445,000</td>
+            <td class="currency">$668</td>
+        </tr>
+        <tr class="medium-performance">
+            <td><strong>Orange County</strong></td>
+            <td class="number">2</td>
+            <td class="number">1</td>
+            <td class="currency">$325,000</td>
+            <td class="currency">$325,000</td>
+            <td class="currency">$488</td>
+        </tr>
+        <tr class="low-performance">
+            <td><strong>San Diego</strong></td>
+            <td class="number">1</td>
+            <td class="number">0</td>
+            <td class="currency">$0</td>
+            <td class="currency">—</td>
+            <td class="currency">—</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Monthly Projections -->
+<div class="section-header">📈 Monthly Projections & Trends</div>
+<table class="analytics-table">
+    <thead>
+        <tr>
+            <th>Category</th>
+            <th>MTD Closings</th>
+            <th>Projected Closings</th>
+            <th>MTD Revenue</th>
+            <th>Projected Revenue</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="high-performance">
+            <td><strong>Total Company</strong></td>
+            <td class="number">185</td>
+            <td class="number">385</td>
+            <td class="currency">$58,250,000</td>
+            <td class="currency">$121,350,000</td>
+        </tr>
+        <tr>
+            <td><strong>Title Division</strong></td>
+            <td class="number">112</td>
+            <td class="number">233</td>
+            <td class="currency">$35,840,000</td>
+            <td class="currency">$74,665,000</td>
+        </tr>
+        <tr>
+            <td><strong>Escrow Division</strong></td>
+            <td class="number">73</td>
+            <td class="number">152</td>
+            <td class="currency">$22,410,000</td>
+            <td class="currency">$46,685,000</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Weekly Trends -->
+<table class="analytics-table">
+    <thead>
+        <tr>
+            <th>Day</th>
+            <th>Openings</th>
+            <th>Closings</th>
+            <th>Revenue</th>
+            <th>Avg Transaction</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class="high-performance">
+            <td><strong>Friday, August 15</strong></td>
+            <td class="number">12</td>
+            <td class="number">8</td>
+            <td class="currency">$3,245,000</td>
+            <td class="currency">$405,625</td>
+        </tr>
+        <tr>
+            <td><strong>Thursday, August 14</strong></td>
+            <td class="number">10</td>
+            <td class="number">6</td>
+            <td class="currency">$2,650,000</td>
+            <td class="currency">$441,667</td>
+        </tr>
+        <tr>
+            <td><strong>Wednesday, August 13</strong></td>
+            <td class="number">15</td>
+            <td class="number">11</td>
+            <td class="currency">$4,125,000</td>
+            <td class="currency">$375,000</td>
+        </tr>
+        <tr>
+            <td><strong>Tuesday, August 12</strong></td>
+            <td class="number">8</td>
+            <td class="number">5</td>
+            <td class="currency">$1,875,000</td>
+            <td class="currency">$375,000</td>
+        </tr>
+        <tr>
+            <td><strong>Monday, August 11</strong></td>
+            <td class="number">13</td>
+            <td class="number">9</td>
+            <td class="currency">$3,850,000</td>
+            <td class="currency">$427,778</td>
+        </tr>
+        <tr class="low-performance">
+            <td><strong>Sunday, August 10</strong></td>
+            <td class="number">2</td>
+            <td class="number">1</td>
+            <td class="currency">$325,000</td>
+            <td class="currency">$325,000</td>
+        </tr>
+        <tr class="low-performance">
+            <td><strong>Saturday, August 9</strong></td>
+            <td class="number">3</td>
+            <td class="number">2</td>
+            <td class="currency">$750,000</td>
+            <td class="currency">$375,000</td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Executive Footer -->
+<div class="report-footer">
+    <strong>Pacific Coast Title Company</strong> | Executive Dashboard<br>
+    Confidential Analytics Report | Generated: August 15, 2025 at 12:51 PM<br>
+    <em>Strategic insights for executive decision-making</em>
+</div>
+
+</body>
+</html>
