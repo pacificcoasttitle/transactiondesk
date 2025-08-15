@@ -4,34 +4,262 @@
 <meta charset='utf-8'>
 <title>{{ meta.title }}</title>
 <style>
-body{font-family:Arial,Helvetica,sans-serif;margin:16px;color:#333;}
-h1{margin:0 0 8px 0;color:#1f4e79;border-bottom:2px solid #1f4e79;padding-bottom:8px;}
-h2{margin:20px 0 4px;color:#1f4e79;font-size:18px;}
-h3{margin:12px 0 4px;color:#666;font-size:14px;}
-table{border-collapse:collapse;width:100%;margin:8px 0;}
-th{background-color:#f8f9fa;font-weight:bold;text-align:left;}
-.banner{background-color:#f0f8ff;padding:8px;margin:8px 0;border-left:4px solid #1f4e79;}
-.generated{font-size:12px;color:#666;margin-top:20px;text-align:center;}
-@media print{body{margin:8mm}h1{page-break-after:avoid}h2{page-break-after:avoid}}
+/* Excel-like styling for professional appearance */
+body {
+    font-family: Calibri, "Segoe UI", Arial, sans-serif;
+    font-size: 11pt;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.2;
+}
+
+/* Excel-style page header */
+.report-header {
+    background: linear-gradient(to bottom, #4472C4, #365F94);
+    color: white;
+    padding: 15px 20px;
+    margin: -20px -20px 20px -20px;
+    border-bottom: 2px solid #2F5597;
+}
+
+.report-title {
+    font-size: 18pt;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+.report-subtitle {
+    font-size: 12pt;
+    margin: 5px 0 0 0;
+    opacity: 0.9;
+}
+
+/* Excel-style section headers */
+.section-header {
+    background: linear-gradient(to bottom, #E7F3FF, #D1E7FF);
+    border: 1px solid #B4D5F0;
+    padding: 8px 12px;
+    margin: 25px 0 5px 0;
+    font-weight: bold;
+    font-size: 12pt;
+    color: #1F4E79;
+    border-radius: 3px;
+}
+
+/* Excel-style subsection headers */
+.subsection-header {
+    background-color: #F2F2F2;
+    border: 1px solid #D4D4D4;
+    padding: 6px 10px;
+    margin: 15px 0 3px 0;
+    font-weight: bold;
+    font-size: 10pt;
+    color: #333333;
+    border-radius: 2px;
+}
+
+/* Excel-style tables */
+.excel-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 0 15px 0;
+    border: 1px solid #D4D4D4;
+    font-size: 10pt;
+}
+
+.excel-table th {
+    background: linear-gradient(to bottom, #F8F9FA, #E9ECEF);
+    border: 1px solid #D4D4D4;
+    padding: 8px 12px;
+    text-align: left;
+    font-weight: bold;
+    color: #495057;
+    font-size: 10pt;
+    white-space: nowrap;
+}
+
+.excel-table td {
+    border: 1px solid #D4D4D4;
+    padding: 6px 12px;
+    vertical-align: top;
+    background-color: #ffffff;
+}
+
+/* Excel-style alternating rows */
+.excel-table tr:nth-child(even) td {
+    background-color: #F8F9FA;
+}
+
+.excel-table tr:hover td {
+    background-color: #E3F2FD;
+}
+
+/* Excel-style number formatting */
+.currency {
+    text-align: right;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    color: #0066CC;
+}
+
+.number {
+    text-align: right;
+    font-family: "Courier New", monospace;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Excel-style summary boxes */
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.summary-card {
+    border: 2px solid #4472C4;
+    border-radius: 5px;
+    padding: 15px;
+    background: linear-gradient(to bottom, #FFFFFF, #F8F9FA);
+    text-align: center;
+}
+
+.summary-card .metric-title {
+    font-size: 9pt;
+    color: #666;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.summary-card .metric-value {
+    font-size: 16pt;
+    font-weight: bold;
+    color: #1F4E79;
+    margin: 0;
+}
+
+/* Excel-style no data message */
+.no-data {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-style: italic;
+    background-color: #F8F9FA;
+    border: 1px solid #DEE2E6;
+    border-radius: 3px;
+}
+
+/* Excel-style footer */
+.report-footer {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 2px solid #E9ECEF;
+    text-align: center;
+    font-size: 9pt;
+    color: #6C757D;
+}
+
+/* Print-specific styles */
+@media print {
+    body {
+        margin: 0;
+        padding: 10mm;
+        background: white;
+    }
+    
+    .report-header {
+        margin: -10mm -10mm 15mm -10mm;
+        page-break-after: avoid;
+    }
+    
+    .section-header {
+        page-break-after: avoid;
+    }
+    
+    .excel-table {
+        page-break-inside: avoid;
+    }
+    
+    .summary-grid {
+        page-break-inside: avoid;
+    }
+}
+
+/* Excel column widths */
+.col-file-number { width: 100px; }
+.col-address { width: 250px; }
+.col-customer { width: 180px; }
+.col-price { width: 120px; }
+.col-type { width: 100px; }
+.col-rep { width: 150px; }
+.col-branch { width: 120px; }
+.col-division { width: 80px; }
+
+/* Status indicators */
+.status-high { color: #28a745; font-weight: bold; }
+.status-medium { color: #ffc107; font-weight: bold; }
+.status-low { color: #dc3545; font-weight: bold; }
 </style>
 </head>
 <body>
-<h1>{{ meta.title }}</h1>
-{% if meta.show_day_banner and day_banner %}<div class="banner"><strong>{{ day_banner }}</strong> - Generated: {{ generated_at }}</div>{% endif %}
-{% from '_macros.html' import render_table %}
-{% for section in sections %}
-  <h2>{{ section.name }}</h2>
-  {% for t in section.subtables %}
-    <h3>{{ t.title }}</h3>
-    {% if t.rows %}
-      {{ render_table(t.columns, t.rows) }}
-    {% else %}
-      <p><em>No data available for this period.</em></p>
+
+<!-- Excel-style Report Header -->
+<div class="report-header">
+    <div class="report-title">{{ meta.title }}</div>
+    {% if meta.show_day_banner and day_banner %}
+    <div class="report-subtitle">{{ day_banner }} | Generated: {{ generated_at }}</div>
     {% endif %}
-  {% endfor %}
-{% endfor %}
-<div class="generated">
-  Report generated on {{ generated_at }} | Pacific Coast Title Daily Executive Report
 </div>
+
+<!-- Import table macro -->
+{% from '_macros.html' import render_excel_table, render_summary_metrics %}
+
+<!-- Executive Summary Section (Excel-style dashboard) -->
+{% set summary_section = sections | selectattr('name', 'equalto', 'Executive Summary') | first %}
+{% if summary_section %}
+<div class="section-header">📊 Executive Dashboard</div>
+{% for subtable in summary_section.subtables %}
+    {{ render_summary_metrics(subtable.rows) }}
+{% endfor %}
+{% endif %}
+
+<!-- Main Report Sections -->
+{% for section in sections %}
+    {% if section.name != 'Executive Summary' %}
+    <div class="section-header">
+        {% if section.name == 'Title Division' %}🏢 {{ section.name }}
+        {% elif section.name == 'Escrow Division' %}🏦 {{ section.name }}
+        {% elif section.name == 'Branch Performance' %}📈 {{ section.name }}
+        {% else %}📋 {{ section.name }}
+        {% endif %}
+    </div>
+    
+    {% for subtable in section.subtables %}
+        <div class="subsection-header">{{ subtable.title }}</div>
+        {% if subtable.rows %}
+            {{ render_excel_table(subtable.columns, subtable.rows) }}
+        {% else %}
+            <div class="no-data">
+                📝 No {{ subtable.title.lower() }} recorded for this period
+            </div>
+        {% endif %}
+    {% endfor %}
+    {% endif %}
+{% endfor %}
+
+<!-- Excel-style Footer -->
+<div class="report-footer">
+    <strong>Pacific Coast Title Company</strong><br>
+    Confidential Executive Report | Generated: {{ generated_at }}<br>
+    <em>This report contains proprietary business information</em>
+</div>
+
 </body>
 </html>

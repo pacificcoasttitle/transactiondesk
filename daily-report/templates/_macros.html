@@ -1,18 +1,137 @@
-{% macro render_table(columns, rows) -%}
-<table border='1' cellspacing='0' cellpadding='4'>
-  <thead><tr>
-    {% for c in columns %}<th>{{ c }}</th>{% endfor %}
-  </tr></thead>
-  <tbody>
-    {% if rows %}
-      {% for r in rows %}
-      <tr>
-        {% for c in columns %}<td>{{ r[c] if r[c] is not none else '' }}</td>{% endfor %}
-      </tr>
+{% macro render_excel_table(columns, rows) -%}
+<table class="excel-table">
+  <thead>
+    <tr>
+      {% for column in columns %}
+      <th class="
+        {%- if 'File' in column -%}col-file-number
+        {%- elif 'Address' in column -%}col-address
+        {%- elif 'Customer' in column -%}col-customer
+        {%- elif 'Price' in column or 'Revenue' in column -%}col-price
+        {%- elif 'Type' in column -%}col-type
+        {%- elif 'Rep' in column -%}col-rep
+        {%- elif 'Branch' in column -%}col-branch
+        {%- elif 'Division' in column -%}col-division
+        {%- endif -%}
+      ">{{ column }}</th>
       {% endfor %}
-    {% else %}
-      <tr><td colspan="{{ columns|length }}"><em>No data available</em></td></tr>
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in rows %}
+    <tr>
+      {% for column in columns %}
+      <td class="
+        {%- if 'Price' in column or 'Revenue' in column or '$' in (row[column] | string) -%}currency
+        {%- elif column in ['Closings Today', 'Openings', 'Closings', 'Value', 'Count'] -%}number
+        {%- elif column in ['Type', 'Division'] -%}center
+        {%- endif -%}
+      ">
+        {%- if row[column] is not none -%}
+          {%- if '$' in (row[column] | string) -%}
+            {{ row[column] }}
+          {%- elif column in ['Closings Today', 'Openings', 'Closings'] and row[column] | int > 5 -%}
+            <span class="status-high">{{ row[column] }}</span>
+          {%- elif column in ['Closings Today', 'Openings', 'Closings'] and row[column] | int > 2 -%}
+            <span class="status-medium">{{ row[column] }}</span>
+          {%- elif column in ['Closings Today', 'Openings', 'Closings'] and row[column] | int <= 2 -%}
+            <span class="status-low">{{ row[column] }}</span>
+          {%- else -%}
+            {{ row[column] }}
+          {%- endif -%}
+        {%- else -%}
+          <span style="color: #ccc;">—</span>
+        {%- endif -%}
+      </td>
+      {% endfor %}
+    </tr>
+    {% endfor %}
+    
+    {% if not rows %}
+    <tr>
+      <td colspan="{{ columns | length }}" class="no-data">
+        No data available for this time period
+      </td>
+    </tr>
     {% endif %}
   </tbody>
 </table>
+{%- endmacro %}
+
+{% macro render_summary_metrics(metrics_data) -%}
+<div class="summary-grid">
+  {% for metric in metrics_data %}
+  <div class="summary-card">
+    <div class="metric-title">{{ metric.Metric }}</div>
+    <div class="metric-value">
+      {%- if '$' in (metric.Value | string) -%}
+        {{ metric.Value }}
+      {%- elif metric.Metric == 'Total Openings Today' or metric.Metric == 'Total Closings Today' -%}
+        {{ metric.Value }} orders
+      {%- else -%}
+        {{ metric.Value }}
+      {%- endif -%}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{%- endmacro %}
+
+{% macro render_simple_table(columns, rows) -%}
+{# Fallback for basic table rendering #}
+<table class="excel-table">
+  <thead>
+    <tr>
+      {% for column in columns %}<th>{{ column }}</th>{% endfor %}
+    </tr>
+  </thead>
+  <tbody>
+    {% if rows %}
+      {% for row in rows %}
+      <tr>
+        {% for column in columns %}
+        <td>{{ row[column] if row[column] is not none else '—' }}</td>
+        {% endfor %}
+      </tr>
+      {% endfor %}
+    {% else %}
+      <tr>
+        <td colspan="{{ columns | length }}" class="no-data">
+          No data available
+        </td>
+      </tr>
+    {% endif %}
+  </tbody>
+</table>
+{%- endmacro %}
+
+{% macro format_currency(value) -%}
+{%- if value is not none -%}
+  {%- if '$' in (value | string) -%}
+    {{ value }}
+  {%- else -%}
+    ${{ "{:,.0f}".format(value | float) }}
+  {%- endif -%}
+{%- else -%}
+  $0
+{%- endif -%}
+{%- endmacro %}
+
+{% macro format_number(value) -%}
+{%- if value is not none -%}
+  {{ "{:,.0f}".format(value | float) }}
+{%- else -%}
+  0
+{%- endif -%}
+{%- endmacro %}
+
+{% macro status_indicator(value, high_threshold=5, medium_threshold=2) -%}
+{%- set num_val = value | int -%}
+{%- if num_val > high_threshold -%}
+  <span class="status-high">{{ value }}</span>
+{%- elif num_val > medium_threshold -%}
+  <span class="status-medium">{{ value }}</span>
+{%- else -%}
+  <span class="status-low">{{ value }}</span>
+{%- endif -%}
 {%- endmacro %}
