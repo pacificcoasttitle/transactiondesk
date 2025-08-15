@@ -1,0 +1,152 @@
+meta:
+  title: 'Pacific Coast Title - Daily Executive Report'
+  show_day_banner: true
+
+sections:
+  - name: 'Title Division'
+    subtables:
+      - id: 'title_openings'
+        title: 'New Openings Today'
+        sql: |
+          SELECT 
+            od.file_number as 'File Number',
+            od.full_address as 'Property Address',
+            CONCAT(cbd.customer_first_name, ' ', cbd.customer_last_name) as 'Customer',
+            CONCAT('$', FORMAT(od.sales_price, 0)) as 'Sales Price',
+            od.transaction_type as 'Type',
+            CONCAT(sr.first_name, ' ', sr.last_name) as 'Sales Rep',
+            sr.branch_location as 'Branch'
+          FROM pct_order_details od
+          LEFT JOIN customer_basic_details cbd ON od.customer_id = cbd.id
+          LEFT JOIN sales_reps sr ON od.sales_rep = sr.id
+          WHERE DATE(od.created_at) = CURDATE()
+          AND sr.division = 'Title'
+          AND od.status != 'cancelled'
+          ORDER BY od.created_at DESC;
+        transforms: []
+      
+      - id: 'title_closings'
+        title: 'Closings Completed Today'
+        sql: |
+          SELECT 
+            od.file_number as 'File Number',
+            od.full_address as 'Property Address',
+            CONCAT(cbd.customer_first_name, ' ', cbd.customer_last_name) as 'Customer',
+            CONCAT('$', FORMAT(od.sales_price, 0)) as 'Sales Price',
+            od.transaction_type as 'Type',
+            CONCAT(sr.first_name, ' ', sr.last_name) as 'Sales Rep',
+            sr.branch_location as 'Branch'
+          FROM pct_order_details od
+          LEFT JOIN customer_basic_details cbd ON od.customer_id = cbd.id
+          LEFT JOIN sales_reps sr ON od.sales_rep = sr.id
+          WHERE DATE(od.closing_date) = CURDATE()
+          AND sr.division = 'Title'
+          AND od.status = 'closed'
+          ORDER BY od.closing_date DESC;
+        transforms: []
+
+  - name: 'Escrow Division'
+    subtables:
+      - id: 'escrow_openings'
+        title: 'New Openings Today'
+        sql: |
+          SELECT 
+            od.file_number as 'File Number',
+            od.full_address as 'Property Address',
+            CONCAT(cbd.customer_first_name, ' ', cbd.customer_last_name) as 'Customer',
+            CONCAT('$', FORMAT(od.sales_price, 0)) as 'Sales Price',
+            od.transaction_type as 'Type',
+            CONCAT(sr.first_name, ' ', sr.last_name) as 'Sales Rep',
+            sr.branch_location as 'Branch'
+          FROM pct_order_details od
+          LEFT JOIN customer_basic_details cbd ON od.customer_id = cbd.id
+          LEFT JOIN sales_reps sr ON od.sales_rep = sr.id
+          WHERE DATE(od.created_at) = CURDATE()
+          AND sr.division = 'Escrow'
+          AND od.status != 'cancelled'
+          ORDER BY od.created_at DESC;
+        transforms: []
+      
+      - id: 'escrow_closings'
+        title: 'Closings Completed Today'
+        sql: |
+          SELECT 
+            od.file_number as 'File Number',
+            od.full_address as 'Property Address',
+            CONCAT(cbd.customer_first_name, ' ', cbd.customer_last_name) as 'Customer',
+            CONCAT('$', FORMAT(od.sales_price, 0)) as 'Sales Price',
+            od.transaction_type as 'Type',
+            CONCAT(sr.first_name, ' ', sr.last_name) as 'Sales Rep',
+            sr.branch_location as 'Branch'
+          FROM pct_order_details od
+          LEFT JOIN customer_basic_details cbd ON od.customer_id = cbd.id
+          LEFT JOIN sales_reps sr ON od.sales_rep = sr.id
+          WHERE DATE(od.closing_date) = CURDATE()
+          AND sr.division = 'Escrow'
+          AND od.status = 'closed'
+          ORDER BY od.closing_date DESC;
+        transforms: []
+
+  - name: 'Executive Summary'
+    subtables:
+      - id: 'daily_metrics'
+        title: 'Key Performance Indicators'
+        sql: |
+          SELECT 
+            'Total Openings Today' as 'Metric',
+            COUNT(*) as 'Value'
+          FROM pct_order_details od
+          LEFT JOIN sales_reps sr ON od.sales_rep = sr.id
+          WHERE DATE(od.created_at) = CURDATE()
+          AND od.status != 'cancelled'
+          
+          UNION ALL
+          
+          SELECT 
+            'Total Closings Today' as 'Metric',
+            COUNT(*) as 'Value'
+          FROM pct_order_details od
+          LEFT JOIN sales_reps sr ON od.sales_rep = sr.id
+          WHERE DATE(od.closing_date) = CURDATE()
+          AND od.status = 'closed'
+          
+          UNION ALL
+          
+          SELECT 
+            'Total Revenue Today' as 'Metric',
+            CONCAT('$', FORMAT(SUM(od.sales_price), 0)) as 'Value'
+          FROM pct_order_details od
+          LEFT JOIN sales_reps sr ON od.sales_rep = sr.id
+          WHERE DATE(od.closing_date) = CURDATE()
+          AND od.status = 'closed'
+          
+          UNION ALL
+          
+          SELECT 
+            'Average Transaction Value' as 'Metric',
+            CONCAT('$', FORMAT(AVG(od.sales_price), 0)) as 'Value'
+          FROM pct_order_details od
+          LEFT JOIN sales_reps sr ON od.sales_rep = sr.id
+          WHERE DATE(od.closing_date) = CURDATE()
+          AND od.status = 'closed';
+        transforms: []
+
+  - name: 'Branch Performance'
+    subtables:
+      - id: 'branch_summary'
+        title: 'Revenue by Branch'
+        sql: |
+          SELECT 
+            sr.branch_location as 'Branch',
+            sr.division as 'Division',
+            COUNT(od.id) as 'Closings Today',
+            CONCAT('$', FORMAT(SUM(od.sales_price), 0)) as 'Revenue Today',
+            CONCAT('$', FORMAT(AVG(od.sales_price), 0)) as 'Avg Transaction'
+          FROM pct_order_details od
+          LEFT JOIN sales_reps sr ON od.sales_rep = sr.id
+          WHERE DATE(od.closing_date) = CURDATE()
+          AND od.status = 'closed'
+          AND sr.branch_location IS NOT NULL
+          GROUP BY sr.branch_location, sr.division
+          ORDER BY SUM(od.sales_price) DESC;
+        transforms: []
