@@ -1,0 +1,736 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>Pacific Coast Title - R-14 Report</title>
+<style>
+/* R-14 Report Styling */
+body {
+    font-family: Calibri, "Segoe UI", Arial, sans-serif;
+    font-size: 11pt;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.2;
+}
+
+.report-header {
+    background: linear-gradient(to bottom, #4472C4, #365F94);
+    color: white;
+    padding: 15px 20px;
+    margin: -20px -20px 20px -20px;
+    border-bottom: 2px solid #2F5597;
+}
+
+.report-title {
+    font-size: 18pt;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+.report-subtitle {
+    font-size: 12pt;
+    margin: 5px 0 0 0;
+    opacity: 0.9;
+}
+
+/* Navigation bar styling */
+.nav-bar {
+    background: linear-gradient(to bottom, #2F5597, #1F4E79);
+    padding: 10px 20px;
+    margin: -20px -20px 0 -20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    border-bottom: 1px solid #1A3C5C;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 11pt;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #E3F2FD;
+}
+
+.nav-link.active {
+    background-color: #4472C4;
+    color: white;
+}
+
+/* Executive Summary Section */
+.executive-summary {
+    background: linear-gradient(135deg, #F8F9FA, #E9ECEF);
+    border: 2px solid #4472C4;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0 30px 0;
+}
+
+.summary-title {
+    font-size: 16pt;
+    font-weight: bold;
+    color: #1F4E79;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Collapsible branch sections */
+.branch-section {
+    margin: 20px 0;
+    border: 1px solid #D4D4D4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.branch-toggle {
+    background: linear-gradient(to bottom, #1F4E79, #2F5597);
+    color: white;
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 14pt;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.branch-toggle:hover {
+    background: linear-gradient(to bottom, #2F5597, #4472C4);
+}
+
+.branch-toggle .toggle-icon {
+    font-size: 12pt;
+    transition: transform 0.3s ease;
+}
+
+.branch-content {
+    padding: 20px;
+    background-color: white;
+    border-radius: 0 0 8px 8px;
+    display: block;
+}
+
+.branch-content.collapsed {
+    display: none;
+}
+
+/* Sales Rep Performance tables */
+.salesrep-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 0 20px 0;
+    border: 1px solid #D4D4D4;
+    font-size: 10pt;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.salesrep-table th {
+    background: linear-gradient(to bottom, #F8F9FA, #E9ECEF);
+    border: 1px solid #D4D4D4;
+    padding: 12px 8px;
+    text-align: center;
+    font-weight: bold;
+    color: #495057;
+    font-size: 9pt;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.salesrep-table td {
+    border: 1px solid #D4D4D4;
+    padding: 8px;
+    vertical-align: middle;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.salesrep-table tr:nth-child(even) td {
+    background-color: #F8F9FA;
+}
+
+.salesrep-table tr:hover td {
+    background-color: #E3F2FD;
+}
+
+/* Alternating row guides for easy reading */
+.salesrep-table tbody tr:nth-child(odd) {
+    background: linear-gradient(to right, 
+        rgba(70, 114, 196, 0.05) 0%, 
+        rgba(70, 114, 196, 0.02) 50%, 
+        rgba(70, 114, 196, 0.05) 100%);
+}
+
+.salesrep-table tbody tr:nth-child(even) {
+    background: linear-gradient(to right, 
+        rgba(47, 85, 151, 0.03) 0%, 
+        rgba(47, 85, 151, 0.01) 50%, 
+        rgba(47, 85, 151, 0.03) 100%);
+}
+
+/* Sales rep name column */
+.salesrep-name {
+    text-align: left !important;
+    font-weight: bold;
+    color: #1F4E79;
+    padding-left: 12px !important;
+}
+
+/* Product type styling */
+.product-escrow { 
+    background-color: #E8F5E8 !important; 
+    font-weight: bold;
+    color: #2E7D32;
+}
+
+.product-title-resale { 
+    background-color: #E3F2FD !important; 
+    font-weight: bold;
+    color: #1565C0;
+}
+
+.product-title-refi { 
+    background-color: #FFF3E0 !important; 
+    font-weight: bold;
+    color: #EF6C00;
+}
+
+/* Number formatting */
+.currency {
+    text-align: right !important;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    color: #0066CC;
+}
+
+.number {
+    text-align: right !important;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+}
+
+.percentage {
+    text-align: right !important;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    color: #0066CC;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Performance indicators */
+.high-performance { color: #28a745; font-weight: bold; }
+.medium-performance { color: #ffc107; font-weight: bold; }
+.low-performance { color: #dc3545; font-weight: bold; }
+
+/* Branch totals styling */
+.branch-totals {
+    background: linear-gradient(135deg, #F0F8FF, #E6F3FF);
+    border: 2px solid #4472C4;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.branch-totals td {
+    font-weight: bold !important;
+    background: linear-gradient(135deg, #F0F8FF, #E6F3FF) !important;
+    color: #1F4E79 !important;
+}
+
+
+
+.report-footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #E9ECEF;
+    text-align: center;
+    font-size: 9pt;
+    color: #6C757D;
+}
+</style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<div class="nav-bar">
+    <a href="#" class="nav-link">📊 Daily Report</a>
+    <a href="#" class="nav-link active">📋 R-14 Report</a>
+</div>
+
+<!-- Report Header -->
+<div class="report-header">
+    <div class="report-title">Pacific Coast Title - R-14 Report</div>
+    <div class="report-subtitle">Sales Representative Performance Analysis | August 15, 2025</div>
+</div>
+
+<!-- Executive Summary -->
+<div class="executive-summary">
+    <div class="summary-title">📈 Executive Summary - Top Performers for August 2025</div>
+    <table class="salesrep-table">
+        <thead>
+            <tr>
+                <th>Metric</th>
+                <th>Best Performer</th>
+                <th>Value</th>
+                <th>Company Average</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Highest Closing Ratio</strong></td>
+                <td class="salesrep-name">Sarah Johnson (Main Office LA)</td>
+                <td class="percentage high-performance">87.5%</td>
+                <td class="percentage">72.3%</td>
+            </tr>
+            <tr>
+                <td><strong>Most Closings Today</strong></td>
+                <td class="salesrep-name">Michael Chen (Orange County)</td>
+                <td class="number high-performance">4</td>
+                <td class="number">1.8</td>
+            </tr>
+            <tr>
+                <td><strong>Highest Revenue Today</strong></td>
+                <td class="salesrep-name">Jennifer Martinez (Main Office LA)</td>
+                <td class="currency high-performance">$8,450</td>
+                <td class="currency">$3,215</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Main Office - Los Angeles -->
+<div class="branch-section">
+    <button class="branch-toggle" onclick="toggleBranch('main-la')">
+        <span>🏢 Main Office - Los Angeles</span>
+        <span class="toggle-icon" id="main-la-icon">▼</span>
+    </button>
+    <div class="branch-content" id="main-la">
+
+<table class="salesrep-table">
+    <thead>
+        <tr>
+            <th rowspan="2">Sales Representative</th>
+            <th rowspan="2">Closing<br>Ratio</th>
+            <th colspan="3">Closings by Production</th>
+            <th colspan="3">Revenue by Production</th>
+        </tr>
+        <tr>
+            <th>Today</th>
+            <th>Month to Date</th>
+            <th>Prior Month</th>
+            <th>Today</th>
+            <th>Month to Date</th>
+            <th>Prior Month</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="salesrep-name">Sarah Johnson</td>
+            <td class="percentage high-performance">87.5%</td>
+            <td>
+                <div class="product-title-resale">1 Title Resale</div>
+                <div class="product-title-refi">0 Title Refi</div>
+                <div class="product-escrow">2 Escrow</div>
+            </td>
+            <td>
+                <div class="product-title-resale">15 Title Resale</div>
+                <div class="product-title-refi">8 Title Refi</div>
+                <div class="product-escrow">28 Escrow</div>
+            </td>
+            <td>
+                <div class="product-title-resale">12 Title Resale</div>
+                <div class="product-title-refi">6 Title Refi</div>
+                <div class="product-escrow">25 Escrow</div>
+            </td>
+            <td>
+                <div class="product-title-resale currency">$3,850</div>
+                <div class="product-title-refi currency">$0</div>
+                <div class="product-escrow currency">$1,200</div>
+            </td>
+            <td>
+                <div class="product-title-resale currency">$89,250</div>
+                <div class="product-title-refi currency">$28,400</div>
+                <div class="product-escrow currency">$42,000</div>
+            </td>
+            <td>
+                <div class="product-title-resale currency">$72,000</div>
+                <div class="product-title-refi currency">$21,300</div>
+                <div class="product-escrow currency">$37,500</div>
+            </td>
+        </tr>
+        <tr>
+            <td class="salesrep-name">Jennifer Martinez</td>
+            <td class="percentage high-performance">82.1%</td>
+            <td>
+                <div class="product-title-resale">2 Title Resale</div>
+                <div class="product-title-refi">1 Title Refi</div>
+                <div class="product-escrow">1 Escrow</div>
+            </td>
+            <td>
+                <div class="product-title-resale">18 Title Resale</div>
+                <div class="product-title-refi">12 Title Refi</div>
+                <div class="product-escrow">22 Escrow</div>
+            </td>
+            <td>
+                <div class="product-title-resale">16 Title Resale</div>
+                <div class="product-title-refi">10 Title Refi</div>
+                <div class="product-escrow">20 Escrow</div>
+            </td>
+            <td>
+                <div class="product-title-resale currency">$6,250</div>
+                <div class="product-title-refi currency">$1,600</div>
+                <div class="product-escrow currency">$600</div>
+            </td>
+            <td>
+                <div class="product-title-resale currency">$112,500</div>
+                <div class="product-title-refi currency">$42,000</div>
+                <div class="product-escrow currency">$33,000</div>
+            </td>
+            <td>
+                <div class="product-title-resale currency">$96,000</div>
+                <div class="product-title-refi currency">$35,000</div>
+                <div class="product-escrow currency">$30,000</div>
+            </td>
+        </tr>
+        <tr>
+            <td class="salesrep-name">David Rodriguez</td>
+            <td class="percentage medium-performance">75.3%</td>
+            <td>
+                <div class="product-title-resale">0 Title Resale</div>
+                <div class="product-title-refi">0 Title Refi</div>
+                <div class="product-escrow">1 Escrow</div>
+            </td>
+            <td>
+                <div class="product-title-resale">14 Title Resale</div>
+                <div class="product-title-refi">9 Title Refi</div>
+                <div class="product-escrow">18 Escrow</div>
+            </td>
+            <td>
+                <div class="product-title-resale">12 Title Resale</div>
+                <div class="product-title-refi">8 Title Refi</div>
+                <div class="product-escrow">16 Escrow</div>
+            </td>
+            <td>
+                <div class="product-title-resale currency">$0</div>
+                <div class="product-title-refi currency">$0</div>
+                <div class="product-escrow currency">$750</div>
+            </td>
+            <td>
+                <div class="product-title-resale currency">$84,000</div>
+                <div class="product-title-refi currency">$31,500</div>
+                <div class="product-escrow currency">$27,000</div>
+            </td>
+            <td>
+                <div class="product-title-resale currency">$72,000</div>
+                <div class="product-title-refi currency">$28,000</div>
+                <div class="product-escrow currency">$24,000</div>
+            </td>
+        </tr>
+        <tr>
+            <td class="salesrep-name">Amanda Wilson</td>
+            <td class="percentage medium-performance">68.9%</td>
+            <td>
+                <div class="product-title-resale">1 Title Resale</div>
+                <div class="product-title-refi">0 Title Refi</div>
+                <div class="product-escrow">0 Escrow</div>
+            </td>
+            <td>
+                <div class="product-title-resale">11 Title Resale</div>
+                <div class="product-title-refi">7 Title Refi</div>
+                <div class="product-escrow">15 Escrow</div>
+            </td>
+            <td>
+                <div class="product-title-resale">10 Title Resale</div>
+                <div class="product-title-refi">6 Title Refi</div>
+                <div class="product-escrow">14 Escrow</div>
+            </td>
+            <td>
+                <div class="product-title-resale currency">$2,850</div>
+                <div class="product-title-refi currency">$0</div>
+                <div class="product-escrow currency">$0</div>
+            </td>
+            <td>
+                <div class="product-title-resale currency">$66,000</div>
+                <div class="product-title-refi currency">$24,500</div>
+                <div class="product-escrow currency">$22,500</div>
+            </td>
+            <td>
+                <div class="product-title-resale currency">$60,000</div>
+                <div class="product-title-refi currency">$21,000</div>
+                <div class="product-escrow currency">$21,000</div>
+            </td>
+        </tr>
+    </tbody>
+    <tfoot class="branch-totals">
+        <tr>
+            <td class="salesrep-name">BRANCH TOTALS</td>
+            <td class="percentage">78.5%</td>
+            <td>
+                <div class="product-title-resale"><strong>4 Title Resale</strong></div>
+                <div class="product-title-refi"><strong>1 Title Refi</strong></div>
+                <div class="product-escrow"><strong>4 Escrow</strong></div>
+            </td>
+            <td>
+                <div class="product-title-resale"><strong>58 Title Resale</strong></div>
+                <div class="product-title-refi"><strong>36 Title Refi</strong></div>
+                <div class="product-escrow"><strong>83 Escrow</strong></div>
+            </td>
+            <td>
+                <div class="product-title-resale"><strong>50 Title Resale</strong></div>
+                <div class="product-title-refi"><strong>30 Title Refi</strong></div>
+                <div class="product-escrow"><strong>75 Escrow</strong></div>
+            </td>
+            <td>
+                <div class="product-title-resale currency"><strong>$12,950</strong></div>
+                <div class="product-title-refi currency"><strong>$1,600</strong></div>
+                <div class="product-escrow currency"><strong>$2,550</strong></div>
+            </td>
+            <td>
+                <div class="product-title-resale currency"><strong>$351,750</strong></div>
+                <div class="product-title-refi currency"><strong>$126,400</strong></div>
+                <div class="product-escrow currency"><strong>$124,500</strong></div>
+            </td>
+            <td>
+                <div class="product-title-resale currency"><strong>$300,000</strong></div>
+                <div class="product-title-refi currency"><strong>$105,300</strong></div>
+                <div class="product-escrow currency"><strong>$112,500</strong></div>
+            </td>
+        </tr>
+    </tfoot>
+</table>
+
+
+    </div>
+</div>
+
+<!-- Orange County Branch -->
+<div class="branch-section">
+    <button class="branch-toggle" onclick="toggleBranch('orange-county')">
+        <span>🌊 Orange County Branch</span>
+        <span class="toggle-icon" id="orange-county-icon">▼</span>
+    </button>
+    <div class="branch-content" id="orange-county">
+
+<table class="salesrep-table">
+    <thead>
+        <tr>
+            <th rowspan="2">Sales Representative</th>
+            <th rowspan="2">Closing<br>Ratio</th>
+            <th colspan="3">Closings by Production</th>
+            <th colspan="3">Revenue by Production</th>
+        </tr>
+        <tr>
+            <th>Today</th>
+            <th>Month to Date</th>
+            <th>Prior Month</th>
+            <th>Today</th>
+            <th>Month to Date</th>
+            <th>Prior Month</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="salesrep-name">Michael Chen</td>
+            <td class="percentage high-performance">84.2%</td>
+            <td>
+                <div class="product-title-resale">2 Title Resale</div>
+                <div class="product-title-refi">0 Title Refi</div>
+                <div class="product-escrow">2 Escrow</div>
+            </td>
+            <td>
+                <div class="product-title-resale">20 Title Resale</div>
+                <div class="product-title-refi">8 Title Refi</div>
+                <div class="product-escrow">25 Escrow</div>
+            </td>
+            <td>
+                <div class="product-title-resale">18 Title Resale</div>
+                <div class="product-title-refi">7 Title Refi</div>
+                <div class="product-escrow">22 Escrow</div>
+            </td>
+            <td>
+                <div class="product-title-resale currency">$6,200</div>
+                <div class="product-title-refi currency">$0</div>
+                <div class="product-escrow currency">$900</div>
+            </td>
+            <td>
+                <div class="product-title-resale currency">$120,000</div>
+                <div class="product-title-refi currency">$28,000</div>
+                <div class="product-escrow currency">$37,500</div>
+            </td>
+            <td>
+                <div class="product-title-resale currency">$108,000</div>
+                <div class="product-title-refi currency">$24,500</div>
+                <div class="product-escrow currency">$33,000</div>
+            </td>
+        </tr>
+        <tr>
+            <td class="salesrep-name">Lisa Thompson</td>
+            <td class="percentage medium-performance">71.4%</td>
+            <td>
+                <div class="product-title-resale">1 Title Resale</div>
+                <div class="product-title-refi">0 Title Refi</div>
+                <div class="product-escrow">1 Escrow</div>
+            </td>
+            <td>
+                <div class="product-title-resale">15 Title Resale</div>
+                <div class="product-title-refi">6 Title Refi</div>
+                <div class="product-escrow">18 Escrow</div>
+            </td>
+            <td>
+                <div class="product-title-resale">13 Title Resale</div>
+                <div class="product-title-refi">5 Title Refi</div>
+                <div class="product-escrow">16 Escrow</div>
+            </td>
+            <td>
+                <div class="product-title-resale currency">$3,400</div>
+                <div class="product-title-refi currency">$0</div>
+                <div class="product-escrow currency">$525</div>
+            </td>
+            <td>
+                <div class="product-title-resale currency">$90,000</div>
+                <div class="product-title-refi currency">$21,000</div>
+                <div class="product-escrow currency">$27,000</div>
+            </td>
+            <td>
+                <div class="product-title-resale currency">$78,000</div>
+                <div class="product-title-refi currency">$17,500</div>
+                <div class="product-escrow currency">$24,000</div>
+            </td>
+        </tr>
+        <tr>
+            <td class="salesrep-name">Carlos Garcia</td>
+            <td class="percentage low-performance">58.7%</td>
+            <td>
+                <div class="product-title-resale">0 Title Resale</div>
+                <div class="product-title-refi">0 Title Refi</div>
+                <div class="product-escrow">0 Escrow</div>
+            </td>
+            <td>
+                <div class="product-title-resale">8 Title Resale</div>
+                <div class="product-title-refi">4 Title Refi</div>
+                <div class="product-escrow">12 Escrow</div>
+            </td>
+            <td>
+                <div class="product-title-resale">7 Title Resale</div>
+                <div class="product-title-refi">3 Title Refi</div>
+                <div class="product-escrow">11 Escrow</div>
+            </td>
+            <td>
+                <div class="product-title-resale currency">$0</div>
+                <div class="product-title-refi currency">$0</div>
+                <div class="product-escrow currency">$0</div>
+            </td>
+            <td>
+                <div class="product-title-resale currency">$48,000</div>
+                <div class="product-title-refi currency">$14,000</div>
+                <div class="product-escrow currency">$18,000</div>
+            </td>
+            <td>
+                <div class="product-title-resale currency">$42,000</div>
+                <div class="product-title-refi currency">$10,500</div>
+                <div class="product-escrow currency">$16,500</div>
+            </td>
+        </tr>
+    </tbody>
+    <tfoot class="branch-totals">
+        <tr>
+            <td class="salesrep-name">BRANCH TOTALS</td>
+            <td class="percentage">71.4%</td>
+            <td>
+                <div class="product-title-resale"><strong>3 Title Resale</strong></div>
+                <div class="product-title-refi"><strong>0 Title Refi</strong></div>
+                <div class="product-escrow"><strong>3 Escrow</strong></div>
+            </td>
+            <td>
+                <div class="product-title-resale"><strong>43 Title Resale</strong></div>
+                <div class="product-title-refi"><strong>18 Title Refi</strong></div>
+                <div class="product-escrow"><strong>55 Escrow</strong></div>
+            </td>
+            <td>
+                <div class="product-title-resale"><strong>38 Title Resale</strong></div>
+                <div class="product-title-refi"><strong>15 Title Refi</strong></div>
+                <div class="product-escrow"><strong>49 Escrow</strong></div>
+            </td>
+            <td>
+                <div class="product-title-resale currency"><strong>$9,600</strong></div>
+                <div class="product-title-refi currency"><strong>$0</strong></div>
+                <div class="product-escrow currency"><strong>$1,425</strong></div>
+            </td>
+            <td>
+                <div class="product-title-resale currency"><strong>$258,000</strong></div>
+                <div class="product-title-refi currency"><strong>$63,000</strong></div>
+                <div class="product-escrow currency"><strong>$82,500</strong></div>
+            </td>
+            <td>
+                <div class="product-title-resale currency"><strong>$228,000</strong></div>
+                <div class="product-title-refi currency"><strong>$52,500</strong></div>
+                <div class="product-escrow currency"><strong>$73,500</strong></div>
+            </td>
+        </tr>
+    </tfoot>
+</table>
+
+
+
+    </div>
+</div>
+
+<!-- Additional branches note -->
+<div style="margin: 30px 0; padding: 20px; background-color: #F8F9FA; border-radius: 5px; text-align: center;">
+    <strong>Additional Branches:</strong> San Diego, Riverside, and Ventura branches would follow the same detailed structure with sales representative performance metrics.
+</div>
+
+<!-- Executive Footer -->
+<div class="report-footer">
+    <strong>Pacific Coast Title Company</strong> | R-14 Sales Performance Report<br>
+    Sales Representative Analysis | Generated: August 15, 2025 at 12:51 PM<br>
+    <em>Individual performance tracking for strategic sales management</em>
+</div>
+
+<script>
+function toggleBranch(branchId) {
+    const content = document.getElementById(branchId);
+    const icon = document.getElementById(branchId + '-icon');
+    
+    if (content.style.display === 'none' || content.classList.contains('collapsed')) {
+        content.style.display = 'block';
+        content.classList.remove('collapsed');
+        icon.textContent = '▼';
+    } else {
+        content.style.display = 'none';
+        content.classList.add('collapsed');
+        icon.textContent = '▶';
+    }
+}
+
+// Initialize all branches as expanded
+document.addEventListener('DOMContentLoaded', function() {
+    const branches = ['main-la', 'orange-county'];
+    branches.forEach(function(branchId) {
+        const content = document.getElementById(branchId);
+        const icon = document.getElementById(branchId + '-icon');
+        content.style.display = 'block';
+        content.classList.remove('collapsed');
+        icon.textContent = '▼';
+    });
+});
+</script>
+
+</body>
+</html>
