@@ -35,6 +35,7 @@
 - **[Order Management Workflow](order-management-workflow.md)** - Step-by-step processing flow
 - **[API Integration Guide](api-integration-guide.md)** - External service integrations
 - **[Google TitlePoint Integration](google-titlepoint-integration-guide.md)** - Property research automation
+- **[TitlePoint Fail‑Proof Guide](titlepoint-failproof-guide.md)** - Exact, step-by-step TitlePoint API usage
 
 ### **⚡ Optimization & Maintenance**
 - **[Optimization Analysis](optimization-improvement-analysis.md)** - Performance and security improvements
