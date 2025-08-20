@@ -150,3 +150,65 @@ sections:
           GROUP BY sr.branch_location, sr.division
           ORDER BY SUM(od.sales_price) DESC;
         transforms: []
+
+  - name: 'R-14 Sales Rep Performance'
+    subtables:
+      - id: 'sales_rep_performance'
+        title: 'Sales Representative Production Analysis'
+        sql: |
+          SELECT 
+            CONCAT(sr.first_name, ' ', sr.last_name) as 'Sales Representative',
+            sr.branch_location as 'Branch',
+            CONCAT(FORMAT((COUNT(CASE WHEN od.status = 'closed' THEN 1 END) / COUNT(*)) * 100, 1), '%') as 'Closing Ratio',
+            COUNT(CASE WHEN DATE(od.closing_date) = CURDATE() AND od.transaction_type = 'title_resale' THEN 1 END) as 'Title Resale Today',
+            COUNT(CASE WHEN DATE(od.closing_date) = CURDATE() AND od.transaction_type = 'title_refi' THEN 1 END) as 'Title Refi Today',
+            COUNT(CASE WHEN DATE(od.closing_date) = CURDATE() AND od.transaction_type = 'escrow' THEN 1 END) as 'Escrow Today',
+            CONCAT('$', FORMAT(SUM(CASE WHEN DATE(od.closing_date) = CURDATE() THEN od.sales_price ELSE 0 END), 0)) as 'Revenue Today'
+          FROM sales_reps sr
+          LEFT JOIN pct_order_details od ON sr.id = od.sales_rep
+          WHERE sr.active = 1
+          GROUP BY sr.id, sr.first_name, sr.last_name, sr.branch_location
+          ORDER BY sr.branch_location, (COUNT(CASE WHEN od.status = 'closed' THEN 1 END) / COUNT(*)) DESC;
+        transforms: []
+
+  - name: 'Escrow Officer Performance'
+    subtables:
+      - id: 'escrow_officer_performance'
+        title: 'Escrow Officer Production Analysis'
+        sql: |
+          SELECT 
+            CONCAT(eo.first_name, ' ', eo.last_name) as 'Escrow Officer',
+            eo.branch_location as 'Branch',
+            CONCAT(FORMAT(eo.closing_efficiency, 1), '%') as 'Closing Efficiency',
+            COUNT(CASE WHEN DATE(od.closing_date) = CURDATE() AND od.transaction_type = 'purchase' THEN 1 END) as 'Purchase Today',
+            COUNT(CASE WHEN DATE(od.closing_date) = CURDATE() AND od.transaction_type = 'refinance' THEN 1 END) as 'Refinance Today',
+            COUNT(CASE WHEN DATE(od.closing_date) = CURDATE() AND od.transaction_type = 'commercial' THEN 1 END) as 'Commercial Today',
+            CONCAT('$', FORMAT(SUM(CASE WHEN DATE(od.closing_date) = CURDATE() THEN od.sales_price ELSE 0 END), 0)) as 'Revenue Today'
+          FROM escrow_officers eo
+          LEFT JOIN pct_order_details od ON eo.id = od.escrow_officer
+          WHERE eo.active = 1
+          AND eo.branch_location LIKE '%Escrow%'
+          GROUP BY eo.id, eo.first_name, eo.last_name, eo.branch_location
+          ORDER BY eo.branch_location, eo.closing_efficiency DESC;
+        transforms: []
+
+  - name: 'Title Officer Performance'
+    subtables:
+      - id: 'title_officer_performance'
+        title: 'Title Officer Production Analysis'
+        sql: |
+          SELECT 
+            CONCAT(to.first_name, ' ', to.last_name) as 'Title Officer',
+            to.branch_location as 'Branch',
+            CONCAT(FORMAT(to.quality_rating, 1), '%') as 'Quality Rating',
+            COUNT(CASE WHEN DATE(od.closing_date) = CURDATE() AND od.transaction_type = 'resale' THEN 1 END) as 'Resale Today',
+            COUNT(CASE WHEN DATE(od.closing_date) = CURDATE() AND od.transaction_type = 'refinance' THEN 1 END) as 'Refinance Today',
+            COUNT(CASE WHEN DATE(od.closing_date) = CURDATE() AND od.transaction_type = 'commercial' THEN 1 END) as 'Commercial Today',
+            CONCAT('$', FORMAT(SUM(CASE WHEN DATE(od.closing_date) = CURDATE() THEN od.sales_price ELSE 0 END), 0)) as 'Revenue Today'
+          FROM title_officers to
+          LEFT JOIN pct_order_details od ON to.id = od.title_officer
+          WHERE to.active = 1
+          AND to.branch_location LIKE '%Title%'
+          GROUP BY to.id, to.first_name, to.last_name, to.branch_location
+          ORDER BY to.branch_location, to.quality_rating DESC;
+        transforms: []

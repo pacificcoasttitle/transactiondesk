@@ -1,0 +1,719 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>Pacific Coast Title - Escrow Officer Report</title>
+<style>
+/* Escrow Report Styling */
+body {
+    font-family: Calibri, "Segoe UI", Arial, sans-serif;
+    font-size: 11pt;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.2;
+}
+
+.report-header {
+    background: linear-gradient(to bottom, #4472C4, #365F94);
+    color: white;
+    padding: 15px 20px;
+    margin: -20px -20px 20px -20px;
+    border-bottom: 2px solid #2F5597;
+}
+
+.report-title {
+    font-size: 18pt;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+.report-subtitle {
+    font-size: 12pt;
+    margin: 5px 0 0 0;
+    opacity: 0.9;
+}
+
+/* Navigation bar styling */
+.nav-bar {
+    background: linear-gradient(to bottom, #2F5597, #1F4E79);
+    padding: 10px 20px;
+    margin: -20px -20px 0 -20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    border-bottom: 1px solid #1A3C5C;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 11pt;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #E3F2FD;
+}
+
+.nav-link.active {
+    background-color: #4472C4;
+    color: white;
+}
+
+/* Executive Summary Section */
+.executive-summary {
+    background: linear-gradient(135deg, #F8F9FA, #E9ECEF);
+    border: 2px solid #4472C4;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0 30px 0;
+}
+
+.summary-title {
+    font-size: 16pt;
+    font-weight: bold;
+    color: #1F4E79;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Collapsible branch sections */
+.branch-section {
+    margin: 20px 0;
+    border: 1px solid #D4D4D4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.branch-toggle {
+    background: linear-gradient(to bottom, #2E7D32, #388E3C);
+    color: white;
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 14pt;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.branch-toggle:hover {
+    background: linear-gradient(to bottom, #388E3C, #43A047);
+}
+
+.branch-toggle .toggle-icon {
+    font-size: 12pt;
+    transition: transform 0.3s ease;
+}
+
+.branch-content {
+    padding: 20px;
+    background-color: white;
+    border-radius: 0 0 8px 8px;
+    display: block;
+}
+
+.branch-content.collapsed {
+    display: none;
+}
+
+/* Escrow Officer Performance tables */
+.escrow-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 0 20px 0;
+    border: 1px solid #D4D4D4;
+    font-size: 10pt;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.escrow-table th {
+    background: linear-gradient(to bottom, #E8F5E8, #C8E6C9);
+    border: 1px solid #D4D4D4;
+    padding: 12px 8px;
+    text-align: center;
+    font-weight: bold;
+    color: #2E7D32;
+    font-size: 9pt;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.escrow-table td {
+    border: 1px solid #D4D4D4;
+    padding: 8px;
+    vertical-align: middle;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.escrow-table tr:nth-child(even) td {
+    background-color: #F8F9FA;
+}
+
+.escrow-table tr:hover td {
+    background-color: #E8F5E8;
+}
+
+/* Alternating row guides for easy reading */
+.escrow-table tbody tr:nth-child(odd) {
+    background: linear-gradient(to right, 
+        rgba(46, 125, 50, 0.05) 0%, 
+        rgba(46, 125, 50, 0.02) 50%, 
+        rgba(46, 125, 50, 0.05) 100%);
+}
+
+.escrow-table tbody tr:nth-child(even) {
+    background: linear-gradient(to right, 
+        rgba(56, 142, 60, 0.03) 0%, 
+        rgba(56, 142, 60, 0.01) 50%, 
+        rgba(56, 142, 60, 0.03) 100%);
+}
+
+/* Escrow officer name column */
+.escrow-name {
+    text-align: left !important;
+    font-weight: bold;
+    color: #2E7D32;
+    padding-left: 12px !important;
+}
+
+/* Transaction type styling for escrow */
+.escrow-purchase { 
+    background-color: #E8F5E8 !important; 
+    font-weight: bold;
+    color: #2E7D32;
+}
+
+.escrow-refinance { 
+    background-color: #FFF3E0 !important; 
+    font-weight: bold;
+    color: #EF6C00;
+}
+
+.escrow-commercial { 
+    background-color: #F3E5F5 !important; 
+    font-weight: bold;
+    color: #7B1FA2;
+}
+
+/* Number formatting */
+.currency {
+    text-align: right !important;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    color: #0066CC;
+}
+
+.number {
+    text-align: right !important;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+}
+
+.percentage {
+    text-align: right !important;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    color: #0066CC;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Performance indicators */
+.high-performance { color: #28a745; font-weight: bold; }
+.medium-performance { color: #ffc107; font-weight: bold; }
+.low-performance { color: #dc3545; font-weight: bold; }
+
+/* Branch totals styling */
+.branch-totals {
+    background: linear-gradient(135deg, #E8F5E8, #C8E6C9);
+    border: 2px solid #4CAF50;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.branch-totals td {
+    font-weight: bold !important;
+    background: linear-gradient(135deg, #E8F5E8, #C8E6C9) !important;
+    color: #2E7D32 !important;
+}
+
+.report-footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #E9ECEF;
+    text-align: center;
+    font-size: 9pt;
+    color: #6C757D;
+}
+</style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<div class="nav-bar">
+    <a href="R-14-Demo.html" class="nav-link">📋 R-14 Report</a>
+    <a href="Escrow-Report-Demo.html" class="nav-link active">🏦 Escrow Report</a>
+    <a href="Title-Officer-Report-Demo.html" class="nav-link">📜 Title Officer Report</a>
+</div>
+
+<!-- Report Header -->
+<div class="report-header">
+    <div class="report-title">Pacific Coast Title - Escrow Officer Report</div>
+    <div class="report-subtitle">Escrow Officer Production Analysis | August 15, 2025</div>
+</div>
+
+<!-- Executive Summary -->
+<div class="executive-summary">
+    <div class="summary-title">🏆 Executive Summary - Top Escrow Officers for August 2025</div>
+    <table class="escrow-table">
+        <thead>
+            <tr>
+                <th>Metric</th>
+                <th>Best Performer</th>
+                <th>Value</th>
+                <th>Company Average</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Most Closings Today</strong></td>
+                <td class="escrow-name">Maria Rodriguez (Main Escrow LA)</td>
+                <td class="number high-performance">6</td>
+                <td class="number">2.4</td>
+            </tr>
+            <tr>
+                <td><strong>Highest Revenue Today</strong></td>
+                <td class="escrow-name">James Wilson (Orange County Escrow)</td>
+                <td class="currency high-performance">$12,850</td>
+                <td class="currency">$4,125</td>
+            </tr>
+            <tr>
+                <td><strong>Best Closing Efficiency</strong></td>
+                <td class="escrow-name">Lisa Chen (San Diego Escrow)</td>
+                <td class="percentage high-performance">94.2%</td>
+                <td class="percentage">82.1%</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Main Escrow Office - Los Angeles -->
+<div class="branch-section">
+    <button class="branch-toggle" onclick="toggleBranch('main-escrow-la')">
+        <span>🏢 Main Escrow Office - Los Angeles</span>
+        <span class="toggle-icon" id="main-escrow-la-icon">▼</span>
+    </button>
+    <div class="branch-content" id="main-escrow-la">
+
+<table class="escrow-table">
+    <thead>
+        <tr>
+            <th rowspan="3">Escrow Officer</th>
+            <th rowspan="3">Closing<br>Efficiency</th>
+            <th colspan="9">Closings by Transaction Type</th>
+            <th colspan="9">Revenue by Transaction Type</th>
+        </tr>
+        <tr>
+            <th colspan="3">Purchase</th>
+            <th colspan="3">Refinance</th>
+            <th colspan="3">Commercial</th>
+            <th colspan="3">Purchase</th>
+            <th colspan="3">Refinance</th>
+            <th colspan="3">Commercial</th>
+        </tr>
+        <tr>
+            <th>Today</th>
+            <th>MTD</th>
+            <th>Prior</th>
+            <th>Today</th>
+            <th>MTD</th>
+            <th>Prior</th>
+            <th>Today</th>
+            <th>MTD</th>
+            <th>Prior</th>
+            <th>Today</th>
+            <th>MTD</th>
+            <th>Prior</th>
+            <th>Today</th>
+            <th>MTD</th>
+            <th>Prior</th>
+            <th>Today</th>
+            <th>MTD</th>
+            <th>Prior</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="escrow-name">Maria Rodriguez</td>
+            <td class="percentage high-performance">92.3%</td>
+            <!-- Purchase Closings -->
+            <td class="number escrow-purchase">4</td>
+            <td class="number escrow-purchase">42</td>
+            <td class="number escrow-purchase">38</td>
+            <!-- Refinance Closings -->
+            <td class="number escrow-refinance">2</td>
+            <td class="number escrow-refinance">18</td>
+            <td class="number escrow-refinance">16</td>
+            <!-- Commercial Closings -->
+            <td class="number escrow-commercial">0</td>
+            <td class="number escrow-commercial">3</td>
+            <td class="number escrow-commercial">2</td>
+            <!-- Purchase Revenue -->
+            <td class="currency escrow-purchase">$6,200</td>
+            <td class="currency escrow-purchase">$89,400</td>
+            <td class="currency escrow-purchase">$82,500</td>
+            <!-- Refinance Revenue -->
+            <td class="currency escrow-refinance">$2,100</td>
+            <td class="currency escrow-refinance">$24,600</td>
+            <td class="currency escrow-refinance">$22,800</td>
+            <!-- Commercial Revenue -->
+            <td class="currency escrow-commercial">$0</td>
+            <td class="currency escrow-commercial">$18,500</td>
+            <td class="currency escrow-commercial">$12,000</td>
+        </tr>
+        <tr>
+            <td class="escrow-name">Robert Johnson</td>
+            <td class="percentage high-performance">89.1%</td>
+            <!-- Purchase Closings -->
+            <td class="number escrow-purchase">3</td>
+            <td class="number escrow-purchase">35</td>
+            <td class="number escrow-purchase">32</td>
+            <!-- Refinance Closings -->
+            <td class="number escrow-refinance">1</td>
+            <td class="number escrow-refinance">15</td>
+            <td class="number escrow-refinance">14</td>
+            <!-- Commercial Closings -->
+            <td class="number escrow-commercial">1</td>
+            <td class="number escrow-commercial">4</td>
+            <td class="number escrow-commercial">3</td>
+            <!-- Purchase Revenue -->
+            <td class="currency escrow-purchase">$4,850</td>
+            <td class="currency escrow-purchase">$76,300</td>
+            <td class="currency escrow-purchase">$71,200</td>
+            <!-- Refinance Revenue -->
+            <td class="currency escrow-refinance">$1,250</td>
+            <td class="currency escrow-refinance">$19,500</td>
+            <td class="currency escrow-refinance">$18,200</td>
+            <!-- Commercial Revenue -->
+            <td class="currency escrow-commercial">$5,500</td>
+            <td class="currency escrow-commercial">$28,200</td>
+            <td class="currency escrow-commercial">$21,500</td>
+        </tr>
+        <tr>
+            <td class="escrow-name">Susan Miller</td>
+            <td class="percentage medium-performance">83.7%</td>
+            <!-- Purchase Closings -->
+            <td class="number escrow-purchase">2</td>
+            <td class="number escrow-purchase">28</td>
+            <td class="number escrow-purchase">26</td>
+            <!-- Refinance Closings -->
+            <td class="number escrow-refinance">1</td>
+            <td class="number escrow-refinance">12</td>
+            <td class="number escrow-refinance">11</td>
+            <!-- Commercial Closings -->
+            <td class="number escrow-commercial">0</td>
+            <td class="number escrow-commercial">2</td>
+            <td class="number escrow-commercial">1</td>
+            <!-- Purchase Revenue -->
+            <td class="currency escrow-purchase">$3,400</td>
+            <td class="currency escrow-purchase">$58,600</td>
+            <td class="currency escrow-purchase">$55,200</td>
+            <!-- Refinance Revenue -->
+            <td class="currency escrow-refinance">$950</td>
+            <td class="currency escrow-refinance">$15,800</td>
+            <td class="currency escrow-refinance">$14,600</td>
+            <!-- Commercial Revenue -->
+            <td class="currency escrow-commercial">$0</td>
+            <td class="currency escrow-commercial">$12,400</td>
+            <td class="currency escrow-commercial">$8,500</td>
+        </tr>
+        <tr>
+            <td class="escrow-name">Patricia Davis</td>
+            <td class="percentage medium-performance">78.4%</td>
+            <!-- Purchase Closings -->
+            <td class="number escrow-purchase">1</td>
+            <td class="number escrow-purchase">22</td>
+            <td class="number escrow-purchase">20</td>
+            <!-- Refinance Closings -->
+            <td class="number escrow-refinance">2</td>
+            <td class="number escrow-refinance">16</td>
+            <td class="number escrow-refinance">15</td>
+            <!-- Commercial Closings -->
+            <td class="number escrow-commercial">0</td>
+            <td class="number escrow-commercial">1</td>
+            <td class="number escrow-commercial">2</td>
+            <!-- Purchase Revenue -->
+            <td class="currency escrow-purchase">$1,850</td>
+            <td class="currency escrow-purchase">$48,200</td>
+            <td class="currency escrow-purchase">$44,500</td>
+            <!-- Refinance Revenue -->
+            <td class="currency escrow-refinance">$1,800</td>
+            <td class="currency escrow-refinance">$20,400</td>
+            <td class="currency escrow-refinance">$19,200</td>
+            <!-- Commercial Revenue -->
+            <td class="currency escrow-commercial">$0</td>
+            <td class="currency escrow-commercial">$7,500</td>
+            <td class="currency escrow-commercial">$15,200</td>
+        </tr>
+    </tbody>
+    <tfoot class="branch-totals">
+        <tr>
+            <td class="escrow-name">BRANCH TOTALS</td>
+            <td class="percentage">85.9%</td>
+            <!-- Purchase Closings -->
+            <td class="number escrow-purchase"><strong>10</strong></td>
+            <td class="number escrow-purchase"><strong>127</strong></td>
+            <td class="number escrow-purchase"><strong>116</strong></td>
+            <!-- Refinance Closings -->
+            <td class="number escrow-refinance"><strong>6</strong></td>
+            <td class="number escrow-refinance"><strong>61</strong></td>
+            <td class="number escrow-refinance"><strong>56</strong></td>
+            <!-- Commercial Closings -->
+            <td class="number escrow-commercial"><strong>1</strong></td>
+            <td class="number escrow-commercial"><strong>10</strong></td>
+            <td class="number escrow-commercial"><strong>8</strong></td>
+            <!-- Purchase Revenue -->
+            <td class="currency escrow-purchase"><strong>$16,300</strong></td>
+            <td class="currency escrow-purchase"><strong>$272,500</strong></td>
+            <td class="currency escrow-purchase"><strong>$253,400</strong></td>
+            <!-- Refinance Revenue -->
+            <td class="currency escrow-refinance"><strong>$6,100</strong></td>
+            <td class="currency escrow-refinance"><strong>$80,300</strong></td>
+            <td class="currency escrow-refinance"><strong>$74,800</strong></td>
+            <!-- Commercial Revenue -->
+            <td class="currency escrow-commercial"><strong>$5,500</strong></td>
+            <td class="currency escrow-commercial"><strong>$66,600</strong></td>
+            <td class="currency escrow-commercial"><strong>$57,200</strong></td>
+        </tr>
+    </tfoot>
+</table>
+
+    </div>
+</div>
+
+<!-- Orange County Escrow Branch -->
+<div class="branch-section">
+    <button class="branch-toggle" onclick="toggleBranch('orange-county-escrow')">
+        <span>🌊 Orange County Escrow Branch</span>
+        <span class="toggle-icon" id="orange-county-escrow-icon">▼</span>
+    </button>
+    <div class="branch-content" id="orange-county-escrow">
+
+<table class="escrow-table">
+    <thead>
+        <tr>
+            <th rowspan="3">Escrow Officer</th>
+            <th rowspan="3">Closing<br>Efficiency</th>
+            <th colspan="9">Closings by Transaction Type</th>
+            <th colspan="9">Revenue by Transaction Type</th>
+        </tr>
+        <tr>
+            <th colspan="3">Purchase</th>
+            <th colspan="3">Refinance</th>
+            <th colspan="3">Commercial</th>
+            <th colspan="3">Purchase</th>
+            <th colspan="3">Refinance</th>
+            <th colspan="3">Commercial</th>
+        </tr>
+        <tr>
+            <th>Today</th>
+            <th>MTD</th>
+            <th>Prior</th>
+            <th>Today</th>
+            <th>MTD</th>
+            <th>Prior</th>
+            <th>Today</th>
+            <th>MTD</th>
+            <th>Prior</th>
+            <th>Today</th>
+            <th>MTD</th>
+            <th>Prior</th>
+            <th>Today</th>
+            <th>MTD</th>
+            <th>Prior</th>
+            <th>Today</th>
+            <th>MTD</th>
+            <th>Prior</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="escrow-name">James Wilson</td>
+            <td class="percentage high-performance">91.5%</td>
+            <!-- Purchase Closings -->
+            <td class="number escrow-purchase">3</td>
+            <td class="number escrow-purchase">38</td>
+            <td class="number escrow-purchase">34</td>
+            <!-- Refinance Closings -->
+            <td class="number escrow-refinance">1</td>
+            <td class="number escrow-refinance">14</td>
+            <td class="number escrow-refinance">13</td>
+            <!-- Commercial Closings -->
+            <td class="number escrow-commercial">1</td>
+            <td class="number escrow-commercial">5</td>
+            <td class="number escrow-commercial">4</td>
+            <!-- Purchase Revenue -->
+            <td class="currency escrow-purchase">$5,350</td>
+            <td class="currency escrow-purchase">$82,400</td>
+            <td class="currency escrow-purchase">$76,800</td>
+            <!-- Refinance Revenue -->
+            <td class="currency escrow-refinance">$1,500</td>
+            <td class="currency escrow-refinance">$18,200</td>
+            <td class="currency escrow-refinance">$17,100</td>
+            <!-- Commercial Revenue -->
+            <td class="currency escrow-commercial">$6,000</td>
+            <td class="currency escrow-commercial">$32,500</td>
+            <td class="currency escrow-commercial">$26,800</td>
+        </tr>
+        <tr>
+            <td class="escrow-name">Michelle Brown</td>
+            <td class="percentage high-performance">87.8%</td>
+            <!-- Purchase Closings -->
+            <td class="number escrow-purchase">2</td>
+            <td class="number escrow-purchase">32</td>
+            <td class="number escrow-purchase">29</td>
+            <!-- Refinance Closings -->
+            <td class="number escrow-refinance">2</td>
+            <td class="number escrow-refinance">19</td>
+            <td class="number escrow-refinance">17</td>
+            <!-- Commercial Closings -->
+            <td class="number escrow-commercial">0</td>
+            <td class="number escrow-commercial">2</td>
+            <td class="number escrow-commercial">3</td>
+            <!-- Purchase Revenue -->
+            <td class="currency escrow-purchase">$3,800</td>
+            <td class="currency escrow-purchase">$68,500</td>
+            <td class="currency escrow-purchase">$62,200</td>
+            <!-- Refinance Revenue -->
+            <td class="currency escrow-refinance">$2,200</td>
+            <td class="currency escrow-refinance">$24,800</td>
+            <td class="currency escrow-refinance">$22,300</td>
+            <!-- Commercial Revenue -->
+            <td class="currency escrow-commercial">$0</td>
+            <td class="currency escrow-commercial">$14,600</td>
+            <td class="currency escrow-commercial">$22,100</td>
+        </tr>
+        <tr>
+            <td class="escrow-name">David Kim</td>
+            <td class="percentage medium-performance">82.1%</td>
+            <!-- Purchase Closings -->
+            <td class="number escrow-purchase">1</td>
+            <td class="number escrow-purchase">25</td>
+            <td class="number escrow-purchase">23</td>
+            <!-- Refinance Closings -->
+            <td class="number escrow-refinance">1</td>
+            <td class="number escrow-refinance">11</td>
+            <td class="number escrow-refinance">10</td>
+            <!-- Commercial Closings -->
+            <td class="number escrow-commercial">0</td>
+            <td class="number escrow-commercial">1</td>
+            <td class="number escrow-commercial">2</td>
+            <!-- Purchase Revenue -->
+            <td class="currency escrow-purchase">$2,100</td>
+            <td class="currency escrow-purchase">$52,800</td>
+            <td class="currency escrow-purchase">$48,900</td>
+            <!-- Refinance Revenue -->
+            <td class="currency escrow-refinance">$1,100</td>
+            <td class="currency escrow-refinance">$14,300</td>
+            <td class="currency escrow-refinance">$13,200</td>
+            <!-- Commercial Revenue -->
+            <td class="currency escrow-commercial">$0</td>
+            <td class="currency escrow-commercial">$6,500</td>
+            <td class="currency escrow-commercial">$13,800</td>
+        </tr>
+    </tbody>
+    <tfoot class="branch-totals">
+        <tr>
+            <td class="escrow-name">BRANCH TOTALS</td>
+            <td class="percentage">87.1%</td>
+            <!-- Purchase Closings -->
+            <td class="number escrow-purchase"><strong>6</strong></td>
+            <td class="number escrow-purchase"><strong>95</strong></td>
+            <td class="number escrow-purchase"><strong>86</strong></td>
+            <!-- Refinance Closings -->
+            <td class="number escrow-refinance"><strong>4</strong></td>
+            <td class="number escrow-refinance"><strong>44</strong></td>
+            <td class="number escrow-refinance"><strong>40</strong></td>
+            <!-- Commercial Closings -->
+            <td class="number escrow-commercial"><strong>1</strong></td>
+            <td class="number escrow-commercial"><strong>8</strong></td>
+            <td class="number escrow-commercial"><strong>9</strong></td>
+            <!-- Purchase Revenue -->
+            <td class="currency escrow-purchase"><strong>$11,250</strong></td>
+            <td class="currency escrow-purchase"><strong>$203,700</strong></td>
+            <td class="currency escrow-purchase"><strong>$187,900</strong></td>
+            <!-- Refinance Revenue -->
+            <td class="currency escrow-refinance"><strong>$4,800</strong></td>
+            <td class="currency escrow-refinance"><strong>$57,300</strong></td>
+            <td class="currency escrow-refinance"><strong>$52,600</strong></td>
+            <!-- Commercial Revenue -->
+            <td class="currency escrow-commercial"><strong>$6,000</strong></td>
+            <td class="currency escrow-commercial"><strong>$53,600</strong></td>
+            <td class="currency escrow-commercial"><strong>$62,700</strong></td>
+        </tr>
+    </tfoot>
+</table>
+
+    </div>
+</div>
+
+<!-- Additional branches note -->
+<div style="margin: 30px 0; padding: 20px; background-color: #F8F9FA; border-radius: 5px; text-align: center;">
+    <strong>Additional Escrow Branches:</strong> San Diego, Riverside, and Ventura escrow branches would follow the same detailed structure with escrow officer performance metrics.
+</div>
+
+<!-- Executive Footer -->
+<div class="report-footer">
+    <strong>Pacific Coast Title Company</strong> | Escrow Officer Performance Report<br>
+    Escrow Production Analysis | Generated: August 15, 2025 at 12:51 PM<br>
+    <em>Individual escrow officer performance tracking for operational excellence</em>
+</div>
+
+<script>
+function toggleBranch(branchId) {
+    const content = document.getElementById(branchId);
+    const icon = document.getElementById(branchId + '-icon');
+    
+    if (content.style.display === 'none' || content.classList.contains('collapsed')) {
+        content.style.display = 'block';
+        content.classList.remove('collapsed');
+        icon.textContent = '▼';
+    } else {
+        content.style.display = 'none';
+        content.classList.add('collapsed');
+        icon.textContent = '▶';
+    }
+}
+
+// Initialize all branches as expanded
+document.addEventListener('DOMContentLoaded', function() {
+    const branches = ['main-escrow-la', 'orange-county-escrow'];
+    branches.forEach(function(branchId) {
+        const content = document.getElementById(branchId);
+        const icon = document.getElementById(branchId + '-icon');
+        content.style.display = 'block';
+        content.classList.remove('collapsed');
+        icon.textContent = '▼';
+    });
+});
+</script>
+
+</body>
+</html>
+

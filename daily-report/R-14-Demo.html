@@ -269,8 +269,9 @@ body {
 
 <!-- Navigation Bar -->
 <div class="nav-bar">
-    <a href="#" class="nav-link">📊 Daily Report</a>
-    <a href="#" class="nav-link active">📋 R-14 Report</a>
+    <a href="R-14-Demo.html" class="nav-link active">📋 R-14 Report</a>
+    <a href="Escrow-Report-Demo.html" class="nav-link">🏦 Escrow Report</a>
+    <a href="Title-Officer-Report-Demo.html" class="nav-link">📜 Title Officer Report</a>
 </div>
 
 <!-- Report Header -->
@@ -325,192 +326,182 @@ body {
 <table class="salesrep-table">
     <thead>
         <tr>
-            <th rowspan="2">Sales Representative</th>
-            <th rowspan="2">Closing<br>Ratio</th>
-            <th colspan="3">Closings by Production</th>
-            <th colspan="3">Revenue by Production</th>
+            <th rowspan="3">Sales Representative</th>
+            <th rowspan="3">Closing<br>Ratio</th>
+            <th colspan="9">Closings by Production</th>
+            <th colspan="9">Revenue by Production</th>
+        </tr>
+        <tr>
+            <th colspan="3">Title Resale</th>
+            <th colspan="3">Title Refi</th>
+            <th colspan="3">Escrow</th>
+            <th colspan="3">Title Resale</th>
+            <th colspan="3">Title Refi</th>
+            <th colspan="3">Escrow</th>
         </tr>
         <tr>
             <th>Today</th>
-            <th>Month to Date</th>
-            <th>Prior Month</th>
+            <th>MTD</th>
+            <th>Prior</th>
             <th>Today</th>
-            <th>Month to Date</th>
-            <th>Prior Month</th>
+            <th>MTD</th>
+            <th>Prior</th>
+            <th>Today</th>
+            <th>MTD</th>
+            <th>Prior</th>
+            <th>Today</th>
+            <th>MTD</th>
+            <th>Prior</th>
+            <th>Today</th>
+            <th>MTD</th>
+            <th>Prior</th>
+            <th>Today</th>
+            <th>MTD</th>
+            <th>Prior</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td class="salesrep-name">Sarah Johnson</td>
             <td class="percentage high-performance">87.5%</td>
-            <td>
-                <div class="product-title-resale">1 Title Resale</div>
-                <div class="product-title-refi">0 Title Refi</div>
-                <div class="product-escrow">2 Escrow</div>
-            </td>
-            <td>
-                <div class="product-title-resale">15 Title Resale</div>
-                <div class="product-title-refi">8 Title Refi</div>
-                <div class="product-escrow">28 Escrow</div>
-            </td>
-            <td>
-                <div class="product-title-resale">12 Title Resale</div>
-                <div class="product-title-refi">6 Title Refi</div>
-                <div class="product-escrow">25 Escrow</div>
-            </td>
-            <td>
-                <div class="product-title-resale currency">$3,850</div>
-                <div class="product-title-refi currency">$0</div>
-                <div class="product-escrow currency">$1,200</div>
-            </td>
-            <td>
-                <div class="product-title-resale currency">$89,250</div>
-                <div class="product-title-refi currency">$28,400</div>
-                <div class="product-escrow currency">$42,000</div>
-            </td>
-            <td>
-                <div class="product-title-resale currency">$72,000</div>
-                <div class="product-title-refi currency">$21,300</div>
-                <div class="product-escrow currency">$37,500</div>
-            </td>
+            <!-- Title Resale Closings -->
+            <td class="number product-title-resale">1</td>
+            <td class="number product-title-resale">15</td>
+            <td class="number product-title-resale">12</td>
+            <!-- Title Refi Closings -->
+            <td class="number product-title-refi">0</td>
+            <td class="number product-title-refi">8</td>
+            <td class="number product-title-refi">6</td>
+            <!-- Escrow Closings -->
+            <td class="number product-escrow">2</td>
+            <td class="number product-escrow">28</td>
+            <td class="number product-escrow">25</td>
+            <!-- Title Resale Revenue -->
+            <td class="currency product-title-resale">$3,850</td>
+            <td class="currency product-title-resale">$89,250</td>
+            <td class="currency product-title-resale">$72,000</td>
+            <!-- Title Refi Revenue -->
+            <td class="currency product-title-refi">$0</td>
+            <td class="currency product-title-refi">$28,400</td>
+            <td class="currency product-title-refi">$21,300</td>
+            <!-- Escrow Revenue -->
+            <td class="currency product-escrow">$1,200</td>
+            <td class="currency product-escrow">$42,000</td>
+            <td class="currency product-escrow">$37,500</td>
         </tr>
         <tr>
             <td class="salesrep-name">Jennifer Martinez</td>
             <td class="percentage high-performance">82.1%</td>
-            <td>
-                <div class="product-title-resale">2 Title Resale</div>
-                <div class="product-title-refi">1 Title Refi</div>
-                <div class="product-escrow">1 Escrow</div>
-            </td>
-            <td>
-                <div class="product-title-resale">18 Title Resale</div>
-                <div class="product-title-refi">12 Title Refi</div>
-                <div class="product-escrow">22 Escrow</div>
-            </td>
-            <td>
-                <div class="product-title-resale">16 Title Resale</div>
-                <div class="product-title-refi">10 Title Refi</div>
-                <div class="product-escrow">20 Escrow</div>
-            </td>
-            <td>
-                <div class="product-title-resale currency">$6,250</div>
-                <div class="product-title-refi currency">$1,600</div>
-                <div class="product-escrow currency">$600</div>
-            </td>
-            <td>
-                <div class="product-title-resale currency">$112,500</div>
-                <div class="product-title-refi currency">$42,000</div>
-                <div class="product-escrow currency">$33,000</div>
-            </td>
-            <td>
-                <div class="product-title-resale currency">$96,000</div>
-                <div class="product-title-refi currency">$35,000</div>
-                <div class="product-escrow currency">$30,000</div>
-            </td>
+            <!-- Title Resale Closings -->
+            <td class="number product-title-resale">2</td>
+            <td class="number product-title-resale">18</td>
+            <td class="number product-title-resale">16</td>
+            <!-- Title Refi Closings -->
+            <td class="number product-title-refi">1</td>
+            <td class="number product-title-refi">12</td>
+            <td class="number product-title-refi">10</td>
+            <!-- Escrow Closings -->
+            <td class="number product-escrow">1</td>
+            <td class="number product-escrow">22</td>
+            <td class="number product-escrow">20</td>
+            <!-- Title Resale Revenue -->
+            <td class="currency product-title-resale">$6,250</td>
+            <td class="currency product-title-resale">$112,500</td>
+            <td class="currency product-title-resale">$96,000</td>
+            <!-- Title Refi Revenue -->
+            <td class="currency product-title-refi">$1,600</td>
+            <td class="currency product-title-refi">$42,000</td>
+            <td class="currency product-title-refi">$35,000</td>
+            <!-- Escrow Revenue -->
+            <td class="currency product-escrow">$600</td>
+            <td class="currency product-escrow">$33,000</td>
+            <td class="currency product-escrow">$30,000</td>
         </tr>
         <tr>
             <td class="salesrep-name">David Rodriguez</td>
             <td class="percentage medium-performance">75.3%</td>
-            <td>
-                <div class="product-title-resale">0 Title Resale</div>
-                <div class="product-title-refi">0 Title Refi</div>
-                <div class="product-escrow">1 Escrow</div>
-            </td>
-            <td>
-                <div class="product-title-resale">14 Title Resale</div>
-                <div class="product-title-refi">9 Title Refi</div>
-                <div class="product-escrow">18 Escrow</div>
-            </td>
-            <td>
-                <div class="product-title-resale">12 Title Resale</div>
-                <div class="product-title-refi">8 Title Refi</div>
-                <div class="product-escrow">16 Escrow</div>
-            </td>
-            <td>
-                <div class="product-title-resale currency">$0</div>
-                <div class="product-title-refi currency">$0</div>
-                <div class="product-escrow currency">$750</div>
-            </td>
-            <td>
-                <div class="product-title-resale currency">$84,000</div>
-                <div class="product-title-refi currency">$31,500</div>
-                <div class="product-escrow currency">$27,000</div>
-            </td>
-            <td>
-                <div class="product-title-resale currency">$72,000</div>
-                <div class="product-title-refi currency">$28,000</div>
-                <div class="product-escrow currency">$24,000</div>
-            </td>
+            <!-- Title Resale Closings -->
+            <td class="number product-title-resale">0</td>
+            <td class="number product-title-resale">14</td>
+            <td class="number product-title-resale">12</td>
+            <!-- Title Refi Closings -->
+            <td class="number product-title-refi">0</td>
+            <td class="number product-title-refi">9</td>
+            <td class="number product-title-refi">8</td>
+            <!-- Escrow Closings -->
+            <td class="number product-escrow">1</td>
+            <td class="number product-escrow">18</td>
+            <td class="number product-escrow">16</td>
+            <!-- Title Resale Revenue -->
+            <td class="currency product-title-resale">$0</td>
+            <td class="currency product-title-resale">$84,000</td>
+            <td class="currency product-title-resale">$72,000</td>
+            <!-- Title Refi Revenue -->
+            <td class="currency product-title-refi">$0</td>
+            <td class="currency product-title-refi">$31,500</td>
+            <td class="currency product-title-refi">$28,000</td>
+            <!-- Escrow Revenue -->
+            <td class="currency product-escrow">$750</td>
+            <td class="currency product-escrow">$27,000</td>
+            <td class="currency product-escrow">$24,000</td>
         </tr>
         <tr>
             <td class="salesrep-name">Amanda Wilson</td>
             <td class="percentage medium-performance">68.9%</td>
-            <td>
-                <div class="product-title-resale">1 Title Resale</div>
-                <div class="product-title-refi">0 Title Refi</div>
-                <div class="product-escrow">0 Escrow</div>
-            </td>
-            <td>
-                <div class="product-title-resale">11 Title Resale</div>
-                <div class="product-title-refi">7 Title Refi</div>
-                <div class="product-escrow">15 Escrow</div>
-            </td>
-            <td>
-                <div class="product-title-resale">10 Title Resale</div>
-                <div class="product-title-refi">6 Title Refi</div>
-                <div class="product-escrow">14 Escrow</div>
-            </td>
-            <td>
-                <div class="product-title-resale currency">$2,850</div>
-                <div class="product-title-refi currency">$0</div>
-                <div class="product-escrow currency">$0</div>
-            </td>
-            <td>
-                <div class="product-title-resale currency">$66,000</div>
-                <div class="product-title-refi currency">$24,500</div>
-                <div class="product-escrow currency">$22,500</div>
-            </td>
-            <td>
-                <div class="product-title-resale currency">$60,000</div>
-                <div class="product-title-refi currency">$21,000</div>
-                <div class="product-escrow currency">$21,000</div>
-            </td>
+            <!-- Title Resale Closings -->
+            <td class="number product-title-resale">1</td>
+            <td class="number product-title-resale">11</td>
+            <td class="number product-title-resale">10</td>
+            <!-- Title Refi Closings -->
+            <td class="number product-title-refi">0</td>
+            <td class="number product-title-refi">7</td>
+            <td class="number product-title-refi">6</td>
+            <!-- Escrow Closings -->
+            <td class="number product-escrow">0</td>
+            <td class="number product-escrow">15</td>
+            <td class="number product-escrow">14</td>
+            <!-- Title Resale Revenue -->
+            <td class="currency product-title-resale">$2,850</td>
+            <td class="currency product-title-resale">$66,000</td>
+            <td class="currency product-title-resale">$60,000</td>
+            <!-- Title Refi Revenue -->
+            <td class="currency product-title-refi">$0</td>
+            <td class="currency product-title-refi">$24,500</td>
+            <td class="currency product-title-refi">$21,000</td>
+            <!-- Escrow Revenue -->
+            <td class="currency product-escrow">$0</td>
+            <td class="currency product-escrow">$22,500</td>
+            <td class="currency product-escrow">$21,000</td>
         </tr>
     </tbody>
     <tfoot class="branch-totals">
         <tr>
             <td class="salesrep-name">BRANCH TOTALS</td>
             <td class="percentage">78.5%</td>
-            <td>
-                <div class="product-title-resale"><strong>4 Title Resale</strong></div>
-                <div class="product-title-refi"><strong>1 Title Refi</strong></div>
-                <div class="product-escrow"><strong>4 Escrow</strong></div>
-            </td>
-            <td>
-                <div class="product-title-resale"><strong>58 Title Resale</strong></div>
-                <div class="product-title-refi"><strong>36 Title Refi</strong></div>
-                <div class="product-escrow"><strong>83 Escrow</strong></div>
-            </td>
-            <td>
-                <div class="product-title-resale"><strong>50 Title Resale</strong></div>
-                <div class="product-title-refi"><strong>30 Title Refi</strong></div>
-                <div class="product-escrow"><strong>75 Escrow</strong></div>
-            </td>
-            <td>
-                <div class="product-title-resale currency"><strong>$12,950</strong></div>
-                <div class="product-title-refi currency"><strong>$1,600</strong></div>
-                <div class="product-escrow currency"><strong>$2,550</strong></div>
-            </td>
-            <td>
-                <div class="product-title-resale currency"><strong>$351,750</strong></div>
-                <div class="product-title-refi currency"><strong>$126,400</strong></div>
-                <div class="product-escrow currency"><strong>$124,500</strong></div>
-            </td>
-            <td>
-                <div class="product-title-resale currency"><strong>$300,000</strong></div>
-                <div class="product-title-refi currency"><strong>$105,300</strong></div>
-                <div class="product-escrow currency"><strong>$112,500</strong></div>
-            </td>
+            <!-- Title Resale Closings -->
+            <td class="number product-title-resale"><strong>4</strong></td>
+            <td class="number product-title-resale"><strong>58</strong></td>
+            <td class="number product-title-resale"><strong>50</strong></td>
+            <!-- Title Refi Closings -->
+            <td class="number product-title-refi"><strong>1</strong></td>
+            <td class="number product-title-refi"><strong>36</strong></td>
+            <td class="number product-title-refi"><strong>30</strong></td>
+            <!-- Escrow Closings -->
+            <td class="number product-escrow"><strong>4</strong></td>
+            <td class="number product-escrow"><strong>83</strong></td>
+            <td class="number product-escrow"><strong>75</strong></td>
+            <!-- Title Resale Revenue -->
+            <td class="currency product-title-resale"><strong>$12,950</strong></td>
+            <td class="currency product-title-resale"><strong>$351,750</strong></td>
+            <td class="currency product-title-resale"><strong>$300,000</strong></td>
+            <!-- Title Refi Revenue -->
+            <td class="currency product-title-refi"><strong>$1,600</strong></td>
+            <td class="currency product-title-refi"><strong>$126,400</strong></td>
+            <td class="currency product-title-refi"><strong>$105,300</strong></td>
+            <!-- Escrow Revenue -->
+            <td class="currency product-escrow"><strong>$2,550</strong></td>
+            <td class="currency product-escrow"><strong>$124,500</strong></td>
+            <td class="currency product-escrow"><strong>$112,500</strong></td>
         </tr>
     </tfoot>
 </table>
@@ -530,158 +521,154 @@ body {
 <table class="salesrep-table">
     <thead>
         <tr>
-            <th rowspan="2">Sales Representative</th>
-            <th rowspan="2">Closing<br>Ratio</th>
-            <th colspan="3">Closings by Production</th>
-            <th colspan="3">Revenue by Production</th>
+            <th rowspan="3">Sales Representative</th>
+            <th rowspan="3">Closing<br>Ratio</th>
+            <th colspan="9">Closings by Production</th>
+            <th colspan="9">Revenue by Production</th>
+        </tr>
+        <tr>
+            <th colspan="3">Title Resale</th>
+            <th colspan="3">Title Refi</th>
+            <th colspan="3">Escrow</th>
+            <th colspan="3">Title Resale</th>
+            <th colspan="3">Title Refi</th>
+            <th colspan="3">Escrow</th>
         </tr>
         <tr>
             <th>Today</th>
-            <th>Month to Date</th>
-            <th>Prior Month</th>
+            <th>MTD</th>
+            <th>Prior</th>
             <th>Today</th>
-            <th>Month to Date</th>
-            <th>Prior Month</th>
+            <th>MTD</th>
+            <th>Prior</th>
+            <th>Today</th>
+            <th>MTD</th>
+            <th>Prior</th>
+            <th>Today</th>
+            <th>MTD</th>
+            <th>Prior</th>
+            <th>Today</th>
+            <th>MTD</th>
+            <th>Prior</th>
+            <th>Today</th>
+            <th>MTD</th>
+            <th>Prior</th>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td class="salesrep-name">Michael Chen</td>
             <td class="percentage high-performance">84.2%</td>
-            <td>
-                <div class="product-title-resale">2 Title Resale</div>
-                <div class="product-title-refi">0 Title Refi</div>
-                <div class="product-escrow">2 Escrow</div>
-            </td>
-            <td>
-                <div class="product-title-resale">20 Title Resale</div>
-                <div class="product-title-refi">8 Title Refi</div>
-                <div class="product-escrow">25 Escrow</div>
-            </td>
-            <td>
-                <div class="product-title-resale">18 Title Resale</div>
-                <div class="product-title-refi">7 Title Refi</div>
-                <div class="product-escrow">22 Escrow</div>
-            </td>
-            <td>
-                <div class="product-title-resale currency">$6,200</div>
-                <div class="product-title-refi currency">$0</div>
-                <div class="product-escrow currency">$900</div>
-            </td>
-            <td>
-                <div class="product-title-resale currency">$120,000</div>
-                <div class="product-title-refi currency">$28,000</div>
-                <div class="product-escrow currency">$37,500</div>
-            </td>
-            <td>
-                <div class="product-title-resale currency">$108,000</div>
-                <div class="product-title-refi currency">$24,500</div>
-                <div class="product-escrow currency">$33,000</div>
-            </td>
+            <!-- Title Resale Closings -->
+            <td class="number product-title-resale">2</td>
+            <td class="number product-title-resale">20</td>
+            <td class="number product-title-resale">18</td>
+            <!-- Title Refi Closings -->
+            <td class="number product-title-refi">0</td>
+            <td class="number product-title-refi">8</td>
+            <td class="number product-title-refi">7</td>
+            <!-- Escrow Closings -->
+            <td class="number product-escrow">2</td>
+            <td class="number product-escrow">25</td>
+            <td class="number product-escrow">22</td>
+            <!-- Title Resale Revenue -->
+            <td class="currency product-title-resale">$6,200</td>
+            <td class="currency product-title-resale">$120,000</td>
+            <td class="currency product-title-resale">$108,000</td>
+            <!-- Title Refi Revenue -->
+            <td class="currency product-title-refi">$0</td>
+            <td class="currency product-title-refi">$28,000</td>
+            <td class="currency product-title-refi">$24,500</td>
+            <!-- Escrow Revenue -->
+            <td class="currency product-escrow">$900</td>
+            <td class="currency product-escrow">$37,500</td>
+            <td class="currency product-escrow">$33,000</td>
         </tr>
         <tr>
             <td class="salesrep-name">Lisa Thompson</td>
             <td class="percentage medium-performance">71.4%</td>
-            <td>
-                <div class="product-title-resale">1 Title Resale</div>
-                <div class="product-title-refi">0 Title Refi</div>
-                <div class="product-escrow">1 Escrow</div>
-            </td>
-            <td>
-                <div class="product-title-resale">15 Title Resale</div>
-                <div class="product-title-refi">6 Title Refi</div>
-                <div class="product-escrow">18 Escrow</div>
-            </td>
-            <td>
-                <div class="product-title-resale">13 Title Resale</div>
-                <div class="product-title-refi">5 Title Refi</div>
-                <div class="product-escrow">16 Escrow</div>
-            </td>
-            <td>
-                <div class="product-title-resale currency">$3,400</div>
-                <div class="product-title-refi currency">$0</div>
-                <div class="product-escrow currency">$525</div>
-            </td>
-            <td>
-                <div class="product-title-resale currency">$90,000</div>
-                <div class="product-title-refi currency">$21,000</div>
-                <div class="product-escrow currency">$27,000</div>
-            </td>
-            <td>
-                <div class="product-title-resale currency">$78,000</div>
-                <div class="product-title-refi currency">$17,500</div>
-                <div class="product-escrow currency">$24,000</div>
-            </td>
+            <!-- Title Resale Closings -->
+            <td class="number product-title-resale">1</td>
+            <td class="number product-title-resale">15</td>
+            <td class="number product-title-resale">13</td>
+            <!-- Title Refi Closings -->
+            <td class="number product-title-refi">0</td>
+            <td class="number product-title-refi">6</td>
+            <td class="number product-title-refi">5</td>
+            <!-- Escrow Closings -->
+            <td class="number product-escrow">1</td>
+            <td class="number product-escrow">18</td>
+            <td class="number product-escrow">16</td>
+            <!-- Title Resale Revenue -->
+            <td class="currency product-title-resale">$3,400</td>
+            <td class="currency product-title-resale">$90,000</td>
+            <td class="currency product-title-resale">$78,000</td>
+            <!-- Title Refi Revenue -->
+            <td class="currency product-title-refi">$0</td>
+            <td class="currency product-title-refi">$21,000</td>
+            <td class="currency product-title-refi">$17,500</td>
+            <!-- Escrow Revenue -->
+            <td class="currency product-escrow">$525</td>
+            <td class="currency product-escrow">$27,000</td>
+            <td class="currency product-escrow">$24,000</td>
         </tr>
         <tr>
             <td class="salesrep-name">Carlos Garcia</td>
             <td class="percentage low-performance">58.7%</td>
-            <td>
-                <div class="product-title-resale">0 Title Resale</div>
-                <div class="product-title-refi">0 Title Refi</div>
-                <div class="product-escrow">0 Escrow</div>
-            </td>
-            <td>
-                <div class="product-title-resale">8 Title Resale</div>
-                <div class="product-title-refi">4 Title Refi</div>
-                <div class="product-escrow">12 Escrow</div>
-            </td>
-            <td>
-                <div class="product-title-resale">7 Title Resale</div>
-                <div class="product-title-refi">3 Title Refi</div>
-                <div class="product-escrow">11 Escrow</div>
-            </td>
-            <td>
-                <div class="product-title-resale currency">$0</div>
-                <div class="product-title-refi currency">$0</div>
-                <div class="product-escrow currency">$0</div>
-            </td>
-            <td>
-                <div class="product-title-resale currency">$48,000</div>
-                <div class="product-title-refi currency">$14,000</div>
-                <div class="product-escrow currency">$18,000</div>
-            </td>
-            <td>
-                <div class="product-title-resale currency">$42,000</div>
-                <div class="product-title-refi currency">$10,500</div>
-                <div class="product-escrow currency">$16,500</div>
-            </td>
+            <!-- Title Resale Closings -->
+            <td class="number product-title-resale">0</td>
+            <td class="number product-title-resale">8</td>
+            <td class="number product-title-resale">7</td>
+            <!-- Title Refi Closings -->
+            <td class="number product-title-refi">0</td>
+            <td class="number product-title-refi">4</td>
+            <td class="number product-title-refi">3</td>
+            <!-- Escrow Closings -->
+            <td class="number product-escrow">0</td>
+            <td class="number product-escrow">12</td>
+            <td class="number product-escrow">11</td>
+            <!-- Title Resale Revenue -->
+            <td class="currency product-title-resale">$0</td>
+            <td class="currency product-title-resale">$48,000</td>
+            <td class="currency product-title-resale">$42,000</td>
+            <!-- Title Refi Revenue -->
+            <td class="currency product-title-refi">$0</td>
+            <td class="currency product-title-refi">$14,000</td>
+            <td class="currency product-title-refi">$10,500</td>
+            <!-- Escrow Revenue -->
+            <td class="currency product-escrow">$0</td>
+            <td class="currency product-escrow">$18,000</td>
+            <td class="currency product-escrow">$16,500</td>
         </tr>
     </tbody>
     <tfoot class="branch-totals">
         <tr>
             <td class="salesrep-name">BRANCH TOTALS</td>
             <td class="percentage">71.4%</td>
-            <td>
-                <div class="product-title-resale"><strong>3 Title Resale</strong></div>
-                <div class="product-title-refi"><strong>0 Title Refi</strong></div>
-                <div class="product-escrow"><strong>3 Escrow</strong></div>
-            </td>
-            <td>
-                <div class="product-title-resale"><strong>43 Title Resale</strong></div>
-                <div class="product-title-refi"><strong>18 Title Refi</strong></div>
-                <div class="product-escrow"><strong>55 Escrow</strong></div>
-            </td>
-            <td>
-                <div class="product-title-resale"><strong>38 Title Resale</strong></div>
-                <div class="product-title-refi"><strong>15 Title Refi</strong></div>
-                <div class="product-escrow"><strong>49 Escrow</strong></div>
-            </td>
-            <td>
-                <div class="product-title-resale currency"><strong>$9,600</strong></div>
-                <div class="product-title-refi currency"><strong>$0</strong></div>
-                <div class="product-escrow currency"><strong>$1,425</strong></div>
-            </td>
-            <td>
-                <div class="product-title-resale currency"><strong>$258,000</strong></div>
-                <div class="product-title-refi currency"><strong>$63,000</strong></div>
-                <div class="product-escrow currency"><strong>$82,500</strong></div>
-            </td>
-            <td>
-                <div class="product-title-resale currency"><strong>$228,000</strong></div>
-                <div class="product-title-refi currency"><strong>$52,500</strong></div>
-                <div class="product-escrow currency"><strong>$73,500</strong></div>
-            </td>
+            <!-- Title Resale Closings -->
+            <td class="number product-title-resale"><strong>3</strong></td>
+            <td class="number product-title-resale"><strong>43</strong></td>
+            <td class="number product-title-resale"><strong>38</strong></td>
+            <!-- Title Refi Closings -->
+            <td class="number product-title-refi"><strong>0</strong></td>
+            <td class="number product-title-refi"><strong>18</strong></td>
+            <td class="number product-title-refi"><strong>15</strong></td>
+            <!-- Escrow Closings -->
+            <td class="number product-escrow"><strong>3</strong></td>
+            <td class="number product-escrow"><strong>55</strong></td>
+            <td class="number product-escrow"><strong>49</strong></td>
+            <!-- Title Resale Revenue -->
+            <td class="currency product-title-resale"><strong>$9,600</strong></td>
+            <td class="currency product-title-resale"><strong>$258,000</strong></td>
+            <td class="currency product-title-resale"><strong>$228,000</strong></td>
+            <!-- Title Refi Revenue -->
+            <td class="currency product-title-refi"><strong>$0</strong></td>
+            <td class="currency product-title-refi"><strong>$63,000</strong></td>
+            <td class="currency product-title-refi"><strong>$52,500</strong></td>
+            <!-- Escrow Revenue -->
+            <td class="currency product-escrow"><strong>$1,425</strong></td>
+            <td class="currency product-escrow"><strong>$82,500</strong></td>
+            <td class="currency product-escrow"><strong>$73,500</strong></td>
         </tr>
     </tfoot>
 </table>

@@ -1,0 +1,719 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>Pacific Coast Title - Title Officer Report</title>
+<style>
+/* Title Officer Report Styling */
+body {
+    font-family: Calibri, "Segoe UI", Arial, sans-serif;
+    font-size: 11pt;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.2;
+}
+
+.report-header {
+    background: linear-gradient(to bottom, #4472C4, #365F94);
+    color: white;
+    padding: 15px 20px;
+    margin: -20px -20px 20px -20px;
+    border-bottom: 2px solid #2F5597;
+}
+
+.report-title {
+    font-size: 18pt;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+.report-subtitle {
+    font-size: 12pt;
+    margin: 5px 0 0 0;
+    opacity: 0.9;
+}
+
+/* Navigation bar styling */
+.nav-bar {
+    background: linear-gradient(to bottom, #2F5597, #1F4E79);
+    padding: 10px 20px;
+    margin: -20px -20px 0 -20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    border-bottom: 1px solid #1A3C5C;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 11pt;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #E3F2FD;
+}
+
+.nav-link.active {
+    background-color: #4472C4;
+    color: white;
+}
+
+/* Executive Summary Section */
+.executive-summary {
+    background: linear-gradient(135deg, #F8F9FA, #E9ECEF);
+    border: 2px solid #4472C4;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0 30px 0;
+}
+
+.summary-title {
+    font-size: 16pt;
+    font-weight: bold;
+    color: #1F4E79;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Collapsible branch sections */
+.branch-section {
+    margin: 20px 0;
+    border: 1px solid #D4D4D4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.branch-toggle {
+    background: linear-gradient(to bottom, #1565C0, #1976D2);
+    color: white;
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 14pt;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.branch-toggle:hover {
+    background: linear-gradient(to bottom, #1976D2, #1E88E5);
+}
+
+.branch-toggle .toggle-icon {
+    font-size: 12pt;
+    transition: transform 0.3s ease;
+}
+
+.branch-content {
+    padding: 20px;
+    background-color: white;
+    border-radius: 0 0 8px 8px;
+    display: block;
+}
+
+.branch-content.collapsed {
+    display: none;
+}
+
+/* Title Officer Performance tables */
+.title-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 0 20px 0;
+    border: 1px solid #D4D4D4;
+    font-size: 10pt;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.title-table th {
+    background: linear-gradient(to bottom, #E3F2FD, #BBDEFB);
+    border: 1px solid #D4D4D4;
+    padding: 12px 8px;
+    text-align: center;
+    font-weight: bold;
+    color: #1565C0;
+    font-size: 9pt;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.title-table td {
+    border: 1px solid #D4D4D4;
+    padding: 8px;
+    vertical-align: middle;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.title-table tr:nth-child(even) td {
+    background-color: #F8F9FA;
+}
+
+.title-table tr:hover td {
+    background-color: #E3F2FD;
+}
+
+/* Alternating row guides for easy reading */
+.title-table tbody tr:nth-child(odd) {
+    background: linear-gradient(to right, 
+        rgba(21, 101, 192, 0.05) 0%, 
+        rgba(21, 101, 192, 0.02) 50%, 
+        rgba(21, 101, 192, 0.05) 100%);
+}
+
+.title-table tbody tr:nth-child(even) {
+    background: linear-gradient(to right, 
+        rgba(25, 118, 210, 0.03) 0%, 
+        rgba(25, 118, 210, 0.01) 50%, 
+        rgba(25, 118, 210, 0.03) 100%);
+}
+
+/* Title officer name column */
+.title-officer-name {
+    text-align: left !important;
+    font-weight: bold;
+    color: #1565C0;
+    padding-left: 12px !important;
+}
+
+/* Product type styling for title work */
+.title-resale { 
+    background-color: #E3F2FD !important; 
+    font-weight: bold;
+    color: #1565C0;
+}
+
+.title-refinance { 
+    background-color: #FFF3E0 !important; 
+    font-weight: bold;
+    color: #EF6C00;
+}
+
+.title-commercial { 
+    background-color: #F3E5F5 !important; 
+    font-weight: bold;
+    color: #7B1FA2;
+}
+
+/* Number formatting */
+.currency {
+    text-align: right !important;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    color: #0066CC;
+}
+
+.number {
+    text-align: right !important;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+}
+
+.percentage {
+    text-align: right !important;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    color: #0066CC;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Performance indicators */
+.high-performance { color: #28a745; font-weight: bold; }
+.medium-performance { color: #ffc107; font-weight: bold; }
+.low-performance { color: #dc3545; font-weight: bold; }
+
+/* Branch totals styling */
+.branch-totals {
+    background: linear-gradient(135deg, #E3F2FD, #BBDEFB);
+    border: 2px solid #2196F3;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.branch-totals td {
+    font-weight: bold !important;
+    background: linear-gradient(135deg, #E3F2FD, #BBDEFB) !important;
+    color: #1565C0 !important;
+}
+
+.report-footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #E9ECEF;
+    text-align: center;
+    font-size: 9pt;
+    color: #6C757D;
+}
+</style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<div class="nav-bar">
+    <a href="R-14-Demo.html" class="nav-link">📋 R-14 Report</a>
+    <a href="Escrow-Report-Demo.html" class="nav-link">🏦 Escrow Report</a>
+    <a href="Title-Officer-Report-Demo.html" class="nav-link active">📜 Title Officer Report</a>
+</div>
+
+<!-- Report Header -->
+<div class="report-header">
+    <div class="report-title">Pacific Coast Title - Title Officer Report</div>
+    <div class="report-subtitle">Title Officer Production Analysis | August 15, 2025</div>
+</div>
+
+<!-- Executive Summary -->
+<div class="executive-summary">
+    <div class="summary-title">🏆 Executive Summary - Top Title Officers for August 2025</div>
+    <table class="title-table">
+        <thead>
+            <tr>
+                <th>Metric</th>
+                <th>Best Performer</th>
+                <th>Value</th>
+                <th>Company Average</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Most Policies Issued Today</strong></td>
+                <td class="title-officer-name">Andrew Thompson (Main Title LA)</td>
+                <td class="number high-performance">8</td>
+                <td class="number">3.2</td>
+            </tr>
+            <tr>
+                <td><strong>Highest Revenue Today</strong></td>
+                <td class="title-officer-name">Rebecca Martinez (Orange County Title)</td>
+                <td class="currency high-performance">$15,650</td>
+                <td class="currency">$5,825</td>
+            </tr>
+            <tr>
+                <td><strong>Best Quality Rating</strong></td>
+                <td class="title-officer-name">Michael Chen (San Diego Title)</td>
+                <td class="percentage high-performance">98.7%</td>
+                <td class="percentage">91.4%</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<!-- Main Title Office - Los Angeles -->
+<div class="branch-section">
+    <button class="branch-toggle" onclick="toggleBranch('main-title-la')">
+        <span>🏢 Main Title Office - Los Angeles</span>
+        <span class="toggle-icon" id="main-title-la-icon">▼</span>
+    </button>
+    <div class="branch-content" id="main-title-la">
+
+<table class="title-table">
+    <thead>
+        <tr>
+            <th rowspan="3">Title Officer</th>
+            <th rowspan="3">Quality<br>Rating</th>
+            <th colspan="9">Policies Issued by Type</th>
+            <th colspan="9">Revenue by Policy Type</th>
+        </tr>
+        <tr>
+            <th colspan="3">Resale</th>
+            <th colspan="3">Refinance</th>
+            <th colspan="3">Commercial</th>
+            <th colspan="3">Resale</th>
+            <th colspan="3">Refinance</th>
+            <th colspan="3">Commercial</th>
+        </tr>
+        <tr>
+            <th>Today</th>
+            <th>MTD</th>
+            <th>Prior</th>
+            <th>Today</th>
+            <th>MTD</th>
+            <th>Prior</th>
+            <th>Today</th>
+            <th>MTD</th>
+            <th>Prior</th>
+            <th>Today</th>
+            <th>MTD</th>
+            <th>Prior</th>
+            <th>Today</th>
+            <th>MTD</th>
+            <th>Prior</th>
+            <th>Today</th>
+            <th>MTD</th>
+            <th>Prior</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="title-officer-name">Andrew Thompson</td>
+            <td class="percentage high-performance">96.8%</td>
+            <!-- Resale Policies -->
+            <td class="number title-resale">5</td>
+            <td class="number title-resale">58</td>
+            <td class="number title-resale">52</td>
+            <!-- Refinance Policies -->
+            <td class="number title-refinance">2</td>
+            <td class="number title-refinance">22</td>
+            <td class="number title-refinance">20</td>
+            <!-- Commercial Policies -->
+            <td class="number title-commercial">1</td>
+            <td class="number title-commercial">8</td>
+            <td class="number title-commercial">6</td>
+            <!-- Resale Revenue -->
+            <td class="currency title-resale">$8,750</td>
+            <td class="currency title-resale">$127,400</td>
+            <td class="currency title-resale">$118,200</td>
+            <!-- Refinance Revenue -->
+            <td class="currency title-refinance">$2,800</td>
+            <td class="currency title-refinance">$34,600</td>
+            <td class="currency title-refinance">$31,500</td>
+            <!-- Commercial Revenue -->
+            <td class="currency title-commercial">$3,200</td>
+            <td class="currency title-commercial">$48,500</td>
+            <td class="currency title-commercial">$38,200</td>
+        </tr>
+        <tr>
+            <td class="title-officer-name">Catherine Williams</td>
+            <td class="percentage high-performance">94.2%</td>
+            <!-- Resale Policies -->
+            <td class="number title-resale">4</td>
+            <td class="number title-resale">46</td>
+            <td class="number title-resale">42</td>
+            <!-- Refinance Policies -->
+            <td class="number title-refinance">3</td>
+            <td class="number title-refinance">28</td>
+            <td class="number title-refinance">25</td>
+            <!-- Commercial Policies -->
+            <td class="number title-commercial">0</td>
+            <td class="number title-commercial">5</td>
+            <td class="number title-commercial">4</td>
+            <!-- Resale Revenue -->
+            <td class="currency title-resale">$6,950</td>
+            <td class="currency title-resale">$98,600</td>
+            <td class="currency title-resale">$92,400</td>
+            <!-- Refinance Revenue -->
+            <td class="currency title-refinance">$4,200</td>
+            <td class="currency title-refinance">$42,800</td>
+            <td class="currency title-refinance">$38,500</td>
+            <!-- Commercial Revenue -->
+            <td class="currency title-commercial">$0</td>
+            <td class="currency title-commercial">$28,500</td>
+            <td class="currency title-commercial">$22,800</td>
+        </tr>
+        <tr>
+            <td class="title-officer-name">Daniel Roberts</td>
+            <td class="percentage medium-performance">91.5%</td>
+            <!-- Resale Policies -->
+            <td class="number title-resale">3</td>
+            <td class="number title-resale">38</td>
+            <td class="number title-resale">35</td>
+            <!-- Refinance Policies -->
+            <td class="number title-refinance">1</td>
+            <td class="number title-refinance">18</td>
+            <td class="number title-refinance">16</td>
+            <!-- Commercial Policies -->
+            <td class="number title-commercial">1</td>
+            <td class="number title-commercial">6</td>
+            <td class="number title-commercial">5</td>
+            <!-- Resale Revenue -->
+            <td class="currency title-resale">$5,250</td>
+            <td class="currency title-resale">$79,800</td>
+            <td class="currency title-resale">$74,200</td>
+            <!-- Refinance Revenue -->
+            <td class="currency title-refinance">$1,400</td>
+            <td class="currency title-refinance">$26,400</td>
+            <td class="currency title-refinance">$23,800</td>
+            <!-- Commercial Revenue -->
+            <td class="currency title-commercial">$2,800</td>
+            <td class="currency title-commercial">$34,200</td>
+            <td class="currency title-commercial">$28,500</td>
+        </tr>
+        <tr>
+            <td class="title-officer-name">Lisa Anderson</td>
+            <td class="percentage medium-performance">88.9%</td>
+            <!-- Resale Policies -->
+            <td class="number title-resale">2</td>
+            <td class="number title-resale">32</td>
+            <td class="number title-resale">29</td>
+            <!-- Refinance Policies -->
+            <td class="number title-refinance">2</td>
+            <td class="number title-refinance">24</td>
+            <td class="number title-refinance">22</td>
+            <!-- Commercial Policies -->
+            <td class="number title-commercial">0</td>
+            <td class="number title-commercial">3</td>
+            <td class="number title-commercial">2</td>
+            <!-- Resale Revenue -->
+            <td class="currency title-resale">$3,600</td>
+            <td class="currency title-resale">$66,400</td>
+            <td class="currency title-resale">$61,800</td>
+            <!-- Refinance Revenue -->
+            <td class="currency title-refinance">$2,500</td>
+            <td class="currency title-refinance">$35,200</td>
+            <td class="currency title-refinance">$32,400</td>
+            <!-- Commercial Revenue -->
+            <td class="currency title-commercial">$0</td>
+            <td class="currency title-commercial">$16,500</td>
+            <td class="currency title-commercial">$12,200</td>
+        </tr>
+    </tbody>
+    <tfoot class="branch-totals">
+        <tr>
+            <td class="title-officer-name">BRANCH TOTALS</td>
+            <td class="percentage">92.9%</td>
+            <!-- Resale Policies -->
+            <td class="number title-resale"><strong>14</strong></td>
+            <td class="number title-resale"><strong>174</strong></td>
+            <td class="number title-resale"><strong>158</strong></td>
+            <!-- Refinance Policies -->
+            <td class="number title-refinance"><strong>8</strong></td>
+            <td class="number title-refinance"><strong>92</strong></td>
+            <td class="number title-refinance"><strong>83</strong></td>
+            <!-- Commercial Policies -->
+            <td class="number title-commercial"><strong>2</strong></td>
+            <td class="number title-commercial"><strong>22</strong></td>
+            <td class="number title-commercial"><strong>17</strong></td>
+            <!-- Resale Revenue -->
+            <td class="currency title-resale"><strong>$24,550</strong></td>
+            <td class="currency title-resale"><strong>$372,200</strong></td>
+            <td class="currency title-resale"><strong>$346,600</strong></td>
+            <!-- Refinance Revenue -->
+            <td class="currency title-refinance"><strong>$10,900</strong></td>
+            <td class="currency title-refinance"><strong>$139,000</strong></td>
+            <td class="currency title-refinance"><strong>$126,200</strong></td>
+            <!-- Commercial Revenue -->
+            <td class="currency title-commercial"><strong>$6,000</strong></td>
+            <td class="currency title-commercial"><strong>$127,700</strong></td>
+            <td class="currency title-commercial"><strong>$101,700</strong></td>
+        </tr>
+    </tfoot>
+</table>
+
+    </div>
+</div>
+
+<!-- Orange County Title Branch -->
+<div class="branch-section">
+    <button class="branch-toggle" onclick="toggleBranch('orange-county-title')">
+        <span>🌊 Orange County Title Branch</span>
+        <span class="toggle-icon" id="orange-county-title-icon">▼</span>
+    </button>
+    <div class="branch-content" id="orange-county-title">
+
+<table class="title-table">
+    <thead>
+        <tr>
+            <th rowspan="3">Title Officer</th>
+            <th rowspan="3">Quality<br>Rating</th>
+            <th colspan="9">Policies Issued by Type</th>
+            <th colspan="9">Revenue by Policy Type</th>
+        </tr>
+        <tr>
+            <th colspan="3">Resale</th>
+            <th colspan="3">Refinance</th>
+            <th colspan="3">Commercial</th>
+            <th colspan="3">Resale</th>
+            <th colspan="3">Refinance</th>
+            <th colspan="3">Commercial</th>
+        </tr>
+        <tr>
+            <th>Today</th>
+            <th>MTD</th>
+            <th>Prior</th>
+            <th>Today</th>
+            <th>MTD</th>
+            <th>Prior</th>
+            <th>Today</th>
+            <th>MTD</th>
+            <th>Prior</th>
+            <th>Today</th>
+            <th>MTD</th>
+            <th>Prior</th>
+            <th>Today</th>
+            <th>MTD</th>
+            <th>Prior</th>
+            <th>Today</th>
+            <th>MTD</th>
+            <th>Prior</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td class="title-officer-name">Rebecca Martinez</td>
+            <td class="percentage high-performance">95.4%</td>
+            <!-- Resale Policies -->
+            <td class="number title-resale">4</td>
+            <td class="number title-resale">52</td>
+            <td class="number title-resale">48</td>
+            <!-- Refinance Policies -->
+            <td class="number title-refinance">1</td>
+            <td class="number title-refinance">16</td>
+            <td class="number title-refinance">15</td>
+            <!-- Commercial Policies -->
+            <td class="number title-commercial">2</td>
+            <td class="number title-commercial">9</td>
+            <td class="number title-commercial">7</td>
+            <!-- Resale Revenue -->
+            <td class="currency title-resale">$7,250</td>
+            <td class="currency title-resale">$112,400</td>
+            <td class="currency title-resale">$105,600</td>
+            <!-- Refinance Revenue -->
+            <td class="currency title-refinance">$1,600</td>
+            <td class="currency title-refinance">$24,800</td>
+            <td class="currency title-refinance">$23,200</td>
+            <!-- Commercial Revenue -->
+            <td class="currency title-commercial">$6,800</td>
+            <td class="currency title-commercial">$52,200</td>
+            <td class="currency title-commercial">$41,800</td>
+        </tr>
+        <tr>
+            <td class="title-officer-name">Kevin Johnson</td>
+            <td class="percentage high-performance">93.7%</td>
+            <!-- Resale Policies -->
+            <td class="number title-resale">3</td>
+            <td class="number title-resale">42</td>
+            <td class="number title-resale">39</td>
+            <!-- Refinance Policies -->
+            <td class="number title-refinance">2</td>
+            <td class="number title-refinance">20</td>
+            <td class="number title-refinance">18</td>
+            <!-- Commercial Policies -->
+            <td class="number title-commercial">0</td>
+            <td class="number title-commercial">4</td>
+            <td class="number title-commercial">3</td>
+            <!-- Resale Revenue -->
+            <td class="currency title-resale">$5,850</td>
+            <td class="currency title-resale">$89,600</td>
+            <td class="currency title-resale">$83,400</td>
+            <!-- Refinance Revenue -->
+            <td class="currency title-refinance">$2,900</td>
+            <td class="currency title-refinance">$31,200</td>
+            <td class="currency title-refinance">$28,800</td>
+            <!-- Commercial Revenue -->
+            <td class="currency title-commercial">$0</td>
+            <td class="currency title-commercial">$22,600</td>
+            <td class="currency title-commercial">$18,500</td>
+        </tr>
+        <tr>
+            <td class="title-officer-name">Sandra Lee</td>
+            <td class="percentage medium-performance">90.1%</td>
+            <!-- Resale Policies -->
+            <td class="number title-resale">2</td>
+            <td class="number title-resale">35</td>
+            <td class="number title-resale">32</td>
+            <!-- Refinance Policies -->
+            <td class="number title-refinance">1</td>
+            <td class="number title-refinance">14</td>
+            <td class="number title-refinance">13</td>
+            <!-- Commercial Policies -->
+            <td class="number title-commercial">1</td>
+            <td class="number title-commercial">5</td>
+            <td class="number title-commercial">4</td>
+            <!-- Resale Revenue -->
+            <td class="currency title-resale">$3,900</td>
+            <td class="currency title-resale">$72,500</td>
+            <td class="currency title-resale">$67,200</td>
+            <!-- Refinance Revenue -->
+            <td class="currency title-refinance">$1,300</td>
+            <td class="currency title-refinance">$21,800</td>
+            <td class="currency title-refinance">$20,100</td>
+            <!-- Commercial Revenue -->
+            <td class="currency title-commercial">$3,500</td>
+            <td class="currency title-commercial">$29,200</td>
+            <td class="currency title-commercial">$24,800</td>
+        </tr>
+    </tbody>
+    <tfoot class="branch-totals">
+        <tr>
+            <td class="title-officer-name">BRANCH TOTALS</td>
+            <td class="percentage">93.1%</td>
+            <!-- Resale Policies -->
+            <td class="number title-resale"><strong>9</strong></td>
+            <td class="number title-resale"><strong>129</strong></td>
+            <td class="number title-resale"><strong>119</strong></td>
+            <!-- Refinance Policies -->
+            <td class="number title-refinance"><strong>4</strong></td>
+            <td class="number title-refinance"><strong>50</strong></td>
+            <td class="number title-refinance"><strong>46</strong></td>
+            <!-- Commercial Policies -->
+            <td class="number title-commercial"><strong>3</strong></td>
+            <td class="number title-commercial"><strong>18</strong></td>
+            <td class="number title-commercial"><strong>14</strong></td>
+            <!-- Resale Revenue -->
+            <td class="currency title-resale"><strong>$17,000</strong></td>
+            <td class="currency title-resale"><strong>$274,500</strong></td>
+            <td class="currency title-resale"><strong>$256,200</strong></td>
+            <!-- Refinance Revenue -->
+            <td class="currency title-refinance"><strong>$5,800</strong></td>
+            <td class="currency title-refinance"><strong>$77,800</strong></td>
+            <td class="currency title-refinance"><strong>$72,100</strong></td>
+            <!-- Commercial Revenue -->
+            <td class="currency title-commercial"><strong>$10,300</strong></td>
+            <td class="currency title-commercial"><strong>$104,000</strong></td>
+            <td class="currency title-commercial"><strong>$85,100</strong></td>
+        </tr>
+    </tfoot>
+</table>
+
+    </div>
+</div>
+
+<!-- Additional branches note -->
+<div style="margin: 30px 0; padding: 20px; background-color: #F8F9FA; border-radius: 5px; text-align: center;">
+    <strong>Additional Title Branches:</strong> San Diego, Riverside, and Ventura title branches would follow the same detailed structure with title officer performance metrics.
+</div>
+
+<!-- Executive Footer -->
+<div class="report-footer">
+    <strong>Pacific Coast Title Company</strong> | Title Officer Performance Report<br>
+    Title Production Analysis | Generated: August 15, 2025 at 12:51 PM<br>
+    <em>Individual title officer performance tracking for quality assurance and productivity</em>
+</div>
+
+<script>
+function toggleBranch(branchId) {
+    const content = document.getElementById(branchId);
+    const icon = document.getElementById(branchId + '-icon');
+    
+    if (content.style.display === 'none' || content.classList.contains('collapsed')) {
+        content.style.display = 'block';
+        content.classList.remove('collapsed');
+        icon.textContent = '▼';
+    } else {
+        content.style.display = 'none';
+        content.classList.add('collapsed');
+        icon.textContent = '▶';
+    }
+}
+
+// Initialize all branches as expanded
+document.addEventListener('DOMContentLoaded', function() {
+    const branches = ['main-title-la', 'orange-county-title'];
+    branches.forEach(function(branchId) {
+        const content = document.getElementById(branchId);
+        const icon = document.getElementById(branchId + '-icon');
+        content.style.display = 'block';
+        content.classList.remove('collapsed');
+        icon.textContent = '▼';
+    });
+});
+</script>
+
+</body>
+</html>
+
