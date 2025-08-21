@@ -1,0 +1,1201 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='utf-8'>
+<title>Pacific Coast Title - Branch Analytics Report</title>
+<style>
+/* Daily Report Styling - Exact match from Branch-Analytics-Updated.html */
+body {
+    font-family: Calibri, "Segoe UI", Arial, sans-serif;
+    font-size: 11pt;
+    margin: 0;
+    padding: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.2;
+}
+
+.report-header {
+    background: linear-gradient(to bottom, #4472C4, #365F94);
+    color: white;
+    padding: 15px 20px;
+    margin: -20px -20px 20px -20px;
+    border-bottom: 2px solid #2F5597;
+}
+
+.report-title {
+    font-size: 18pt;
+    font-weight: bold;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+.report-subtitle {
+    font-size: 12pt;
+    margin: 5px 0 0 0;
+    opacity: 0.9;
+}
+
+/* Executive Summary Section */
+.executive-summary {
+    background: linear-gradient(135deg, #F8F9FA, #E9ECEF);
+    border: 2px solid #4472C4;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0 30px 0;
+}
+
+.summary-title {
+    font-size: 16pt;
+    font-weight: bold;
+    color: #1F4E79;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Branch Section Headers */
+.branch-header {
+    background: linear-gradient(to bottom, #1F4E79, #2F5597);
+    color: white;
+    padding: 12px 20px;
+    margin: 30px 0 8px 0;
+    font-weight: bold;
+    font-size: 14pt;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.branch-header:hover {
+    background: linear-gradient(to bottom, #2F5597, #1F4E79);
+}
+
+/* Metric Section Headers */
+.metric-header {
+    background: linear-gradient(to bottom, #E7F3FF, #D1E7FF);
+    border: 1px solid #B4D5F0;
+    padding: 10px 15px;
+    margin: 20px 0 5px 0;
+    font-weight: bold;
+    font-size: 12pt;
+    color: #1F4E79;
+    border-radius: 3px;
+}
+
+/* Analytics tables */
+.branch-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 0 0 20px 0;
+    border: 1px solid #D4D4D4;
+    font-size: 10pt;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.branch-table th {
+    background: linear-gradient(to bottom, #F8F9FA, #E9ECEF);
+    border: 1px solid #D4D4D4;
+    padding: 10px 12px;
+    text-align: left;
+    font-weight: bold;
+    color: #495057;
+    font-size: 10pt;
+    white-space: nowrap;
+}
+
+.branch-table td {
+    border: 1px solid #D4D4D4;
+    padding: 8px 12px;
+    vertical-align: middle;
+    background-color: #ffffff;
+}
+
+.branch-table tr:nth-child(even) td {
+    background-color: #F8F9FA;
+}
+
+.branch-table tr:hover td {
+    background-color: #E3F2FD;
+}
+
+/* Service type styling */
+.service-escrow { 
+    background-color: #E8F5E8 !important; 
+    font-weight: bold;
+    color: #2E7D32;
+}
+
+.service-title-resale { 
+    background-color: #E3F2FD !important; 
+    font-weight: bold;
+    color: #1565C0;
+}
+
+.service-title-refi { 
+    background-color: #FFF3E0 !important; 
+    font-weight: bold;
+    color: #EF6C00;
+}
+
+/* Number formatting */
+.currency {
+    text-align: right;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    color: #0066CC;
+}
+
+.number {
+    text-align: right;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Branch content */
+.branch-content {
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.branch-content.collapsed {
+    display: none;
+}
+
+.toggle-icon {
+    font-size: 14pt;
+    transition: transform 0.3s ease;
+}
+
+.toggle-icon.collapsed {
+    transform: rotate(-90deg);
+}
+
+/* Controls */
+.controls {
+    background: linear-gradient(135deg, #F8F9FA, #E9ECEF);
+    border: 1px solid #4472C4;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px 0;
+}
+
+.controls label {
+    font-size: 12pt;
+    font-weight: bold;
+    margin-right: 15px;
+    color: #1F4E79;
+}
+
+.controls select {
+    font-size: 11pt;
+    padding: 5px 10px;
+    border: 1px solid #D4D4D4;
+    border-radius: 3px;
+    background: white;
+}
+</style>
+
+<script>
+function toggleSection(sectionId) {
+    const content = document.getElementById(sectionId + '-content');
+    const icon = document.getElementById(sectionId + '-icon');
+    
+    if (content.classList.contains('collapsed')) {
+        content.classList.remove('collapsed');
+        icon.classList.remove('collapsed');
+        icon.textContent = '▼';
+    } else {
+        content.classList.add('collapsed');
+        icon.classList.add('collapsed');
+        icon.textContent = '▶';
+    }
+}
+
+function changeMonth() {
+    const monthSelect = document.getElementById('monthSelect');
+    const selectedMonth = monthSelect.value;
+    
+    if (selectedMonth !== 'August 2025') {
+        alert('Data loading for ' + selectedMonth + ' would be implemented here.');
+    }
+}
+</script>
+</head>
+<body>
+
+<!-- Report Header -->
+<div class="report-header">
+    <div class="report-title">Pacific Coast Title - Branch Analytics Report</div>
+    <div class="report-subtitle">Performance Dashboard | August 2025 | Generated: 2025-08-21 14:04:13</div>
+</div>
+
+<!-- Controls -->
+<div class="controls">
+    <label for="monthSelect">📅 Select Month:</label>
+    <select id="monthSelect" onchange="changeMonth()">
+        <option value="August 2025" selected>August 2025</option>
+        <option value="July 2025">July 2025</option>
+        <option value="June 2025">June 2025</option>
+        <option value="May 2025">May 2025</option>
+        <option value="April 2025">April 2025</option>
+        <option value="March 2025">March 2025</option>
+    </select>
+</div>
+<!-- Company Production Totals - Executive Summary Style -->
+<div class="executive-summary">
+    <div class="summary-title">📊 Company Production Totals - All Branches</div>
+    <table class="branch-table">
+        <thead>
+            <tr>
+                <th>Metric</th>
+                <th>Today</th>
+                <th>Month to Date</th>
+                <th>Avg Per Day</th>
+                <th>Projected Month</th>
+                <th>Prior Month</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>Total Openings</strong></td>
+                <td class="number">40.2</td>
+                <td class="number">804</td>
+                <td class="number">40.2</td>
+                <td class="number">1608.0</td>
+                <td class="number">683.4</td>
+            </tr>
+            <tr>
+                <td><strong>Total Closings</strong></td>
+                <td class="number">18.6</td>
+                <td class="number">372</td>
+                <td class="number">18.6</td>
+                <td class="number">744.0</td>
+                <td class="number">316.2</td>
+            </tr>
+            <tr>
+                <td><strong>Total Title Premiums</strong></td>
+                <td class="currency">$12,829.22</td>
+                <td class="currency">$256,584.43</td>
+                <td class="currency">$12,829.22</td>
+                <td class="currency">$513,168.86</td>
+                <td class="currency">$218,096.77</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!-- Glendale Branch -->
+<div class="branch-header" onclick="toggleSection('glendale')">
+    <span>🏢 Glendale Branch</span>
+    <span class="toggle-icon" id="glendale-icon">▼</span>
+</div>
+<div class="branch-content" id="glendale-content">
+    
+    <div class="metric-header">📈 Openings Analysis</div>
+    <table class="branch-table">
+        <thead>
+            <tr>
+                <th>Service Type</th>
+                <th>Count for Day</th>
+                <th>Count for Month</th>
+                <th>Average Per Day</th>
+                <th>Projected For Month</th>
+                <th>Prior Month Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>🏢 Glendale TOTAL OPENINGS</strong></td>
+                <td class="number">19.05</td>
+                <td class="number">381</td>
+                <td class="number">19.05</td>
+                <td class="number">762.0</td>
+                <td class="number">323.85</td>
+            </tr>
+            <tr class="service-escrow">
+                <td>📋 Escrow Orders</td>
+                <td class="number">0.45</td>
+                <td class="number">9</td>
+                <td class="number">0.45</td>
+                <td class="number">18.0</td>
+                <td class="number">7.65</td>
+            </tr>
+            <tr class="service-title-resale">
+                <td>📋 Title Only - Resale</td>
+                <td class="number">12.45</td>
+                <td class="number">249</td>
+                <td class="number">12.45</td>
+                <td class="number">498.0</td>
+                <td class="number">211.65</td>
+            </tr>
+            <tr class="service-title-refi">
+                <td>📋 Title Only - Refinance</td>
+                <td class="number">6.15</td>
+                <td class="number">123</td>
+                <td class="number">6.15</td>
+                <td class="number">246.0</td>
+                <td class="number">104.55</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div class="metric-header">🎯 Closings Analysis</div>
+    <table class="branch-table">
+        <thead>
+            <tr>
+                <th>Service Type</th>
+                <th>Count for Day</th>
+                <th>Count for Month</th>
+                <th>Average Per Day</th>
+                <th>Projected For Month</th>
+                <th>Prior Month Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>🏢 Glendale TOTAL CLOSINGS</strong></td>
+                <td class="number">9.3</td>
+                <td class="number">186</td>
+                <td class="number">9.3</td>
+                <td class="number">372.0</td>
+                <td class="number">158.1</td>
+            </tr>
+            <tr class="service-escrow">
+                <td>📋 Escrow Orders</td>
+                <td class="number">0.05</td>
+                <td class="number">1</td>
+                <td class="number">0.05</td>
+                <td class="number">2.0</td>
+                <td class="number">0.85</td>
+            </tr>
+            <tr class="service-title-resale">
+                <td>📋 Title Only - Resale</td>
+                <td class="number">6.15</td>
+                <td class="number">123</td>
+                <td class="number">6.15</td>
+                <td class="number">246.0</td>
+                <td class="number">104.55</td>
+            </tr>
+            <tr class="service-title-refi">
+                <td>📋 Title Only - Refinance</td>
+                <td class="number">3.1</td>
+                <td class="number">62</td>
+                <td class="number">3.1</td>
+                <td class="number">124.0</td>
+                <td class="number">52.7</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div class="metric-header">💰 Revenue Analysis</div>
+    <table class="branch-table">
+        <thead>
+            <tr>
+                <th>Service Type</th>
+                <th>Count for Day</th>
+                <th>Count for Month</th>
+                <th>Average Per Day</th>
+                <th>Projected For Month</th>
+                <th>Prior Month Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>🏢 Glendale TOTAL REVENUE</strong></td>
+                <td class="currency">$8,360.37</td>
+                <td class="currency">$167,207.32</td>
+                <td class="currency">$8,360.37</td>
+                <td class="currency">$334,414.64</td>
+                <td class="currency">$142,126.22</td>
+            </tr>
+            <tr class="service-escrow">
+                <td>📋 Escrow Orders</td>
+                <td class="currency">$7.63</td>
+                <td class="currency">$152.60</td>
+                <td class="currency">$7.63</td>
+                <td class="currency">$305.20</td>
+                <td class="currency">$129.71</td>
+            </tr>
+            <tr class="service-title-resale">
+                <td>📋 Title Only - Resale</td>
+                <td class="currency">$6,461.68</td>
+                <td class="currency">$129,233.64</td>
+                <td class="currency">$6,461.68</td>
+                <td class="currency">$258,467.28</td>
+                <td class="currency">$109,848.59</td>
+            </tr>
+            <tr class="service-title-refi">
+                <td>📋 Title Only - Refinance</td>
+                <td class="currency">$1,891.05</td>
+                <td class="currency">$37,821.08</td>
+                <td class="currency">$1,891.05</td>
+                <td class="currency">$75,642.16</td>
+                <td class="currency">$32,147.92</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!-- Orange Branch -->
+<div class="branch-header" onclick="toggleSection('orange')">
+    <span>🏢 Orange Branch</span>
+    <span class="toggle-icon" id="orange-icon">▼</span>
+</div>
+<div class="branch-content" id="orange-content">
+    
+    <div class="metric-header">📈 Openings Analysis</div>
+    <table class="branch-table">
+        <thead>
+            <tr>
+                <th>Service Type</th>
+                <th>Count for Day</th>
+                <th>Count for Month</th>
+                <th>Average Per Day</th>
+                <th>Projected For Month</th>
+                <th>Prior Month Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>🏢 Orange TOTAL OPENINGS</strong></td>
+                <td class="number">17.65</td>
+                <td class="number">353</td>
+                <td class="number">17.65</td>
+                <td class="number">706.0</td>
+                <td class="number">300.05</td>
+            </tr>
+            <tr class="service-escrow">
+                <td>📋 Escrow Orders</td>
+                <td class="number">2.95</td>
+                <td class="number">59</td>
+                <td class="number">2.95</td>
+                <td class="number">118.0</td>
+                <td class="number">50.15</td>
+            </tr>
+            <tr class="service-title-resale">
+                <td>📋 Title Only - Resale</td>
+                <td class="number">4.9</td>
+                <td class="number">98</td>
+                <td class="number">4.9</td>
+                <td class="number">196.0</td>
+                <td class="number">83.3</td>
+            </tr>
+            <tr class="service-title-refi">
+                <td>📋 Title Only - Refinance</td>
+                <td class="number">9.8</td>
+                <td class="number">196</td>
+                <td class="number">9.8</td>
+                <td class="number">392.0</td>
+                <td class="number">166.6</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div class="metric-header">🎯 Closings Analysis</div>
+    <table class="branch-table">
+        <thead>
+            <tr>
+                <th>Service Type</th>
+                <th>Count for Day</th>
+                <th>Count for Month</th>
+                <th>Average Per Day</th>
+                <th>Projected For Month</th>
+                <th>Prior Month Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>🏢 Orange TOTAL CLOSINGS</strong></td>
+                <td class="number">7.45</td>
+                <td class="number">149</td>
+                <td class="number">7.45</td>
+                <td class="number">298.0</td>
+                <td class="number">126.65</td>
+            </tr>
+            <tr class="service-escrow">
+                <td>📋 Escrow Orders</td>
+                <td class="number">0.3</td>
+                <td class="number">6</td>
+                <td class="number">0.3</td>
+                <td class="number">12.0</td>
+                <td class="number">5.1</td>
+            </tr>
+            <tr class="service-title-resale">
+                <td>📋 Title Only - Resale</td>
+                <td class="number">2.45</td>
+                <td class="number">49</td>
+                <td class="number">2.45</td>
+                <td class="number">98.0</td>
+                <td class="number">41.65</td>
+            </tr>
+            <tr class="service-title-refi">
+                <td>📋 Title Only - Refinance</td>
+                <td class="number">4.7</td>
+                <td class="number">94</td>
+                <td class="number">4.7</td>
+                <td class="number">188.0</td>
+                <td class="number">79.9</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div class="metric-header">💰 Revenue Analysis</div>
+    <table class="branch-table">
+        <thead>
+            <tr>
+                <th>Service Type</th>
+                <th>Count for Day</th>
+                <th>Count for Month</th>
+                <th>Average Per Day</th>
+                <th>Projected For Month</th>
+                <th>Prior Month Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>🏢 Orange TOTAL REVENUE</strong></td>
+                <td class="currency">$4,195.81</td>
+                <td class="currency">$83,916.21</td>
+                <td class="currency">$4,195.81</td>
+                <td class="currency">$167,832.42</td>
+                <td class="currency">$71,328.78</td>
+            </tr>
+            <tr class="service-escrow">
+                <td>📋 Escrow Orders</td>
+                <td class="currency">$50.84</td>
+                <td class="currency">$1,016.72</td>
+                <td class="currency">$50.84</td>
+                <td class="currency">$2,033.44</td>
+                <td class="currency">$864.21</td>
+            </tr>
+            <tr class="service-title-resale">
+                <td>📋 Title Only - Resale</td>
+                <td class="currency">$2,474.89</td>
+                <td class="currency">$49,497.78</td>
+                <td class="currency">$2,474.89</td>
+                <td class="currency">$98,995.56</td>
+                <td class="currency">$42,073.11</td>
+            </tr>
+            <tr class="service-title-refi">
+                <td>📋 Title Only - Refinance</td>
+                <td class="currency">$1,670.09</td>
+                <td class="currency">$33,401.71</td>
+                <td class="currency">$1,670.09</td>
+                <td class="currency">$66,803.42</td>
+                <td class="currency">$28,391.45</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!-- Inland Empire Branch -->
+<div class="branch-header" onclick="toggleSection('inland-empire')">
+    <span>🏢 Inland Empire Branch</span>
+    <span class="toggle-icon" id="inland-empire-icon">▼</span>
+</div>
+<div class="branch-content" id="inland-empire-content">
+    
+    <div class="metric-header">📈 Openings Analysis</div>
+    <table class="branch-table">
+        <thead>
+            <tr>
+                <th>Service Type</th>
+                <th>Count for Day</th>
+                <th>Count for Month</th>
+                <th>Average Per Day</th>
+                <th>Projected For Month</th>
+                <th>Prior Month Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>🏢 Inland Empire TOTAL OPENINGS</strong></td>
+                <td class="number">0.25</td>
+                <td class="number">5</td>
+                <td class="number">0.25</td>
+                <td class="number">10.0</td>
+                <td class="number">4.25</td>
+            </tr>
+            <tr class="service-escrow">
+                <td>📋 Escrow Orders</td>
+                <td class="number">0.25</td>
+                <td class="number">5</td>
+                <td class="number">0.25</td>
+                <td class="number">10.0</td>
+                <td class="number">4.25</td>
+            </tr>
+            <tr class="service-title-resale">
+                <td>📋 Title Only - Resale</td>
+                <td class="number">0.0</td>
+                <td class="number">0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+            </tr>
+            <tr class="service-title-refi">
+                <td>📋 Title Only - Refinance</td>
+                <td class="number">0.0</td>
+                <td class="number">0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div class="metric-header">🎯 Closings Analysis</div>
+    <table class="branch-table">
+        <thead>
+            <tr>
+                <th>Service Type</th>
+                <th>Count for Day</th>
+                <th>Count for Month</th>
+                <th>Average Per Day</th>
+                <th>Projected For Month</th>
+                <th>Prior Month Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>🏢 Inland Empire TOTAL CLOSINGS</strong></td>
+                <td class="number">0.3</td>
+                <td class="number">6</td>
+                <td class="number">0.3</td>
+                <td class="number">12.0</td>
+                <td class="number">5.1</td>
+            </tr>
+            <tr class="service-escrow">
+                <td>📋 Escrow Orders</td>
+                <td class="number">0.3</td>
+                <td class="number">6</td>
+                <td class="number">0.3</td>
+                <td class="number">12.0</td>
+                <td class="number">5.1</td>
+            </tr>
+            <tr class="service-title-resale">
+                <td>📋 Title Only - Resale</td>
+                <td class="number">0.0</td>
+                <td class="number">0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+            </tr>
+            <tr class="service-title-refi">
+                <td>📋 Title Only - Refinance</td>
+                <td class="number">0.0</td>
+                <td class="number">0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div class="metric-header">💰 Revenue Analysis</div>
+    <table class="branch-table">
+        <thead>
+            <tr>
+                <th>Service Type</th>
+                <th>Count for Day</th>
+                <th>Count for Month</th>
+                <th>Average Per Day</th>
+                <th>Projected For Month</th>
+                <th>Prior Month Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>🏢 Inland Empire TOTAL REVENUE</strong></td>
+                <td class="currency">$197.73</td>
+                <td class="currency">$3,954.60</td>
+                <td class="currency">$197.73</td>
+                <td class="currency">$7,909.20</td>
+                <td class="currency">$3,361.41</td>
+            </tr>
+            <tr class="service-escrow">
+                <td>📋 Escrow Orders</td>
+                <td class="currency">$197.73</td>
+                <td class="currency">$3,954.60</td>
+                <td class="currency">$197.73</td>
+                <td class="currency">$7,909.20</td>
+                <td class="currency">$3,361.41</td>
+            </tr>
+            <tr class="service-title-resale">
+                <td>📋 Title Only - Resale</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+            </tr>
+            <tr class="service-title-refi">
+                <td>📋 Title Only - Refinance</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!-- Porterville Branch -->
+<div class="branch-header" onclick="toggleSection('porterville')">
+    <span>🏢 Porterville Branch</span>
+    <span class="toggle-icon" id="porterville-icon">▼</span>
+</div>
+<div class="branch-content" id="porterville-content">
+    
+    <div class="metric-header">📈 Openings Analysis</div>
+    <table class="branch-table">
+        <thead>
+            <tr>
+                <th>Service Type</th>
+                <th>Count for Day</th>
+                <th>Count for Month</th>
+                <th>Average Per Day</th>
+                <th>Projected For Month</th>
+                <th>Prior Month Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>🏢 Porterville TOTAL OPENINGS</strong></td>
+                <td class="number">0.8</td>
+                <td class="number">16</td>
+                <td class="number">0.8</td>
+                <td class="number">32.0</td>
+                <td class="number">13.6</td>
+            </tr>
+            <tr class="service-escrow">
+                <td>📋 Escrow Orders</td>
+                <td class="number">0.8</td>
+                <td class="number">16</td>
+                <td class="number">0.8</td>
+                <td class="number">32.0</td>
+                <td class="number">13.6</td>
+            </tr>
+            <tr class="service-title-resale">
+                <td>📋 Title Only - Resale</td>
+                <td class="number">0.0</td>
+                <td class="number">0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+            </tr>
+            <tr class="service-title-refi">
+                <td>📋 Title Only - Refinance</td>
+                <td class="number">0.0</td>
+                <td class="number">0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div class="metric-header">🎯 Closings Analysis</div>
+    <table class="branch-table">
+        <thead>
+            <tr>
+                <th>Service Type</th>
+                <th>Count for Day</th>
+                <th>Count for Month</th>
+                <th>Average Per Day</th>
+                <th>Projected For Month</th>
+                <th>Prior Month Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>🏢 Porterville TOTAL CLOSINGS</strong></td>
+                <td class="number">0.1</td>
+                <td class="number">2</td>
+                <td class="number">0.1</td>
+                <td class="number">4.0</td>
+                <td class="number">1.7</td>
+            </tr>
+            <tr class="service-escrow">
+                <td>📋 Escrow Orders</td>
+                <td class="number">0.1</td>
+                <td class="number">2</td>
+                <td class="number">0.1</td>
+                <td class="number">4.0</td>
+                <td class="number">1.7</td>
+            </tr>
+            <tr class="service-title-resale">
+                <td>📋 Title Only - Resale</td>
+                <td class="number">0.0</td>
+                <td class="number">0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+            </tr>
+            <tr class="service-title-refi">
+                <td>📋 Title Only - Refinance</td>
+                <td class="number">0.0</td>
+                <td class="number">0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div class="metric-header">💰 Revenue Analysis</div>
+    <table class="branch-table">
+        <thead>
+            <tr>
+                <th>Service Type</th>
+                <th>Count for Day</th>
+                <th>Count for Month</th>
+                <th>Average Per Day</th>
+                <th>Projected For Month</th>
+                <th>Prior Month Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>🏢 Porterville TOTAL REVENUE</strong></td>
+                <td class="currency">$33.20</td>
+                <td class="currency">$663.90</td>
+                <td class="currency">$33.20</td>
+                <td class="currency">$1,327.80</td>
+                <td class="currency">$564.31</td>
+            </tr>
+            <tr class="service-escrow">
+                <td>📋 Escrow Orders</td>
+                <td class="currency">$33.20</td>
+                <td class="currency">$663.90</td>
+                <td class="currency">$33.20</td>
+                <td class="currency">$1,327.80</td>
+                <td class="currency">$564.31</td>
+            </tr>
+            <tr class="service-title-resale">
+                <td>📋 Title Only - Resale</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+            </tr>
+            <tr class="service-title-refi">
+                <td>📋 Title Only - Refinance</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!-- TSG Branch -->
+<div class="branch-header" onclick="toggleSection('tsg')">
+    <span>🏢 TSG Branch</span>
+    <span class="toggle-icon" id="tsg-icon">▼</span>
+</div>
+<div class="branch-content" id="tsg-content">
+    
+    <div class="metric-header">📈 Openings Analysis</div>
+    <table class="branch-table">
+        <thead>
+            <tr>
+                <th>Service Type</th>
+                <th>Count for Day</th>
+                <th>Count for Month</th>
+                <th>Average Per Day</th>
+                <th>Projected For Month</th>
+                <th>Prior Month Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>🏢 TSG TOTAL OPENINGS</strong></td>
+                <td class="number">1.55</td>
+                <td class="number">31</td>
+                <td class="number">1.55</td>
+                <td class="number">62.0</td>
+                <td class="number">26.35</td>
+            </tr>
+            <tr class="service-escrow">
+                <td>📋 Escrow Orders</td>
+                <td class="number">0.0</td>
+                <td class="number">0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+            </tr>
+            <tr class="service-title-resale">
+                <td>📋 Title Only - Resale</td>
+                <td class="number">1.55</td>
+                <td class="number">31</td>
+                <td class="number">1.55</td>
+                <td class="number">62.0</td>
+                <td class="number">26.35</td>
+            </tr>
+            <tr class="service-title-refi">
+                <td>📋 Title Only - Refinance</td>
+                <td class="number">0.0</td>
+                <td class="number">0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div class="metric-header">🎯 Closings Analysis</div>
+    <table class="branch-table">
+        <thead>
+            <tr>
+                <th>Service Type</th>
+                <th>Count for Day</th>
+                <th>Count for Month</th>
+                <th>Average Per Day</th>
+                <th>Projected For Month</th>
+                <th>Prior Month Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>🏢 TSG TOTAL CLOSINGS</strong></td>
+                <td class="number">1.4</td>
+                <td class="number">28</td>
+                <td class="number">1.4</td>
+                <td class="number">56.0</td>
+                <td class="number">23.8</td>
+            </tr>
+            <tr class="service-escrow">
+                <td>📋 Escrow Orders</td>
+                <td class="number">0.0</td>
+                <td class="number">0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+            </tr>
+            <tr class="service-title-resale">
+                <td>📋 Title Only - Resale</td>
+                <td class="number">1.4</td>
+                <td class="number">28</td>
+                <td class="number">1.4</td>
+                <td class="number">56.0</td>
+                <td class="number">23.8</td>
+            </tr>
+            <tr class="service-title-refi">
+                <td>📋 Title Only - Refinance</td>
+                <td class="number">0.0</td>
+                <td class="number">0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div class="metric-header">💰 Revenue Analysis</div>
+    <table class="branch-table">
+        <thead>
+            <tr>
+                <th>Service Type</th>
+                <th>Count for Day</th>
+                <th>Count for Month</th>
+                <th>Average Per Day</th>
+                <th>Projected For Month</th>
+                <th>Prior Month Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>🏢 TSG TOTAL REVENUE</strong></td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+            </tr>
+            <tr class="service-escrow">
+                <td>📋 Escrow Orders</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+            </tr>
+            <tr class="service-title-resale">
+                <td>📋 Title Only - Resale</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+            </tr>
+            <tr class="service-title-refi">
+                <td>📋 Title Only - Refinance</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<!-- Production Branch -->
+<div class="branch-header" onclick="toggleSection('production')">
+    <span>🏢 Production Branch</span>
+    <span class="toggle-icon" id="production-icon">▼</span>
+</div>
+<div class="branch-content" id="production-content">
+    
+    <div class="metric-header">📈 Openings Analysis</div>
+    <table class="branch-table">
+        <thead>
+            <tr>
+                <th>Service Type</th>
+                <th>Count for Day</th>
+                <th>Count for Month</th>
+                <th>Average Per Day</th>
+                <th>Projected For Month</th>
+                <th>Prior Month Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>🏢 Production TOTAL OPENINGS</strong></td>
+                <td class="number">0.9</td>
+                <td class="number">18</td>
+                <td class="number">0.9</td>
+                <td class="number">36.0</td>
+                <td class="number">15.3</td>
+            </tr>
+            <tr class="service-escrow">
+                <td>📋 Escrow Orders</td>
+                <td class="number">0.0</td>
+                <td class="number">0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+            </tr>
+            <tr class="service-title-resale">
+                <td>📋 Title Only - Resale</td>
+                <td class="number">0.9</td>
+                <td class="number">18</td>
+                <td class="number">0.9</td>
+                <td class="number">36.0</td>
+                <td class="number">15.3</td>
+            </tr>
+            <tr class="service-title-refi">
+                <td>📋 Title Only - Refinance</td>
+                <td class="number">0.0</td>
+                <td class="number">0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div class="metric-header">🎯 Closings Analysis</div>
+    <table class="branch-table">
+        <thead>
+            <tr>
+                <th>Service Type</th>
+                <th>Count for Day</th>
+                <th>Count for Month</th>
+                <th>Average Per Day</th>
+                <th>Projected For Month</th>
+                <th>Prior Month Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>🏢 Production TOTAL CLOSINGS</strong></td>
+                <td class="number">0.05</td>
+                <td class="number">1</td>
+                <td class="number">0.05</td>
+                <td class="number">2.0</td>
+                <td class="number">0.85</td>
+            </tr>
+            <tr class="service-escrow">
+                <td>📋 Escrow Orders</td>
+                <td class="number">0.0</td>
+                <td class="number">0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+            </tr>
+            <tr class="service-title-resale">
+                <td>📋 Title Only - Resale</td>
+                <td class="number">0.05</td>
+                <td class="number">1</td>
+                <td class="number">0.05</td>
+                <td class="number">2.0</td>
+                <td class="number">0.85</td>
+            </tr>
+            <tr class="service-title-refi">
+                <td>📋 Title Only - Refinance</td>
+                <td class="number">0.0</td>
+                <td class="number">0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+                <td class="number">0.0</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <div class="metric-header">💰 Revenue Analysis</div>
+    <table class="branch-table">
+        <thead>
+            <tr>
+                <th>Service Type</th>
+                <th>Count for Day</th>
+                <th>Count for Month</th>
+                <th>Average Per Day</th>
+                <th>Projected For Month</th>
+                <th>Prior Month Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>🏢 Production TOTAL REVENUE</strong></td>
+                <td class="currency">$42.12</td>
+                <td class="currency">$842.40</td>
+                <td class="currency">$42.12</td>
+                <td class="currency">$1,684.80</td>
+                <td class="currency">$716.04</td>
+            </tr>
+            <tr class="service-escrow">
+                <td>📋 Escrow Orders</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+            </tr>
+            <tr class="service-title-resale">
+                <td>📋 Title Only - Resale</td>
+                <td class="currency">$42.12</td>
+                <td class="currency">$842.40</td>
+                <td class="currency">$42.12</td>
+                <td class="currency">$1,684.80</td>
+                <td class="currency">$716.04</td>
+            </tr>
+            <tr class="service-title-refi">
+                <td>📋 Title Only - Refinance</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+                <td class="currency">$0.00</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
