@@ -12,6 +12,7 @@ This folder contains comprehensive documentation for the Daily Report system. Us
 1. **[CALCULATION-MAPPING.md](CALCULATION-MAPPING.md)** - Line-by-line explanation of every number
 2. **[DATA-LINEAGE.md](DATA-LINEAGE.md)** - Complete data flow from Excel to reports
 3. **[FINAL-STRUCTURE.md](FINAL-STRUCTURE.md)** - Current system overview
+4. **[METRICS-GLOSSARY.md](METRICS-GLOSSARY.md)** - One-page definitions for MTD, Prior, Closing Ratio, projections
 
 ### **💡 Key Talking Points**
 - **Data Integrity**: Every number traceable to source Excel files
